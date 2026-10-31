@@ -1,6 +1,6 @@
 # Lott Lab
 
-Phần mềm thử nghiệm phân tích kết quả **Oz Lotto, Powerball và Saturday Lotto** (thelott.com).
+Phần mềm thử nghiệm phân tích kết quả **Oz Lotto, Powerball và Saturday Lotto** của The Lott (Úc).
 Mỗi kỳ, hệ thống tạo **50 dòng số** và tự chốt vào **17:00 (giờ Sydney) ngày trước kỳ quay**.
 
 ## Hệ thống làm gì
@@ -79,7 +79,7 @@ python -m pytest -q             # kiểm thử
 
 ```
 lottlab/games.py      luật chơi, hạng giải, xác suất chính xác
-lottlab/fetch.py      lấy kết quả từ API thelott.com
+lottlab/sources.py    đọc kết quả từ các trang công bố (tôn trọng robots.txt)
 lottlab/generator.py  tạo 50 dòng (phủ đều + tránh số phổ biến)
 lottlab/analysis.py   thống kê, kiểm định ngẫu nhiên, mô phỏng, thử nghiệm
 lottlab/cli.py        cập nhật, chốt, đối chiếu, dựng dữ liệu web
