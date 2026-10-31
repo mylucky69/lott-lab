@@ -46,7 +46,9 @@ def test_check_line():
     assert check_line(oz, {"main": [1, 2, 3, 20, 21, 22, 23]}, d)["div"] is None
     assert check_line(pb, {"main": [1, 2, 20, 21, 22, 23, 24], "pb": 5}, {"main": [1, 2, 3, 4, 5, 6, 7], "supp": [5]})["div"] == 9
     sd = {"main": [1, 2, 3, 4, 5, 6], "supp": [7, 8]}
-    assert check_line(sat, {"main": [1, 7, 8, 30, 31, 32]}, sd)["div"] == 6
+    assert check_line(sat, {"main": [1, 2, 3, 30, 31, 32]}, sd)["div"] == 6
+    assert check_line(sat, {"main": [1, 2, 3, 7, 31, 32]}, sd)["div"] == 5
+    assert check_line(sat, {"main": [1, 7, 8, 30, 31, 32]}, sd)["div"] is None
 
 
 def test_generator_shape_and_coverage():

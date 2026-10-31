@@ -74,7 +74,7 @@ function tile(k, v, d = "") { return `<div class="tile"><div class="k">${k}</div
 
 /* ---------- main render ---------- */
 function render(g) {
-  const parts = [nextCard(g), latestCard(g), trackingCard(g), statsCard(g), backtestCard(g), oddsCard(g)];
+  const parts = [nextCard(g), latestCard(g), trackingCard(g), statsCard(g), backtestCard(g), modelsCard(g), oddsCard(g)];
   $("#app").innerHTML = parts.join("");
   bindCharts();
   bindNext(g);
@@ -119,7 +119,7 @@ function nextCard(g) {
       ${tile("Có ≥ 1 dòng trúng giải", sim.p_any != null ? pct(sim.p_any) : "—", `50 dòng ngẫu nhiên: ${rnd.p_any != null ? pct(rnd.p_any) : "—"}`)}
       ${tile("Số dòng trúng trung bình / kỳ", sim.mean_prizes != null ? num(sim.mean_prizes) : "—", "Không chiến lược nào thay đổi được con số này")}
       ${tile("Xác suất giải độc đắc / dòng", "1 / " + fmtInt(g.meta.odds[0].one_in), `${n.lines.length} dòng: 1 / ${fmtInt(Math.round(g.meta.odds[0].one_in / n.lines.length))}`)}
-      ${tile("Chiến lược", esc(n.strategy === "balanced" ? "Phủ đều" : n.strategy), esc(n.strategy_label))}
+      ${valueTile(g)}
     </div>
     <div class="card-head" style="margin-bottom:8px">
       <h3>${n.lines.length} dòng số${isPB ? " (số đỏ = Powerball)" : ""}</h3>
@@ -132,6 +132,18 @@ function nextCard(g) {
     ${statusWarn(g)}
   </section>`;
 }
+
+const RATING = { low: "Thấp", medium: "Trung bình", high: "Cao", positive: "Kỳ vọng dương" };
+function valueTile(g) {
+  const v = g.value;
+  if (!v) return tile("Giá trị kỳ vọng / $1", "—", "Điền giá vé trong config.json");
+  if (v.per_dollar == null) return tile("Giá trị kỳ vọng / $1", "≈ " + money2(v.low_div_ev / v.price),
+    "Chưa có jackpot kỳ tới; con số chỉ tính các giải phụ");
+  return tile(`Giá trị kỳ vọng / $1 · ${RATING[v.rating] || ""}`,
+    `${money2(v.per_dollar_busy)}–${money2(v.per_dollar)}`,
+    `Jackpot ${fmtMoney(v.jackpot)}. Hòa vốn khi jackpot ≈ ${fmtMoney(v.break_even_jackpot)}`);
+}
+const money2 = (x) => "$" + num(x, 2);
 
 function bindNext(g) {
   const n = g.next;
@@ -298,6 +310,19 @@ function backtestCard(g) {
     <div class="table-scroll"><table><thead><tr><th>Chiến lược</th><th class="num">Trùng TB</th><th class="num">Dòng trúng</th><th class="num">Tiền thưởng</th><th class="num">p</th></tr></thead>
     <tbody>${rows}<tr><td><em>Lý thuyết (ngẫu nhiên)</em></td><td class="num">${num(b.theory.mean_match, 3)}</td><td class="num">${num(b.theory.prize_lines, 1)}</td><td class="num">—</td><td class="num"></td></tr></tbody></table></div>
     <p class="sub" style="margin-top:10px">“Trùng TB” = số trùng trung bình mỗi dòng. p lớn (&gt; 0,05) nghĩa là chiến lược đó không khác gì chọn ngẫu nhiên. Cập nhật lúc ${fmtDateTime(b.run_at)}.</p>
+  </section>`;
+}
+
+function modelsCard(g) {
+  const m = g.models;
+  if (!m || !m.methods) return "";
+  const rows = Object.values(m.methods).map((r) => `<tr><td>${esc(r.label)}</td><td class="num">${num(r.topk_mean, 3)}</td><td class="num">${num(r.topk_p)}</td><td class="num">${num(r.rank_mean, 3)}</td><td class="num">${num(r.rank_p)}</td></tr>`).join("");
+  return `<section class="card">
+    <h2>Kiểm chứng các phương pháp dự đoán phổ biến</h2>
+    <div class="sub" style="margin-bottom:12px">Các phương pháp mà các repo dự đoán xổ số trên GitHub hay dùng (LSTM, số nóng/lạnh, Markov…), thử trên ${fmtInt(m.tested)} kỳ thật. Mỗi kỳ mô hình chỉ học từ các kỳ trước đó.</div>
+    <div class="table-scroll"><table><thead><tr><th>Phương pháp</th><th class="num">Trùng / ${g.meta.pick} số</th><th class="num">p</th><th class="num">Điểm xếp hạng</th><th class="num">p</th></tr></thead>
+    <tbody>${rows}<tr><td><em>Mức ngẫu nhiên</em></td><td class="num">${num(m.chance_topk, 3)}</td><td></td><td class="num">0,500</td><td></td></tr></tbody></table></div>
+    <p class="sub" style="margin-top:10px">“Trùng” = số trùng trung bình giữa ${g.meta.pick} số được mô hình chọn và kết quả thật. “Điểm xếp hạng” = mô hình xếp các số thật sự trúng cao đến đâu (0,5 = như đoán bừa). Không phương pháp nào vượt mức ngẫu nhiên một cách có ý nghĩa (p &gt; 0,05).</p>
   </section>`;
 }
 

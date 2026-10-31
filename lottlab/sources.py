@@ -165,3 +165,41 @@ def parse_le_draw_page(game: Game, page: str) -> tuple[dict | None, str | None]:
 
 def lotteryextreme_draw(game: Game, date: str) -> tuple[dict | None, str | None]:
     return parse_le_draw_page(game, polite_get(f"{LE_BASE}/{LE_SLUG[game.id]}-dividends({date})"))
+
+
+# -- lotteryguru.com: next jackpot ----------------------------------------------------
+LG_SLUG = {"oz": "au-oz-lotto", "powerball": "au-powerball", "saturday": "au-saturday-lotto"}
+LG_INDEX = "https://lotteryguru.com/australia-lottery-results"
+
+
+def parse_lotteryguru_jackpots(page: str) -> dict[str, dict]:
+    """Each game card has 'Next draw' date, 'Next Jackpot' amount and a link id draw_<slug>."""
+    out = {}
+    for m in re.finditer(r'id="draw_(au-[a-z0-9-]+)"', page):
+        block = page[max(0, m.start() - 3000):m.start()]
+        jp = re.findall(r'Next Jackpot</div>\s*<div class="lg-sum">\s*A?\$\s*([\d,]+)', block)
+        text = re.sub(r"<[^>]+>", " ", block)
+        nd = re.findall(r"Next draw\s+\w+day\s+(\d{1,2}\s+[A-Za-z]{3})\s+(\d{4})", re.sub(r"\s+", " ", text))
+        nd = [f"{a} {b}" for a, b in nd]
+        if jp:
+            date = None
+            if nd:
+                try:
+                    date = dt.datetime.strptime(nd[-1], "%d %b %Y").date().isoformat()
+                except ValueError:
+                    pass
+            out.setdefault(m.group(1), {"jackpot": float(jp[-1].replace(",", "")), "date": date})
+    return out
+
+
+def next_jackpot(game: Game) -> dict | None:
+    """{'jackpot': 60000000.0, 'date': '2026-11-03'} or None."""
+    slug = LG_SLUG[game.id]
+    for url in (LG_INDEX, f"{LG_INDEX}/{slug}/{slug}-results-history"):
+        try:
+            found = parse_lotteryguru_jackpots(polite_get(url)).get(slug)
+        except SourceError:
+            continue
+        if found:
+            return found
+    return None

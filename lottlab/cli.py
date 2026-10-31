@@ -19,11 +19,13 @@ from . import sources as src
 from .analysis import backtest, simulate_set, statistics
 from .games import GAMES, Game, check_line
 from .generator import STRATEGIES, generate
+from .value import value as draw_value
 from .store import (DATA, ROOT, SITE_DATA, all_picks, latest_due_date, load_draws, load_pick, merge_draws, set_dividends,
                     next_draw, now_sydney, read_json, save_pick, write_json)
 
 CONFIG = read_json(ROOT / "config.json", {}) or {}
 N_LINES = int(CONFIG.get("lines", 50))
+RULES_VERSION = 2  # bump when prize rules change, so unlocked previews are rebuilt
 STRATEGY = CONFIG.get("strategy", "balanced")
 
 
@@ -78,7 +80,8 @@ def prepare_next(game: Game, draws: list[dict], open_info: dict | None) -> dict 
     history = [d for d in draws if d["date"] < nxt["date"]]
     based_on = history[-1]["draw"] if history else None
     if existing and existing.get("based_on") == based_on and existing.get("strategy") == STRATEGY \
-            and len(existing.get("lines", [])) == N_LINES and now < lock_at:
+            and len(existing.get("lines", [])) == N_LINES and existing.get("rules") == RULES_VERSION \
+            and now < lock_at:
         return existing
     if existing and existing.get("based_on") == based_on and now >= lock_at:
         lines = existing["lines"]
@@ -92,7 +95,7 @@ def prepare_next(game: Game, draws: list[dict], open_info: dict | None) -> dict 
         "generated_at": (existing or {}).get("generated_at") if existing and existing.get("lines") == lines
         else now.isoformat(timespec="seconds"),
         "locked_at": now.isoformat(timespec="seconds") if status == "locked" else None,
-        "lines": lines,
+        "lines": lines, "rules": RULES_VERSION,
         "simulation": simulate_set(game, lines),
         "simulation_random": simulate_set(game, generate(game, history, nxt["draw"], "random", N_LINES)),
     }
@@ -125,8 +128,19 @@ def build_game(game: Game, status: dict) -> None:
         "tracking": list(reversed(tracking)), "totals": totals,
         "stats": statistics(game, draws),
         "backtest": read_json(DATA / game.id / "backtest.json"),
+        "models": read_json(DATA / game.id / "models.json"),
+        "value": _value_for(game, draws, nxt, price),
         "history": {**(read_json(DATA / game.id / "history.json", {}) or {}), "stop": HISTORY_STOP[game.id]},
     })
+
+
+def _value_for(game: Game, draws: list[dict], nxt: dict | None, price) -> dict | None:
+    jp = read_json(DATA / game.id / "jackpot.json", {}) or {}
+    jackpot = jp.get("jackpot") if nxt and jp.get("for_draw") == nxt.get("draw") else None
+    v = draw_value(game, draws, jackpot, price)
+    if v:
+        v["jackpot_source"] = "lotteryguru.com" if jackpot else None
+    return v
 
 
 def build_index(statuses: dict) -> None:
@@ -178,9 +192,24 @@ def fetch_new(game: Game, st: dict) -> None:
                 st["changed"] = True
         except src.SourceError as e:
             errors.append(f"dividends #{d['draw']}: {e}")
+    # announced jackpot for the next draw (one request per draw)
+    have = load_draws(game)
+    if have:
+        nxt = next_draw(game, have)
+        jp_path = DATA / game.id / "jackpot.json"
+        jp = read_json(jp_path, {}) or {}
+        if jp.get("for_draw") != nxt["draw"]:
+            try:
+                found = src.next_jackpot(game)
+            except Exception as e:  # optional information
+                found, _ = None, errors.append(f"jackpot: {e}")
+            if found and (not found.get("date") or found["date"] == nxt["date"]):
+                write_json(jp_path, {**found, "for_draw": nxt["draw"],
+                                     "fetched_at": now_sydney().isoformat(timespec="minutes")})
+                log(f"  next jackpot: ${found['jackpot']:,.0f}")
+                st["changed"] = True
     if new_all:
         log(f"  new results: {new_all}")
-    have = load_draws(game)
     st["new_draws"] = new_all
     st["changed"] = st.get("changed") or bool(new_all)
     st["fetch_ok"] = bool(have) and have[-1]["date"] >= due

@@ -29,12 +29,13 @@ class Game:
             if m == 4: return 6
             if m == 3 and s >= 1: return 7
             return None
-        if self.id == "saturday":     # 6 / 5+1 / 5 / 4 / 3+1 / (1 or 2)+2
+        if self.id == "saturday":     # 6 / 5+1 / 5 / 4 / 3+1 / 3
+            # Division 6 is "3 numbers" (checked against real winner counts since 2022;
+            # the old rule "1-2 numbers + both supps" no longer applies)
             if m == 6: return 1
             if m == 5: return 2 if s >= 1 else 3
             if m == 4: return 4
-            if m == 3 and s >= 1: return 5
-            if m in (1, 2) and s == 2: return 6
+            if m == 3: return 5 if s >= 1 else 6
             return None
         # powerball
         table = {(7, True): 1, (7, False): 2, (6, True): 3, (6, False): 4, (5, True): 5,
@@ -95,7 +96,7 @@ SATURDAY = Game(
     id="saturday", name="Saturday Lotto", product_ids=("TattsLotto", "SaturdayLotto"),
     pool=45, pick=6, drawn=6, supps=2, pb_pool=0, draw_weekday=5,
     matrix_start="1985-01-01", history_start="1985",
-    division_rules=("6 số", "5 số + số phụ", "5 số", "4 số", "3 số + số phụ", "1–2 số + 2 số phụ"),
+    division_rules=("6 số", "5 số + số phụ", "5 số", "4 số", "3 số + số phụ", "3 số"),
 )
 
 # Order = order of completion requested by the user.

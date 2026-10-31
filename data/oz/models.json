@@ -1,0 +1,64 @@
+{
+ "game": "oz",
+ "draws": 231,
+ "tested": 171,
+ "chance_topk": 1.0425531914893618,
+ "methods": {
+  "random": {
+   "label": "Ngẫu nhiên (mốc so sánh)",
+   "topk_mean": 1.0818713450292399,
+   "topk_p": 0.5701741075020536,
+   "rank_mean": 0.502488104318768,
+   "rank_p": 0.7723192198500369
+  },
+  "frequency": {
+   "label": "Tần suất toàn bộ lịch sử",
+   "topk_mean": 1.0116959064327486,
+   "topk_p": 0.6450481983241546,
+   "rank_mean": 0.49222694417202423,
+   "rank_p": 0.3686283238242923
+  },
+  "hot": {
+   "label": "Số nóng (10 kỳ gần nhất)",
+   "topk_mean": 1.0526315789473684,
+   "topk_p": 0.888038737582861,
+   "rank_mean": 0.5033235262068214,
+   "rank_p": 0.6928274404136515
+  },
+  "cold": {
+   "label": "Số lạnh (lâu chưa ra)",
+   "topk_mean": 1.0701754385964912,
+   "topk_p": 0.7111109936408987,
+   "rank_mean": 0.5023791362464132,
+   "rank_p": 0.7824845316276687
+  },
+  "markov": {
+   "label": "Chuỗi Markov (kỳ trước → kỳ sau)",
+   "topk_mean": 0.9766081871345029,
+   "topk_p": 0.3099653485001224,
+   "rank_mean": 0.4922451055174167,
+   "rank_p": 0.36140729423689133
+  },
+  "logistic": {
+   "label": "Hồi quy logistic, 5 kỳ gần nhất",
+   "topk_mean": 1.023391812865497,
+   "topk_p": 0.7796345285663872,
+   "rank_mean": 0.4999091932730377,
+   "rank_p": 0.9914127042658646
+  },
+  "forest": {
+   "label": "Random Forest, 5 kỳ gần nhất",
+   "topk_mean": 1.0526315789473684,
+   "topk_p": 0.8840958048329914,
+   "rank_mean": 0.497856961243689,
+   "rank_p": 0.802061020003143
+  },
+  "mlp": {
+   "label": "Mạng nơ-ron (như các repo LSTM), 5 kỳ gần nhất",
+   "topk_mean": 1.0350877192982457,
+   "topk_p": 0.9137780644269291,
+   "rank_mean": 0.5002179361447096,
+   "rank_p": 0.9794447051141165
+  }
+ }
+}
