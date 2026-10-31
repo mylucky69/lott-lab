@@ -1,0 +1,81 @@
+{
+ "meta": {
+  "id": "oz",
+  "name": "Oz Lotto",
+  "pool": 47,
+  "pick": 7,
+  "drawn": 7,
+  "supps": 3,
+  "pb_pool": 0,
+  "draw_weekday": 1,
+  "odds": [
+   {
+    "division": 1,
+    "rule": "7 số",
+    "p": 1.5900400147880083e-08,
+    "one_in": 62891499.0
+   },
+   {
+    "division": 2,
+    "rule": "6 số + số phụ",
+    "p": 3.3390840310548173e-07,
+    "one_in": 2994833.3
+   },
+   {
+    "division": 3,
+    "rule": "6 số",
+    "p": 4.118203638300941e-06,
+    "one_in": 242824.3
+   },
+   {
+    "division": 4,
+    "rule": "5 số + số phụ",
+    "p": 3.806555795402492e-05,
+    "one_in": 26270.5
+   },
+   {
+    "division": 5,
+    "rule": "5 số",
+    "p": 0.00022238299646825082,
+    "one_in": 4496.7
+   },
+   {
+    "division": 6,
+    "rule": "4 số",
+    "p": 0.005498358371136932,
+    "one_in": 181.9
+   },
+   {
+    "division": 7,
+    "rule": "3 số + số phụ",
+    "p": 0.014104847461180722,
+    "one_in": 70.9
+   }
+  ],
+  "any_prize_p": 0.019868122399181485
+ },
+ "status": {
+  "fetch_ok": false,
+  "error": "FetchError: results/search/daterange: 403 Client Error: Forbidden for url: https://data.api.thelott.com/sales/vmax/web/data/lotto/results/search/daterange",
+  "changed": false,
+  "checked_at": "2026-11-01T00:12+11:00"
+ },
+ "config": {
+  "lines": 50,
+  "strategy": "balanced",
+  "ticket_price": null
+ },
+ "next": null,
+ "latest": [],
+ "tracking": [],
+ "totals": {
+  "draws": 0,
+  "lines": 0,
+  "prize": 0,
+  "prize_lines": 0
+ },
+ "stats": {
+  "n_draws": 0
+ },
+ "backtest": null
+}

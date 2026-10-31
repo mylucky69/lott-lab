@@ -1,0 +1,93 @@
+{
+ "meta": {
+  "id": "powerball",
+  "name": "Powerball",
+  "pool": 35,
+  "pick": 7,
+  "drawn": 7,
+  "supps": 0,
+  "pb_pool": 20,
+  "draw_weekday": 3,
+  "odds": [
+   {
+    "division": 1,
+    "rule": "7 số + PB",
+    "p": 7.435474948397804e-09,
+    "one_in": 134490400.0
+   },
+   {
+    "division": 2,
+    "rule": "7 số",
+    "p": 1.4127402401955826e-07,
+    "one_in": 7078442.1
+   },
+   {
+    "division": 3,
+    "rule": "6 số + PB",
+    "p": 1.4573530898859696e-06,
+    "one_in": 686175.5
+   },
+   {
+    "division": 4,
+    "rule": "6 số",
+    "p": 2.768970870783342e-05,
+    "one_in": 36114.5
+   },
+   {
+    "division": 5,
+    "rule": "5 số + PB",
+    "p": 5.9022800140381766e-05,
+    "one_in": 16942.6
+   },
+   {
+    "division": 6,
+    "rule": "4 số + PB",
+    "p": 0.0008525515575832923,
+    "one_in": 1172.9
+   },
+   {
+    "division": 7,
+    "rule": "5 số",
+    "p": 0.0011214332026672534,
+    "one_in": 891.7
+   },
+   {
+    "division": 8,
+    "rule": "3 số + PB",
+    "p": 0.005328447234895576,
+    "one_in": 187.7
+   },
+   {
+    "division": 9,
+    "rule": "2 số + PB",
+    "p": 0.01534592803649926,
+    "one_in": 65.2
+   }
+  ],
+  "any_prize_p": 0.022736678603082452
+ },
+ "status": {
+  "fetch_ok": false,
+  "error": "FetchError: results/search/daterange: 403 Client Error: Forbidden for url: https://data.api.thelott.com/sales/vmax/web/data/lotto/results/search/daterange",
+  "changed": false,
+  "checked_at": "2026-11-01T00:12+11:00"
+ },
+ "config": {
+  "lines": 50,
+  "strategy": "balanced",
+  "ticket_price": null
+ },
+ "next": null,
+ "latest": [],
+ "tracking": [],
+ "totals": {
+  "draws": 0,
+  "lines": 0,
+  "prize": 0,
+  "prize_lines": 0
+ },
+ "stats": {
+  "n_draws": 0
+ },
+ "backtest": null
+}
