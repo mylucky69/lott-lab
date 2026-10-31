@@ -1321,7 +1321,66 @@
    }
   ]
  },
- "backtest": null,
+ "backtest": {
+  "strategies": {
+   "balanced": {
+    "label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
+    "draws": 0,
+    "lines": 0,
+    "mean_match": 0.0,
+    "divisions": {},
+    "prize_lines": 0,
+    "prize_total": 0.0,
+    "p_value": null
+   },
+   "hot": {
+    "label": "Ưu tiên số ra nhiều trong 30 kỳ gần nhất",
+    "draws": 0,
+    "lines": 0,
+    "mean_match": 0.0,
+    "divisions": {},
+    "prize_lines": 0,
+    "prize_total": 0.0,
+    "p_value": null
+   },
+   "cold": {
+    "label": "Ưu tiên số lâu chưa ra / ra ít",
+    "draws": 0,
+    "lines": 0,
+    "mean_match": 0.0,
+    "divisions": {},
+    "prize_lines": 0,
+    "prize_total": 0.0,
+    "p_value": null
+   },
+   "random": {
+    "label": "Ngẫu nhiên hoàn toàn (mốc so sánh)",
+    "draws": 0,
+    "lines": 0,
+    "mean_match": 0.0,
+    "divisions": {},
+    "prize_lines": 0,
+    "prize_total": 0.0,
+    "p_value": null
+   }
+  },
+  "theory": {
+   "mean_match": 0.8,
+   "prize_lines": 0.0,
+   "divisions": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0
+   }
+  },
+  "draws": 0,
+  "from": null,
+  "to": null,
+  "run_at": "2026-11-01T01:02+11:00"
+ },
  "history": {
   "stop": "2000-01-01"
  }

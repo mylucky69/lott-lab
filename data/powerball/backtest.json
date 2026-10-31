@@ -1,0 +1,82 @@
+{
+ "strategies": {
+  "balanced": {
+   "label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
+   "draws": 79,
+   "lines": 3950,
+   "mean_match": 1.4,
+   "divisions": {
+    "6": 3,
+    "8": 27,
+    "9": 68
+   },
+   "prize_lines": 98,
+   "prize_total": 1410.55,
+   "p_value": 0.3643643828541414
+  },
+  "hot": {
+   "label": "Ưu tiên số ra nhiều trong 30 kỳ gần nhất",
+   "draws": 79,
+   "lines": 3950,
+   "mean_match": 1.398987341772152,
+   "divisions": {
+    "6": 5,
+    "7": 6,
+    "8": 22,
+    "9": 59
+   },
+   "prize_lines": 92,
+   "prize_total": 1354.1,
+   "p_value": 0.7895444637981222
+  },
+  "cold": {
+   "label": "Ưu tiên số lâu chưa ra / ra ít",
+   "draws": 79,
+   "lines": 3950,
+   "mean_match": 1.3944303797468354,
+   "divisions": {
+    "6": 2,
+    "7": 1,
+    "8": 21,
+    "9": 58
+   },
+   "prize_lines": 82,
+   "prize_total": 1046.55,
+   "p_value": 0.45454311479337595
+  },
+  "random": {
+   "label": "Ngẫu nhiên hoàn toàn (mốc so sánh)",
+   "draws": 79,
+   "lines": 3950,
+   "mean_match": 1.3670886075949367,
+   "divisions": {
+    "6": 3,
+    "7": 2,
+    "8": 18,
+    "9": 82
+   },
+   "prize_lines": 105,
+   "prize_total": 1475.5,
+   "p_value": 0.10901701185691716
+  }
+ },
+ "theory": {
+  "mean_match": 1.4,
+  "prize_lines": 89.80988048217569,
+  "divisions": {
+   "1": 2.9370126046171325e-05,
+   "2": 0.0005580323948772551,
+   "3": 0.00575654470504958,
+   "4": 0.10937434939594201,
+   "5": 0.23314006055450798,
+   "6": 3.3675786524540046,
+   "7": 4.429661150535651,
+   "8": 21.047366577837526,
+   "9": 60.61641574417208
+  }
+ },
+ "draws": 79,
+ "from": "2025-05-01",
+ "to": "2026-10-29",
+ "run_at": "2026-11-01T01:02+11:00"
+}
