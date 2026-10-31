@@ -27,11 +27,4 @@ jobs:
       - run: python -m lottlab.models
       - run: python -m lottlab backtest
       - name: Lưu thay đổi
-        run: |
-          git config user.name "lott-lab-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- data docs/data
-          git diff --cached --quiet && exit 0
-          git commit -m "Cập nhật thử nghiệm chiến lược"
-          for i in 1 2 3 4; do git pull --rebase -q && git push && exit 0; sleep $((i*5)); done
-          exit 1
+        run: bash .github/scripts/save.sh "Cập nhật thử nghiệm chiến lược"

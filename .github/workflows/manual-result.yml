@@ -47,11 +47,7 @@ jobs:
           SUPP: ${{ inputs.supp }}
         run: python -m lottlab add-result "$GAME" "$DRAW" "$DATE" "$MAIN" "$SUPP"
       - name: Lưu thay đổi
-        run: |
-          git config user.name "lott-lab-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- data docs/data
-          git diff --cached --quiet && exit 0
-          git commit -m "Nhập tay kết quả ${{ inputs.game }} #${{ inputs.draw }}"
-          for i in 1 2 3 4; do git pull --rebase -q && git push && exit 0; sleep $((i*5)); done
-          exit 1
+        env:
+          GAME: ${{ inputs.game }}
+          DRAW: ${{ inputs.draw }}
+        run: bash .github/scripts/save.sh "Nhập tay kết quả $GAME #$DRAW"
