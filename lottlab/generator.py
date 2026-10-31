@@ -49,27 +49,29 @@ def number_weights(game: Game, history: list[dict], strategy: str, window: int =
     return w
 
 
-def popularity_penalty(game: Game, lines: np.ndarray, last_main: set[int], past: set[tuple]) -> np.ndarray:
-    """Higher = more people likely play this combination. lines: (C, pick) sorted."""
-    k = game.pick
+POP_WEIGHT = 32.0  # weight of the measured number popularity (chosen in research: +value, keeps P(any prize) above random)
+
+
+def popularity_penalty(game: Game, lines: np.ndarray, last_main: set[int], past: set[tuple],
+                       pop_weight: float | None = None) -> np.ndarray:
+    """Higher = more people likely play this combination (so prizes are shared more).
+    lines: (C, pick) sorted. Uses the popularity measured from real winner counts when
+    available; otherwise falls back to simple rules (birthday numbers)."""
+    from .popularity import line_popularity, model
+    w = POP_WEIGHT if pop_weight is None else pop_weight
     pen = np.zeros(len(lines))
-    low = (lines <= 31).sum(1)                       # birthday numbers
-    pen += np.where(low == k, 4.0, np.where(low == k - 1, 1.5, 0.0))
     diffs = np.diff(lines, axis=1)
-    consec = (diffs == 1).sum(1)
-    pen += np.maximum(consec - 1, 0) * 1.5
-    run3 = ((diffs[:, :-1] == 1) & (diffs[:, 1:] == 1)).any(1)
-    pen += run3 * 3.0
+    if model() and w > 0:
+        pen += w * line_popularity(lines, game.pool)
+    else:
+        low = (lines <= 31).sum(1)
+        pen += np.where(low == game.pick, 4.0, np.where(low == game.pick - 1, 1.5, 0.0))
+    # well-known slip patterns (rare, but heavily played when they occur)
     pen += (diffs == diffs[:, :1]).all(1) * 10.0      # arithmetic sequences 5,10,15,...
-    last_digit = lines % 10
-    same_digit = np.array([np.bincount(r, minlength=10).max() for r in last_digit])
-    pen += np.maximum(same_digit - 3, 0) * 2.0
-    decade = lines // 10
-    same_decade = np.array([np.bincount(r, minlength=6).max() for r in decade])
-    pen += np.maximum(same_decade - 4, 0) * 2.0
-    mult = ((lines % 5 == 0).all(1) | (lines % 7 == 0).all(1))
-    pen += mult * 5.0
-    if last_main:
+    pen += ((lines % 5 == 0).all(1) | (lines % 7 == 0).all(1)) * 5.0
+    run4 = ((diffs[:, :-2] == 1) & (diffs[:, 1:-1] == 1) & (diffs[:, 2:] == 1)).any(1)
+    pen += run4 * 5.0                                  # 4+ in a row, e.g. 1,2,3,4
+    if last_main:                                      # replaying last draw's numbers
         rep = np.isin(lines, list(last_main)).sum(1)
         pen += np.maximum(rep - 2, 0) * 2.0
     if past:
@@ -86,7 +88,8 @@ def _sample(rng, logits: np.ndarray, size: int, k: int) -> np.ndarray:
 
 
 def generate(game: Game, history: list[dict], draw: int, strategy: str = "balanced",
-             n_lines: int = 50, candidates: int = 3000, polish: int = 400) -> list[dict]:
+             n_lines: int = 50, candidates: int = 3000, polish: int = 400,
+             pop_weight: float | None = None) -> list[dict]:
     rng = np.random.default_rng(seed_for(game, draw, strategy))
     P, k = game.pool, game.pick
 
@@ -98,6 +101,10 @@ def generate(game: Game, history: list[dict], draw: int, strategy: str = "balanc
     w = number_weights(game, history, strategy)
     base_logits = np.log(np.maximum(w, 1e-9))
     base_logits[0] = -1e9
+    from .popularity import effects
+    pw = POP_WEIGHT if pop_weight is None else pop_weight
+    e, _ = effects(P)
+    base_logits = base_logits - pw * 0.6 * e         # sample less popular numbers more often
     last_main = set(history[-1]["main"]) if history else set()
     past = {tuple(sorted(d["main"])) for d in history} if k == game.drawn else set()
 
@@ -117,13 +124,13 @@ def generate(game: Game, history: list[dict], draw: int, strategy: str = "balanc
             ov_pen = np.zeros(len(cand))
         use_pen = usage[cand].sum(1) / max(target, 1)
         pref = (np.log(w[cand])).sum(1)
-        score = ov_pen * 1.0 + use_pen * 0.8 + popularity_penalty(game, cand, last_main, past) - pref
+        score = ov_pen * 1.0 + use_pen * 0.8 + popularity_penalty(game, cand, last_main, past, pw) - pref
         best = int(np.argmin(score))
         lines.append(cand[best].tolist())
         chosen = np.vstack([chosen, onehot[best]])
         usage[cand[best]] += 1
 
-    lines = _polish(game, rng, lines, w, last_main, past, polish)
+    lines = _polish(game, rng, lines, w, last_main, past, polish, pw)
     if game.pb_pool:
         pbs = _powerballs(game, rng, history, strategy, n_lines)
     else:
@@ -131,7 +138,7 @@ def generate(game: Game, history: list[dict], draw: int, strategy: str = "balanc
     return [_line(l, pb) for l, pb in zip(lines, pbs)]
 
 
-def _set_score(game, lines_arr, w, last_main, past) -> float:
+def _set_score(game, lines_arr, w, last_main, past, pw=None) -> float:
     P = game.pool
     onehot = np.zeros((len(lines_arr), P + 1))
     np.put_along_axis(onehot, lines_arr, 1, axis=1)
@@ -140,15 +147,15 @@ def _set_score(game, lines_arr, w, last_main, past) -> float:
     ov_pen = (np.maximum(ov - 1, 0) ** 2).sum() / 2
     usage = onehot.sum(0)[1:]
     use_pen = ((usage - usage.mean()) ** 2).sum()
-    pop = popularity_penalty(game, lines_arr, last_main, past).sum()
+    pop = popularity_penalty(game, lines_arr, last_main, past, pw).sum()
     pref = np.log(w[lines_arr]).sum()
     return ov_pen + 0.5 * use_pen + pop - pref
 
 
-def _polish(game, rng, lines, w, last_main, past, iters):
+def _polish(game, rng, lines, w, last_main, past, iters, pw=None):
     """Local search: swap single numbers when it improves the whole set."""
     arr = np.array(lines)
-    best = _set_score(game, arr, w, last_main, past)
+    best = _set_score(game, arr, w, last_main, past, pw)
     for _ in range(iters):
         i, j = rng.integers(len(arr)), rng.integers(game.pick)
         new = rng.integers(1, game.pool + 1)
@@ -157,7 +164,7 @@ def _polish(game, rng, lines, w, last_main, past, iters):
         trial = arr.copy()
         trial[i, j] = new
         trial[i].sort()
-        s = _set_score(game, trial, w, last_main, past)
+        s = _set_score(game, trial, w, last_main, past, pw)
         if s < best:
             arr, best = trial, s
     return sorted(arr.tolist())

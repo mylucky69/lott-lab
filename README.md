@@ -25,13 +25,22 @@ Mỗi kỳ quay là ngẫu nhiên và độc lập, nên **không phương pháp
 Trang web tự kiểm chứng điều này: kiểm định chi bình phương, kiểm định độc lập, và bảng thử nghiệm
 so sánh "số nóng", "số lạnh" với chọn ngẫu nhiên.
 
+## Nghiên cứu: người chơi Úc hay chọn số nào (`python -m lottlab.popularity`)
+
+Mọi hạng giải đều chia theo số người trúng. Đo số người trúng thật so với lượng vé bán ở 357 kỳ
+Saturday Lotto cho thấy: số ≤ 31 (ngày sinh) được chọn nhiều hơn số > 31 khoảng 14%; các số 7, 11, 13, 8, 3
+được chọn nhiều nhất; 41, 44, 45, 39, 36, 40 ít nhất; mỗi cặp số liên tiếp làm số người trúng giảm ~3%
+(người chơi né số liên tiếp). Kiểm tra ngoài mẫu: tương quan 0,50–0,56; áp dụng cho Oz Lotto: 0,39–0,59.
+Bộ số khuyến nghị ưu tiên số ít người chọn (`POP_WEIGHT` trong `lottlab/generator.py`), làm giá trị mỗi $1
+tăng khoảng 2–10% (Oz Lotto ≥ $50 triệu: $0,77 → $0,81; Saturday Lotto ≥ $12 triệu: $0,59 → $0,65).
+
 Chiến lược mặc định `balanced` chỉ tối ưu những gì tối ưu được:
 
 1. **Phủ đều**: 50 dòng trùng nhau ít nhất có thể, dùng đủ mọi số (Powerball: đủ cả 20 số PB).
    Số dòng trúng *trung bình* không đổi, nhưng **khả năng có ít nhất 1 dòng trúng giải mỗi kỳ** tăng
    (mô phỏng: Oz Lotto 63% → 70%, Powerball 65–68% → 77%, Saturday Lotto 45% → 50%).
-2. **Tránh bộ số phổ biến**: ngày sinh (toàn số ≤ 31), dãy liên tiếp, cấp số cộng, cùng hàng chục,
-   cùng chữ số cuối, bội số của 5 hoặc 7, lặp lại số kỳ trước, bộ số đã từng ra.
+2. **Ưu tiên số ít người chọn** theo mức phổ biến đo được (xem trên), và tránh các mẫu hình
+   phổ biến: cấp số cộng, toàn bội số của 5 hoặc 7, 4 số liền nhau, lặp lại số kỳ trước, bộ số đã từng ra.
    Nếu trúng thì ít người phải chia giải hơn.
 
 ## Quy tắc "chỉ chơi khi jackpot lớn"
@@ -99,6 +108,8 @@ lottlab/value.py      giá trị kỳ vọng mỗi dòng theo jackpot
 lottlab/study.py      nghiên cứu quy tắc ngưỡng jackpot (thực tế + mô phỏng)
 lottlab/models.py     kiểm chứng các phương pháp dự đoán (LSTM-like, Random Forest, Markov...)
 lottlab/replay.py     chạy lùi theo ngân sách
+lottlab/popularity.py đo mức phổ biến của từng số từ số người trúng thật
+lottlab/optimize.py   tìm ngưỡng jackpot tốt nhất, tổng hợp có/không Powerball
 data/<trò chơi>/      kết quả (draws.json) và các bộ số đã chốt (picks/)
 docs/                 trang web tĩnh (GitHub Pages)
 ```

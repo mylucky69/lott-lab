@@ -5,7 +5,7 @@ const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const pad = (n) => String(n).padStart(2, "0");
 const fmtInt = (n) => Number(n).toLocaleString("vi-VN");
-const fmtMoney = (n) => n == null ? "—" : "$" + Number(n).toLocaleString("en-AU", { maximumFractionDigits: 2 });
+const fmtMoney = (n) => n == null ? "—" : "$" + Number(n).toLocaleString("en-AU", Number.isInteger(Math.round(n * 100) / 100) ? { maximumFractionDigits: 0 } : { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const num = (x, d = 2) => Number(x).toLocaleString("vi-VN", { minimumFractionDigits: d, maximumFractionDigits: d });
 const pct = (p, d = 1) => num(p * 100, d) + "%";
 const SHORT = { balanced: "Phủ đều (đang dùng)", hot: "Số nóng", cold: "Số lạnh", random: "Ngẫu nhiên" };
@@ -38,12 +38,13 @@ async function load() {
   }));
   $("#updated").innerHTML = `Kiểm tra lần cuối: ${fmtDateTime(state.index.checked_at)}`;
   const tabs = $("#tabs");
-  tabs.innerHTML = state.index.games.filter((id) => state.games[id]).map((id) =>
+  tabs.innerHTML = `<button role="tab" data-id="overview">Tổng quan</button>` + state.index.games.filter((id) => state.games[id]).map((id) =>
     `<button role="tab" data-id="${id}">${esc(state.games[id].meta.name)}</button>`).join("");
   tabs.onclick = (e) => { const b = e.target.closest("button"); if (b) show(b.dataset.id); };
   let start = location.hash.slice(1);
-  if (!state.games[start]) { try { start = localStorage.getItem("lott.tab"); } catch { start = null; } }
-  show(state.games[start] ? start : state.index.games.find((id) => state.games[id]));
+  const valid = (id) => id === "overview" || !!state.games[id];
+  if (!valid(start)) { try { start = localStorage.getItem("lott.tab"); } catch { start = null; } }
+  show(valid(start) ? start : "overview");
 }
 
 function show(id) {
@@ -51,7 +52,8 @@ function show(id) {
   try { localStorage.setItem("lott.tab", id); } catch { /* ignore */ }
   history.replaceState(null, "", "#" + id);
   document.querySelectorAll("#tabs button").forEach((b) => b.setAttribute("aria-selected", b.dataset.id === id));
-  render(state.games[id]);
+  if (id === "overview") renderOverview(); else render(state.games[id]);
+  window.scrollTo({ top: 0 });
 }
 
 /* ---------- small renderers ---------- */
@@ -71,6 +73,99 @@ function drawBalls(g, d, lg) {
   return g.meta.pb_pool ? balls(d.main, [], { pb: d.supp[0], lg }) : balls(d.main, d.supp, { lg });
 }
 function tile(k, v, d = "") { return `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${d}</div></div>`; }
+
+/* ---------- overview ---------- */
+function renderOverview() {
+  const ids = state.index.games.filter((id) => state.games[id]);
+  let total = 0;
+  const cards = ids.map((id) => {
+    const g = state.games[id], n = g.next, v = g.value || {};
+    if (!n) return "";
+    const cost = g.config.ticket_price ? n.lines.length * g.config.ticket_price : null;
+    if (n.play === true && cost) total += cost;
+    const cls = n.play === true ? "go" : n.play === false ? "wait" : "unknown";
+    const head = n.play === true ? "✓ NÊN CHƠI" : n.play === false ? "⏸ CHỜ" : "? Chưa rõ";
+    const val = v.per_dollar != null ? `${money2(v.per_dollar_busy)}–${money2(v.per_dollar)}` : "—";
+    return `<div class="ov ${cls}">
+      <div class="ov-top"><strong>${esc(g.meta.name)}</strong><span class="ov-tag">${head}</span></div>
+      <div class="sub">Kỳ #${n.draw} · ${fmtDate(n.date)}</div>
+      <div class="ov-row"><span>Jackpot</span><strong>${n.jackpot ? million(n.jackpot) : "—"}</strong></div>
+      <div class="ov-row"><span>Ngưỡng chơi</span><span>≥ ${million(g.config.min_jackpot || 0)}</span></div>
+      <div class="ov-row"><span>Nhận lại mỗi $1 (ước tính)</span><span>${val}</span></div>
+      <div class="ov-row"><span>${n.lines.length} dòng</span><span>${cost != null ? fmtMoney(Math.round(cost * 100) / 100) : "—"}</span></div>
+      <div class="ov-row"><span>Trạng thái</span><span>${n.status === "locked" ? "🔒 đã chốt" : "✎ chốt " + fmtDateTime(n.lock_at)}</span></div>
+      <button class="btn" data-go="${id}" style="margin-top:8px">${n.play === true ? "Xem bộ số khuyến nghị" : "Xem chi tiết"}</button>
+    </div>`;
+  }).join("");
+  const pf = state.index.portfolio;
+  const pfRow = (label, t) => t ? `<tr><td>${label}<div class="muted" style="font-size:12px">${esc(t.games.join(", "))}</div></td><td class="num">${num(t.per_year, 1)}</td><td class="num">${fmtMoney(t.spend_per_year)}</td><td class="num">−${fmtMoney(t.expected_loss_per_year)}</td><td class="num">${(t.real_net_per_year >= 0 ? "+" : "−") + fmtMoney(Math.abs(t.real_net_per_year))}</td></tr>` : "";
+  const pfCard = pf ? `<section class="card"><h2>Kết quả kiểm thử theo quy tắc hiện tại</h2>
+    <div class="sub" style="margin-bottom:12px">Mỗi năm, với ngưỡng jackpot của từng trò và bộ 50 dòng khuyến nghị. "Lời/lỗ thật" là chạy lùi trên các kỳ đã qua (từ 01/2025).</div>
+    <div class="table-scroll"><table><thead><tr><th>Phương án</th><th class="num">Kỳ chơi/năm</th><th class="num">Chi/năm</th><th class="num">Lỗ kỳ vọng/năm</th><th class="num">Lời/lỗ thật/năm</th></tr></thead>
+    <tbody>${pfRow("Cả 3 trò", pf.with_powerball)}${pfRow("Không chơi Powerball", pf.without_powerball)}</tbody></table></div>
+    <p class="sub" style="margin-top:10px">Chưa có phương án nào có lời theo kỳ vọng. Quy tắc ngưỡng jackpot và bộ số ít người chọn chỉ giúp lỗ ít hơn nhiều so với chơi mọi kỳ.</p></section>` : "";
+  $("#app").innerHTML = `<section class="card">
+      <h2>Kỳ tới nên chơi gì?</h2>
+      <div class="sub" style="margin-bottom:14px">Tự cập nhật sau mỗi kỳ quay. Quyết định và bộ số được chốt lúc 17:00 (giờ Sydney) ngày trước kỳ quay.
+      ${total ? ` Tổng chi các kỳ nên chơi: <strong>${fmtMoney(Math.round(total * 100) / 100)}</strong>.` : " Tuần này không có kỳ nào đủ điều kiện."}</div>
+      <div class="ov-grid">${cards}</div>
+    </section>
+    ${pfCard}
+    ${popularityCard()}
+    ${rulesCard()}`;
+  document.querySelectorAll("[data-go]").forEach((b) => (b.onclick = () => show(b.dataset.go)));
+  bindCharts();
+}
+
+function divergingChart(data, tipFn) {
+  const narrow = (document.getElementById("app")?.clientWidth || 800) < 600;
+  const W = narrow ? 380 : 760, H = 200, m = { l: 36, r: 6, t: 10, b: 24 };
+  const lim = Math.max(10, Math.ceil(Math.max(...data.map((d) => Math.abs(d.v))) / 5) * 5);
+  const iw = W - m.l - m.r, ih = H - m.t - m.b, bw = iw / data.length, barW = Math.max(3, Math.min(14, bw - 2));
+  const y = (v) => m.t + ih / 2 - (v / lim) * (ih / 2);
+  let s = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Mức phổ biến từng số">`;
+  for (const v of [-lim, -lim / 2, 0, lim / 2, lim]) s += `<line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/><text x="${m.l - 5}" y="${y(v) + 4}" text-anchor="end">${v > 0 ? "+" : ""}${num(v, 0)}%</text>`;
+  data.forEach((d, i) => {
+    const cx = m.l + bw * i + bw / 2, x = cx - barW / 2, y0 = y(0), y1 = y(d.v);
+    const top = Math.min(y0, y1), h = Math.max(1, Math.abs(y1 - y0));
+    s += `<g data-tip="${esc(tipFn(d))}"><rect class="hitbox" x="${m.l + bw * i}" y="${m.t}" width="${bw}" height="${ih}"/><rect class="${d.v >= 0 ? "bar-pos" : "bar-neg"}" x="${x}" y="${top}" width="${barW}" height="${h}" rx="2"/></g>`;
+    if (d.n === 1 || d.n % 5 === 0) s += `<text x="${cx}" y="${H - 6}" text-anchor="middle">${d.n}</text>`;
+  });
+  s += `<line class="ref" x1="${m.l}" x2="${W - m.r}" y1="${y(0)}" y2="${y(0)}"/>`;
+  return s + "</svg>";
+}
+
+function popularityCard() {
+  const p = state.index.popularity;
+  if (!p) return "";
+  const fx = (v) => (v >= 0 ? "+" : "−") + num(Math.abs(Math.exp(v) - 1) * 100, 0) + "%";
+  const chips = (list) => `<div class="chip-list">${list.map(([n, v]) => `<span class="pchip" title="${esc(fx(v))} người trúng so với trung bình">${balls([n])}<small>${fx(v)}</small></span>`).join("")}</div>`;
+  const per = Object.entries(p.per_number).filter(([n]) => +n <= 45).map(([n, v]) => ({ n: +n, count: Math.exp(v) }));
+  return `<section class="card">
+    <h2>Nghiên cứu: người chơi Úc hay chọn số nào?</h2>
+    <div class="sub" style="margin-bottom:12px">Đo từ số người trúng thật của ${fmtInt(p.draws_used)} kỳ Saturday Lotto: kỳ nào ra nhiều số "được ưa chuộng" thì nhiều người trúng hơn và mỗi người nhận ít tiền hơn. Kiểm tra ngoài mẫu: tương quan 0,50–0,56; áp dụng cho Oz Lotto: 0,39–0,59.</div>
+    <div class="legend"><span class="key"><i class="pos"></i>Được chọn nhiều hơn trung bình</span><span class="key"><i class="neg"></i>Ít người chọn hơn (hệ thống ưu tiên)</span></div>
+    ${divergingChart(per.map((d) => ({ n: d.n, v: (d.count - 1) * 100 })), (d) => `Số ${d.n}: ${fx(Math.log(1 + d.v / 100))} người trúng so với trung bình`)}
+    <div class="cols" style="margin-top:12px">
+      <div><h3>Được chọn nhiều nhất</h3>${chips(p.most)}</div>
+      <div><h3>Ít người chọn nhất</h3>${chips(p.least.slice().reverse())}</div>
+    </div>
+    <p class="sub" style="margin-top:12px">Số ≤ 31 (ngày sinh) được chọn nhiều hơn số &gt; 31 khoảng 14%. Mỗi cặp số liên tiếp làm số người trúng ${fx(p.consecutive)}, tức người chơi né số liên tiếp.</p>
+  </section>`;
+}
+
+function rulesCard() {
+  return `<section class="card">
+    <h2>Luật tạo bộ số khuyến nghị</h2>
+    <ol class="rules">
+      <li><strong>Chỉ chơi khi jackpot đủ lớn:</strong> mỗi trò có ngưỡng riêng, chọn bằng dữ liệu jackpot và lượng vé thật.</li>
+      <li><strong>Ưu tiên số ít người chọn</strong> (theo nghiên cứu trên): mọi hạng giải đều chia theo số người trúng, nên nếu trúng sẽ nhận nhiều hơn. Không dùng luật "tránh số liên tiếp" vì dữ liệu cho thấy người chơi vốn đã né chúng.</li>
+      <li><strong>Phủ đều 50 dòng:</strong> các dòng trùng nhau ít nhất có thể và dùng đủ mọi số, để kết quả mỗi kỳ ổn định hơn.</li>
+      <li><strong>Tránh mẫu hình phổ biến:</strong> cấp số cộng (5, 10, 15…), toàn bội số của 5 hoặc 7, 4 số liền nhau, lặp lại số kỳ trước, bộ số đã từng ra.</li>
+      <li><strong>Không dùng "số nóng/lạnh", Markov hay AI dự đoán:</strong> đã thử trên dữ liệu thật, không cách nào đoán tốt hơn ngẫu nhiên.</li>
+    </ol>
+  </section>`;
+}
 
 /* ---------- main render ---------- */
 function render(g) {
@@ -152,7 +247,7 @@ function valueTile(g) {
     "Chưa có jackpot kỳ tới; con số chỉ tính các giải phụ");
   return tile(`Giá trị kỳ vọng / $1 · ${RATING[v.rating] || ""}`,
     `${money2(v.per_dollar_busy)}–${money2(v.per_dollar)}`,
-    `Jackpot ${fmtMoney(v.jackpot)}. Hòa vốn khi jackpot ≈ ${fmtMoney(v.break_even_jackpot)}`);
+    `Jackpot ${million(v.jackpot)}. ${v.break_even_jackpot ? `Hòa vốn khi jackpot ≈ ${million(v.break_even_jackpot)}` : "Không có mức jackpot nào hòa vốn"}`);
 }
 const money2 = (x) => "$" + num(x, 2);
 const million = (x) => "$" + num(x / 1e6, x % 1e6 ? 1 : 0) + " triệu";
@@ -345,7 +440,7 @@ function modelsCard(g) {
 function curveChart(o) {
   const narrow = (document.getElementById("app")?.clientWidth || 800) < 600;
   const W = narrow ? 380 : 760, H = 220, m = { l: 34, r: 8, t: 16, b: 26 };
-  const data = o.curve, maxSeen = Math.max(...o.sweep.map((s) => s.threshold));
+  const data = o.curve.map((c) => ({ ...c, per_dollar: c.set_per_dollar ?? c.per_dollar })), maxSeen = Math.max(...o.sweep.map((s) => s.threshold));
   const top = Math.max(1.2, Math.ceil(Math.max(...data.map((d) => d.per_dollar)) * 5) / 5);
   const iw = W - m.l - m.r, ih = H - m.t - m.b, bw = iw / data.length, barW = Math.min(24, bw - 4);
   const y = (v) => m.t + ih - (v / top) * ih;
@@ -370,11 +465,12 @@ function optimizeCard(g) {
   const rows = o.sweep.map((s) => `<tr${min && s.threshold === min ? ' style="font-weight:600"' : ""}><td>≥ ${million(s.threshold)}${min && s.threshold === min ? " ← đang dùng" : ""}</td>
     <td class="num">${num(s.per_year, 1)}</td><td class="num">${money2(s.per_dollar)}</td><td class="num">${fmtMoney(s.spend_per_year)}</td>
     <td class="num">−${fmtMoney(s.expected_loss_per_year)}</td><td class="num">${(s.real_net_per_year >= 0 ? "+" : "−") + fmtMoney(Math.abs(s.real_net_per_year))}</td></tr>`).join("");
-  const be = o.break_even ? `Theo mô hình, hòa vốn khi jackpot ≈ <strong>${fmtMoney(o.break_even)}</strong>${o.break_even > Math.max(...o.sweep.map((s) => s.threshold)) ? " (cao hơn mọi jackpot đã thấy, nên chỉ là ước tính)" : ""}.` : "Theo mô hình, <strong>không có mức jackpot nào hòa vốn</strong> (tính đến $200 triệu).";
+  const beVal = o.break_even_set ?? o.break_even;
+  const be = beVal ? `Với bộ số khuyến nghị, theo mô hình hòa vốn khi jackpot ≈ <strong>${million(beVal)}</strong>${o.break_even && o.break_even !== beVal ? ` (dòng ngẫu nhiên: ${million(o.break_even)})` : ""}${beVal > Math.max(...o.sweep.map((s) => s.threshold)) ? ", cao hơn mọi jackpot đã thấy nên chỉ là ước tính" : ""}.` : "Theo mô hình, <strong>không có mức jackpot nào hòa vốn</strong> (tính đến $200 triệu), kể cả với bộ số khuyến nghị.";
   return `<section class="card">
     <h2>Tìm ngưỡng jackpot tốt nhất</h2>
     <div class="sub" style="margin-bottom:12px">${fmtInt(o.draws)} kỳ thật trong ${num(o.years, 1)} năm, ${g.config.lines} dòng/kỳ, giá ${money2(o.price)}/dòng. Lượng vé bán ra tăng theo jackpot: khoảng ${num(o.sales_model.a / 1e6, 1)} triệu + ${num(o.sales_model.b, 2)} × jackpot (độ khớp R² = ${num(o.sales_model.r2, 2)}).</div>
-    <div class="legend"><span class="key"><i></i>Nhận lại mỗi $1 theo mức jackpot</span><span class="key"><i class="refkey"></i>Hòa vốn</span></div>
+    <div class="legend"><span class="key"><i></i>Nhận lại mỗi $1 với bộ số khuyến nghị, theo mức jackpot</span><span class="key"><i class="refkey"></i>Hòa vốn</span></div>
     ${curveChart(o)}
     <p class="sub">${be} Cột mờ = vượt mức jackpot đã thấy trong dữ liệu.</p>
     <div class="table-scroll"><table><thead><tr><th>Chỉ chơi khi jackpot</th><th class="num">Kỳ/năm</th><th class="num">Nhận lại / $1</th><th class="num">Chi / năm</th><th class="num">Lỗ kỳ vọng / năm</th><th class="num">Lời/lỗ thật / năm</th></tr></thead><tbody>${rows}</tbody></table></div>

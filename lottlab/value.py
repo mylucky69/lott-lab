@@ -43,7 +43,8 @@ def _share(entries: float, p1: float) -> float:
     return (1 - math.exp(-lam)) / lam if lam > 1e-12 else 1.0
 
 
-def value(game: Game, draws: list[dict], jackpot: float | None, price: float | None) -> dict | None:
+def value(game: Game, draws: list[dict], jackpot: float | None, price: float | None,
+          lines: list[dict] | None = None) -> dict | None:
     if not price or not draws:
         return None
     p1 = game.division_odds()[0]["p"]
@@ -51,16 +52,33 @@ def value(game: Game, draws: list[dict], jackpot: float | None, price: float | N
     low = lower_division_ev(game, draws)
     out = {"price": price, "low_div_ev": round(low, 4), "entries": entries, "jackpot": jackpot}
     if jackpot and entries:
-        ev = low + p1 * jackpot * _share(entries, p1)
-        ev_busy = low + p1 * jackpot * _share(entries * 3, p1)
-        out.update(ev_line=round(ev, 4), per_dollar=round(ev / price, 3),
-                   per_dollar_busy=round(ev_busy / price, 3))
-        # jackpot at which one line is worth its price (normal sales)
-        lo, hi = 0.0, 5e9
+        # sales grow with the jackpot: use the model fitted on real draws (optimize.py) when present
+        from .store import DATA, read_json
+        sm = (read_json(DATA / game.id / "optimize.json", {}) or {}).get("sales_model")
+
+        def sales_at(j):
+            return max(sm["a"] + sm["b"] * j, entries * 0.5) if sm else entries * 3
+        ev = low + p1 * jackpot * _share(entries, p1)                 # if sales stay as now
+        ev_busy = low + p1 * jackpot * _share(sales_at(jackpot), p1)  # sales expected at this jackpot
+        ratio = 1.0
+        if lines:
+            from .popularity import set_value_exact
+            recent = [d for d in draws if d.get("dividends")][-30:]
+            pay = {o["division"]: statistics.median([x["amount"] for d in recent for x in d["dividends"]
+                                                     if x["div"] == o["division"] and x.get("amount")] or [0])
+                   for o in game.division_odds()}
+            sv = set_value_exact(game, lines, pay, sales_at(jackpot), jackpot)
+            ratio = sv["value_set"] / sv["value_avg"] if sv["value_avg"] else 1.0
+            out["set_ratio"] = round(ratio, 4)
+        ev, ev_busy = ev * ratio, ev_busy * ratio
+        out.update(ev_line=round(ev_busy, 4), per_dollar=round(max(ev, ev_busy) / price, 3),
+                   per_dollar_busy=round(min(ev, ev_busy) / price, 3), expected_sales=round(sales_at(jackpot)))
+        # jackpot at which one line is worth its price, with sales growing with the jackpot
+        lo, hi = 0.0, 2e9
         for _ in range(80):
             mid = (lo + hi) / 2
-            lo, hi = (mid, hi) if low + p1 * mid * _share(entries, p1) < price else (lo, mid)
-        out["break_even_jackpot"] = round(hi, -5)
-        r = out["per_dollar"]
-        out["rating"] = ("positive" if r >= 1 else "high" if r >= 0.8 else "medium" if r >= 0.55 else "low")
+            lo, hi = (mid, hi) if (low + p1 * mid * _share(sales_at(mid), p1)) * ratio < price else (lo, mid)
+        out["break_even_jackpot"] = round(hi, -6) if hi < 1.9e9 else None
+        r = out["per_dollar_busy"]
+        out["rating"] = ("positive" if r >= 1 else "high" if r >= 0.75 else "medium" if r >= 0.55 else "low")
     return out

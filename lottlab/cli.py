@@ -27,7 +27,7 @@ from .store import (DATA, ROOT, SITE_DATA, all_picks, latest_due_date, load_draw
 
 CONFIG = read_json(ROOT / "config.json", {}) or {}
 N_LINES = int(CONFIG.get("lines", 50))
-RULES_VERSION = 2  # bump when prize rules change, so unlocked previews are rebuilt
+RULES_VERSION = 3  # bump when prize rules change, so unlocked previews are rebuilt
 def min_jackpot(game: Game) -> float:
     """Play only when the jackpot is at least this (per game in config.json, 0 = always)."""
     v = CONFIG.get("min_jackpot") or 0
@@ -177,7 +177,7 @@ def build_game(game: Game, status: dict) -> None:
 def _value_for(game: Game, draws: list[dict], nxt: dict | None, price) -> dict | None:
     jp = read_json(DATA / game.id / "jackpot.json", {}) or {}
     jackpot = jp.get("jackpot") if nxt and jp.get("for_draw") == nxt.get("draw") else None
-    v = draw_value(game, draws, jackpot, price)
+    v = draw_value(game, draws, jackpot, price, (nxt or {}).get("lines"))
     if v:
         v["jackpot_source"] = "lotteryguru.com" if jackpot else None
     return v
@@ -186,8 +186,17 @@ def _value_for(game: Game, draws: list[dict], nxt: dict | None, price) -> dict |
 def build_index(statuses: dict) -> None:
     prev = read_json(SITE_DATA / "index.json", {}) or {}
     changed = any(s.get("changed") for s in statuses.values())
+    pop = read_json(DATA / "popularity.json")
+    pop_summary = None
+    if pop:
+        per = sorted(((v, int(k)) for k, v in pop["per_number"].items() if int(k) <= 45), reverse=True)
+        pop_summary = {"most": [[n, round(v, 4)] for v, n in per[:10]], "least": [[n, round(v, 4)] for v, n in per[-10:]],
+                       "consecutive": pop["consecutive"], "draws_used": pop.get("draws_used"), "r2": pop.get("r2"),
+                       "per_number": pop["per_number"]}
     write_json(SITE_DATA / "index.json", {
         "games": [g.id for g in GAMES.values()],
+        "portfolio": read_json(DATA / "portfolio.json"),
+        "popularity": pop_summary,
         "checked_at": now_sydney().isoformat(timespec="minutes"),
         "updated_at": now_sydney().isoformat(timespec="minutes") if changed or not prev
         else prev.get("updated_at"),

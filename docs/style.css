@@ -1,5 +1,7 @@
 :root {
   color-scheme: light;
+  --neg: #2a78d6;
+  --pos: #e34948;
   --bg: #f6f5f2;
   --surface: #fcfcfb;
   --surface-2: #f0efec;
@@ -175,3 +177,26 @@ details[open] summary::before { content: "▾"; }
   :root:not([data-theme="light"]) .play.go { background: #183318; border-color: #2f5f2f; color: #bfeebf; }
   :root:not([data-theme="light"]) .play.wait { background: #262624; border-color: #45453f; color: #d8d7d0; }
 }
+
+.ov-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.ov { border: 1px solid var(--border); border-radius: 12px; padding: 14px; background: var(--surface); display: flex; flex-direction: column; gap: 4px; }
+.ov.go { border-color: #9fd49f; box-shadow: inset 4px 0 0 #0ca30c; }
+.ov.wait { box-shadow: inset 4px 0 0 #a9a79f; }
+.ov.unknown { box-shadow: inset 4px 0 0 #fab219; }
+.ov-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 16px; }
+.ov-tag { font-size: 13px; font-weight: 700; padding: 2px 10px; border-radius: 999px; background: var(--surface-2); white-space: nowrap; }
+.ov.go .ov-tag { background: #e3f3e3; color: #0a4a0a; }
+:root[data-theme="dark"] .ov.go .ov-tag { background: #183318; color: #bfeebf; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ov.go .ov-tag { background: #183318; color: #bfeebf; } }
+.ov-row { display: flex; justify-content: space-between; gap: 8px; font-size: 14px; border-bottom: 1px solid var(--grid); padding: 3px 0; }
+.ov-row span:first-child { color: var(--text-2); }
+.pchip { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; }
+.pchip small { font-size: 11px; color: var(--text-2); }
+.rules { margin: 0; padding-left: 20px; display: grid; gap: 8px; font-size: 14px; }
+
+.chart .bar-pos { fill: var(--pos); }
+.chart .bar-neg { fill: var(--neg); }
+.key i.pos { background: var(--pos); }
+.key i.neg { background: var(--neg); }
+:root[data-theme="dark"] { --neg: #3987e5; --pos: #e66767; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --neg: #3987e5; --pos: #e66767; } }
