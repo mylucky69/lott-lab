@@ -1,6 +1,12455 @@
 [
  {
   "game": "oz",
+  "draw": 1476,
+  "date": "2022-05-31",
+  "main": [
+   20,
+   21,
+   27,
+   30,
+   32,
+   36,
+   40
+  ],
+  "supp": [
+   8,
+   14,
+   28
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 5759193.22
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 42865.75
+   },
+   {
+    "div": 3,
+    "winners": 59,
+    "amount": 3434.55
+   },
+   {
+    "div": 4,
+    "winners": 436,
+    "amount": 357.5
+   },
+   {
+    "div": 5,
+    "winners": 2405,
+    "amount": 51.85
+   },
+   {
+    "div": 6,
+    "winners": 58755,
+    "amount": 26.25
+   },
+   {
+    "div": 7,
+    "winners": 156526,
+    "amount": 15.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1477,
+  "date": "2022-06-07",
+  "main": [
+   3,
+   4,
+   12,
+   25,
+   28,
+   33,
+   37
+  ],
+  "supp": [
+   9,
+   17,
+   19
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 68163.3
+   },
+   {
+    "div": 3,
+    "winners": 41,
+    "amount": 3929.6
+   },
+   {
+    "div": 4,
+    "winners": 451,
+    "amount": 274.8
+   },
+   {
+    "div": 5,
+    "winners": 2045,
+    "amount": 48.5
+   },
+   {
+    "div": 6,
+    "winners": 50524,
+    "amount": 24.3
+   },
+   {
+    "div": 7,
+    "winners": 143466,
+    "amount": 13.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1478,
+  "date": "2022-06-14",
+  "main": [
+   2,
+   3,
+   16,
+   22,
+   24,
+   25,
+   35
+  ],
+  "supp": [
+   31,
+   36,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 3,
+    "winners": 48,
+    "amount": 6658.6
+   },
+   {
+    "div": 4,
+    "winners": 289,
+    "amount": 460.8
+   },
+   {
+    "div": 5,
+    "winners": 2223,
+    "amount": 47.95
+   },
+   {
+    "div": 6,
+    "winners": 53228,
+    "amount": 24.75
+   },
+   {
+    "div": 7,
+    "winners": 125774,
+    "amount": 16.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1479,
+  "date": "2022-06-21",
+  "main": [
+   7,
+   11,
+   12,
+   16,
+   40,
+   41,
+   45
+  ],
+  "supp": [
+   3,
+   24,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 197649.15
+   },
+   {
+    "div": 3,
+    "winners": 43,
+    "amount": 5432.2
+   },
+   {
+    "div": 4,
+    "winners": 417,
+    "amount": 430.9
+   },
+   {
+    "div": 5,
+    "winners": 2647,
+    "amount": 54.3
+   },
+   {
+    "div": 6,
+    "winners": 67254,
+    "amount": 26.45
+   },
+   {
+    "div": 7,
+    "winners": 167949,
+    "amount": 17.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1480,
+  "date": "2022-06-28",
+  "main": [
+   23,
+   28,
+   38,
+   42,
+   43,
+   44,
+   47
+  ],
+  "supp": [
+   24,
+   39,
+   41
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 33227.15
+   },
+   {
+    "div": 3,
+    "winners": 61,
+    "amount": 5149.95
+   },
+   {
+    "div": 4,
+    "winners": 575,
+    "amount": 420.25
+   },
+   {
+    "div": 5,
+    "winners": 2960,
+    "amount": 65.3
+   },
+   {
+    "div": 6,
+    "winners": 78689,
+    "amount": 30.4
+   },
+   {
+    "div": 7,
+    "winners": 204076,
+    "amount": 18.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1481,
+  "date": "2022-07-05",
+  "main": [
+   2,
+   17,
+   20,
+   22,
+   29,
+   31,
+   41
+  ],
+  "supp": [
+   7,
+   18,
+   36
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30000000.0
+   },
+   {
+    "div": 2,
+    "winners": 11,
+    "amount": 39302.7
+   },
+   {
+    "div": 3,
+    "winners": 116,
+    "amount": 4404.6
+   },
+   {
+    "div": 4,
+    "winners": 1057,
+    "amount": 371.85
+   },
+   {
+    "div": 5,
+    "winners": 6359,
+    "amount": 49.45
+   },
+   {
+    "div": 6,
+    "winners": 153749,
+    "amount": 25.3
+   },
+   {
+    "div": 7,
+    "winners": 401661,
+    "amount": 15.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1482,
+  "date": "2022-07-12",
+  "main": [
+   1,
+   5,
+   14,
+   18,
+   24,
+   38,
+   40
+  ],
+  "supp": [
+   27,
+   36,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 48416.8
+   },
+   {
+    "div": 3,
+    "winners": 30,
+    "amount": 5722.0
+   },
+   {
+    "div": 4,
+    "winners": 315,
+    "amount": 419.2
+   },
+   {
+    "div": 5,
+    "winners": 1994,
+    "amount": 53.0
+   },
+   {
+    "div": 6,
+    "winners": 50353,
+    "amount": 25.95
+   },
+   {
+    "div": 7,
+    "winners": 116660,
+    "amount": 18.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1483,
+  "date": "2022-07-19",
+  "main": [
+   7,
+   9,
+   11,
+   12,
+   21,
+   28,
+   34
+  ],
+  "supp": [
+   2,
+   4,
+   16
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 36616.1
+   },
+   {
+    "div": 3,
+    "winners": 76,
+    "amount": 3985.75
+   },
+   {
+    "div": 4,
+    "winners": 806,
+    "amount": 289.15
+   },
+   {
+    "div": 5,
+    "winners": 3943,
+    "amount": 47.3
+   },
+   {
+    "div": 6,
+    "winners": 88617,
+    "amount": 26.0
+   },
+   {
+    "div": 7,
+    "winners": 227440,
+    "amount": 16.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1484,
+  "date": "2022-07-26",
+  "main": [
+   11,
+   23,
+   27,
+   29,
+   30,
+   41,
+   42
+  ],
+  "supp": [
+   8,
+   9,
+   15
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 31202.65
+   },
+   {
+    "div": 3,
+    "winners": 58,
+    "amount": 5086.35
+   },
+   {
+    "div": 4,
+    "winners": 645,
+    "amount": 351.85
+   },
+   {
+    "div": 5,
+    "winners": 3331,
+    "amount": 54.5
+   },
+   {
+    "div": 6,
+    "winners": 87814,
+    "amount": 25.6
+   },
+   {
+    "div": 7,
+    "winners": 237651,
+    "amount": 15.2
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1485,
+  "date": "2022-08-02",
+  "main": [
+   22,
+   23,
+   27,
+   33,
+   38,
+   39,
+   42
+  ],
+  "supp": [
+   4,
+   20,
+   37
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 10,
+    "amount": 35788.4
+   },
+   {
+    "div": 3,
+    "winners": 87,
+    "amount": 4861.55
+   },
+   {
+    "div": 4,
+    "winners": 897,
+    "amount": 362.7
+   },
+   {
+    "div": 5,
+    "winners": 4669,
+    "amount": 55.75
+   },
+   {
+    "div": 6,
+    "winners": 121111,
+    "amount": 26.6
+   },
+   {
+    "div": 7,
+    "winners": 313553,
+    "amount": 16.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1486,
+  "date": "2022-08-09",
+  "main": [
+   13,
+   16,
+   21,
+   32,
+   37,
+   43,
+   45
+  ],
+  "supp": [
+   28,
+   31,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 45576.45
+   },
+   {
+    "div": 3,
+    "winners": 39,
+    "amount": 4143.3
+   },
+   {
+    "div": 4,
+    "winners": 318,
+    "amount": 390.9
+   },
+   {
+    "div": 5,
+    "winners": 1912,
+    "amount": 52.0
+   },
+   {
+    "div": 6,
+    "winners": 47075,
+    "amount": 26.15
+   },
+   {
+    "div": 7,
+    "winners": 106633,
+    "amount": 18.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1487,
+  "date": "2022-08-16",
+  "main": [
+   4,
+   5,
+   17,
+   28,
+   36,
+   45,
+   47
+  ],
+  "supp": [
+   6,
+   30,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 3,
+    "winners": 31,
+    "amount": 12235.6
+   },
+   {
+    "div": 4,
+    "winners": 278,
+    "amount": 568.5
+   },
+   {
+    "div": 5,
+    "winners": 1945,
+    "amount": 65.0
+   },
+   {
+    "div": 6,
+    "winners": 51964,
+    "amount": 30.1
+   },
+   {
+    "div": 7,
+    "winners": 131165,
+    "amount": 19.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1488,
+  "date": "2022-08-23",
+  "main": [
+   1,
+   3,
+   5,
+   6,
+   18,
+   21,
+   23
+  ],
+  "supp": [
+   10,
+   35,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 10280940.96
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 36448.0
+   },
+   {
+    "div": 3,
+    "winners": 156,
+    "amount": 1932.85
+   },
+   {
+    "div": 4,
+    "winners": 805,
+    "amount": 288.15
+   },
+   {
+    "div": 5,
+    "winners": 5510,
+    "amount": 33.7
+   },
+   {
+    "div": 6,
+    "winners": 116182,
+    "amount": 19.75
+   },
+   {
+    "div": 7,
+    "winners": 252984,
+    "amount": 14.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1489,
+  "date": "2022-08-30",
+  "main": [
+   12,
+   24,
+   27,
+   28,
+   32,
+   34,
+   39
+  ],
+  "supp": [
+   17,
+   18,
+   22
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 43690.9
+   },
+   {
+    "div": 3,
+    "winners": 27,
+    "amount": 5737.2
+   },
+   {
+    "div": 4,
+    "winners": 313,
+    "amount": 380.7
+   },
+   {
+    "div": 5,
+    "winners": 1689,
+    "amount": 56.45
+   },
+   {
+    "div": 6,
+    "winners": 43616,
+    "amount": 27.05
+   },
+   {
+    "div": 7,
+    "winners": 122316,
+    "amount": 15.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1490,
+  "date": "2022-09-06",
+  "main": [
+   8,
+   12,
+   19,
+   28,
+   32,
+   34,
+   41
+  ],
+  "supp": [
+   9,
+   18,
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 3,
+    "winners": 33,
+    "amount": 9958.35
+   },
+   {
+    "div": 4,
+    "winners": 340,
+    "amount": 402.75
+   },
+   {
+    "div": 5,
+    "winners": 2199,
+    "amount": 49.8
+   },
+   {
+    "div": 6,
+    "winners": 52993,
+    "amount": 25.6
+   },
+   {
+    "div": 7,
+    "winners": 139553,
+    "amount": 15.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1491,
+  "date": "2022-09-13",
+  "main": [
+   11,
+   13,
+   14,
+   16,
+   28,
+   33,
+   37
+  ],
+  "supp": [
+   10,
+   29,
+   31
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 80442.1
+   },
+   {
+    "div": 3,
+    "winners": 52,
+    "amount": 5484.7
+   },
+   {
+    "div": 4,
+    "winners": 600,
+    "amount": 365.65
+   },
+   {
+    "div": 5,
+    "winners": 3310,
+    "amount": 53.0
+   },
+   {
+    "div": 6,
+    "winners": 85935,
+    "amount": 25.25
+   },
+   {
+    "div": 7,
+    "winners": 227407,
+    "amount": 15.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1492,
+  "date": "2022-09-20",
+  "main": [
+   5,
+   21,
+   22,
+   24,
+   29,
+   33,
+   37
+  ],
+  "supp": [
+   8,
+   14,
+   23
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 43965.85
+   },
+   {
+    "div": 3,
+    "winners": 113,
+    "amount": 3678.55
+   },
+   {
+    "div": 4,
+    "winners": 868,
+    "amount": 368.4
+   },
+   {
+    "div": 5,
+    "winners": 5150,
+    "amount": 49.65
+   },
+   {
+    "div": 6,
+    "winners": 125522,
+    "amount": 25.2
+   },
+   {
+    "div": 7,
+    "winners": 328390,
+    "amount": 15.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1493,
+  "date": "2022-09-27",
+  "main": [
+   2,
+   6,
+   9,
+   10,
+   33,
+   35,
+   36
+  ],
+  "supp": [
+   16,
+   21,
+   41
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 12,
+    "amount": 35685.55
+   },
+   {
+    "div": 3,
+    "winners": 86,
+    "amount": 5884.7
+   },
+   {
+    "div": 4,
+    "winners": 915,
+    "amount": 425.45
+   },
+   {
+    "div": 5,
+    "winners": 5827,
+    "amount": 53.45
+   },
+   {
+    "div": 6,
+    "winners": 149244,
+    "amount": 25.8
+   },
+   {
+    "div": 7,
+    "winners": 380603,
+    "amount": 16.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1494,
+  "date": "2022-10-04",
+  "main": [
+   5,
+   17,
+   20,
+   37,
+   39,
+   42,
+   47
+  ],
+  "supp": [
+   22,
+   29,
+   38
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 50000000.0
+   },
+   {
+    "div": 2,
+    "winners": 14,
+    "amount": 47858.55
+   },
+   {
+    "div": 3,
+    "winners": 135,
+    "amount": 5865.5
+   },
+   {
+    "div": 4,
+    "winners": 1463,
+    "amount": 416.35
+   },
+   {
+    "div": 5,
+    "winners": 8232,
+    "amount": 59.2
+   },
+   {
+    "div": 6,
+    "winners": 210303,
+    "amount": 28.65
+   },
+   {
+    "div": 7,
+    "winners": 558496,
+    "amount": 17.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1495,
+  "date": "2022-10-11",
+  "main": [
+   16,
+   19,
+   23,
+   27,
+   31,
+   32,
+   47
+  ],
+  "supp": [
+   2,
+   14,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 27602.35
+   },
+   {
+    "div": 3,
+    "winners": 36,
+    "amount": 4530.7
+   },
+   {
+    "div": 4,
+    "winners": 284,
+    "amount": 441.8
+   },
+   {
+    "div": 5,
+    "winners": 1554,
+    "amount": 64.6
+   },
+   {
+    "div": 6,
+    "winners": 40308,
+    "amount": 30.8
+   },
+   {
+    "div": 7,
+    "winners": 110589,
+    "amount": 18.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1496,
+  "date": "2022-10-18",
+  "main": [
+   8,
+   14,
+   15,
+   21,
+   25,
+   37,
+   42
+  ],
+  "supp": [
+   13,
+   17,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 49269.1
+   },
+   {
+    "div": 3,
+    "winners": 33,
+    "amount": 5293.4
+   },
+   {
+    "div": 4,
+    "winners": 331,
+    "amount": 405.95
+   },
+   {
+    "div": 5,
+    "winners": 2004,
+    "amount": 53.65
+   },
+   {
+    "div": 6,
+    "winners": 50262,
+    "amount": 26.45
+   },
+   {
+    "div": 7,
+    "winners": 134428,
+    "amount": 15.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1497,
+  "date": "2022-10-25",
+  "main": [
+   1,
+   7,
+   9,
+   15,
+   23,
+   32,
+   39
+  ],
+  "supp": [
+   18,
+   36,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 34907.0
+   },
+   {
+    "div": 3,
+    "winners": 45,
+    "amount": 5500.5
+   },
+   {
+    "div": 4,
+    "winners": 535,
+    "amount": 355.9
+   },
+   {
+    "div": 5,
+    "winners": 3034,
+    "amount": 50.2
+   },
+   {
+    "div": 6,
+    "winners": 77448,
+    "amount": 24.35
+   },
+   {
+    "div": 7,
+    "winners": 185894,
+    "amount": 16.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1498,
+  "date": "2022-11-01",
+  "main": [
+   6,
+   9,
+   13,
+   18,
+   26,
+   30,
+   31
+  ],
+  "supp": [
+   16,
+   22,
+   37
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 10,
+    "amount": 38846.45
+   },
+   {
+    "div": 3,
+    "winners": 122,
+    "amount": 3763.05
+   },
+   {
+    "div": 4,
+    "winners": 1037,
+    "amount": 340.55
+   },
+   {
+    "div": 5,
+    "winners": 6433,
+    "amount": 43.9
+   },
+   {
+    "div": 6,
+    "winners": 149608,
+    "amount": 23.35
+   },
+   {
+    "div": 7,
+    "winners": 370626,
+    "amount": 15.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1499,
+  "date": "2022-11-08",
+  "main": [
+   1,
+   2,
+   19,
+   23,
+   28,
+   30,
+   40
+  ],
+  "supp": [
+   21,
+   25,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 71194.15
+   },
+   {
+    "div": 3,
+    "winners": 35,
+    "amount": 4807.9
+   },
+   {
+    "div": 4,
+    "winners": 375,
+    "amount": 345.2
+   },
+   {
+    "div": 5,
+    "winners": 2417,
+    "amount": 42.85
+   },
+   {
+    "div": 6,
+    "winners": 54113,
+    "amount": 23.7
+   },
+   {
+    "div": 7,
+    "winners": 134722,
+    "amount": 15.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1500,
+  "date": "2022-11-15",
+  "main": [
+   4,
+   11,
+   14,
+   22,
+   25,
+   33,
+   44
+  ],
+  "supp": [
+   19,
+   23,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 37797.6
+   },
+   {
+    "div": 3,
+    "winners": 98,
+    "amount": 2734.9
+   },
+   {
+    "div": 4,
+    "winners": 465,
+    "amount": 443.4
+   },
+   {
+    "div": 5,
+    "winners": 3591,
+    "amount": 46.0
+   },
+   {
+    "div": 6,
+    "winners": 70260,
+    "amount": 29.1
+   },
+   {
+    "div": 7,
+    "winners": 165266,
+    "amount": 19.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1501,
+  "date": "2022-11-22",
+  "main": [
+   1,
+   12,
+   15,
+   19,
+   22,
+   27,
+   40
+  ],
+  "supp": [
+   23,
+   33,
+   35
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 34055.0
+   },
+   {
+    "div": 3,
+    "winners": 71,
+    "amount": 3401.15
+   },
+   {
+    "div": 4,
+    "winners": 678,
+    "amount": 273.95
+   },
+   {
+    "div": 5,
+    "winners": 3329,
+    "amount": 44.65
+   },
+   {
+    "div": 6,
+    "winners": 81144,
+    "amount": 22.65
+   },
+   {
+    "div": 7,
+    "winners": 195237,
+    "amount": 15.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1502,
+  "date": "2022-11-29",
+  "main": [
+   3,
+   9,
+   11,
+   15,
+   20,
+   24,
+   40
+  ],
+  "supp": [
+   26,
+   28,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 38982.5
+   },
+   {
+    "div": 3,
+    "winners": 95,
+    "amount": 3879.6
+   },
+   {
+    "div": 4,
+    "winners": 883,
+    "amount": 321.05
+   },
+   {
+    "div": 5,
+    "winners": 5123,
+    "amount": 44.25
+   },
+   {
+    "div": 6,
+    "winners": 119985,
+    "amount": 23.4
+   },
+   {
+    "div": 7,
+    "winners": 297986,
+    "amount": 15.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1503,
+  "date": "2022-12-06",
+  "main": [
+   2,
+   5,
+   11,
+   24,
+   32,
+   34,
+   44
+  ],
+  "supp": [
+   20,
+   39,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30000000.0
+   },
+   {
+    "div": 2,
+    "winners": 13,
+    "amount": 29833.95
+   },
+   {
+    "div": 3,
+    "winners": 107,
+    "amount": 4283.7
+   },
+   {
+    "div": 4,
+    "winners": 831,
+    "amount": 424.3
+   },
+   {
+    "div": 5,
+    "winners": 5417,
+    "amount": 52.05
+   },
+   {
+    "div": 6,
+    "winners": 134469,
+    "amount": 25.95
+   },
+   {
+    "div": 7,
+    "winners": 319647,
+    "amount": 17.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1504,
+  "date": "2022-12-13",
+  "main": [
+   11,
+   13,
+   17,
+   25,
+   35,
+   37,
+   38
+  ],
+  "supp": [
+   14,
+   23,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 45117.2
+   },
+   {
+    "div": 3,
+    "winners": 38,
+    "amount": 4209.5
+   },
+   {
+    "div": 4,
+    "winners": 314,
+    "amount": 391.85
+   },
+   {
+    "div": 5,
+    "winners": 1862,
+    "amount": 52.85
+   },
+   {
+    "div": 6,
+    "winners": 47635,
+    "amount": 25.55
+   },
+   {
+    "div": 7,
+    "winners": 124283,
+    "amount": 15.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1505,
+  "date": "2022-12-20",
+  "main": [
+   9,
+   10,
+   12,
+   14,
+   27,
+   29,
+   37
+  ],
+  "supp": [
+   31,
+   40,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 37121.25
+   },
+   {
+    "div": 3,
+    "winners": 38,
+    "amount": 4617.95
+   },
+   {
+    "div": 4,
+    "winners": 333,
+    "amount": 405.35
+   },
+   {
+    "div": 5,
+    "winners": 2588,
+    "amount": 41.75
+   },
+   {
+    "div": 6,
+    "winners": 58798,
+    "amount": 22.75
+   },
+   {
+    "div": 7,
+    "winners": 121849,
+    "amount": 17.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1506,
+  "date": "2022-12-27",
+  "main": [
+   4,
+   8,
+   12,
+   19,
+   21,
+   27,
+   33
+  ],
+  "supp": [
+   7,
+   16,
+   24
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 13,
+    "amount": 13771.8
+   },
+   {
+    "div": 3,
+    "winners": 86,
+    "amount": 2460.3
+   },
+   {
+    "div": 4,
+    "winners": 770,
+    "amount": 211.35
+   },
+   {
+    "div": 5,
+    "winners": 3518,
+    "amount": 37.0
+   },
+   {
+    "div": 6,
+    "winners": 79166,
+    "amount": 20.35
+   },
+   {
+    "div": 7,
+    "winners": 203139,
+    "amount": 12.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1507,
+  "date": "2023-01-03",
+  "main": [
+   7,
+   20,
+   24,
+   30,
+   35,
+   41,
+   43
+  ],
+  "supp": [
+   17,
+   19,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 41240.7
+   },
+   {
+    "div": 3,
+    "winners": 90,
+    "amount": 4332.35
+   },
+   {
+    "div": 4,
+    "winners": 843,
+    "amount": 355.8
+   },
+   {
+    "div": 5,
+    "winners": 4413,
+    "amount": 54.35
+   },
+   {
+    "div": 6,
+    "winners": 110243,
+    "amount": 26.95
+   },
+   {
+    "div": 7,
+    "winners": 292577,
+    "amount": 16.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1508,
+  "date": "2023-01-10",
+  "main": [
+   7,
+   10,
+   26,
+   27,
+   37,
+   38,
+   42
+  ],
+  "supp": [
+   33,
+   34,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 3000000.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 36703.0
+   },
+   {
+    "div": 3,
+    "winners": 39,
+    "amount": 4448.85
+   },
+   {
+    "div": 4,
+    "winners": 297,
+    "amount": 449.4
+   },
+   {
+    "div": 5,
+    "winners": 2320,
+    "amount": 46.0
+   },
+   {
+    "div": 6,
+    "winners": 53277,
+    "amount": 24.8
+   },
+   {
+    "div": 7,
+    "winners": 118978,
+    "amount": 17.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1509,
+  "date": "2023-01-17",
+  "main": [
+   9,
+   10,
+   11,
+   33,
+   37,
+   38,
+   46
+  ],
+  "supp": [
+   21,
+   24,
+   32
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 35072.7
+   },
+   {
+    "div": 3,
+    "winners": 28,
+    "amount": 5921.35
+   },
+   {
+    "div": 4,
+    "winners": 266,
+    "amount": 479.45
+   },
+   {
+    "div": 5,
+    "winners": 1429,
+    "amount": 71.4
+   },
+   {
+    "div": 6,
+    "winners": 38892,
+    "amount": 32.45
+   },
+   {
+    "div": 7,
+    "winners": 108670,
+    "amount": 18.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1510,
+  "date": "2023-01-24",
+  "main": [
+   7,
+   8,
+   18,
+   30,
+   43,
+   44,
+   46
+  ],
+  "supp": [
+   9,
+   10,
+   32
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 78434.6
+   },
+   {
+    "div": 3,
+    "winners": 28,
+    "amount": 6621.1
+   },
+   {
+    "div": 4,
+    "winners": 261,
+    "amount": 546.4
+   },
+   {
+    "div": 5,
+    "winners": 1628,
+    "amount": 70.1
+   },
+   {
+    "div": 6,
+    "winners": 43917,
+    "amount": 32.15
+   },
+   {
+    "div": 7,
+    "winners": 124565,
+    "amount": 18.2
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1511,
+  "date": "2023-01-31",
+  "main": [
+   5,
+   6,
+   9,
+   10,
+   24,
+   27,
+   34
+  ],
+  "supp": [
+   13,
+   26,
+   39
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 40765.9
+   },
+   {
+    "div": 3,
+    "winners": 72,
+    "amount": 3345.7
+   },
+   {
+    "div": 4,
+    "winners": 502,
+    "amount": 369.1
+   },
+   {
+    "div": 5,
+    "winners": 3364,
+    "amount": 44.05
+   },
+   {
+    "div": 6,
+    "winners": 82697,
+    "amount": 22.2
+   },
+   {
+    "div": 7,
+    "winners": 198794,
+    "amount": 14.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1512,
+  "date": "2023-02-07",
+  "main": [
+   5,
+   7,
+   14,
+   18,
+   20,
+   22,
+   43
+  ],
+  "supp": [
+   1,
+   2,
+   33
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 10000000.0
+   },
+   {
+    "div": 2,
+    "winners": 24,
+    "amount": 13413.6
+   },
+   {
+    "div": 3,
+    "winners": 133,
+    "amount": 2860.6
+   },
+   {
+    "div": 4,
+    "winners": 993,
+    "amount": 294.7
+   },
+   {
+    "div": 5,
+    "winners": 5227,
+    "amount": 44.8
+   },
+   {
+    "div": 6,
+    "winners": 122987,
+    "amount": 23.55
+   },
+   {
+    "div": 7,
+    "winners": 317317,
+    "amount": 14.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1513,
+  "date": "2023-02-14",
+  "main": [
+   5,
+   8,
+   14,
+   18,
+   27,
+   38,
+   41
+  ],
+  "supp": [
+   2,
+   11,
+   13
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 24553.6
+   },
+   {
+    "div": 3,
+    "winners": 49,
+    "amount": 3553.2
+   },
+   {
+    "div": 4,
+    "winners": 461,
+    "amount": 290.5
+   },
+   {
+    "div": 5,
+    "winners": 2204,
+    "amount": 48.6
+   },
+   {
+    "div": 6,
+    "winners": 54104,
+    "amount": 24.5
+   },
+   {
+    "div": 7,
+    "winners": 149203,
+    "amount": 14.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1514,
+  "date": "2023-02-21",
+  "main": [
+   1,
+   3,
+   4,
+   21,
+   24,
+   36,
+   38
+  ],
+  "supp": [
+   43,
+   44,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 38593.85
+   },
+   {
+    "div": 3,
+    "winners": 32,
+    "amount": 5701.35
+   },
+   {
+    "div": 4,
+    "winners": 302,
+    "amount": 464.7
+   },
+   {
+    "div": 5,
+    "winners": 2181,
+    "amount": 51.5
+   },
+   {
+    "div": 6,
+    "winners": 53351,
+    "amount": 26.05
+   },
+   {
+    "div": 7,
+    "winners": 118244,
+    "amount": 18.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1515,
+  "date": "2023-02-28",
+  "main": [
+   1,
+   5,
+   6,
+   29,
+   31,
+   39,
+   42
+  ],
+  "supp": [
+   3,
+   27,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 34635.65
+   },
+   {
+    "div": 3,
+    "winners": 43,
+    "amount": 5711.6
+   },
+   {
+    "div": 4,
+    "winners": 464,
+    "amount": 407.15
+   },
+   {
+    "div": 5,
+    "winners": 2689,
+    "amount": 56.2
+   },
+   {
+    "div": 6,
+    "winners": 68822,
+    "amount": 27.2
+   },
+   {
+    "div": 7,
+    "winners": 189572,
+    "amount": 15.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1516,
+  "date": "2023-03-07",
+  "main": [
+   4,
+   26,
+   28,
+   31,
+   33,
+   44,
+   47
+  ],
+  "supp": [
+   9,
+   11,
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 83614.3
+   },
+   {
+    "div": 3,
+    "winners": 58,
+    "amount": 6814.95
+   },
+   {
+    "div": 4,
+    "winners": 713,
+    "amount": 426.45
+   },
+   {
+    "div": 5,
+    "winners": 3881,
+    "amount": 62.65
+   },
+   {
+    "div": 6,
+    "winners": 103216,
+    "amount": 29.15
+   },
+   {
+    "div": 7,
+    "winners": 287538,
+    "amount": 16.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1517,
+  "date": "2023-03-14",
+  "main": [
+   3,
+   18,
+   27,
+   34,
+   40,
+   41,
+   44
+  ],
+  "supp": [
+   5,
+   12,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 47832.0
+   },
+   {
+    "div": 3,
+    "winners": 40,
+    "amount": 4239.65
+   },
+   {
+    "div": 4,
+    "winners": 295,
+    "amount": 442.2
+   },
+   {
+    "div": 5,
+    "winners": 1868,
+    "amount": 55.85
+   },
+   {
+    "div": 6,
+    "winners": 46504,
+    "amount": 27.75
+   },
+   {
+    "div": 7,
+    "winners": 114682,
+    "amount": 18.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1518,
+  "date": "2023-03-21",
+  "main": [
+   1,
+   4,
+   6,
+   9,
+   19,
+   30,
+   38
+  ],
+  "supp": [
+   10,
+   13,
+   37
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 53150.95
+   },
+   {
+    "div": 3,
+    "winners": 61,
+    "amount": 3089.25
+   },
+   {
+    "div": 4,
+    "winners": 548,
+    "amount": 264.5
+   },
+   {
+    "div": 5,
+    "winners": 3100,
+    "amount": 37.4
+   },
+   {
+    "div": 6,
+    "winners": 67915,
+    "amount": 21.15
+   },
+   {
+    "div": 7,
+    "winners": 163582,
+    "amount": 14.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1519,
+  "date": "2023-03-28",
+  "main": [
+   3,
+   7,
+   15,
+   16,
+   19,
+   35,
+   38
+  ],
+  "supp": [
+   13,
+   32,
+   39
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 10,
+    "amount": 23459.6
+   },
+   {
+    "div": 3,
+    "winners": 70,
+    "amount": 3960.7
+   },
+   {
+    "div": 4,
+    "winners": 656,
+    "amount": 325.1
+   },
+   {
+    "div": 5,
+    "winners": 3521,
+    "amount": 48.45
+   },
+   {
+    "div": 6,
+    "winners": 87323,
+    "amount": 24.2
+   },
+   {
+    "div": 7,
+    "winners": 218273,
+    "amount": 15.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1520,
+  "date": "2023-04-04",
+  "main": [
+   2,
+   19,
+   26,
+   28,
+   39,
+   42,
+   47
+  ],
+  "supp": [
+   9,
+   23,
+   37
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 107818.6
+   },
+   {
+    "div": 3,
+    "winners": 78,
+    "amount": 4900.85
+   },
+   {
+    "div": 4,
+    "winners": 675,
+    "amount": 435.65
+   },
+   {
+    "div": 5,
+    "winners": 3791,
+    "amount": 62.05
+   },
+   {
+    "div": 6,
+    "winners": 98492,
+    "amount": 29.55
+   },
+   {
+    "div": 7,
+    "winners": 270541,
+    "amount": 17.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1521,
+  "date": "2023-04-11",
+  "main": [
+   9,
+   12,
+   15,
+   19,
+   21,
+   46,
+   47
+  ],
+  "supp": [
+   16,
+   30,
+   34
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30000000.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 64355.2
+   },
+   {
+    "div": 3,
+    "winners": 88,
+    "amount": 5185.65
+   },
+   {
+    "div": 4,
+    "winners": 779,
+    "amount": 450.6
+   },
+   {
+    "div": 5,
+    "winners": 4682,
+    "amount": 60.0
+   },
+   {
+    "div": 6,
+    "winners": 118406,
+    "amount": 29.35
+   },
+   {
+    "div": 7,
+    "winners": 309825,
+    "amount": 18.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1522,
+  "date": "2023-04-18",
+  "main": [
+   3,
+   4,
+   5,
+   6,
+   26,
+   34,
+   46
+  ],
+  "supp": [
+   15,
+   22,
+   29
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 73551.4
+   },
+   {
+    "div": 3,
+    "winners": 32,
+    "amount": 5432.75
+   },
+   {
+    "div": 4,
+    "winners": 284,
+    "amount": 470.9
+   },
+   {
+    "div": 5,
+    "winners": 1724,
+    "amount": 62.05
+   },
+   {
+    "div": 6,
+    "winners": 48186,
+    "amount": 27.5
+   },
+   {
+    "div": 7,
+    "winners": 126938,
+    "amount": 16.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1523,
+  "date": "2023-04-25",
+  "main": [
+   7,
+   8,
+   9,
+   21,
+   24,
+   28,
+   31
+  ],
+  "supp": [
+   2,
+   10,
+   11
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 30900.2
+   },
+   {
+    "div": 3,
+    "winners": 48,
+    "amount": 3804.0
+   },
+   {
+    "div": 4,
+    "winners": 651,
+    "amount": 215.75
+   },
+   {
+    "div": 5,
+    "winners": 2791,
+    "amount": 40.25
+   },
+   {
+    "div": 6,
+    "winners": 66245,
+    "amount": 21.0
+   },
+   {
+    "div": 7,
+    "winners": 184213,
+    "amount": 12.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1524,
+  "date": "2023-05-02",
+  "main": [
+   1,
+   7,
+   20,
+   26,
+   28,
+   29,
+   45
+  ],
+  "supp": [
+   4,
+   11,
+   16
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 58093.05
+   },
+   {
+    "div": 3,
+    "winners": 54,
+    "amount": 5085.6
+   },
+   {
+    "div": 4,
+    "winners": 666,
+    "amount": 317.2
+   },
+   {
+    "div": 5,
+    "winners": 3440,
+    "amount": 49.15
+   },
+   {
+    "div": 6,
+    "winners": 88576,
+    "amount": 23.6
+   },
+   {
+    "div": 7,
+    "winners": 240713,
+    "amount": 13.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1525,
+  "date": "2023-05-09",
+  "main": [
+   3,
+   11,
+   21,
+   28,
+   35,
+   40,
+   46
+  ],
+  "supp": [
+   20,
+   39,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 48962.7
+   },
+   {
+    "div": 3,
+    "winners": 71,
+    "amount": 5705.0
+   },
+   {
+    "div": 4,
+    "winners": 734,
+    "amount": 424.5
+   },
+   {
+    "div": 5,
+    "winners": 4459,
+    "amount": 55.9
+   },
+   {
+    "div": 6,
+    "winners": 111016,
+    "amount": 27.8
+   },
+   {
+    "div": 7,
+    "winners": 281437,
+    "amount": 17.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1526,
+  "date": "2023-05-16",
+  "main": [
+   5,
+   17,
+   21,
+   22,
+   34,
+   37,
+   45
+  ],
+  "supp": [
+   35,
+   41,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 77352.25
+   },
+   {
+    "div": 3,
+    "winners": 108,
+    "amount": 5078.7
+   },
+   {
+    "div": 4,
+    "winners": 1057,
+    "amount": 399.15
+   },
+   {
+    "div": 5,
+    "winners": 6938,
+    "amount": 48.65
+   },
+   {
+    "div": 6,
+    "winners": 165577,
+    "amount": 25.25
+   },
+   {
+    "div": 7,
+    "winners": 384186,
+    "amount": 17.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1527,
+  "date": "2023-05-23",
+  "main": [
+   3,
+   4,
+   5,
+   15,
+   18,
+   41,
+   45
+  ],
+  "supp": [
+   25,
+   33,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 34512.8
+   },
+   {
+    "div": 3,
+    "winners": 28,
+    "amount": 5826.85
+   },
+   {
+    "div": 4,
+    "winners": 345,
+    "amount": 363.75
+   },
+   {
+    "div": 5,
+    "winners": 2047,
+    "amount": 49.05
+   },
+   {
+    "div": 6,
+    "winners": 49993,
+    "amount": 24.85
+   },
+   {
+    "div": 7,
+    "winners": 122586,
+    "amount": 16.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1528,
+  "date": "2023-05-30",
+  "main": [
+   10,
+   17,
+   20,
+   30,
+   41,
+   42,
+   43
+  ],
+  "supp": [
+   1,
+   6,
+   14
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 52242.6
+   },
+   {
+    "div": 3,
+    "winners": 40,
+    "amount": 4630.6
+   },
+   {
+    "div": 4,
+    "winners": 352,
+    "amount": 404.75
+   },
+   {
+    "div": 5,
+    "winners": 2086,
+    "amount": 54.65
+   },
+   {
+    "div": 6,
+    "winners": 50534,
+    "amount": 27.9
+   },
+   {
+    "div": 7,
+    "winners": 136285,
+    "amount": 16.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1529,
+  "date": "2023-06-06",
+  "main": [
+   1,
+   3,
+   5,
+   8,
+   19,
+   26,
+   46
+  ],
+  "supp": [
+   28,
+   35,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 106294.25
+   },
+   {
+    "div": 3,
+    "winners": 75,
+    "amount": 3349.9
+   },
+   {
+    "div": 4,
+    "winners": 486,
+    "amount": 397.65
+   },
+   {
+    "div": 5,
+    "winners": 3634,
+    "amount": 42.55
+   },
+   {
+    "div": 6,
+    "winners": 82741,
+    "amount": 23.1
+   },
+   {
+    "div": 7,
+    "winners": 192287,
+    "amount": 16.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1530,
+  "date": "2023-06-13",
+  "main": [
+   5,
+   12,
+   14,
+   21,
+   22,
+   35,
+   37
+  ],
+  "supp": [
+   17,
+   46,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 54938.0
+   },
+   {
+    "div": 3,
+    "winners": 62,
+    "amount": 5236.0
+   },
+   {
+    "div": 4,
+    "winners": 582,
+    "amount": 429.05
+   },
+   {
+    "div": 5,
+    "winners": 4154,
+    "amount": 48.1
+   },
+   {
+    "div": 6,
+    "winners": 100310,
+    "amount": 24.65
+   },
+   {
+    "div": 7,
+    "winners": 220762,
+    "amount": 18.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1531,
+  "date": "2023-06-20",
+  "main": [
+   5,
+   19,
+   22,
+   23,
+   30,
+   36,
+   38
+  ],
+  "supp": [
+   11,
+   42,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 41816.35
+   },
+   {
+    "div": 3,
+    "winners": 33,
+    "amount": 4492.65
+   },
+   {
+    "div": 4,
+    "winners": 324,
+    "amount": 352.0
+   },
+   {
+    "div": 5,
+    "winners": 1799,
+    "amount": 50.7
+   },
+   {
+    "div": 6,
+    "winners": 45759,
+    "amount": 24.65
+   },
+   {
+    "div": 7,
+    "winners": 109157,
+    "amount": 16.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1532,
+  "date": "2023-06-27",
+  "main": [
+   5,
+   16,
+   31,
+   37,
+   39,
+   43,
+   47
+  ],
+  "supp": [
+   14,
+   30,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 27681.7
+   },
+   {
+    "div": 3,
+    "winners": 29,
+    "amount": 6768.55
+   },
+   {
+    "div": 4,
+    "winners": 304,
+    "amount": 496.7
+   },
+   {
+    "div": 5,
+    "winners": 1811,
+    "amount": 66.7
+   },
+   {
+    "div": 6,
+    "winners": 46333,
+    "amount": 32.25
+   },
+   {
+    "div": 7,
+    "winners": 120859,
+    "amount": 19.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1533,
+  "date": "2023-07-04",
+  "main": [
+   3,
+   12,
+   20,
+   21,
+   29,
+   36,
+   40
+  ],
+  "supp": [
+   1,
+   5,
+   6
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 231090.05
+   },
+   {
+    "div": 3,
+    "winners": 60,
+    "amount": 4551.75
+   },
+   {
+    "div": 4,
+    "winners": 583,
+    "amount": 360.35
+   },
+   {
+    "div": 5,
+    "winners": 3264,
+    "amount": 51.5
+   },
+   {
+    "div": 6,
+    "winners": 81992,
+    "amount": 25.35
+   },
+   {
+    "div": 7,
+    "winners": 226515,
+    "amount": 14.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1534,
+  "date": "2023-07-11",
+  "main": [
+   4,
+   9,
+   26,
+   28,
+   35,
+   42,
+   46
+  ],
+  "supp": [
+   21,
+   40,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 10,
+    "amount": 32402.75
+   },
+   {
+    "div": 3,
+    "winners": 81,
+    "amount": 4727.65
+   },
+   {
+    "div": 4,
+    "winners": 752,
+    "amount": 391.7
+   },
+   {
+    "div": 5,
+    "winners": 4098,
+    "amount": 57.5
+   },
+   {
+    "div": 6,
+    "winners": 103072,
+    "amount": 28.3
+   },
+   {
+    "div": 7,
+    "winners": 258399,
+    "amount": 18.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1535,
+  "date": "2023-07-18",
+  "main": [
+   7,
+   11,
+   17,
+   20,
+   22,
+   24,
+   41
+  ],
+  "supp": [
+   6,
+   33,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 66566.4
+   },
+   {
+    "div": 3,
+    "winners": 38,
+    "amount": 4140.5
+   },
+   {
+    "div": 4,
+    "winners": 349,
+    "amount": 346.8
+   },
+   {
+    "div": 5,
+    "winners": 2282,
+    "amount": 42.45
+   },
+   {
+    "div": 6,
+    "winners": 55034,
+    "amount": 21.75
+   },
+   {
+    "div": 7,
+    "winners": 119700,
+    "amount": 16.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1536,
+  "date": "2023-07-25",
+  "main": [
+   1,
+   10,
+   14,
+   32,
+   39,
+   43,
+   44
+  ],
+  "supp": [
+   8,
+   23,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 147571.0
+   },
+   {
+    "div": 3,
+    "winners": 26,
+    "amount": 6707.75
+   },
+   {
+    "div": 4,
+    "winners": 286,
+    "amount": 469.05
+   },
+   {
+    "div": 5,
+    "winners": 1633,
+    "amount": 65.7
+   },
+   {
+    "div": 6,
+    "winners": 43929,
+    "amount": 30.25
+   },
+   {
+    "div": 7,
+    "winners": 115109,
+    "amount": 18.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1537,
+  "date": "2023-08-01",
+  "main": [
+   11,
+   13,
+   17,
+   19,
+   34,
+   36,
+   40
+  ],
+  "supp": [
+   12,
+   14,
+   35
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 33603.35
+   },
+   {
+    "div": 3,
+    "winners": 49,
+    "amount": 4862.8
+   },
+   {
+    "div": 4,
+    "winners": 481,
+    "amount": 381.05
+   },
+   {
+    "div": 5,
+    "winners": 2876,
+    "amount": 51.0
+   },
+   {
+    "div": 6,
+    "winners": 71494,
+    "amount": 25.4
+   },
+   {
+    "div": 7,
+    "winners": 176310,
+    "amount": 16.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1538,
+  "date": "2023-08-08",
+  "main": [
+   3,
+   7,
+   19,
+   20,
+   22,
+   35,
+   47
+  ],
+  "supp": [
+   4,
+   10,
+   17
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 88438.0
+   },
+   {
+    "div": 3,
+    "winners": 79,
+    "amount": 5292.05
+   },
+   {
+    "div": 4,
+    "winners": 829,
+    "amount": 387.95
+   },
+   {
+    "div": 5,
+    "winners": 4843,
+    "amount": 53.1
+   },
+   {
+    "div": 6,
+    "winners": 124460,
+    "amount": 25.6
+   },
+   {
+    "div": 7,
+    "winners": 337461,
+    "amount": 15.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1539,
+  "date": "2023-08-15",
+  "main": [
+   6,
+   8,
+   23,
+   24,
+   27,
+   41,
+   47
+  ],
+  "supp": [
+   4,
+   13,
+   28
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30000000.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 66183.7
+   },
+   {
+    "div": 3,
+    "winners": 86,
+    "amount": 6366.5
+   },
+   {
+    "div": 4,
+    "winners": 949,
+    "amount": 443.8
+   },
+   {
+    "div": 5,
+    "winners": 5670,
+    "amount": 59.4
+   },
+   {
+    "div": 6,
+    "winners": 150077,
+    "amount": 27.8
+   },
+   {
+    "div": 7,
+    "winners": 412002,
+    "amount": 16.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1540,
+  "date": "2023-08-22",
+  "main": [
+   10,
+   12,
+   33,
+   36,
+   37,
+   40,
+   42
+  ],
+  "supp": [
+   5,
+   27,
+   28
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 137813.65
+   },
+   {
+    "div": 3,
+    "winners": 20,
+    "amount": 8143.55
+   },
+   {
+    "div": 4,
+    "winners": 267,
+    "amount": 469.25
+   },
+   {
+    "div": 5,
+    "winners": 1592,
+    "amount": 62.95
+   },
+   {
+    "div": 6,
+    "winners": 43059,
+    "amount": 28.8
+   },
+   {
+    "div": 7,
+    "winners": 120693,
+    "amount": 16.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1541,
+  "date": "2023-08-29",
+  "main": [
+   14,
+   17,
+   19,
+   22,
+   27,
+   46,
+   47
+  ],
+  "supp": [
+   29,
+   30,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 73787.75
+   },
+   {
+    "div": 3,
+    "winners": 23,
+    "amount": 7582.95
+   },
+   {
+    "div": 4,
+    "winners": 273,
+    "amount": 491.45
+   },
+   {
+    "div": 5,
+    "winners": 1562,
+    "amount": 68.7
+   },
+   {
+    "div": 6,
+    "winners": 43316,
+    "amount": 30.65
+   },
+   {
+    "div": 7,
+    "winners": 114617,
+    "amount": 18.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1542,
+  "date": "2023-09-05",
+  "main": [
+   2,
+   5,
+   13,
+   18,
+   21,
+   31,
+   41
+  ],
+  "supp": [
+   9,
+   40,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 10000000.0
+   },
+   {
+    "div": 2,
+    "winners": 9,
+    "amount": 25849.75
+   },
+   {
+    "div": 3,
+    "winners": 70,
+    "amount": 3927.8
+   },
+   {
+    "div": 4,
+    "winners": 601,
+    "amount": 351.9
+   },
+   {
+    "div": 5,
+    "winners": 3721,
+    "amount": 45.45
+   },
+   {
+    "div": 6,
+    "winners": 88121,
+    "amount": 23.75
+   },
+   {
+    "div": 7,
+    "winners": 200737,
+    "amount": 16.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1543,
+  "date": "2023-09-12",
+  "main": [
+   4,
+   5,
+   12,
+   24,
+   25,
+   27,
+   44
+  ],
+  "supp": [
+   7,
+   39,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 18863.85
+   },
+   {
+    "div": 3,
+    "winners": 46,
+    "amount": 3392.5
+   },
+   {
+    "div": 4,
+    "winners": 404,
+    "amount": 297.15
+   },
+   {
+    "div": 5,
+    "winners": 2173,
+    "amount": 44.2
+   },
+   {
+    "div": 6,
+    "winners": 52588,
+    "amount": 22.6
+   },
+   {
+    "div": 7,
+    "winners": 128580,
+    "amount": 14.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1544,
+  "date": "2023-09-19",
+  "main": [
+   14,
+   23,
+   32,
+   33,
+   35,
+   36,
+   45
+  ],
+  "supp": [
+   12,
+   20,
+   30
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 73115.85
+   },
+   {
+    "div": 3,
+    "winners": 27,
+    "amount": 6400.7
+   },
+   {
+    "div": 4,
+    "winners": 317,
+    "amount": 419.35
+   },
+   {
+    "div": 5,
+    "winners": 1845,
+    "amount": 57.65
+   },
+   {
+    "div": 6,
+    "winners": 46991,
+    "amount": 28.0
+   },
+   {
+    "div": 7,
+    "winners": 124243,
+    "amount": 17.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1545,
+  "date": "2023-09-26",
+  "main": [
+   1,
+   9,
+   10,
+   13,
+   20,
+   34,
+   46
+  ],
+  "supp": [
+   19,
+   30,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 96382.85
+   },
+   {
+    "div": 3,
+    "winners": 40,
+    "amount": 5695.35
+   },
+   {
+    "div": 4,
+    "winners": 366,
+    "amount": 478.8
+   },
+   {
+    "div": 5,
+    "winners": 2321,
+    "amount": 60.4
+   },
+   {
+    "div": 6,
+    "winners": 62327,
+    "amount": 27.85
+   },
+   {
+    "div": 7,
+    "winners": 168065,
+    "amount": 16.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1546,
+  "date": "2023-10-03",
+  "main": [
+   7,
+   19,
+   21,
+   24,
+   27,
+   43,
+   47
+  ],
+  "supp": [
+   11,
+   29,
+   39
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 56375.2
+   },
+   {
+    "div": 3,
+    "winners": 60,
+    "amount": 4441.7
+   },
+   {
+    "div": 4,
+    "winners": 531,
+    "amount": 386.05
+   },
+   {
+    "div": 5,
+    "winners": 3021,
+    "amount": 54.3
+   },
+   {
+    "div": 6,
+    "winners": 77894,
+    "amount": 26.05
+   },
+   {
+    "div": 7,
+    "winners": 209559,
+    "amount": 15.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1547,
+  "date": "2023-10-10",
+  "main": [
+   2,
+   6,
+   12,
+   15,
+   29,
+   31,
+   35
+  ],
+  "supp": [
+   8,
+   28,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 66643.5
+   },
+   {
+    "div": 3,
+    "winners": 120,
+    "amount": 3281.7
+   },
+   {
+    "div": 4,
+    "winners": 879,
+    "amount": 344.6
+   },
+   {
+    "div": 5,
+    "winners": 5151,
+    "amount": 47.05
+   },
+   {
+    "div": 6,
+    "winners": 122227,
+    "amount": 24.55
+   },
+   {
+    "div": 7,
+    "winners": 299396,
+    "amount": 16.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1548,
+  "date": "2023-10-17",
+  "main": [
+   14,
+   18,
+   21,
+   23,
+   33,
+   39,
+   46
+  ],
+  "supp": [
+   28,
+   37,
+   41
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30000000.0
+   },
+   {
+    "div": 2,
+    "winners": 12,
+    "amount": 34953.75
+   },
+   {
+    "div": 3,
+    "winners": 83,
+    "amount": 5972.4
+   },
+   {
+    "div": 4,
+    "winners": 908,
+    "amount": 419.95
+   },
+   {
+    "div": 5,
+    "winners": 5170,
+    "amount": 59.0
+   },
+   {
+    "div": 6,
+    "winners": 131706,
+    "amount": 28.65
+   },
+   {
+    "div": 7,
+    "winners": 347417,
+    "amount": 17.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1549,
+  "date": "2023-10-24",
+  "main": [
+   3,
+   5,
+   25,
+   30,
+   39,
+   40,
+   47
+  ],
+  "supp": [
+   19,
+   33,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 33481.4
+   },
+   {
+    "div": 3,
+    "winners": 13,
+    "amount": 12175.05
+   },
+   {
+    "div": 4,
+    "winners": 235,
+    "amount": 518.1
+   },
+   {
+    "div": 5,
+    "winners": 1414,
+    "amount": 68.9
+   },
+   {
+    "div": 6,
+    "winners": 38239,
+    "amount": 31.5
+   },
+   {
+    "div": 7,
+    "winners": 108390,
+    "amount": 17.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1550,
+  "date": "2023-10-31",
+  "main": [
+   3,
+   13,
+   21,
+   31,
+   37,
+   44,
+   45
+  ],
+  "supp": [
+   11,
+   30,
+   33
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 73748.4
+   },
+   {
+    "div": 3,
+    "winners": 63,
+    "amount": 2766.9
+   },
+   {
+    "div": 4,
+    "winners": 353,
+    "amount": 379.85
+   },
+   {
+    "div": 5,
+    "winners": 2257,
+    "amount": 47.55
+   },
+   {
+    "div": 6,
+    "winners": 53894,
+    "amount": 24.65
+   },
+   {
+    "div": 7,
+    "winners": 139127,
+    "amount": 15.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1551,
+  "date": "2023-11-07",
+  "main": [
+   3,
+   16,
+   21,
+   22,
+   30,
+   41,
+   43
+  ],
+  "supp": [
+   25,
+   33,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 57520.9
+   },
+   {
+    "div": 3,
+    "winners": 59,
+    "amount": 4608.75
+   },
+   {
+    "div": 4,
+    "winners": 533,
+    "amount": 392.45
+   },
+   {
+    "div": 5,
+    "winners": 2992,
+    "amount": 55.95
+   },
+   {
+    "div": 6,
+    "winners": 76177,
+    "amount": 27.2
+   },
+   {
+    "div": 7,
+    "winners": 187961,
+    "amount": 17.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1552,
+  "date": "2023-11-14",
+  "main": [
+   1,
+   4,
+   9,
+   12,
+   32,
+   38,
+   45
+  ],
+  "supp": [
+   10,
+   18,
+   43
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 40444.75
+   },
+   {
+    "div": 3,
+    "winners": 50,
+    "amount": 6691.75
+   },
+   {
+    "div": 4,
+    "winners": 636,
+    "amount": 404.7
+   },
+   {
+    "div": 5,
+    "winners": 3908,
+    "amount": 52.7
+   },
+   {
+    "div": 6,
+    "winners": 99812,
+    "amount": 25.55
+   },
+   {
+    "div": 7,
+    "winners": 254515,
+    "amount": 16.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1553,
+  "date": "2023-11-21",
+  "main": [
+   8,
+   12,
+   14,
+   21,
+   25,
+   36,
+   41
+  ],
+  "supp": [
+   19,
+   22,
+   23
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 105211.5
+   },
+   {
+    "div": 3,
+    "winners": 74,
+    "amount": 5040.85
+   },
+   {
+    "div": 4,
+    "winners": 735,
+    "amount": 390.4
+   },
+   {
+    "div": 5,
+    "winners": 4187,
+    "amount": 54.85
+   },
+   {
+    "div": 6,
+    "winners": 109193,
+    "amount": 26.0
+   },
+   {
+    "div": 7,
+    "winners": 293366,
+    "amount": 15.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1554,
+  "date": "2023-11-28",
+  "main": [
+   6,
+   19,
+   22,
+   24,
+   33,
+   34,
+   43
+  ],
+  "supp": [
+   10,
+   25,
+   38
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 52581.6
+   },
+   {
+    "div": 3,
+    "winners": 118,
+    "amount": 4213.0
+   },
+   {
+    "div": 4,
+    "winners": 960,
+    "amount": 398.35
+   },
+   {
+    "div": 5,
+    "winners": 5901,
+    "amount": 51.85
+   },
+   {
+    "div": 6,
+    "winners": 144192,
+    "amount": 26.25
+   },
+   {
+    "div": 7,
+    "winners": 369403,
+    "amount": 16.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1555,
+  "date": "2023-12-05",
+  "main": [
+   3,
+   11,
+   17,
+   19,
+   32,
+   36,
+   41
+  ],
+  "supp": [
+   6,
+   22,
+   34
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 63901.95
+   },
+   {
+    "div": 3,
+    "winners": 125,
+    "amount": 4833.3
+   },
+   {
+    "div": 4,
+    "winners": 1273,
+    "amount": 365.1
+   },
+   {
+    "div": 5,
+    "winners": 7205,
+    "amount": 51.6
+   },
+   {
+    "div": 6,
+    "winners": 178335,
+    "amount": 25.8
+   },
+   {
+    "div": 7,
+    "winners": 462667,
+    "amount": 15.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1556,
+  "date": "2023-12-12",
+  "main": [
+   6,
+   19,
+   30,
+   39,
+   42,
+   44,
+   47
+  ],
+  "supp": [
+   8,
+   33,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 91891.95
+   },
+   {
+    "div": 3,
+    "winners": 106,
+    "amount": 7171.65
+   },
+   {
+    "div": 4,
+    "winners": 1342,
+    "amount": 435.75
+   },
+   {
+    "div": 5,
+    "winners": 7548,
+    "amount": 62.0
+   },
+   {
+    "div": 6,
+    "winners": 199271,
+    "amount": 29.05
+   },
+   {
+    "div": 7,
+    "winners": 524728,
+    "amount": 17.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1557,
+  "date": "2023-12-19",
+  "main": [
+   12,
+   18,
+   25,
+   37,
+   40,
+   43,
+   47
+  ],
+  "supp": [
+   28,
+   30,
+   32
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 12,
+    "amount": 90505.4
+   },
+   {
+    "div": 3,
+    "winners": 230,
+    "amount": 5580.55
+   },
+   {
+    "div": 4,
+    "winners": 2466,
+    "amount": 400.4
+   },
+   {
+    "div": 5,
+    "winners": 13621,
+    "amount": 58.0
+   },
+   {
+    "div": 6,
+    "winners": 347332,
+    "amount": 28.15
+   },
+   {
+    "div": 7,
+    "winners": 918413,
+    "amount": 17.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1558,
+  "date": "2023-12-26",
+  "main": [
+   17,
+   22,
+   24,
+   28,
+   31,
+   42,
+   44
+  ],
+  "supp": [
+   3,
+   16,
+   39
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 3,
+    "amount": 32629794.23
+   },
+   {
+    "div": 2,
+    "winners": 31,
+    "amount": 52070.45
+   },
+   {
+    "div": 3,
+    "winners": 428,
+    "amount": 4457.2
+   },
+   {
+    "div": 4,
+    "winners": 3760,
+    "amount": 390.3
+   },
+   {
+    "div": 5,
+    "winners": 22296,
+    "amount": 52.65
+   },
+   {
+    "div": 6,
+    "winners": 552886,
+    "amount": 26.3
+   },
+   {
+    "div": 7,
+    "winners": 1415829,
+    "amount": 16.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1559,
+  "date": "2024-01-02",
+  "main": [
+   3,
+   21,
+   24,
+   30,
+   36,
+   44,
+   46
+  ],
+  "supp": [
+   18,
+   31,
+   37
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 3,
+    "winners": 29,
+    "amount": 11002.05
+   },
+   {
+    "div": 4,
+    "winners": 265,
+    "amount": 501.65
+   },
+   {
+    "div": 5,
+    "winners": 1619,
+    "amount": 65.7
+   },
+   {
+    "div": 6,
+    "winners": 43110,
+    "amount": 30.55
+   },
+   {
+    "div": 7,
+    "winners": 116007,
+    "amount": 18.2
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1560,
+  "date": "2024-01-09",
+  "main": [
+   5,
+   6,
+   21,
+   22,
+   25,
+   38,
+   42
+  ],
+  "supp": [
+   16,
+   36,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 81364.2
+   },
+   {
+    "div": 3,
+    "winners": 37,
+    "amount": 5197.7
+   },
+   {
+    "div": 4,
+    "winners": 345,
+    "amount": 428.8
+   },
+   {
+    "div": 5,
+    "winners": 2240,
+    "amount": 52.85
+   },
+   {
+    "div": 6,
+    "winners": 55481,
+    "amount": 26.4
+   },
+   {
+    "div": 7,
+    "winners": 141001,
+    "amount": 16.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1561,
+  "date": "2024-01-16",
+  "main": [
+   4,
+   9,
+   17,
+   24,
+   29,
+   37,
+   47
+  ],
+  "supp": [
+   14,
+   20,
+   27
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 10000000.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 112486.7
+   },
+   {
+    "div": 3,
+    "winners": 56,
+    "amount": 4747.8
+   },
+   {
+    "div": 4,
+    "winners": 584,
+    "amount": 350.2
+   },
+   {
+    "div": 5,
+    "winners": 2793,
+    "amount": 58.6
+   },
+   {
+    "div": 6,
+    "winners": 72157,
+    "amount": 28.05
+   },
+   {
+    "div": 7,
+    "winners": 199905,
+    "amount": 16.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1562,
+  "date": "2024-01-23",
+  "main": [
+   2,
+   15,
+   18,
+   20,
+   26,
+   27,
+   44
+  ],
+  "supp": [
+   1,
+   10,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 67749.45
+   },
+   {
+    "div": 3,
+    "winners": 37,
+    "amount": 4327.95
+   },
+   {
+    "div": 4,
+    "winners": 337,
+    "amount": 365.5
+   },
+   {
+    "div": 5,
+    "winners": 2028,
+    "amount": 48.6
+   },
+   {
+    "div": 6,
+    "winners": 49143,
+    "amount": 24.8
+   },
+   {
+    "div": 7,
+    "winners": 127813,
+    "amount": 15.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1563,
+  "date": "2024-01-30",
+  "main": [
+   4,
+   20,
+   25,
+   27,
+   28,
+   29,
+   34
+  ],
+  "supp": [
+   12,
+   26,
+   38
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 24844.75
+   },
+   {
+    "div": 3,
+    "winners": 38,
+    "amount": 4636.1
+   },
+   {
+    "div": 4,
+    "winners": 425,
+    "amount": 318.85
+   },
+   {
+    "div": 5,
+    "winners": 2142,
+    "amount": 50.6
+   },
+   {
+    "div": 6,
+    "winners": 55114,
+    "amount": 24.35
+   },
+   {
+    "div": 7,
+    "winners": 140291,
+    "amount": 15.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1564,
+  "date": "2024-02-06",
+  "main": [
+   3,
+   10,
+   13,
+   20,
+   31,
+   38,
+   39
+  ],
+  "supp": [
+   12,
+   33,
+   41
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 41014.9
+   },
+   {
+    "div": 3,
+    "winners": 73,
+    "amount": 4648.0
+   },
+   {
+    "div": 4,
+    "winners": 644,
+    "amount": 405.3
+   },
+   {
+    "div": 5,
+    "winners": 3867,
+    "amount": 54.0
+   },
+   {
+    "div": 6,
+    "winners": 98302,
+    "amount": 26.3
+   },
+   {
+    "div": 7,
+    "winners": 252049,
+    "amount": 16.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1565,
+  "date": "2024-02-13",
+  "main": [
+   6,
+   7,
+   8,
+   16,
+   17,
+   21,
+   32
+  ],
+  "supp": [
+   12,
+   14,
+   25
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 54751.75
+   },
+   {
+    "div": 3,
+    "winners": 113,
+    "amount": 4008.35
+   },
+   {
+    "div": 4,
+    "winners": 1086,
+    "amount": 320.85
+   },
+   {
+    "div": 5,
+    "winners": 5841,
+    "amount": 47.7
+   },
+   {
+    "div": 6,
+    "winners": 146964,
+    "amount": 23.45
+   },
+   {
+    "div": 7,
+    "winners": 378579,
+    "amount": 14.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1566,
+  "date": "2024-02-20",
+  "main": [
+   7,
+   11,
+   17,
+   24,
+   33,
+   39,
+   43
+  ],
+  "supp": [
+   26,
+   27,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 10,
+    "amount": 49349.55
+   },
+   {
+    "div": 3,
+    "winners": 145,
+    "amount": 4022.2
+   },
+   {
+    "div": 4,
+    "winners": 1318,
+    "amount": 340.4
+   },
+   {
+    "div": 5,
+    "winners": 7416,
+    "amount": 48.4
+   },
+   {
+    "div": 6,
+    "winners": 178710,
+    "amount": 24.85
+   },
+   {
+    "div": 7,
+    "winners": 463514,
+    "amount": 15.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1567,
+  "date": "2024-02-27",
+  "main": [
+   1,
+   4,
+   8,
+   10,
+   18,
+   38,
+   39
+  ],
+  "supp": [
+   5,
+   11,
+   21
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 72466.7
+   },
+   {
+    "div": 3,
+    "winners": 47,
+    "amount": 3644.35
+   },
+   {
+    "div": 4,
+    "winners": 349,
+    "amount": 377.55
+   },
+   {
+    "div": 5,
+    "winners": 2095,
+    "amount": 50.3
+   },
+   {
+    "div": 6,
+    "winners": 53290,
+    "amount": 24.5
+   },
+   {
+    "div": 7,
+    "winners": 147909,
+    "amount": 14.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1568,
+  "date": "2024-03-05",
+  "main": [
+   6,
+   16,
+   24,
+   25,
+   29,
+   37,
+   47
+  ],
+  "supp": [
+   13,
+   17,
+   28
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 38107.7
+   },
+   {
+    "div": 3,
+    "winners": 46,
+    "amount": 4895.25
+   },
+   {
+    "div": 4,
+    "winners": 396,
+    "amount": 437.4
+   },
+   {
+    "div": 5,
+    "winners": 2171,
+    "amount": 63.85
+   },
+   {
+    "div": 6,
+    "winners": 57382,
+    "amount": 29.9
+   },
+   {
+    "div": 7,
+    "winners": 161796,
+    "amount": 17.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1569,
+  "date": "2024-03-12",
+  "main": [
+   2,
+   18,
+   19,
+   23,
+   33,
+   36,
+   38
+  ],
+  "supp": [
+   13,
+   35,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 77978.1
+   },
+   {
+    "div": 3,
+    "winners": 47,
+    "amount": 5882.3
+   },
+   {
+    "div": 4,
+    "winners": 530,
+    "amount": 401.25
+   },
+   {
+    "div": 5,
+    "winners": 3166,
+    "amount": 53.75
+   },
+   {
+    "div": 6,
+    "winners": 81130,
+    "amount": 25.95
+   },
+   {
+    "div": 7,
+    "winners": 209811,
+    "amount": 16.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1570,
+  "date": "2024-03-19",
+  "main": [
+   1,
+   13,
+   18,
+   23,
+   28,
+   31,
+   47
+  ],
+  "supp": [
+   14,
+   36,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 82218.45
+   },
+   {
+    "div": 3,
+    "winners": 92,
+    "amount": 4224.65
+   },
+   {
+    "div": 4,
+    "winners": 700,
+    "amount": 427.1
+   },
+   {
+    "div": 5,
+    "winners": 4228,
+    "amount": 56.55
+   },
+   {
+    "div": 6,
+    "winners": 110329,
+    "amount": 26.85
+   },
+   {
+    "div": 7,
+    "winners": 279137,
+    "amount": 17.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1571,
+  "date": "2024-03-26",
+  "main": [
+   6,
+   8,
+   9,
+   23,
+   25,
+   33,
+   47
+  ],
+  "supp": [
+   3,
+   32,
+   37
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 11,
+    "amount": 38934.3
+   },
+   {
+    "div": 3,
+    "winners": 94,
+    "amount": 5384.55
+   },
+   {
+    "div": 4,
+    "winners": 939,
+    "amount": 414.65
+   },
+   {
+    "div": 5,
+    "winners": 5562,
+    "amount": 56.0
+   },
+   {
+    "div": 6,
+    "winners": 146048,
+    "amount": 26.4
+   },
+   {
+    "div": 7,
+    "winners": 386591,
+    "amount": 16.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1572,
+  "date": "2024-04-02",
+  "main": [
+   2,
+   15,
+   21,
+   22,
+   41,
+   43,
+   47
+  ],
+  "supp": [
+   6,
+   23,
+   28
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 60942.0
+   },
+   {
+    "div": 3,
+    "winners": 126,
+    "amount": 4572.85
+   },
+   {
+    "div": 4,
+    "winners": 975,
+    "amount": 454.6
+   },
+   {
+    "div": 5,
+    "winners": 6001,
+    "amount": 59.1
+   },
+   {
+    "div": 6,
+    "winners": 152060,
+    "amount": 28.85
+   },
+   {
+    "div": 7,
+    "winners": 408401,
+    "amount": 17.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1573,
+  "date": "2024-04-09",
+  "main": [
+   1,
+   2,
+   4,
+   18,
+   28,
+   37,
+   47
+  ],
+  "supp": [
+   11,
+   24,
+   27
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 50000000.0
+   },
+   {
+    "div": 2,
+    "winners": 14,
+    "amount": 49961.4
+   },
+   {
+    "div": 3,
+    "winners": 155,
+    "amount": 5333.1
+   },
+   {
+    "div": 4,
+    "winners": 1632,
+    "amount": 389.65
+   },
+   {
+    "div": 5,
+    "winners": 9197,
+    "amount": 55.3
+   },
+   {
+    "div": 6,
+    "winners": 239509,
+    "amount": 26.3
+   },
+   {
+    "div": 7,
+    "winners": 631262,
+    "amount": 16.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1574,
+  "date": "2024-04-16",
+  "main": [
+   12,
+   13,
+   17,
+   21,
+   28,
+   32,
+   33
+  ],
+  "supp": [
+   7,
+   9,
+   22
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 3000000.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 24032.6
+   },
+   {
+    "div": 3,
+    "winners": 26,
+    "amount": 6554.35
+   },
+   {
+    "div": 4,
+    "winners": 428,
+    "amount": 306.3
+   },
+   {
+    "div": 5,
+    "winners": 2210,
+    "amount": 47.45
+   },
+   {
+    "div": 6,
+    "winners": 55247,
+    "amount": 23.5
+   },
+   {
+    "div": 7,
+    "winners": 153998,
+    "amount": 13.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1575,
+  "date": "2024-04-23",
+  "main": [
+   6,
+   9,
+   14,
+   19,
+   21,
+   30,
+   45
+  ],
+  "supp": [
+   5,
+   16,
+   33
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 9,
+    "amount": 15508.6
+   },
+   {
+    "div": 3,
+    "winners": 35,
+    "amount": 4713.0
+   },
+   {
+    "div": 4,
+    "winners": 414,
+    "amount": 306.5
+   },
+   {
+    "div": 5,
+    "winners": 2294,
+    "amount": 44.25
+   },
+   {
+    "div": 6,
+    "winners": 55476,
+    "amount": 22.65
+   },
+   {
+    "div": 7,
+    "winners": 142591,
+    "amount": 14.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1576,
+  "date": "2024-04-30",
+  "main": [
+   3,
+   6,
+   15,
+   24,
+   32,
+   44,
+   47
+  ],
+  "supp": [
+   18,
+   33,
+   38
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 47395.15
+   },
+   {
+    "div": 3,
+    "winners": 30,
+    "amount": 7468.35
+   },
+   {
+    "div": 4,
+    "winners": 411,
+    "amount": 419.35
+   },
+   {
+    "div": 5,
+    "winners": 2193,
+    "amount": 62.85
+   },
+   {
+    "div": 6,
+    "winners": 56210,
+    "amount": 30.35
+   },
+   {
+    "div": 7,
+    "winners": 152681,
+    "amount": 17.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1577,
+  "date": "2024-05-07",
+  "main": [
+   15,
+   24,
+   35,
+   43,
+   45,
+   46,
+   47
+  ],
+  "supp": [
+   19,
+   20,
+   38
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 236010.3
+   },
+   {
+    "div": 3,
+    "winners": 62,
+    "amount": 4498.75
+   },
+   {
+    "div": 4,
+    "winners": 413,
+    "amount": 519.5
+   },
+   {
+    "div": 5,
+    "winners": 2661,
+    "amount": 64.5
+   },
+   {
+    "div": 6,
+    "winners": 68622,
+    "amount": 30.95
+   },
+   {
+    "div": 7,
+    "winners": 174288,
+    "amount": 19.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1578,
+  "date": "2024-05-14",
+  "main": [
+   7,
+   11,
+   13,
+   16,
+   25,
+   28,
+   47
+  ],
+  "supp": [
+   8,
+   18,
+   34
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 93934.7
+   },
+   {
+    "div": 3,
+    "winners": 71,
+    "amount": 4690.7
+   },
+   {
+    "div": 4,
+    "winners": 724,
+    "amount": 353.85
+   },
+   {
+    "div": 5,
+    "winners": 4258,
+    "amount": 48.15
+   },
+   {
+    "div": 6,
+    "winners": 104825,
+    "amount": 24.2
+   },
+   {
+    "div": 7,
+    "winners": 266733,
+    "amount": 15.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1579,
+  "date": "2024-05-21",
+  "main": [
+   3,
+   7,
+   8,
+   25,
+   26,
+   30,
+   47
+  ],
+  "supp": [
+   4,
+   15,
+   16
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 56203.55
+   },
+   {
+    "div": 3,
+    "winners": 99,
+    "amount": 4025.6
+   },
+   {
+    "div": 4,
+    "winners": 884,
+    "amount": 346.8
+   },
+   {
+    "div": 5,
+    "winners": 4582,
+    "amount": 53.55
+   },
+   {
+    "div": 6,
+    "winners": 118409,
+    "amount": 25.65
+   },
+   {
+    "div": 7,
+    "winners": 317050,
+    "amount": 15.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1580,
+  "date": "2024-05-28",
+  "main": [
+   5,
+   10,
+   13,
+   15,
+   29,
+   31,
+   42
+  ],
+  "supp": [
+   17,
+   39,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 3,
+    "amount": 13333333.34
+   },
+   {
+    "div": 2,
+    "winners": 13,
+    "amount": 41674.55
+   },
+   {
+    "div": 3,
+    "winners": 168,
+    "amount": 3811.15
+   },
+   {
+    "div": 4,
+    "winners": 1412,
+    "amount": 348.8
+   },
+   {
+    "div": 5,
+    "winners": 8038,
+    "amount": 49.0
+   },
+   {
+    "div": 6,
+    "winners": 196192,
+    "amount": 24.85
+   },
+   {
+    "div": 7,
+    "winners": 481885,
+    "amount": 16.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1581,
+  "date": "2024-06-04",
+  "main": [
+   1,
+   13,
+   15,
+   16,
+   28,
+   33,
+   36
+  ],
+  "supp": [
+   21,
+   26,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 3000000.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 72938.6
+   },
+   {
+    "div": 3,
+    "winners": 60,
+    "amount": 2873.35
+   },
+   {
+    "div": 4,
+    "winners": 323,
+    "amount": 410.55
+   },
+   {
+    "div": 5,
+    "winners": 2103,
+    "amount": 50.45
+   },
+   {
+    "div": 6,
+    "winners": 50592,
+    "amount": 25.95
+   },
+   {
+    "div": 7,
+    "winners": 133617,
+    "amount": 15.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1582,
+  "date": "2024-06-11",
+  "main": [
+   3,
+   12,
+   26,
+   30,
+   41,
+   45,
+   46
+  ],
+  "supp": [
+   18,
+   35,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 134774.35
+   },
+   {
+    "div": 3,
+    "winners": 31,
+    "amount": 5138.05
+   },
+   {
+    "div": 4,
+    "winners": 255,
+    "amount": 480.5
+   },
+   {
+    "div": 5,
+    "winners": 1482,
+    "amount": 66.15
+   },
+   {
+    "div": 6,
+    "winners": 38596,
+    "amount": 31.45
+   },
+   {
+    "div": 7,
+    "winners": 104425,
+    "amount": 18.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1583,
+  "date": "2024-06-18",
+  "main": [
+   3,
+   9,
+   10,
+   21,
+   28,
+   29,
+   30
+  ],
+  "supp": [
+   6,
+   17,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 36200.3
+   },
+   {
+    "div": 3,
+    "winners": 60,
+    "amount": 3565.2
+   },
+   {
+    "div": 4,
+    "winners": 614,
+    "amount": 268.0
+   },
+   {
+    "div": 5,
+    "winners": 3220,
+    "amount": 40.9
+   },
+   {
+    "div": 6,
+    "winners": 75526,
+    "amount": 21.55
+   },
+   {
+    "div": 7,
+    "winners": 181388,
+    "amount": 14.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1584,
+  "date": "2024-06-25",
+  "main": [
+   2,
+   9,
+   12,
+   14,
+   31,
+   38,
+   40
+  ],
+  "supp": [
+   4,
+   8,
+   15
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 43007.7
+   },
+   {
+    "div": 3,
+    "winners": 47,
+    "amount": 6488.6
+   },
+   {
+    "div": 4,
+    "winners": 560,
+    "amount": 418.9
+   },
+   {
+    "div": 5,
+    "winners": 3408,
+    "amount": 55.05
+   },
+   {
+    "div": 6,
+    "winners": 85435,
+    "amount": 27.2
+   },
+   {
+    "div": 7,
+    "winners": 235830,
+    "amount": 15.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1585,
+  "date": "2024-07-02",
+  "main": [
+   14,
+   29,
+   30,
+   31,
+   36,
+   38,
+   46
+  ],
+  "supp": [
+   23,
+   34,
+   41
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 11,
+    "amount": 28123.0
+   },
+   {
+    "div": 3,
+    "winners": 65,
+    "amount": 5624.6
+   },
+   {
+    "div": 4,
+    "winners": 589,
+    "amount": 477.45
+   },
+   {
+    "div": 5,
+    "winners": 3474,
+    "amount": 64.75
+   },
+   {
+    "div": 6,
+    "winners": 91399,
+    "amount": 30.45
+   },
+   {
+    "div": 7,
+    "winners": 243594,
+    "amount": 18.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1586,
+  "date": "2024-07-09",
+  "main": [
+   12,
+   18,
+   21,
+   26,
+   37,
+   39,
+   44
+  ],
+  "supp": [
+   2,
+   17,
+   33
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 100956.55
+   },
+   {
+    "div": 3,
+    "winners": 98,
+    "amount": 4869.9
+   },
+   {
+    "div": 4,
+    "winners": 934,
+    "amount": 393.05
+   },
+   {
+    "div": 5,
+    "winners": 5454,
+    "amount": 53.85
+   },
+   {
+    "div": 6,
+    "winners": 137317,
+    "amount": 26.45
+   },
+   {
+    "div": 7,
+    "winners": 358350,
+    "amount": 16.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1587,
+  "date": "2024-07-16",
+  "main": [
+   1,
+   10,
+   15,
+   18,
+   33,
+   36,
+   42
+  ],
+  "supp": [
+   9,
+   12,
+   27
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 40000000.0
+   },
+   {
+    "div": 2,
+    "winners": 9,
+    "amount": 57143.9
+   },
+   {
+    "div": 3,
+    "winners": 137,
+    "amount": 4436.5
+   },
+   {
+    "div": 4,
+    "winners": 1248,
+    "amount": 374.65
+   },
+   {
+    "div": 5,
+    "winners": 7060,
+    "amount": 53.0
+   },
+   {
+    "div": 6,
+    "winners": 172703,
+    "amount": 26.8
+   },
+   {
+    "div": 7,
+    "winners": 465320,
+    "amount": 16.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1588,
+  "date": "2024-07-23",
+  "main": [
+   1,
+   10,
+   12,
+   15,
+   29,
+   33,
+   42
+  ],
+  "supp": [
+   4,
+   30,
+   32
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 3,
+    "winners": 44,
+    "amount": 7106.55
+   },
+   {
+    "div": 4,
+    "winners": 375,
+    "amount": 347.45
+   },
+   {
+    "div": 5,
+    "winners": 2379,
+    "amount": 43.8
+   },
+   {
+    "div": 6,
+    "winners": 53260,
+    "amount": 24.2
+   },
+   {
+    "div": 7,
+    "winners": 131726,
+    "amount": 15.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1589,
+  "date": "2024-07-30",
+  "main": [
+   9,
+   25,
+   27,
+   29,
+   40,
+   42,
+   43
+  ],
+  "supp": [
+   24,
+   35,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 8000000.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 67236.55
+   },
+   {
+    "div": 3,
+    "winners": 47,
+    "amount": 6762.7
+   },
+   {
+    "div": 4,
+    "winners": 530,
+    "amount": 461.35
+   },
+   {
+    "div": 5,
+    "winners": 2610,
+    "amount": 74.95
+   },
+   {
+    "div": 6,
+    "winners": 67755,
+    "amount": 35.75
+   },
+   {
+    "div": 7,
+    "winners": 177022,
+    "amount": 22.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1590,
+  "date": "2024-08-06",
+  "main": [
+   3,
+   7,
+   9,
+   32,
+   36,
+   39,
+   43
+  ],
+  "supp": [
+   23,
+   29,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 69618.45
+   },
+   {
+    "div": 3,
+    "winners": 31,
+    "amount": 5308.15
+   },
+   {
+    "div": 4,
+    "winners": 322,
+    "amount": 393.1
+   },
+   {
+    "div": 5,
+    "winners": 1913,
+    "amount": 52.95
+   },
+   {
+    "div": 6,
+    "winners": 47215,
+    "amount": 26.55
+   },
+   {
+    "div": 7,
+    "winners": 126120,
+    "amount": 15.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1591,
+  "date": "2024-08-13",
+  "main": [
+   4,
+   6,
+   21,
+   22,
+   34,
+   40,
+   42
+  ],
+  "supp": [
+   5,
+   27,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 91345.05
+   },
+   {
+    "div": 3,
+    "winners": 49,
+    "amount": 4406.25
+   },
+   {
+    "div": 4,
+    "winners": 379,
+    "amount": 438.2
+   },
+   {
+    "div": 5,
+    "winners": 2368,
+    "amount": 56.1
+   },
+   {
+    "div": 6,
+    "winners": 59817,
+    "amount": 27.5
+   },
+   {
+    "div": 7,
+    "winners": 160683,
+    "amount": 16.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1592,
+  "date": "2024-08-20",
+  "main": [
+   18,
+   20,
+   21,
+   29,
+   37,
+   38,
+   40
+  ],
+  "supp": [
+   23,
+   31,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 58597.85
+   },
+   {
+    "div": 3,
+    "winners": 54,
+    "amount": 5129.8
+   },
+   {
+    "div": 4,
+    "winners": 505,
+    "amount": 421.95
+   },
+   {
+    "div": 5,
+    "winners": 3210,
+    "amount": 53.1
+   },
+   {
+    "div": 6,
+    "winners": 76024,
+    "amount": 27.75
+   },
+   {
+    "div": 7,
+    "winners": 187643,
+    "amount": 18.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1593,
+  "date": "2024-08-27",
+  "main": [
+   1,
+   13,
+   14,
+   18,
+   22,
+   37,
+   42
+  ],
+  "supp": [
+   27,
+   28,
+   32
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 44749.95
+   },
+   {
+    "div": 3,
+    "winners": 104,
+    "amount": 4068.2
+   },
+   {
+    "div": 4,
+    "winners": 823,
+    "amount": 395.45
+   },
+   {
+    "div": 5,
+    "winners": 4756,
+    "amount": 54.75
+   },
+   {
+    "div": 6,
+    "winners": 121854,
+    "amount": 26.45
+   },
+   {
+    "div": 7,
+    "winners": 325869,
+    "amount": 15.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1594,
+  "date": "2024-09-03",
+  "main": [
+   3,
+   8,
+   9,
+   32,
+   35,
+   38,
+   43
+  ],
+  "supp": [
+   22,
+   33,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 10,
+    "amount": 45018.0
+   },
+   {
+    "div": 3,
+    "winners": 100,
+    "amount": 5320.3
+   },
+   {
+    "div": 4,
+    "winners": 938,
+    "amount": 436.3
+   },
+   {
+    "div": 5,
+    "winners": 6142,
+    "amount": 53.3
+   },
+   {
+    "div": 6,
+    "winners": 152005,
+    "amount": 26.65
+   },
+   {
+    "div": 7,
+    "winners": 384208,
+    "amount": 16.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1595,
+  "date": "2024-09-10",
+  "main": [
+   4,
+   10,
+   23,
+   25,
+   27,
+   30,
+   37
+  ],
+  "supp": [
+   3,
+   16,
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 24053.9
+   },
+   {
+    "div": 3,
+    "winners": 42,
+    "amount": 4061.05
+   },
+   {
+    "div": 4,
+    "winners": 457,
+    "amount": 287.1
+   },
+   {
+    "div": 5,
+    "winners": 2372,
+    "amount": 44.25
+   },
+   {
+    "div": 6,
+    "winners": 56682,
+    "amount": 22.9
+   },
+   {
+    "div": 7,
+    "winners": 147825,
+    "amount": 14.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1596,
+  "date": "2024-09-17",
+  "main": [
+   3,
+   4,
+   13,
+   15,
+   24,
+   26,
+   32
+  ],
+  "supp": [
+   28,
+   31,
+   36
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 64420.85
+   },
+   {
+    "div": 3,
+    "winners": 62,
+    "amount": 3683.9
+   },
+   {
+    "div": 4,
+    "winners": 466,
+    "amount": 377.0
+   },
+   {
+    "div": 5,
+    "winners": 2954,
+    "amount": 47.6
+   },
+   {
+    "div": 6,
+    "winners": 72227,
+    "amount": 24.1
+   },
+   {
+    "div": 7,
+    "winners": 181308,
+    "amount": 15.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1597,
+  "date": "2024-09-24",
+  "main": [
+   4,
+   13,
+   15,
+   30,
+   32,
+   33,
+   35
+  ],
+  "supp": [
+   20,
+   27,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 37419.85
+   },
+   {
+    "div": 3,
+    "winners": 84,
+    "amount": 4211.75
+   },
+   {
+    "div": 4,
+    "winners": 700,
+    "amount": 388.8
+   },
+   {
+    "div": 5,
+    "winners": 4296,
+    "amount": 50.7
+   },
+   {
+    "div": 6,
+    "winners": 104769,
+    "amount": 25.7
+   },
+   {
+    "div": 7,
+    "winners": 269627,
+    "amount": 16.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1598,
+  "date": "2024-10-01",
+  "main": [
+   2,
+   3,
+   5,
+   24,
+   27,
+   31,
+   32
+  ],
+  "supp": [
+   1,
+   4,
+   35
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 141965.0
+   },
+   {
+    "div": 3,
+    "winners": 32,
+    "amount": 5243.05
+   },
+   {
+    "div": 4,
+    "winners": 384,
+    "amount": 336.1
+   },
+   {
+    "div": 5,
+    "winners": 2003,
+    "amount": 51.55
+   },
+   {
+    "div": 6,
+    "winners": 51228,
+    "amount": 24.95
+   },
+   {
+    "div": 7,
+    "winners": 137195,
+    "amount": 14.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1599,
+  "date": "2024-10-08",
+  "main": [
+   6,
+   14,
+   30,
+   42,
+   44,
+   45,
+   46
+  ],
+  "supp": [
+   15,
+   16,
+   21
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 8000000.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 278827.9
+   },
+   {
+    "div": 3,
+    "winners": 38,
+    "amount": 8671.65
+   },
+   {
+    "div": 4,
+    "winners": 388,
+    "amount": 653.35
+   },
+   {
+    "div": 5,
+    "winners": 2469,
+    "amount": 82.2
+   },
+   {
+    "div": 6,
+    "winners": 64276,
+    "amount": 39.1
+   },
+   {
+    "div": 7,
+    "winners": 165802,
+    "amount": 24.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1600,
+  "date": "2024-10-15",
+  "main": [
+   3,
+   11,
+   12,
+   30,
+   39,
+   43,
+   46
+  ],
+  "supp": [
+   20,
+   22,
+   36
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 138705.85
+   },
+   {
+    "div": 3,
+    "winners": 23,
+    "amount": 7127.2
+   },
+   {
+    "div": 4,
+    "winners": 266,
+    "amount": 474.05
+   },
+   {
+    "div": 5,
+    "winners": 1619,
+    "amount": 62.3
+   },
+   {
+    "div": 6,
+    "winners": 42031,
+    "amount": 29.7
+   },
+   {
+    "div": 7,
+    "winners": 111689,
+    "amount": 17.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1601,
+  "date": "2024-10-22",
+  "main": [
+   1,
+   2,
+   16,
+   17,
+   24,
+   26,
+   28
+  ],
+  "supp": [
+   4,
+   41,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 8000000.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 35666.25
+   },
+   {
+    "div": 3,
+    "winners": 53,
+    "amount": 3976.5
+   },
+   {
+    "div": 4,
+    "winners": 418,
+    "amount": 387.85
+   },
+   {
+    "div": 5,
+    "winners": 2891,
+    "amount": 44.85
+   },
+   {
+    "div": 6,
+    "winners": 67733,
+    "amount": 23.7
+   },
+   {
+    "div": 7,
+    "winners": 154871,
+    "amount": 16.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1602,
+  "date": "2024-10-29",
+  "main": [
+   3,
+   10,
+   22,
+   27,
+   33,
+   39,
+   45
+  ],
+  "supp": [
+   1,
+   12,
+   23
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 27863.0
+   },
+   {
+    "div": 3,
+    "winners": 38,
+    "amount": 4332.75
+   },
+   {
+    "div": 4,
+    "winners": 409,
+    "amount": 309.65
+   },
+   {
+    "div": 5,
+    "winners": 2218,
+    "amount": 45.7
+   },
+   {
+    "div": 6,
+    "winners": 50241,
+    "amount": 24.95
+   },
+   {
+    "div": 7,
+    "winners": 134120,
+    "amount": 15.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1603,
+  "date": "2024-11-05",
+  "main": [
+   4,
+   6,
+   16,
+   31,
+   32,
+   35,
+   45
+  ],
+  "supp": [
+   11,
+   39,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 36906.6
+   },
+   {
+    "div": 3,
+    "winners": 32,
+    "amount": 6815.15
+   },
+   {
+    "div": 4,
+    "winners": 388,
+    "amount": 432.35
+   },
+   {
+    "div": 5,
+    "winners": 2270,
+    "amount": 59.1
+   },
+   {
+    "div": 6,
+    "winners": 59440,
+    "amount": 27.95
+   },
+   {
+    "div": 7,
+    "winners": 155512,
+    "amount": 17.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1604,
+  "date": "2024-11-12",
+  "main": [
+   5,
+   10,
+   14,
+   16,
+   28,
+   30,
+   34
+  ],
+  "supp": [
+   9,
+   19,
+   23
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 61604.75
+   },
+   {
+    "div": 3,
+    "winners": 71,
+    "amount": 4101.7
+   },
+   {
+    "div": 4,
+    "winners": 720,
+    "amount": 311.15
+   },
+   {
+    "div": 5,
+    "winners": 3789,
+    "amount": 47.3
+   },
+   {
+    "div": 6,
+    "winners": 92693,
+    "amount": 23.95
+   },
+   {
+    "div": 7,
+    "winners": 245071,
+    "amount": 14.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1605,
+  "date": "2024-11-19",
+  "main": [
+   2,
+   8,
+   9,
+   10,
+   18,
+   34,
+   40
+  ],
+  "supp": [
+   3,
+   32,
+   37
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 56559.05
+   },
+   {
+    "div": 3,
+    "winners": 80,
+    "amount": 4177.65
+   },
+   {
+    "div": 4,
+    "winners": 729,
+    "amount": 352.65
+   },
+   {
+    "div": 5,
+    "winners": 4209,
+    "amount": 48.85
+   },
+   {
+    "div": 6,
+    "winners": 104647,
+    "amount": 24.3
+   },
+   {
+    "div": 7,
+    "winners": 255672,
+    "amount": 16.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1606,
+  "date": "2024-11-26",
+  "main": [
+   2,
+   4,
+   12,
+   17,
+   19,
+   22,
+   32
+  ],
+  "supp": [
+   11,
+   27,
+   31
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 40887.85
+   },
+   {
+    "div": 3,
+    "winners": 104,
+    "amount": 3717.1
+   },
+   {
+    "div": 4,
+    "winners": 1073,
+    "amount": 277.15
+   },
+   {
+    "div": 5,
+    "winners": 5769,
+    "amount": 41.25
+   },
+   {
+    "div": 6,
+    "winners": 130095,
+    "amount": 22.65
+   },
+   {
+    "div": 7,
+    "winners": 330551,
+    "amount": 14.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1607,
+  "date": "2024-12-03",
+  "main": [
+   18,
+   22,
+   23,
+   26,
+   27,
+   39,
+   44
+  ],
+  "supp": [
+   10,
+   37,
+   41
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 71836.0
+   },
+   {
+    "div": 3,
+    "winners": 101,
+    "amount": 5883.95
+   },
+   {
+    "div": 4,
+    "winners": 1174,
+    "amount": 389.4
+   },
+   {
+    "div": 5,
+    "winners": 6522,
+    "amount": 56.05
+   },
+   {
+    "div": 6,
+    "winners": 173749,
+    "amount": 26.05
+   },
+   {
+    "div": 7,
+    "winners": 441250,
+    "amount": 16.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1608,
+  "date": "2024-12-10",
+  "main": [
+   1,
+   20,
+   23,
+   29,
+   34,
+   39,
+   46
+  ],
+  "supp": [
+   24,
+   42,
+   43
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 50000000.0
+   },
+   {
+    "div": 2,
+    "winners": 10,
+    "amount": 62689.1
+   },
+   {
+    "div": 3,
+    "winners": 139,
+    "amount": 5330.0
+   },
+   {
+    "div": 4,
+    "winners": 1261,
+    "amount": 451.95
+   },
+   {
+    "div": 5,
+    "winners": 7436,
+    "amount": 61.3
+   },
+   {
+    "div": 6,
+    "winners": 197132,
+    "amount": 28.6
+   },
+   {
+    "div": 7,
+    "winners": 513500,
+    "amount": 17.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1609,
+  "date": "2024-12-17",
+  "main": [
+   10,
+   13,
+   16,
+   22,
+   26,
+   31,
+   41
+  ],
+  "supp": [
+   8,
+   14,
+   19
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 50706.85
+   },
+   {
+    "div": 3,
+    "winners": 27,
+    "amount": 6658.5
+   },
+   {
+    "div": 4,
+    "winners": 376,
+    "amount": 367.8
+   },
+   {
+    "div": 5,
+    "winners": 2218,
+    "amount": 49.9
+   },
+   {
+    "div": 6,
+    "winners": 53518,
+    "amount": 25.6
+   },
+   {
+    "div": 7,
+    "winners": 144383,
+    "amount": 15.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1610,
+  "date": "2024-12-24",
+  "main": [
+   17,
+   20,
+   31,
+   41,
+   45,
+   46,
+   47
+  ],
+  "supp": [
+   3,
+   33,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 61479.45
+   },
+   {
+    "div": 3,
+    "winners": 51,
+    "amount": 5698.65
+   },
+   {
+    "div": 4,
+    "winners": 467,
+    "amount": 478.7
+   },
+   {
+    "div": 5,
+    "winners": 2754,
+    "amount": 64.95
+   },
+   {
+    "div": 6,
+    "winners": 70666,
+    "amount": 31.3
+   },
+   {
+    "div": 7,
+    "winners": 186369,
+    "amount": 19.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1611,
+  "date": "2024-12-31",
+  "main": [
+   4,
+   7,
+   12,
+   15,
+   24,
+   38,
+   47
+  ],
+  "supp": [
+   8,
+   43,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 44647.3
+   },
+   {
+    "div": 3,
+    "winners": 80,
+    "amount": 4616.95
+   },
+   {
+    "div": 4,
+    "winners": 650,
+    "amount": 437.1
+   },
+   {
+    "div": 5,
+    "winners": 4097,
+    "amount": 55.5
+   },
+   {
+    "div": 6,
+    "winners": 105427,
+    "amount": 26.7
+   },
+   {
+    "div": 7,
+    "winners": 260901,
+    "amount": 17.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1612,
+  "date": "2025-01-07",
+  "main": [
+   2,
+   6,
+   11,
+   19,
+   27,
+   29,
+   46
+  ],
+  "supp": [
+   15,
+   38,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 9,
+    "amount": 38530.35
+   },
+   {
+    "div": 3,
+    "winners": 83,
+    "amount": 4937.6
+   },
+   {
+    "div": 4,
+    "winners": 807,
+    "amount": 390.65
+   },
+   {
+    "div": 5,
+    "winners": 4932,
+    "amount": 51.15
+   },
+   {
+    "div": 6,
+    "winners": 126345,
+    "amount": 24.7
+   },
+   {
+    "div": 7,
+    "winners": 302873,
+    "amount": 16.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1613,
+  "date": "2025-01-14",
+  "main": [
+   2,
+   5,
+   9,
+   11,
+   17,
+   32,
+   38
+  ],
+  "supp": [
+   7,
+   25,
+   36
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 56979.15
+   },
+   {
+    "div": 3,
+    "winners": 97,
+    "amount": 5553.75
+   },
+   {
+    "div": 4,
+    "winners": 1296,
+    "amount": 319.75
+   },
+   {
+    "div": 5,
+    "winners": 6670,
+    "amount": 49.7
+   },
+   {
+    "div": 6,
+    "winners": 169626,
+    "amount": 24.2
+   },
+   {
+    "div": 7,
+    "winners": 446405,
+    "amount": 14.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1614,
+  "date": "2025-01-21",
+  "main": [
+   8,
+   18,
+   22,
+   24,
+   37,
+   41,
+   44
+  ],
+  "supp": [
+   1,
+   26,
+   39
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 115756.9
+   },
+   {
+    "div": 3,
+    "winners": 189,
+    "amount": 4342.95
+   },
+   {
+    "div": 4,
+    "winners": 1614,
+    "amount": 391.2
+   },
+   {
+    "div": 5,
+    "winners": 9681,
+    "amount": 52.2
+   },
+   {
+    "div": 6,
+    "winners": 236334,
+    "amount": 26.45
+   },
+   {
+    "div": 7,
+    "winners": 608782,
+    "amount": 16.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1615,
+  "date": "2025-01-28",
+  "main": [
+   3,
+   24,
+   33,
+   34,
+   36,
+   42,
+   44
+  ],
+  "supp": [
+   1,
+   5,
+   10
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 21,
+    "amount": 46305.2
+   },
+   {
+    "div": 3,
+    "winners": 219,
+    "amount": 5247.55
+   },
+   {
+    "div": 4,
+    "winners": 2169,
+    "amount": 407.55
+   },
+   {
+    "div": 5,
+    "winners": 12543,
+    "amount": 56.4
+   },
+   {
+    "div": 6,
+    "winners": 324065,
+    "amount": 27.0
+   },
+   {
+    "div": 7,
+    "winners": 832826,
+    "amount": 16.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1616,
+  "date": "2025-02-04",
+  "main": [
+   3,
+   26,
+   34,
+   35,
+   36,
+   39,
+   44
+  ],
+  "supp": [
+   5,
+   6,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 100000000.0
+   },
+   {
+    "div": 2,
+    "winners": 26,
+    "amount": 59597.7
+   },
+   {
+    "div": 3,
+    "winners": 362,
+    "amount": 5058.75
+   },
+   {
+    "div": 4,
+    "winners": 3311,
+    "amount": 425.45
+   },
+   {
+    "div": 5,
+    "winners": 19572,
+    "amount": 57.6
+   },
+   {
+    "div": 6,
+    "winners": 514574,
+    "amount": 27.1
+   },
+   {
+    "div": 7,
+    "winners": 1343788,
+    "amount": 16.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1617,
+  "date": "2025-02-11",
+  "main": [
+   13,
+   16,
+   19,
+   23,
+   34,
+   35,
+   40
+  ],
+  "supp": [
+   7,
+   25,
+   31
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 39282.95
+   },
+   {
+    "div": 3,
+    "winners": 29,
+    "amount": 6403.5
+   },
+   {
+    "div": 4,
+    "winners": 400,
+    "amount": 357.1
+   },
+   {
+    "div": 5,
+    "winners": 2080,
+    "amount": 54.95
+   },
+   {
+    "div": 6,
+    "winners": 53779,
+    "amount": 26.3
+   },
+   {
+    "div": 7,
+    "winners": 144887,
+    "amount": 15.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1618,
+  "date": "2025-02-18",
+  "main": [
+   13,
+   14,
+   16,
+   17,
+   21,
+   28,
+   43
+  ],
+  "supp": [
+   4,
+   25,
+   36
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 37380.1
+   },
+   {
+    "div": 3,
+    "winners": 74,
+    "amount": 4775.85
+   },
+   {
+    "div": 4,
+    "winners": 588,
+    "amount": 462.35
+   },
+   {
+    "div": 5,
+    "winners": 3357,
+    "amount": 64.85
+   },
+   {
+    "div": 6,
+    "winners": 84354,
+    "amount": 31.95
+   },
+   {
+    "div": 7,
+    "winners": 214640,
+    "amount": 20.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1619,
+  "date": "2025-02-25",
+  "main": [
+   8,
+   11,
+   12,
+   17,
+   18,
+   30,
+   46
+  ],
+  "supp": [
+   24,
+   37,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 47444.9
+   },
+   {
+    "div": 3,
+    "winners": 65,
+    "amount": 5175.8
+   },
+   {
+    "div": 4,
+    "winners": 638,
+    "amount": 405.65
+   },
+   {
+    "div": 5,
+    "winners": 4021,
+    "amount": 51.5
+   },
+   {
+    "div": 6,
+    "winners": 99629,
+    "amount": 25.7
+   },
+   {
+    "div": 7,
+    "winners": 246452,
+    "amount": 16.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1620,
+  "date": "2025-03-04",
+  "main": [
+   9,
+   17,
+   19,
+   21,
+   29,
+   35,
+   45
+  ],
+  "supp": [
+   27,
+   28,
+   36
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 51118.0
+   },
+   {
+    "div": 3,
+    "winners": 45,
+    "amount": 4027.5
+   },
+   {
+    "div": 4,
+    "winners": 395,
+    "amount": 352.95
+   },
+   {
+    "div": 5,
+    "winners": 2355,
+    "amount": 47.35
+   },
+   {
+    "div": 6,
+    "winners": 57705,
+    "amount": 23.9
+   },
+   {
+    "div": 7,
+    "winners": 147374,
+    "amount": 15.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1621,
+  "date": "2025-03-11",
+  "main": [
+   2,
+   5,
+   20,
+   21,
+   32,
+   33,
+   41
+  ],
+  "supp": [
+   1,
+   8,
+   34
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 3,
+    "winners": 45,
+    "amount": 9896.55
+   },
+   {
+    "div": 4,
+    "winners": 456,
+    "amount": 406.95
+   },
+   {
+    "div": 5,
+    "winners": 2676,
+    "amount": 55.45
+   },
+   {
+    "div": 6,
+    "winners": 68392,
+    "amount": 26.85
+   },
+   {
+    "div": 7,
+    "winners": 182598,
+    "amount": 16.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1622,
+  "date": "2025-03-18",
+  "main": [
+   4,
+   6,
+   12,
+   30,
+   37,
+   39,
+   47
+  ],
+  "supp": [
+   13,
+   17,
+   34
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 60155.1
+   },
+   {
+    "div": 3,
+    "winners": 63,
+    "amount": 5642.25
+   },
+   {
+    "div": 4,
+    "winners": 574,
+    "amount": 476.35
+   },
+   {
+    "div": 5,
+    "winners": 3670,
+    "amount": 59.6
+   },
+   {
+    "div": 6,
+    "winners": 93137,
+    "amount": 29.05
+   },
+   {
+    "div": 7,
+    "winners": 248373,
+    "amount": 17.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1623,
+  "date": "2025-03-25",
+  "main": [
+   8,
+   13,
+   19,
+   26,
+   39,
+   40,
+   44
+  ],
+  "supp": [
+   16,
+   20,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 11,
+    "amount": 30808.4
+   },
+   {
+    "div": 3,
+    "winners": 66,
+    "amount": 6068.3
+   },
+   {
+    "div": 4,
+    "winners": 754,
+    "amount": 408.6
+   },
+   {
+    "div": 5,
+    "winners": 4864,
+    "amount": 50.65
+   },
+   {
+    "div": 6,
+    "winners": 116609,
+    "amount": 26.15
+   },
+   {
+    "div": 7,
+    "winners": 282521,
+    "amount": 17.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1624,
+  "date": "2025-04-01",
+  "main": [
+   4,
+   8,
+   28,
+   29,
+   30,
+   36,
+   40
+  ],
+  "supp": [
+   37,
+   44,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 13,
+    "amount": 33325.9
+   },
+   {
+    "div": 3,
+    "winners": 121,
+    "amount": 4231.45
+   },
+   {
+    "div": 4,
+    "winners": 925,
+    "amount": 425.8
+   },
+   {
+    "div": 5,
+    "winners": 5834,
+    "amount": 54.0
+   },
+   {
+    "div": 6,
+    "winners": 149973,
+    "amount": 26.0
+   },
+   {
+    "div": 7,
+    "winners": 356732,
+    "amount": 17.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1625,
+  "date": "2025-04-08",
+  "main": [
+   17,
+   18,
+   21,
+   24,
+   29,
+   30,
+   44
+  ],
+  "supp": [
+   9,
+   12,
+   43
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 13,
+    "amount": 49454.45
+   },
+   {
+    "div": 3,
+    "winners": 145,
+    "amount": 5240.0
+   },
+   {
+    "div": 4,
+    "winners": 1602,
+    "amount": 364.85
+   },
+   {
+    "div": 5,
+    "winners": 8991,
+    "amount": 52.0
+   },
+   {
+    "div": 6,
+    "winners": 225960,
+    "amount": 25.6
+   },
+   {
+    "div": 7,
+    "winners": 586760,
+    "amount": 15.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1626,
+  "date": "2025-04-15",
+  "main": [
+   8,
+   13,
+   14,
+   23,
+   29,
+   32,
+   41
+  ],
+  "supp": [
+   4,
+   40,
+   43
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 70000000.0
+   },
+   {
+    "div": 2,
+    "winners": 41,
+    "amount": 24374.5
+   },
+   {
+    "div": 3,
+    "winners": 289,
+    "amount": 4086.7
+   },
+   {
+    "div": 4,
+    "winners": 2545,
+    "amount": 357.0
+   },
+   {
+    "div": 5,
+    "winners": 14692,
+    "amount": 49.45
+   },
+   {
+    "div": 6,
+    "winners": 351775,
+    "amount": 25.55
+   },
+   {
+    "div": 7,
+    "winners": 879213,
+    "amount": 16.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1627,
+  "date": "2025-04-22",
+  "main": [
+   2,
+   3,
+   16,
+   23,
+   27,
+   31,
+   37
+  ],
+  "supp": [
+   21,
+   28,
+   34
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 30178.05
+   },
+   {
+    "div": 3,
+    "winners": 42,
+    "amount": 4245.85
+   },
+   {
+    "div": 4,
+    "winners": 367,
+    "amount": 373.75
+   },
+   {
+    "div": 5,
+    "winners": 2288,
+    "amount": 47.95
+   },
+   {
+    "div": 6,
+    "winners": 55421,
+    "amount": 24.5
+   },
+   {
+    "div": 7,
+    "winners": 140486,
+    "amount": 15.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1628,
+  "date": "2025-04-29",
+  "main": [
+   2,
+   16,
+   27,
+   30,
+   34,
+   38,
+   43
+  ],
+  "supp": [
+   9,
+   14,
+   31
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 42246.85
+   },
+   {
+    "div": 3,
+    "winners": 39,
+    "amount": 6401.05
+   },
+   {
+    "div": 4,
+    "winners": 438,
+    "amount": 438.45
+   },
+   {
+    "div": 5,
+    "winners": 2619,
+    "amount": 58.65
+   },
+   {
+    "div": 6,
+    "winners": 67811,
+    "amount": 28.05
+   },
+   {
+    "div": 7,
+    "winners": 180399,
+    "amount": 16.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1629,
+  "date": "2025-05-06",
+  "main": [
+   6,
+   17,
+   19,
+   28,
+   35,
+   43,
+   47
+  ],
+  "supp": [
+   3,
+   18,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 65258.0
+   },
+   {
+    "div": 3,
+    "winners": 62,
+    "amount": 4975.7
+   },
+   {
+    "div": 4,
+    "winners": 565,
+    "amount": 420.0
+   },
+   {
+    "div": 5,
+    "winners": 3249,
+    "amount": 58.45
+   },
+   {
+    "div": 6,
+    "winners": 82422,
+    "amount": 28.5
+   },
+   {
+    "div": 7,
+    "winners": 224683,
+    "amount": 16.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1630,
+  "date": "2025-05-13",
+  "main": [
+   9,
+   10,
+   16,
+   18,
+   26,
+   39,
+   40
+  ],
+  "supp": [
+   20,
+   35,
+   43
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 48832.15
+   },
+   {
+    "div": 3,
+    "winners": 89,
+    "amount": 4539.05
+   },
+   {
+    "div": 4,
+    "winners": 703,
+    "amount": 442.05
+   },
+   {
+    "div": 5,
+    "winners": 4431,
+    "amount": 56.1
+   },
+   {
+    "div": 6,
+    "winners": 113008,
+    "amount": 27.2
+   },
+   {
+    "div": 7,
+    "winners": 288409,
+    "amount": 17.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1631,
+  "date": "2025-05-20",
+  "main": [
+   21,
+   22,
+   25,
+   31,
+   32,
+   36,
+   39
+  ],
+  "supp": [
+   16,
+   29,
+   37
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 53571.6
+   },
+   {
+    "div": 3,
+    "winners": 97,
+    "amount": 5221.6
+   },
+   {
+    "div": 4,
+    "winners": 949,
+    "amount": 410.55
+   },
+   {
+    "div": 5,
+    "winners": 5575,
+    "amount": 55.9
+   },
+   {
+    "div": 6,
+    "winners": 139363,
+    "amount": 27.7
+   },
+   {
+    "div": 7,
+    "winners": 361035,
+    "amount": 17.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1632,
+  "date": "2025-05-27",
+  "main": [
+   12,
+   16,
+   24,
+   37,
+   39,
+   45,
+   46
+  ],
+  "supp": [
+   19,
+   31,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 12,
+    "amount": 51531.15
+   },
+   {
+    "div": 3,
+    "winners": 144,
+    "amount": 5075.05
+   },
+   {
+    "div": 4,
+    "winners": 1368,
+    "amount": 410.95
+   },
+   {
+    "div": 5,
+    "winners": 7576,
+    "amount": 59.35
+   },
+   {
+    "div": 6,
+    "winners": 192310,
+    "amount": 28.95
+   },
+   {
+    "div": 7,
+    "winners": 510725,
+    "amount": 17.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1633,
+  "date": "2025-06-03",
+  "main": [
+   1,
+   21,
+   25,
+   34,
+   44,
+   45,
+   46
+  ],
+  "supp": [
+   9,
+   14,
+   16
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 70000000.0
+   },
+   {
+    "div": 2,
+    "winners": 20,
+    "amount": 48365.75
+   },
+   {
+    "div": 3,
+    "winners": 193,
+    "amount": 5923.25
+   },
+   {
+    "div": 4,
+    "winners": 2118,
+    "amount": 415.2
+   },
+   {
+    "div": 5,
+    "winners": 11877,
+    "amount": 59.25
+   },
+   {
+    "div": 6,
+    "winners": 309153,
+    "amount": 28.15
+   },
+   {
+    "div": 7,
+    "winners": 810969,
+    "amount": 17.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1634,
+  "date": "2025-06-10",
+  "main": [
+   1,
+   15,
+   21,
+   32,
+   33,
+   38,
+   45
+  ],
+  "supp": [
+   3,
+   25,
+   39
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 48562.8
+   },
+   {
+    "div": 3,
+    "winners": 38,
+    "amount": 4531.0
+   },
+   {
+    "div": 4,
+    "winners": 344,
+    "amount": 385.0
+   },
+   {
+    "div": 5,
+    "winners": 1948,
+    "amount": 54.4
+   },
+   {
+    "div": 6,
+    "winners": 47268,
+    "amount": 27.75
+   },
+   {
+    "div": 7,
+    "winners": 125330,
+    "amount": 16.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1635,
+  "date": "2025-06-17",
+  "main": [
+   8,
+   21,
+   25,
+   26,
+   29,
+   31,
+   47
+  ],
+  "supp": [
+   18,
+   24,
+   43
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 327252.6
+   },
+   {
+    "div": 3,
+    "winners": 54,
+    "amount": 7162.1
+   },
+   {
+    "div": 4,
+    "winners": 549,
+    "amount": 541.95
+   },
+   {
+    "div": 5,
+    "winners": 3071,
+    "amount": 77.5
+   },
+   {
+    "div": 6,
+    "winners": 81576,
+    "amount": 36.1
+   },
+   {
+    "div": 7,
+    "winners": 214389,
+    "amount": 22.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1636,
+  "date": "2025-06-24",
+  "main": [
+   7,
+   8,
+   12,
+   19,
+   23,
+   24,
+   45
+  ],
+  "supp": [
+   4,
+   33,
+   38
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 9,
+    "amount": 34219.65
+   },
+   {
+    "div": 3,
+    "winners": 96,
+    "amount": 3791.4
+   },
+   {
+    "div": 4,
+    "winners": 926,
+    "amount": 302.35
+   },
+   {
+    "div": 5,
+    "winners": 5117,
+    "amount": 43.75
+   },
+   {
+    "div": 6,
+    "winners": 122800,
+    "amount": 22.55
+   },
+   {
+    "div": 7,
+    "winners": 301482,
+    "amount": 14.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1637,
+  "date": "2025-07-01",
+  "main": [
+   2,
+   16,
+   26,
+   28,
+   32,
+   38,
+   43
+  ],
+  "supp": [
+   23,
+   33,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 9,
+    "amount": 43182.25
+   },
+   {
+    "div": 3,
+    "winners": 113,
+    "amount": 4064.6
+   },
+   {
+    "div": 4,
+    "winners": 875,
+    "amount": 403.8
+   },
+   {
+    "div": 5,
+    "winners": 5299,
+    "amount": 53.35
+   },
+   {
+    "div": 6,
+    "winners": 130606,
+    "amount": 26.8
+   },
+   {
+    "div": 7,
+    "winners": 332897,
+    "amount": 16.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1638,
+  "date": "2025-07-08",
+  "main": [
+   1,
+   5,
+   27,
+   41,
+   43,
+   44,
+   47
+  ],
+  "supp": [
+   18,
+   23,
+   26
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 158101.6
+   },
+   {
+    "div": 3,
+    "winners": 26,
+    "amount": 7186.45
+   },
+   {
+    "div": 4,
+    "winners": 296,
+    "amount": 485.55
+   },
+   {
+    "div": 5,
+    "winners": 1761,
+    "amount": 65.3
+   },
+   {
+    "div": 6,
+    "winners": 47604,
+    "amount": 29.9
+   },
+   {
+    "div": 7,
+    "winners": 125234,
+    "amount": 18.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1639,
+  "date": "2025-07-15",
+  "main": [
+   6,
+   7,
+   13,
+   17,
+   20,
+   39,
+   41
+  ],
+  "supp": [
+   12,
+   23,
+   30
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 41288.3
+   },
+   {
+    "div": 3,
+    "winners": 48,
+    "amount": 5082.85
+   },
+   {
+    "div": 4,
+    "winners": 490,
+    "amount": 383.0
+   },
+   {
+    "div": 5,
+    "winners": 2957,
+    "amount": 50.75
+   },
+   {
+    "div": 6,
+    "winners": 73124,
+    "amount": 25.4
+   },
+   {
+    "div": 7,
+    "winners": 194103,
+    "amount": 15.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1640,
+  "date": "2025-07-22",
+  "main": [
+   1,
+   5,
+   17,
+   21,
+   25,
+   32,
+   36
+  ],
+  "supp": [
+   16,
+   38,
+   41
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 38629.45
+   },
+   {
+    "div": 3,
+    "winners": 86,
+    "amount": 3715.95
+   },
+   {
+    "div": 4,
+    "winners": 664,
+    "amount": 370.2
+   },
+   {
+    "div": 5,
+    "winners": 3987,
+    "amount": 49.35
+   },
+   {
+    "div": 6,
+    "winners": 97562,
+    "amount": 24.95
+   },
+   {
+    "div": 7,
+    "winners": 234522,
+    "amount": 16.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1641,
+  "date": "2025-07-29",
+  "main": [
+   2,
+   18,
+   21,
+   25,
+   28,
+   31,
+   38
+  ],
+  "supp": [
+   23,
+   27,
+   34
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 12,
+    "amount": 29298.05
+   },
+   {
+    "div": 3,
+    "winners": 82,
+    "amount": 5067.05
+   },
+   {
+    "div": 4,
+    "winners": 907,
+    "amount": 352.4
+   },
+   {
+    "div": 5,
+    "winners": 5031,
+    "amount": 50.8
+   },
+   {
+    "div": 6,
+    "winners": 124995,
+    "amount": 25.3
+   },
+   {
+    "div": 7,
+    "winners": 324003,
+    "amount": 15.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1642,
+  "date": "2025-08-05",
+  "main": [
+   11,
+   29,
+   32,
+   34,
+   38,
+   40,
+   42
+  ],
+  "supp": [
+   3,
+   15,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 74753.6
+   },
+   {
+    "div": 3,
+    "winners": 136,
+    "amount": 3897.6
+   },
+   {
+    "div": 4,
+    "winners": 1024,
+    "amount": 398.2
+   },
+   {
+    "div": 5,
+    "winners": 6378,
+    "amount": 51.15
+   },
+   {
+    "div": 6,
+    "winners": 149600,
+    "amount": 27.0
+   },
+   {
+    "div": 7,
+    "winners": 373272,
+    "amount": 17.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1643,
+  "date": "2025-08-12",
+  "main": [
+   2,
+   14,
+   34,
+   37,
+   38,
+   40,
+   41
+  ],
+  "supp": [
+   19,
+   25,
+   28
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 26169.15
+   },
+   {
+    "div": 3,
+    "winners": 29,
+    "amount": 6398.75
+   },
+   {
+    "div": 4,
+    "winners": 340,
+    "amount": 419.85
+   },
+   {
+    "div": 5,
+    "winners": 1849,
+    "amount": 61.75
+   },
+   {
+    "div": 6,
+    "winners": 47338,
+    "amount": 29.85
+   },
+   {
+    "div": 7,
+    "winners": 127224,
+    "amount": 17.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1644,
+  "date": "2025-08-19",
+  "main": [
+   4,
+   8,
+   11,
+   26,
+   29,
+   32,
+   41
+  ],
+  "supp": [
+   3,
+   10,
+   16
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 42244.5
+   },
+   {
+    "div": 3,
+    "winners": 56,
+    "amount": 6240.65
+   },
+   {
+    "div": 4,
+    "winners": 558,
+    "amount": 481.8
+   },
+   {
+    "div": 5,
+    "winners": 3516,
+    "amount": 61.2
+   },
+   {
+    "div": 6,
+    "winners": 83819,
+    "amount": 31.75
+   },
+   {
+    "div": 7,
+    "winners": 220416,
+    "amount": 19.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1645,
+  "date": "2025-08-26",
+  "main": [
+   10,
+   17,
+   26,
+   28,
+   29,
+   35,
+   36
+  ],
+  "supp": [
+   24,
+   37,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 44297.7
+   },
+   {
+    "div": 3,
+    "winners": 73,
+    "amount": 4302.9
+   },
+   {
+    "div": 4,
+    "winners": 582,
+    "amount": 415.15
+   },
+   {
+    "div": 5,
+    "winners": 3639,
+    "amount": 53.1
+   },
+   {
+    "div": 6,
+    "winners": 91447,
+    "amount": 26.15
+   },
+   {
+    "div": 7,
+    "winners": 222488,
+    "amount": 17.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1646,
+  "date": "2025-09-02",
+  "main": [
+   1,
+   2,
+   7,
+   17,
+   30,
+   37,
+   39
+  ],
+  "supp": [
+   6,
+   13,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 71394.45
+   },
+   {
+    "div": 3,
+    "winners": 39,
+    "amount": 4326.95
+   },
+   {
+    "div": 4,
+    "winners": 314,
+    "amount": 413.4
+   },
+   {
+    "div": 5,
+    "winners": 1935,
+    "amount": 53.65
+   },
+   {
+    "div": 6,
+    "winners": 49708,
+    "amount": 25.85
+   },
+   {
+    "div": 7,
+    "winners": 129796,
+    "amount": 15.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1647,
+  "date": "2025-09-09",
+  "main": [
+   13,
+   14,
+   21,
+   30,
+   33,
+   37,
+   44
+  ],
+  "supp": [
+   3,
+   4,
+   26
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 72813.5
+   },
+   {
+    "div": 3,
+    "winners": 48,
+    "amount": 5378.25
+   },
+   {
+    "div": 4,
+    "winners": 507,
+    "amount": 391.7
+   },
+   {
+    "div": 5,
+    "winners": 2802,
+    "amount": 56.7
+   },
+   {
+    "div": 6,
+    "winners": 75103,
+    "amount": 26.2
+   },
+   {
+    "div": 7,
+    "winners": 208016,
+    "amount": 15.2
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1648,
+  "date": "2025-09-16",
+  "main": [
+   3,
+   7,
+   20,
+   35,
+   37,
+   41,
+   42
+  ],
+  "supp": [
+   18,
+   30,
+   33
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 7500000.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 74375.25
+   },
+   {
+    "div": 3,
+    "winners": 73,
+    "amount": 4816.35
+   },
+   {
+    "div": 4,
+    "winners": 658,
+    "amount": 411.05
+   },
+   {
+    "div": 5,
+    "winners": 3886,
+    "amount": 55.7
+   },
+   {
+    "div": 6,
+    "winners": 98800,
+    "amount": 27.1
+   },
+   {
+    "div": 7,
+    "winners": 257714,
+    "amount": 16.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1649,
+  "date": "2025-09-23",
+  "main": [
+   1,
+   4,
+   11,
+   20,
+   23,
+   30,
+   31
+  ],
+  "supp": [
+   25,
+   40,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 147711.05
+   },
+   {
+    "div": 3,
+    "winners": 55,
+    "amount": 3173.95
+   },
+   {
+    "div": 4,
+    "winners": 400,
+    "amount": 335.7
+   },
+   {
+    "div": 5,
+    "winners": 2834,
+    "amount": 37.9
+   },
+   {
+    "div": 6,
+    "winners": 61171,
+    "amount": 21.75
+   },
+   {
+    "div": 7,
+    "winners": 138690,
+    "amount": 15.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1650,
+  "date": "2025-09-30",
+  "main": [
+   4,
+   7,
+   9,
+   28,
+   35,
+   39,
+   46
+  ],
+  "supp": [
+   14,
+   15,
+   24
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 63653.2
+   },
+   {
+    "div": 3,
+    "winners": 41,
+    "amount": 5504.4
+   },
+   {
+    "div": 4,
+    "winners": 447,
+    "amount": 388.35
+   },
+   {
+    "div": 5,
+    "winners": 2234,
+    "amount": 62.15
+   },
+   {
+    "div": 6,
+    "winners": 60571,
+    "amount": 28.35
+   },
+   {
+    "div": 7,
+    "winners": 169820,
+    "amount": 16.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1651,
+  "date": "2025-10-07",
+  "main": [
+   3,
+   7,
+   15,
+   34,
+   39,
+   44,
+   46
+  ],
+  "supp": [
+   13,
+   19,
+   24
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 244222.4
+   },
+   {
+    "div": 3,
+    "winners": 48,
+    "amount": 6013.05
+   },
+   {
+    "div": 4,
+    "winners": 497,
+    "amount": 446.7
+   },
+   {
+    "div": 5,
+    "winners": 2838,
+    "amount": 62.6
+   },
+   {
+    "div": 6,
+    "winners": 74916,
+    "amount": 29.35
+   },
+   {
+    "div": 7,
+    "winners": 205279,
+    "amount": 17.2
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1652,
+  "date": "2025-10-14",
+  "main": [
+   1,
+   14,
+   17,
+   18,
+   22,
+   33,
+   47
+  ],
+  "supp": [
+   11,
+   34,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 30813.85
+   },
+   {
+    "div": 3,
+    "winners": 25,
+    "amount": 7283.25
+   },
+   {
+    "div": 4,
+    "winners": 302,
+    "amount": 463.8
+   },
+   {
+    "div": 5,
+    "winners": 1821,
+    "amount": 61.55
+   },
+   {
+    "div": 6,
+    "winners": 48775,
+    "amount": 28.45
+   },
+   {
+    "div": 7,
+    "winners": 132417,
+    "amount": 16.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1653,
+  "date": "2025-10-21",
+  "main": [
+   4,
+   26,
+   28,
+   29,
+   36,
+   37,
+   45
+  ],
+  "supp": [
+   20,
+   24,
+   43
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 104197.55
+   },
+   {
+    "div": 3,
+    "winners": 35,
+    "amount": 7036.7
+   },
+   {
+    "div": 4,
+    "winners": 478,
+    "amount": 396.35
+   },
+   {
+    "div": 5,
+    "winners": 2742,
+    "amount": 55.25
+   },
+   {
+    "div": 6,
+    "winners": 69767,
+    "amount": 26.9
+   },
+   {
+    "div": 7,
+    "winners": 182008,
+    "amount": 16.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1654,
+  "date": "2025-10-28",
+  "main": [
+   6,
+   30,
+   33,
+   35,
+   39,
+   43,
+   45
+  ],
+  "supp": [
+   3,
+   40,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 87116.95
+   },
+   {
+    "div": 3,
+    "winners": 73,
+    "amount": 4231.1
+   },
+   {
+    "div": 4,
+    "winners": 512,
+    "amount": 464.05
+   },
+   {
+    "div": 5,
+    "winners": 3449,
+    "amount": 55.1
+   },
+   {
+    "div": 6,
+    "winners": 83637,
+    "amount": 28.1
+   },
+   {
+    "div": 7,
+    "winners": 211218,
+    "amount": 17.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1655,
+  "date": "2025-11-04",
+  "main": [
+   12,
+   14,
+   17,
+   18,
+   21,
+   25,
+   43
+  ],
+  "supp": [
+   15,
+   24,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 49270.0
+   },
+   {
+    "div": 3,
+    "winners": 66,
+    "amount": 5293.45
+   },
+   {
+    "div": 4,
+    "winners": 655,
+    "amount": 410.3
+   },
+   {
+    "div": 5,
+    "winners": 4294,
+    "amount": 50.05
+   },
+   {
+    "div": 6,
+    "winners": 105956,
+    "amount": 25.1
+   },
+   {
+    "div": 7,
+    "winners": 264577,
+    "amount": 16.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1656,
+  "date": "2025-11-11",
+  "main": [
+   7,
+   17,
+   28,
+   30,
+   34,
+   42,
+   44
+  ],
+  "supp": [
+   3,
+   20,
+   32
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 47468.6
+   },
+   {
+    "div": 3,
+    "winners": 41,
+    "amount": 4104.8
+   },
+   {
+    "div": 4,
+    "winners": 346,
+    "amount": 374.15
+   },
+   {
+    "div": 5,
+    "winners": 1936,
+    "amount": 53.5
+   },
+   {
+    "div": 6,
+    "winners": 49022,
+    "amount": 26.15
+   },
+   {
+    "div": 7,
+    "winners": 129638,
+    "amount": 15.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1657,
+  "date": "2025-11-18",
+  "main": [
+   2,
+   4,
+   6,
+   8,
+   22,
+   27,
+   39
+  ],
+  "supp": [
+   5,
+   24,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 9,
+    "amount": 33998.75
+   },
+   {
+    "div": 3,
+    "winners": 93,
+    "amount": 3888.45
+   },
+   {
+    "div": 4,
+    "winners": 682,
+    "amount": 407.9
+   },
+   {
+    "div": 5,
+    "winners": 4413,
+    "amount": 50.45
+   },
+   {
+    "div": 6,
+    "winners": 95943,
+    "amount": 28.75
+   },
+   {
+    "div": 7,
+    "winners": 222752,
+    "amount": 19.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1658,
+  "date": "2025-11-25",
+  "main": [
+   1,
+   12,
+   14,
+   28,
+   35,
+   43,
+   47
+  ],
+  "supp": [
+   15,
+   16,
+   46
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 50843.0
+   },
+   {
+    "div": 3,
+    "winners": 52,
+    "amount": 6933.15
+   },
+   {
+    "div": 4,
+    "winners": 589,
+    "amount": 470.85
+   },
+   {
+    "div": 5,
+    "winners": 3720,
+    "amount": 59.65
+   },
+   {
+    "div": 6,
+    "winners": 95061,
+    "amount": 28.9
+   },
+   {
+    "div": 7,
+    "winners": 243366,
+    "amount": 18.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1659,
+  "date": "2025-12-02",
+  "main": [
+   7,
+   22,
+   26,
+   28,
+   40,
+   42,
+   43
+  ],
+  "supp": [
+   6,
+   29,
+   47
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 60243.9
+   },
+   {
+    "div": 3,
+    "winners": 73,
+    "amount": 5851.85
+   },
+   {
+    "div": 4,
+    "winners": 820,
+    "amount": 400.75
+   },
+   {
+    "div": 5,
+    "winners": 4714,
+    "amount": 55.75
+   },
+   {
+    "div": 6,
+    "winners": 121536,
+    "amount": 26.75
+   },
+   {
+    "div": 7,
+    "winners": 307255,
+    "amount": 17.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1660,
+  "date": "2025-12-09",
+  "main": [
+   3,
+   6,
+   9,
+   15,
+   19,
+   21,
+   33
+  ],
+  "supp": [
+   7,
+   14,
+   31
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 24,
+    "amount": 18429.45
+   },
+   {
+    "div": 3,
+    "winners": 262,
+    "amount": 1995.15
+   },
+   {
+    "div": 4,
+    "winners": 1552,
+    "amount": 259.1
+   },
+   {
+    "div": 5,
+    "winners": 9619,
+    "amount": 33.45
+   },
+   {
+    "div": 6,
+    "winners": 189635,
+    "amount": 21.0
+   },
+   {
+    "div": 7,
+    "winners": 454476,
+    "amount": 14.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1661,
+  "date": "2025-12-16",
+  "main": [
+   4,
+   9,
+   19,
+   20,
+   41,
+   43,
+   46
+  ],
+  "supp": [
+   8,
+   21,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 148246.4
+   },
+   {
+    "div": 3,
+    "winners": 29,
+    "amount": 6041.4
+   },
+   {
+    "div": 4,
+    "winners": 277,
+    "amount": 486.55
+   },
+   {
+    "div": 5,
+    "winners": 1650,
+    "amount": 65.35
+   },
+   {
+    "div": 6,
+    "winners": 43542,
+    "amount": 30.65
+   },
+   {
+    "div": 7,
+    "winners": 120838,
+    "amount": 17.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1662,
+  "date": "2025-12-23",
+  "main": [
+   2,
+   12,
+   23,
+   29,
+   36,
+   37,
+   47
+  ],
+  "supp": [
+   3,
+   34,
+   43
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 103596.4
+   },
+   {
+    "div": 3,
+    "winners": 49,
+    "amount": 4997.25
+   },
+   {
+    "div": 4,
+    "winners": 441,
+    "amount": 427.1
+   },
+   {
+    "div": 5,
+    "winners": 2534,
+    "amount": 59.45
+   },
+   {
+    "div": 6,
+    "winners": 64794,
+    "amount": 28.8
+   },
+   {
+    "div": 7,
+    "winners": 171893,
+    "amount": 17.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1663,
+  "date": "2025-12-30",
+  "main": [
+   11,
+   12,
+   14,
+   19,
+   20,
+   27,
+   31
+  ],
+  "supp": [
+   1,
+   13,
+   43
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 7500000.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 57279.2
+   },
+   {
+    "div": 3,
+    "winners": 63,
+    "amount": 5372.5
+   },
+   {
+    "div": 4,
+    "winners": 839,
+    "amount": 310.3
+   },
+   {
+    "div": 5,
+    "winners": 4511,
+    "amount": 46.15
+   },
+   {
+    "div": 6,
+    "winners": 111925,
+    "amount": 23.05
+   },
+   {
+    "div": 7,
+    "winners": 279632,
+    "amount": 14.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1664,
+  "date": "2026-01-06",
+  "main": [
+   2,
+   13,
+   14,
+   17,
+   19,
+   30,
+   45
+  ],
+  "supp": [
+   4,
+   8,
+   33
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 49235.1
+   },
+   {
+    "div": 3,
+    "winners": 43,
+    "amount": 4059.55
+   },
+   {
+    "div": 4,
+    "winners": 414,
+    "amount": 324.35
+   },
+   {
+    "div": 5,
+    "winners": 2255,
+    "amount": 47.65
+   },
+   {
+    "div": 6,
+    "winners": 54948,
+    "amount": 24.2
+   },
+   {
+    "div": 7,
+    "winners": 145834,
+    "amount": 14.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1665,
+  "date": "2026-01-13",
+  "main": [
+   17,
+   23,
+   31,
+   35,
+   38,
+   39,
+   42
+  ],
+  "supp": [
+   7,
+   24,
+   29
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 8000000.0
+   },
+   {
+    "div": 2,
+    "winners": 9,
+    "amount": 22649.95
+   },
+   {
+    "div": 3,
+    "winners": 56,
+    "amount": 4302.0
+   },
+   {
+    "div": 4,
+    "winners": 415,
+    "amount": 446.55
+   },
+   {
+    "div": 5,
+    "winners": 2711,
+    "amount": 54.7
+   },
+   {
+    "div": 6,
+    "winners": 65384,
+    "amount": 28.05
+   },
+   {
+    "div": 7,
+    "winners": 173884,
+    "amount": 16.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1666,
+  "date": "2026-01-20",
+  "main": [
+   3,
+   11,
+   14,
+   22,
+   27,
+   32,
+   33
+  ],
+  "supp": [
+   31,
+   37,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 29265.75
+   },
+   {
+    "div": 3,
+    "winners": 47,
+    "amount": 3679.45
+   },
+   {
+    "div": 4,
+    "winners": 374,
+    "amount": 355.7
+   },
+   {
+    "div": 5,
+    "winners": 2506,
+    "amount": 42.45
+   },
+   {
+    "div": 6,
+    "winners": 58933,
+    "amount": 22.35
+   },
+   {
+    "div": 7,
+    "winners": 132464,
+    "amount": 15.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1667,
+  "date": "2026-01-27",
+  "main": [
+   1,
+   15,
+   17,
+   22,
+   23,
+   28,
+   41
+  ],
+  "supp": [
+   5,
+   12,
+   18
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 29976.4
+   },
+   {
+    "div": 3,
+    "winners": 40,
+    "amount": 5314.0
+   },
+   {
+    "div": 4,
+    "winners": 421,
+    "amount": 388.4
+   },
+   {
+    "div": 5,
+    "winners": 2420,
+    "amount": 54.05
+   },
+   {
+    "div": 6,
+    "winners": 63898,
+    "amount": 25.35
+   },
+   {
+    "div": 7,
+    "winners": 175810,
+    "amount": 14.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1668,
+  "date": "2026-02-03",
+  "main": [
+   4,
+   10,
+   19,
+   27,
+   29,
+   41,
+   46
+  ],
+  "supp": [
+   7,
+   20,
+   25
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 41454.7
+   },
+   {
+    "div": 3,
+    "winners": 49,
+    "amount": 5999.0
+   },
+   {
+    "div": 4,
+    "winners": 498,
+    "amount": 454.05
+   },
+   {
+    "div": 5,
+    "winners": 3118,
+    "amount": 58.0
+   },
+   {
+    "div": 6,
+    "winners": 80203,
+    "amount": 27.9
+   },
+   {
+    "div": 7,
+    "winners": 224332,
+    "amount": 16.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1669,
+  "date": "2026-02-10",
+  "main": [
+   4,
+   20,
+   23,
+   26,
+   27,
+   31,
+   44
+  ],
+  "supp": [
+   2,
+   24,
+   35
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 40387.3
+   },
+   {
+    "div": 3,
+    "winners": 89,
+    "amount": 3754.1
+   },
+   {
+    "div": 4,
+    "winners": 675,
+    "amount": 380.75
+   },
+   {
+    "div": 5,
+    "winners": 4148,
+    "amount": 49.55
+   },
+   {
+    "div": 6,
+    "winners": 102614,
+    "amount": 24.8
+   },
+   {
+    "div": 7,
+    "winners": 256801,
+    "amount": 15.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1670,
+  "date": "2026-02-17",
+  "main": [
+   9,
+   23,
+   32,
+   36,
+   39,
+   42,
+   44
+  ],
+  "supp": [
+   18,
+   24,
+   30
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 14,
+    "amount": 29731.1
+   },
+   {
+    "div": 3,
+    "winners": 95,
+    "amount": 5178.05
+   },
+   {
+    "div": 4,
+    "winners": 872,
+    "amount": 433.95
+   },
+   {
+    "div": 5,
+    "winners": 5403,
+    "amount": 56.05
+   },
+   {
+    "div": 6,
+    "winners": 135115,
+    "amount": 27.75
+   },
+   {
+    "div": 7,
+    "winners": 351640,
+    "amount": 17.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1671,
+  "date": "2026-02-24",
+  "main": [
+   2,
+   5,
+   7,
+   25,
+   27,
+   33,
+   43
+  ],
+  "supp": [
+   28,
+   31,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 40000000.0
+   },
+   {
+    "div": 2,
+    "winners": 15,
+    "amount": 32864.55
+   },
+   {
+    "div": 3,
+    "winners": 340,
+    "amount": 1713.5
+   },
+   {
+    "div": 4,
+    "winners": 1794,
+    "amount": 249.8
+   },
+   {
+    "div": 5,
+    "winners": 8491,
+    "amount": 42.2
+   },
+   {
+    "div": 6,
+    "winners": 186613,
+    "amount": 23.75
+   },
+   {
+    "div": 7,
+    "winners": 450139,
+    "amount": 15.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1672,
+  "date": "2026-03-03",
+  "main": [
+   5,
+   7,
+   18,
+   21,
+   33,
+   39,
+   47
+  ],
+  "supp": [
+   14,
+   26,
+   27
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 79012.8
+   },
+   {
+    "div": 3,
+    "winners": 36,
+    "amount": 5187.7
+   },
+   {
+    "div": 4,
+    "winners": 336,
+    "amount": 427.55
+   },
+   {
+    "div": 5,
+    "winners": 2082,
+    "amount": 55.2
+   },
+   {
+    "div": 6,
+    "winners": 54645,
+    "amount": 26.05
+   },
+   {
+    "div": 7,
+    "winners": 144775,
+    "amount": 15.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1673,
+  "date": "2026-03-10",
+  "main": [
+   12,
+   16,
+   17,
+   33,
+   34,
+   41,
+   42
+  ],
+  "supp": [
+   23,
+   24,
+   29
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 36842.85
+   },
+   {
+    "div": 3,
+    "winners": 35,
+    "amount": 6220.2
+   },
+   {
+    "div": 4,
+    "winners": 383,
+    "amount": 437.25
+   },
+   {
+    "div": 5,
+    "winners": 2268,
+    "amount": 59.05
+   },
+   {
+    "div": 6,
+    "winners": 57007,
+    "amount": 29.1
+   },
+   {
+    "div": 7,
+    "winners": 156768,
+    "amount": 17.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1674,
+  "date": "2026-03-17",
+  "main": [
+   2,
+   6,
+   18,
+   24,
+   25,
+   45,
+   47
+  ],
+  "supp": [
+   3,
+   10,
+   22
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 54632.9
+   },
+   {
+    "div": 3,
+    "winners": 73,
+    "amount": 4422.35
+   },
+   {
+    "div": 4,
+    "winners": 619,
+    "amount": 401.2
+   },
+   {
+    "div": 5,
+    "winners": 3356,
+    "amount": 59.2
+   },
+   {
+    "div": 6,
+    "winners": 87617,
+    "amount": 28.05
+   },
+   {
+    "div": 7,
+    "winners": 239881,
+    "amount": 16.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1675,
+  "date": "2026-03-24",
+  "main": [
+   6,
+   9,
+   22,
+   24,
+   25,
+   27,
+   34
+  ],
+  "supp": [
+   1,
+   14,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 4000000.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 51437.45
+   },
+   {
+    "div": 3,
+    "winners": 52,
+    "amount": 3507.1
+   },
+   {
+    "div": 4,
+    "winners": 378,
+    "amount": 371.1
+   },
+   {
+    "div": 5,
+    "winners": 2442,
+    "amount": 45.95
+   },
+   {
+    "div": 6,
+    "winners": 59983,
+    "amount": 23.15
+   },
+   {
+    "div": 7,
+    "winners": 145166,
+    "amount": 15.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1676,
+  "date": "2026-03-31",
+  "main": [
+   8,
+   17,
+   18,
+   31,
+   35,
+   43,
+   44
+  ],
+  "supp": [
+   6,
+   29,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 151056.0
+   },
+   {
+    "div": 3,
+    "winners": 41,
+    "amount": 4354.15
+   },
+   {
+    "div": 4,
+    "winners": 340,
+    "amount": 403.9
+   },
+   {
+    "div": 5,
+    "winners": 1955,
+    "amount": 56.2
+   },
+   {
+    "div": 6,
+    "winners": 49032,
+    "amount": 27.75
+   },
+   {
+    "div": 7,
+    "winners": 129215,
+    "amount": 16.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1677,
+  "date": "2026-04-07",
+  "main": [
+   3,
+   10,
+   17,
+   20,
+   24,
+   37,
+   39
+  ],
+  "supp": [
+   12,
+   22,
+   38
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 85045.2
+   },
+   {
+    "div": 3,
+    "winners": 59,
+    "amount": 5110.6
+   },
+   {
+    "div": 4,
+    "winners": 450,
+    "amount": 515.45
+   },
+   {
+    "div": 5,
+    "winners": 2739,
+    "amount": 67.75
+   },
+   {
+    "div": 6,
+    "winners": 68693,
+    "amount": 33.45
+   },
+   {
+    "div": 7,
+    "winners": 176072,
+    "amount": 20.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1678,
+  "date": "2026-04-14",
+  "main": [
+   2,
+   5,
+   19,
+   25,
+   30,
+   36,
+   39
+  ],
+  "supp": [
+   13,
+   40,
+   43
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 15000000.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 48254.95
+   },
+   {
+    "div": 3,
+    "winners": 70,
+    "amount": 4073.45
+   },
+   {
+    "div": 4,
+    "winners": 634,
+    "amount": 345.95
+   },
+   {
+    "div": 5,
+    "winners": 3409,
+    "amount": 51.45
+   },
+   {
+    "div": 6,
+    "winners": 83625,
+    "amount": 25.95
+   },
+   {
+    "div": 7,
+    "winners": 211988,
+    "amount": 16.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1679,
+  "date": "2026-04-21",
+  "main": [
+   6,
+   15,
+   20,
+   32,
+   33,
+   38,
+   47
+  ],
+  "supp": [
+   12,
+   25,
+   28
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 80352.35
+   },
+   {
+    "div": 3,
+    "winners": 34,
+    "amount": 5586.0
+   },
+   {
+    "div": 4,
+    "winners": 296,
+    "amount": 493.55
+   },
+   {
+    "div": 5,
+    "winners": 1756,
+    "amount": 66.55
+   },
+   {
+    "div": 6,
+    "winners": 45787,
+    "amount": 31.6
+   },
+   {
+    "div": 7,
+    "winners": 129009,
+    "amount": 18.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1680,
+  "date": "2026-04-28",
+  "main": [
+   9,
+   13,
+   23,
+   25,
+   28,
+   32,
+   33
+  ],
+  "supp": [
+   11,
+   21,
+   34
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 8000000.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 52792.2
+   },
+   {
+    "div": 3,
+    "winners": 59,
+    "amount": 4229.9
+   },
+   {
+    "div": 4,
+    "winners": 570,
+    "amount": 336.8
+   },
+   {
+    "div": 5,
+    "winners": 3421,
+    "amount": 44.9
+   },
+   {
+    "div": 6,
+    "winners": 80333,
+    "amount": 23.65
+   },
+   {
+    "div": 7,
+    "winners": 205020,
+    "amount": 14.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1681,
+  "date": "2026-05-05",
+  "main": [
+   1,
+   2,
+   4,
+   6,
+   14,
+   24,
+   39
+  ],
+  "supp": [
+   7,
+   19,
+   40
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 24718.35
+   },
+   {
+    "div": 3,
+    "winners": 45,
+    "amount": 3895.0
+   },
+   {
+    "div": 4,
+    "winners": 413,
+    "amount": 326.45
+   },
+   {
+    "div": 5,
+    "winners": 2299,
+    "amount": 46.9
+   },
+   {
+    "div": 6,
+    "winners": 58543,
+    "amount": 22.8
+   },
+   {
+    "div": 7,
+    "winners": 148735,
+    "amount": 14.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1682,
+  "date": "2026-05-12",
+  "main": [
+   10,
+   13,
+   18,
+   22,
+   24,
+   34,
+   43
+  ],
+  "supp": [
+   25,
+   36,
+   41
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 46634.8
+   },
+   {
+    "div": 3,
+    "winners": 51,
+    "amount": 4322.65
+   },
+   {
+    "div": 4,
+    "winners": 387,
+    "amount": 438.2
+   },
+   {
+    "div": 5,
+    "winners": 2565,
+    "amount": 52.9
+   },
+   {
+    "div": 6,
+    "winners": 64956,
+    "amount": 25.85
+   },
+   {
+    "div": 7,
+    "winners": 160015,
+    "amount": 16.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1683,
+  "date": "2026-05-19",
+  "main": [
+   6,
+   17,
+   18,
+   21,
+   30,
+   35,
+   40
+  ],
+  "supp": [
+   8,
+   24,
+   42
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 78672.55
+   },
+   {
+    "div": 3,
+    "winners": 57,
+    "amount": 4893.5
+   },
+   {
+    "div": 4,
+    "winners": 632,
+    "amount": 339.5
+   },
+   {
+    "div": 5,
+    "winners": 3117,
+    "amount": 55.05
+   },
+   {
+    "div": 6,
+    "winners": 80796,
+    "amount": 26.3
+   },
+   {
+    "div": 7,
+    "winners": 213982,
+    "amount": 15.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1684,
+  "date": "2026-05-26",
+  "main": [
+   10,
+   16,
+   25,
+   26,
+   34,
+   44,
+   45
+  ],
+  "supp": [
+   15,
+   21,
+   32
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 10,
+    "amount": 27487.6
+   },
+   {
+    "div": 3,
+    "winners": 61,
+    "amount": 5325.45
+   },
+   {
+    "div": 4,
+    "winners": 695,
+    "amount": 359.55
+   },
+   {
+    "div": 5,
+    "winners": 3500,
+    "amount": 57.1
+   },
+   {
+    "div": 6,
+    "winners": 90183,
+    "amount": 27.45
+   },
+   {
+    "div": 7,
+    "winners": 237285,
+    "amount": 16.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1685,
+  "date": "2026-06-02",
+  "main": [
+   4,
+   9,
+   10,
+   30,
+   31,
+   40,
+   43
+  ],
+  "supp": [
+   15,
+   16,
+   44
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 78919.35
+   },
+   {
+    "div": 3,
+    "winners": 46,
+    "amount": 4055.15
+   },
+   {
+    "div": 4,
+    "winners": 327,
+    "amount": 438.8
+   },
+   {
+    "div": 5,
+    "winners": 2098,
+    "amount": 54.7
+   },
+   {
+    "div": 6,
+    "winners": 52552,
+    "amount": 27.05
+   },
+   {
+    "div": 7,
+    "winners": 136448,
+    "amount": 16.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1686,
+  "date": "2026-06-09",
+  "main": [
+   2,
+   9,
+   19,
+   26,
+   33,
+   36,
+   43
+  ],
+  "supp": [
+   29,
+   44,
+   45
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 32594.9
+   },
+   {
+    "div": 3,
+    "winners": 49,
+    "amount": 4716.9
+   },
+   {
+    "div": 4,
+    "winners": 430,
+    "amount": 413.45
+   },
+   {
+    "div": 5,
+    "winners": 2557,
+    "amount": 55.6
+   },
+   {
+    "div": 6,
+    "winners": 68139,
+    "amount": 25.85
+   },
+   {
+    "div": 7,
+    "winners": 173243,
+    "amount": 16.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
   "draw": 1687,
   "date": "2026-06-16",
   "main": [

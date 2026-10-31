@@ -1321,5 +1321,8 @@
    }
   ]
  },
- "backtest": null
+ "backtest": null,
+ "history": {
+  "stop": "2000-01-01"
+ }
 }

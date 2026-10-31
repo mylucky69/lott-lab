@@ -1,6 +1,5969 @@
 [
  {
   "game": "powerball",
+  "draw": 1481,
+  "date": "2024-10-03",
+  "main": [
+   10,
+   11,
+   13,
+   15,
+   16,
+   18,
+   34
+  ],
+  "supp": [
+   2
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 12418438.85
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 60249.8
+   },
+   {
+    "div": 3,
+    "winners": 39,
+    "amount": 13444.5
+   },
+   {
+    "div": 4,
+    "winners": 772,
+    "amount": 590.6
+   },
+   {
+    "div": 5,
+    "winners": 1731,
+    "amount": 197.55
+   },
+   {
+    "div": 6,
+    "winners": 25564,
+    "amount": 83.85
+   },
+   {
+    "div": 7,
+    "winners": 34445,
+    "amount": 48.3
+   },
+   {
+    "div": 8,
+    "winners": 167368,
+    "amount": 21.1
+   },
+   {
+    "div": 9,
+    "winners": 496822,
+    "amount": 12.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1482,
+  "date": "2024-10-10",
+  "main": [
+   5,
+   7,
+   10,
+   11,
+   28,
+   33,
+   35
+  ],
+  "supp": [
+   1
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 100041.9
+   },
+   {
+    "div": 3,
+    "winners": 49,
+    "amount": 10153.2
+   },
+   {
+    "div": 4,
+    "winners": 931,
+    "amount": 464.7
+   },
+   {
+    "div": 5,
+    "winners": 1826,
+    "amount": 177.7
+   },
+   {
+    "div": 6,
+    "winners": 26542,
+    "amount": 76.6
+   },
+   {
+    "div": 7,
+    "winners": 36915,
+    "amount": 42.8
+   },
+   {
+    "div": 8,
+    "winners": 165218,
+    "amount": 20.3
+   },
+   {
+    "div": 9,
+    "winners": 464812,
+    "amount": 12.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1483,
+  "date": "2024-10-17",
+  "main": [
+   2,
+   6,
+   16,
+   21,
+   27,
+   30,
+   35
+  ],
+  "supp": [
+   7
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 139799.85
+   },
+   {
+    "div": 3,
+    "winners": 57,
+    "amount": 12196.85
+   },
+   {
+    "div": 4,
+    "winners": 1089,
+    "amount": 555.15
+   },
+   {
+    "div": 5,
+    "winners": 2464,
+    "amount": 184.0
+   },
+   {
+    "div": 6,
+    "winners": 37329,
+    "amount": 76.1
+   },
+   {
+    "div": 7,
+    "winners": 46432,
+    "amount": 47.5
+   },
+   {
+    "div": 8,
+    "winners": 236264,
+    "amount": 19.85
+   },
+   {
+    "div": 9,
+    "winners": 690311,
+    "amount": 11.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1484,
+  "date": "2024-10-24",
+  "main": [
+   1,
+   5,
+   8,
+   9,
+   14,
+   22,
+   33
+  ],
+  "supp": [
+   2
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30000000.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 92622.6
+   },
+   {
+    "div": 3,
+    "winners": 97,
+    "amount": 8309.95
+   },
+   {
+    "div": 4,
+    "winners": 1434,
+    "amount": 488.8
+   },
+   {
+    "div": 5,
+    "winners": 2934,
+    "amount": 179.15
+   },
+   {
+    "div": 6,
+    "winners": 43192,
+    "amount": 76.25
+   },
+   {
+    "div": 7,
+    "winners": 57361,
+    "amount": 44.6
+   },
+   {
+    "div": 8,
+    "winners": 266728,
+    "amount": 20.35
+   },
+   {
+    "div": 9,
+    "winners": 770079,
+    "amount": 12.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1485,
+  "date": "2024-10-31",
+  "main": [
+   3,
+   9,
+   11,
+   14,
+   26,
+   34,
+   35
+  ],
+  "supp": [
+   7
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 134360.55
+   },
+   {
+    "div": 3,
+    "winners": 35,
+    "amount": 14317.95
+   },
+   {
+    "div": 4,
+    "winners": 835,
+    "amount": 521.85
+   },
+   {
+    "div": 5,
+    "winners": 1831,
+    "amount": 178.5
+   },
+   {
+    "div": 6,
+    "winners": 26516,
+    "amount": 77.25
+   },
+   {
+    "div": 7,
+    "winners": 32992,
+    "amount": 48.2
+   },
+   {
+    "div": 8,
+    "winners": 172619,
+    "amount": 19.55
+   },
+   {
+    "div": 9,
+    "winners": 505920,
+    "amount": 11.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1486,
+  "date": "2024-11-07",
+  "main": [
+   3,
+   15,
+   23,
+   26,
+   31,
+   32,
+   33
+  ],
+  "supp": [
+   6
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 267923.3
+   },
+   {
+    "div": 3,
+    "winners": 50,
+    "amount": 13323.75
+   },
+   {
+    "div": 4,
+    "winners": 1024,
+    "amount": 565.7
+   },
+   {
+    "div": 5,
+    "winners": 2278,
+    "amount": 190.7
+   },
+   {
+    "div": 6,
+    "winners": 33917,
+    "amount": 80.25
+   },
+   {
+    "div": 7,
+    "winners": 43754,
+    "amount": 48.35
+   },
+   {
+    "div": 8,
+    "winners": 211618,
+    "amount": 21.2
+   },
+   {
+    "div": 9,
+    "winners": 625768,
+    "amount": 12.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1487,
+  "date": "2024-11-14",
+  "main": [
+   4,
+   5,
+   10,
+   11,
+   14,
+   19,
+   25
+  ],
+  "supp": [
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 127394.85
+   },
+   {
+    "div": 3,
+    "winners": 70,
+    "amount": 11313.05
+   },
+   {
+    "div": 4,
+    "winners": 1408,
+    "amount": 489.1
+   },
+   {
+    "div": 5,
+    "winners": 3192,
+    "amount": 161.8
+   },
+   {
+    "div": 6,
+    "winners": 45050,
+    "amount": 71.85
+   },
+   {
+    "div": 7,
+    "winners": 60432,
+    "amount": 41.6
+   },
+   {
+    "div": 8,
+    "winners": 276137,
+    "amount": 19.35
+   },
+   {
+    "div": 9,
+    "winners": 767842,
+    "amount": 11.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1488,
+  "date": "2024-11-21",
+  "main": [
+   3,
+   11,
+   15,
+   19,
+   22,
+   30,
+   31
+  ],
+  "supp": [
+   2
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 443998.95
+   },
+   {
+    "div": 3,
+    "winners": 81,
+    "amount": 13629.6
+   },
+   {
+    "div": 4,
+    "winners": 1654,
+    "amount": 580.4
+   },
+   {
+    "div": 5,
+    "winners": 4115,
+    "amount": 174.95
+   },
+   {
+    "div": 6,
+    "winners": 59259,
+    "amount": 76.15
+   },
+   {
+    "div": 7,
+    "winners": 79551,
+    "amount": 44.05
+   },
+   {
+    "div": 8,
+    "winners": 371677,
+    "amount": 20.0
+   },
+   {
+    "div": 9,
+    "winners": 1077603,
+    "amount": 11.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1489,
+  "date": "2024-11-28",
+  "main": [
+   1,
+   4,
+   9,
+   10,
+   22,
+   26,
+   31
+  ],
+  "supp": [
+   14
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 50000000.0
+   },
+   {
+    "div": 2,
+    "winners": 11,
+    "amount": 158200.15
+   },
+   {
+    "div": 3,
+    "winners": 199,
+    "amount": 10871.85
+   },
+   {
+    "div": 4,
+    "winners": 3915,
+    "amount": 480.55
+   },
+   {
+    "div": 5,
+    "winners": 8084,
+    "amount": 174.55
+   },
+   {
+    "div": 6,
+    "winners": 114693,
+    "amount": 77.1
+   },
+   {
+    "div": 7,
+    "winners": 154327,
+    "amount": 44.5
+   },
+   {
+    "div": 8,
+    "winners": 730344,
+    "amount": 19.95
+   },
+   {
+    "div": 9,
+    "winners": 2069390,
+    "amount": 12.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1490,
+  "date": "2024-12-05",
+  "main": [
+   5,
+   6,
+   7,
+   11,
+   30,
+   32,
+   33
+  ],
+  "supp": [
+   11
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 261031.5
+   },
+   {
+    "div": 3,
+    "winners": 24,
+    "amount": 13521.9
+   },
+   {
+    "div": 4,
+    "winners": 464,
+    "amount": 608.2
+   },
+   {
+    "div": 5,
+    "winners": 1189,
+    "amount": 178.0
+   },
+   {
+    "div": 6,
+    "winners": 18263,
+    "amount": 72.6
+   },
+   {
+    "div": 7,
+    "winners": 21256,
+    "amount": 48.45
+   },
+   {
+    "div": 8,
+    "winners": 118055,
+    "amount": 18.55
+   },
+   {
+    "div": 9,
+    "winners": 337354,
+    "amount": 11.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1491,
+  "date": "2024-12-12",
+  "main": [
+   3,
+   9,
+   11,
+   14,
+   16,
+   19,
+   23
+  ],
+  "supp": [
+   16
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 3,
+    "amount": 4000000.0
+   },
+   {
+    "div": 2,
+    "winners": 41,
+    "amount": 9494.45
+   },
+   {
+    "div": 3,
+    "winners": 53,
+    "amount": 9131.3
+   },
+   {
+    "div": 4,
+    "winners": 1066,
+    "amount": 394.8
+   },
+   {
+    "div": 5,
+    "winners": 2192,
+    "amount": 144.0
+   },
+   {
+    "div": 6,
+    "winners": 28468,
+    "amount": 69.5
+   },
+   {
+    "div": 7,
+    "winners": 41235,
+    "amount": 37.25
+   },
+   {
+    "div": 8,
+    "winners": 167267,
+    "amount": 19.5
+   },
+   {
+    "div": 9,
+    "winners": 456865,
+    "amount": 12.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1492,
+  "date": "2024-12-19",
+  "main": [
+   3,
+   9,
+   12,
+   16,
+   23,
+   29,
+   30
+  ],
+  "supp": [
+   19
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 138534.3
+   },
+   {
+    "div": 3,
+    "winners": 25,
+    "amount": 13778.55
+   },
+   {
+    "div": 4,
+    "winners": 622,
+    "amount": 481.55
+   },
+   {
+    "div": 5,
+    "winners": 1352,
+    "amount": 166.15
+   },
+   {
+    "div": 6,
+    "winners": 19529,
+    "amount": 72.1
+   },
+   {
+    "div": 7,
+    "winners": 26250,
+    "amount": 41.65
+   },
+   {
+    "div": 8,
+    "winners": 120284,
+    "amount": 19.3
+   },
+   {
+    "div": 9,
+    "winners": 345675,
+    "amount": 11.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1493,
+  "date": "2024-12-26",
+  "main": [
+   1,
+   3,
+   9,
+   18,
+   20,
+   28,
+   29
+  ],
+  "supp": [
+   9
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 194649.15
+   },
+   {
+    "div": 3,
+    "winners": 52,
+    "amount": 9307.55
+   },
+   {
+    "div": 4,
+    "winners": 916,
+    "amount": 459.45
+   },
+   {
+    "div": 5,
+    "winners": 1904,
+    "amount": 165.8
+   },
+   {
+    "div": 6,
+    "winners": 27471,
+    "amount": 72.0
+   },
+   {
+    "div": 7,
+    "winners": 33474,
+    "amount": 45.9
+   },
+   {
+    "div": 8,
+    "winners": 170481,
+    "amount": 19.15
+   },
+   {
+    "div": 9,
+    "winners": 479044,
+    "amount": 11.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1494,
+  "date": "2025-01-02",
+  "main": [
+   8,
+   9,
+   15,
+   18,
+   21,
+   22,
+   27
+  ],
+  "supp": [
+   19
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20809257.29
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 241154.45
+   },
+   {
+    "div": 3,
+    "winners": 57,
+    "amount": 10519.8
+   },
+   {
+    "div": 4,
+    "winners": 1084,
+    "amount": 481.0
+   },
+   {
+    "div": 5,
+    "winners": 2232,
+    "amount": 175.2
+   },
+   {
+    "div": 6,
+    "winners": 32576,
+    "amount": 75.25
+   },
+   {
+    "div": 7,
+    "winners": 43716,
+    "amount": 43.55
+   },
+   {
+    "div": 8,
+    "winners": 204111,
+    "amount": 19.8
+   },
+   {
+    "div": 9,
+    "winners": 582821,
+    "amount": 11.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1495,
+  "date": "2025-01-09",
+  "main": [
+   1,
+   2,
+   8,
+   11,
+   17,
+   19,
+   26
+  ],
+  "supp": [
+   11
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 124517.05
+   },
+   {
+    "div": 3,
+    "winners": 34,
+    "amount": 9106.2
+   },
+   {
+    "div": 4,
+    "winners": 626,
+    "amount": 430.05
+   },
+   {
+    "div": 5,
+    "winners": 1403,
+    "amount": 143.9
+   },
+   {
+    "div": 6,
+    "winners": 20243,
+    "amount": 62.5
+   },
+   {
+    "div": 7,
+    "winners": 24705,
+    "amount": 39.8
+   },
+   {
+    "div": 8,
+    "winners": 119142,
+    "amount": 17.5
+   },
+   {
+    "div": 9,
+    "winners": 320486,
+    "amount": 11.2
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1496,
+  "date": "2025-01-16",
+  "main": [
+   2,
+   6,
+   13,
+   14,
+   25,
+   30,
+   31
+  ],
+  "supp": [
+   2
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 179256.8
+   },
+   {
+    "div": 3,
+    "winners": 44,
+    "amount": 10130.0
+   },
+   {
+    "div": 4,
+    "winners": 739,
+    "amount": 524.45
+   },
+   {
+    "div": 5,
+    "winners": 1519,
+    "amount": 191.35
+   },
+   {
+    "div": 6,
+    "winners": 22235,
+    "amount": 81.95
+   },
+   {
+    "div": 7,
+    "winners": 27637,
+    "amount": 51.2
+   },
+   {
+    "div": 8,
+    "winners": 144071,
+    "amount": 20.85
+   },
+   {
+    "div": 9,
+    "winners": 425447,
+    "amount": 12.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1497,
+  "date": "2025-01-23",
+  "main": [
+   9,
+   11,
+   12,
+   17,
+   27,
+   29,
+   32
+  ],
+  "supp": [
+   18
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 150026.5
+   },
+   {
+    "div": 3,
+    "winners": 56,
+    "amount": 9992.1
+   },
+   {
+    "div": 4,
+    "winners": 959,
+    "amount": 507.35
+   },
+   {
+    "div": 5,
+    "winners": 2196,
+    "amount": 166.2
+   },
+   {
+    "div": 6,
+    "winners": 30821,
+    "amount": 74.2
+   },
+   {
+    "div": 7,
+    "winners": 43618,
+    "amount": 40.7
+   },
+   {
+    "div": 8,
+    "winners": 191887,
+    "amount": 19.65
+   },
+   {
+    "div": 9,
+    "winners": 535265,
+    "amount": 12.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1498,
+  "date": "2025-01-30",
+  "main": [
+   1,
+   2,
+   12,
+   13,
+   18,
+   19,
+   23
+  ],
+  "supp": [
+   4
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 86344.85
+   },
+   {
+    "div": 3,
+    "winners": 56,
+    "amount": 13418.45
+   },
+   {
+    "div": 4,
+    "winners": 1245,
+    "amount": 524.85
+   },
+   {
+    "div": 5,
+    "winners": 2841,
+    "amount": 172.5
+   },
+   {
+    "div": 6,
+    "winners": 40769,
+    "amount": 75.35
+   },
+   {
+    "div": 7,
+    "winners": 53794,
+    "amount": 44.35
+   },
+   {
+    "div": 8,
+    "winners": 257623,
+    "amount": 19.65
+   },
+   {
+    "div": 9,
+    "winners": 739337,
+    "amount": 11.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1499,
+  "date": "2025-02-06",
+  "main": [
+   10,
+   19,
+   20,
+   23,
+   24,
+   31,
+   34
+  ],
+  "supp": [
+   14
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 60000000.0
+   },
+   {
+    "div": 2,
+    "winners": 27,
+    "amount": 33243.6
+   },
+   {
+    "div": 3,
+    "winners": 102,
+    "amount": 10940.25
+   },
+   {
+    "div": 4,
+    "winners": 1881,
+    "amount": 515.85
+   },
+   {
+    "div": 5,
+    "winners": 3698,
+    "amount": 196.8
+   },
+   {
+    "div": 6,
+    "winners": 56524,
+    "amount": 80.7
+   },
+   {
+    "div": 7,
+    "winners": 72198,
+    "amount": 49.05
+   },
+   {
+    "div": 8,
+    "winners": 361067,
+    "amount": 20.85
+   },
+   {
+    "div": 9,
+    "winners": 1064597,
+    "amount": 12.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1500,
+  "date": "2025-02-13",
+  "main": [
+   1,
+   10,
+   23,
+   26,
+   28,
+   31,
+   34
+  ],
+  "supp": [
+   3
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 371872.0
+   },
+   {
+    "div": 3,
+    "winners": 34,
+    "amount": 13597.85
+   },
+   {
+    "div": 4,
+    "winners": 639,
+    "amount": 629.15
+   },
+   {
+    "div": 5,
+    "winners": 1591,
+    "amount": 189.5
+   },
+   {
+    "div": 6,
+    "winners": 23386,
+    "amount": 80.8
+   },
+   {
+    "div": 7,
+    "winners": 30701,
+    "amount": 47.8
+   },
+   {
+    "div": 8,
+    "winners": 148053,
+    "amount": 21.05
+   },
+   {
+    "div": 9,
+    "winners": 436148,
+    "amount": 12.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1501,
+  "date": "2025-02-20",
+  "main": [
+   1,
+   3,
+   8,
+   14,
+   16,
+   24,
+   26
+  ],
+  "supp": [
+   4
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 123906.65
+   },
+   {
+    "div": 3,
+    "winners": 54,
+    "amount": 11410.8
+   },
+   {
+    "div": 4,
+    "winners": 1045,
+    "amount": 512.75
+   },
+   {
+    "div": 5,
+    "winners": 2189,
+    "amount": 183.6
+   },
+   {
+    "div": 6,
+    "winners": 33150,
+    "amount": 75.95
+   },
+   {
+    "div": 7,
+    "winners": 42470,
+    "amount": 46.05
+   },
+   {
+    "div": 8,
+    "winners": 206442,
+    "amount": 20.1
+   },
+   {
+    "div": 9,
+    "winners": 593700,
+    "amount": 12.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1502,
+  "date": "2025-02-27",
+  "main": [
+   1,
+   7,
+   11,
+   22,
+   25,
+   26,
+   35
+  ],
+  "supp": [
+   3
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30000000.0
+   },
+   {
+    "div": 2,
+    "winners": 26,
+    "amount": 23197.8
+   },
+   {
+    "div": 3,
+    "winners": 70,
+    "amount": 10712.2
+   },
+   {
+    "div": 4,
+    "winners": 1373,
+    "amount": 474.9
+   },
+   {
+    "div": 5,
+    "winners": 2888,
+    "amount": 169.35
+   },
+   {
+    "div": 6,
+    "winners": 41426,
+    "amount": 74.0
+   },
+   {
+    "div": 7,
+    "winners": 55881,
+    "amount": 42.6
+   },
+   {
+    "div": 8,
+    "winners": 256968,
+    "amount": 19.65
+   },
+   {
+    "div": 9,
+    "winners": 731245,
+    "amount": 11.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1503,
+  "date": "2025-03-06",
+  "main": [
+   5,
+   6,
+   18,
+   21,
+   22,
+   23,
+   33
+  ],
+  "supp": [
+   16
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 10000000.0
+   },
+   {
+    "div": 2,
+    "winners": 23,
+    "amount": 16516.9
+   },
+   {
+    "div": 3,
+    "winners": 41,
+    "amount": 11519.4
+   },
+   {
+    "div": 4,
+    "winners": 655,
+    "amount": 627.0
+   },
+   {
+    "div": 5,
+    "winners": 1514,
+    "amount": 203.45
+   },
+   {
+    "div": 6,
+    "winners": 23724,
+    "amount": 81.35
+   },
+   {
+    "div": 7,
+    "winners": 31147,
+    "amount": 48.15
+   },
+   {
+    "div": 8,
+    "winners": 151935,
+    "amount": 20.95
+   },
+   {
+    "div": 9,
+    "winners": 441629,
+    "amount": 12.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1504,
+  "date": "2025-03-13",
+  "main": [
+   4,
+   5,
+   6,
+   7,
+   11,
+   19,
+   30
+  ],
+  "supp": [
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 10000000.0
+   },
+   {
+    "div": 2,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 3,
+    "winners": 50,
+    "amount": 16939.3
+   },
+   {
+    "div": 4,
+    "winners": 1017,
+    "amount": 401.35
+   },
+   {
+    "div": 5,
+    "winners": 2108,
+    "amount": 145.2
+   },
+   {
+    "div": 6,
+    "winners": 29008,
+    "amount": 66.15
+   },
+   {
+    "div": 7,
+    "winners": 40768,
+    "amount": 36.55
+   },
+   {
+    "div": 8,
+    "winners": 168121,
+    "amount": 18.8
+   },
+   {
+    "div": 9,
+    "winners": 461955,
+    "amount": 11.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1505,
+  "date": "2025-03-20",
+  "main": [
+   1,
+   2,
+   9,
+   16,
+   17,
+   18,
+   32
+  ],
+  "supp": [
+   1
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 182070.2
+   },
+   {
+    "div": 3,
+    "winners": 30,
+    "amount": 15090.5
+   },
+   {
+    "div": 4,
+    "winners": 752,
+    "amount": 523.5
+   },
+   {
+    "div": 5,
+    "winners": 1570,
+    "amount": 188.05
+   },
+   {
+    "div": 6,
+    "winners": 23003,
+    "amount": 80.45
+   },
+   {
+    "div": 7,
+    "winners": 28623,
+    "amount": 50.2
+   },
+   {
+    "div": 8,
+    "winners": 145351,
+    "amount": 21.0
+   },
+   {
+    "div": 9,
+    "winners": 416780,
+    "amount": 12.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1506,
+  "date": "2025-03-27",
+  "main": [
+   7,
+   9,
+   11,
+   13,
+   17,
+   21,
+   24
+  ],
+  "supp": [
+   11
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 66611.55
+   },
+   {
+    "div": 3,
+    "winners": 84,
+    "amount": 6901.2
+   },
+   {
+    "div": 4,
+    "winners": 1523,
+    "amount": 331.0
+   },
+   {
+    "div": 5,
+    "winners": 3125,
+    "amount": 121.0
+   },
+   {
+    "div": 6,
+    "winners": 40622,
+    "amount": 58.3
+   },
+   {
+    "div": 7,
+    "winners": 56110,
+    "amount": 32.8
+   },
+   {
+    "div": 8,
+    "winners": 220001,
+    "amount": 17.75
+   },
+   {
+    "div": 9,
+    "winners": 588265,
+    "amount": 11.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1507,
+  "date": "2025-04-03",
+  "main": [
+   14,
+   15,
+   24,
+   26,
+   27,
+   33,
+   34
+  ],
+  "supp": [
+   10
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 66481.1
+   },
+   {
+    "div": 3,
+    "winners": 38,
+    "amount": 10875.3
+   },
+   {
+    "div": 4,
+    "winners": 608,
+    "amount": 591.05
+   },
+   {
+    "div": 5,
+    "winners": 1391,
+    "amount": 193.75
+   },
+   {
+    "div": 6,
+    "winners": 20169,
+    "amount": 83.75
+   },
+   {
+    "div": 7,
+    "winners": 25923,
+    "amount": 50.6
+   },
+   {
+    "div": 8,
+    "winners": 128340,
+    "amount": 21.7
+   },
+   {
+    "div": 9,
+    "winners": 387692,
+    "amount": 12.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1508,
+  "date": "2025-04-10",
+  "main": [
+   15,
+   19,
+   22,
+   23,
+   25,
+   32,
+   34
+  ],
+  "supp": [
+   2
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 210019.9
+   },
+   {
+    "div": 3,
+    "winners": 49,
+    "amount": 10657.4
+   },
+   {
+    "div": 4,
+    "winners": 817,
+    "amount": 555.8
+   },
+   {
+    "div": 5,
+    "winners": 1815,
+    "amount": 187.65
+   },
+   {
+    "div": 6,
+    "winners": 25890,
+    "amount": 82.45
+   },
+   {
+    "div": 7,
+    "winners": 33366,
+    "amount": 49.65
+   },
+   {
+    "div": 8,
+    "winners": 165361,
+    "amount": 21.3
+   },
+   {
+    "div": 9,
+    "winners": 488624,
+    "amount": 12.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1509,
+  "date": "2025-04-17",
+  "main": [
+   14,
+   17,
+   27,
+   30,
+   32,
+   34,
+   35
+  ],
+  "supp": [
+   17
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30000000.0
+   },
+   {
+    "div": 2,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 3,
+    "winners": 73,
+    "amount": 16726.85
+   },
+   {
+    "div": 4,
+    "winners": 1178,
+    "amount": 499.55
+   },
+   {
+    "div": 5,
+    "winners": 2322,
+    "amount": 190.05
+   },
+   {
+    "div": 6,
+    "winners": 34606,
+    "amount": 79.9
+   },
+   {
+    "div": 7,
+    "winners": 43323,
+    "amount": 49.6
+   },
+   {
+    "div": 8,
+    "winners": 216954,
+    "amount": 21.0
+   },
+   {
+    "div": 9,
+    "winners": 636379,
+    "amount": 12.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1510,
+  "date": "2025-04-24",
+  "main": [
+   1,
+   13,
+   14,
+   18,
+   19,
+   21,
+   24
+  ],
+  "supp": [
+   13
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 369494.1
+   },
+   {
+    "div": 3,
+    "winners": 60,
+    "amount": 7656.2
+   },
+   {
+    "div": 4,
+    "winners": 825,
+    "amount": 484.2
+   },
+   {
+    "div": 5,
+    "winners": 1745,
+    "amount": 171.7
+   },
+   {
+    "div": 6,
+    "winners": 25280,
+    "amount": 74.25
+   },
+   {
+    "div": 7,
+    "winners": 30400,
+    "amount": 47.95
+   },
+   {
+    "div": 8,
+    "winners": 159116,
+    "amount": 19.45
+   },
+   {
+    "div": 9,
+    "winners": 458686,
+    "amount": 11.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1511,
+  "date": "2025-05-01",
+  "main": [
+   2,
+   9,
+   12,
+   15,
+   23,
+   27,
+   30
+  ],
+  "supp": [
+   10
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 152774.2
+   },
+   {
+    "div": 3,
+    "winners": 70,
+    "amount": 8140.1
+   },
+   {
+    "div": 4,
+    "winners": 1236,
+    "amount": 400.9
+   },
+   {
+    "div": 5,
+    "winners": 2236,
+    "amount": 166.2
+   },
+   {
+    "div": 6,
+    "winners": 32309,
+    "amount": 72.1
+   },
+   {
+    "div": 7,
+    "winners": 43277,
+    "amount": 41.8
+   },
+   {
+    "div": 8,
+    "winners": 198373,
+    "amount": 19.35
+   },
+   {
+    "div": 9,
+    "winners": 565405,
+    "amount": 11.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1512,
+  "date": "2025-05-08",
+  "main": [
+   7,
+   14,
+   15,
+   32,
+   33,
+   34,
+   35
+  ],
+  "supp": [
+   12
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30000000.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 106535.05
+   },
+   {
+    "div": 3,
+    "winners": 55,
+    "amount": 12040.8
+   },
+   {
+    "div": 4,
+    "winners": 1124,
+    "amount": 512.35
+   },
+   {
+    "div": 5,
+    "winners": 2233,
+    "amount": 193.4
+   },
+   {
+    "div": 6,
+    "winners": 33244,
+    "amount": 81.4
+   },
+   {
+    "div": 7,
+    "winners": 43293,
+    "amount": 48.55
+   },
+   {
+    "div": 8,
+    "winners": 212905,
+    "amount": 20.95
+   },
+   {
+    "div": 9,
+    "winners": 635388,
+    "amount": 12.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1513,
+  "date": "2025-05-15",
+  "main": [
+   3,
+   7,
+   11,
+   19,
+   24,
+   32,
+   33
+  ],
+  "supp": [
+   17
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 82083.5
+   },
+   {
+    "div": 3,
+    "winners": 47,
+    "amount": 8685.1
+   },
+   {
+    "div": 4,
+    "winners": 940,
+    "amount": 377.6
+   },
+   {
+    "div": 5,
+    "winners": 1779,
+    "amount": 149.65
+   },
+   {
+    "div": 6,
+    "winners": 23856,
+    "amount": 69.95
+   },
+   {
+    "div": 7,
+    "winners": 34537,
+    "amount": 37.5
+   },
+   {
+    "div": 8,
+    "winners": 143374,
+    "amount": 19.2
+   },
+   {
+    "div": 9,
+    "winners": 398306,
+    "amount": 11.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1514,
+  "date": "2025-05-22",
+  "main": [
+   3,
+   8,
+   19,
+   21,
+   26,
+   28,
+   30
+  ],
+  "supp": [
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 206702.45
+   },
+   {
+    "div": 3,
+    "winners": 58,
+    "amount": 8861.45
+   },
+   {
+    "div": 4,
+    "winners": 1076,
+    "amount": 415.35
+   },
+   {
+    "div": 5,
+    "winners": 1971,
+    "amount": 170.05
+   },
+   {
+    "div": 6,
+    "winners": 28241,
+    "amount": 74.4
+   },
+   {
+    "div": 7,
+    "winners": 38068,
+    "amount": 42.85
+   },
+   {
+    "div": 8,
+    "winners": 174841,
+    "amount": 19.8
+   },
+   {
+    "div": 9,
+    "winners": 502328,
+    "amount": 11.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1515,
+  "date": "2025-05-29",
+  "main": [
+   7,
+   10,
+   15,
+   21,
+   23,
+   26,
+   35
+  ],
+  "supp": [
+   18
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 120876.45
+   },
+   {
+    "div": 3,
+    "winners": 68,
+    "amount": 8839.95
+   },
+   {
+    "div": 4,
+    "winners": 1226,
+    "amount": 426.35
+   },
+   {
+    "div": 5,
+    "winners": 2313,
+    "amount": 169.5
+   },
+   {
+    "div": 6,
+    "winners": 32609,
+    "amount": 75.35
+   },
+   {
+    "div": 7,
+    "winners": 44761,
+    "amount": 42.6
+   },
+   {
+    "div": 8,
+    "winners": 202177,
+    "amount": 20.05
+   },
+   {
+    "div": 9,
+    "winners": 581252,
+    "amount": 12.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1516,
+  "date": "2025-06-05",
+  "main": [
+   1,
+   6,
+   9,
+   12,
+   24,
+   30,
+   34
+  ],
+  "supp": [
+   10
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 121979.6
+   },
+   {
+    "div": 3,
+    "winners": 93,
+    "amount": 9783.9
+   },
+   {
+    "div": 4,
+    "winners": 1783,
+    "amount": 443.75
+   },
+   {
+    "div": 5,
+    "winners": 3525,
+    "amount": 168.35
+   },
+   {
+    "div": 6,
+    "winners": 50161,
+    "amount": 74.15
+   },
+   {
+    "div": 7,
+    "winners": 65141,
+    "amount": 44.35
+   },
+   {
+    "div": 8,
+    "winners": 309801,
+    "amount": 19.8
+   },
+   {
+    "div": 9,
+    "winners": 887699,
+    "amount": 11.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1517,
+  "date": "2025-06-12",
+  "main": [
+   3,
+   10,
+   14,
+   16,
+   21,
+   28,
+   31
+  ],
+  "supp": [
+   6
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 100000000.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 282415.55
+   },
+   {
+    "div": 3,
+    "winners": 187,
+    "amount": 11265.6
+   },
+   {
+    "div": 4,
+    "winners": 3553,
+    "amount": 515.6
+   },
+   {
+    "div": 5,
+    "winners": 7762,
+    "amount": 177.0
+   },
+   {
+    "div": 6,
+    "winners": 112941,
+    "amount": 76.25
+   },
+   {
+    "div": 7,
+    "winners": 147760,
+    "amount": 45.25
+   },
+   {
+    "div": 8,
+    "winners": 711042,
+    "amount": 19.95
+   },
+   {
+    "div": 9,
+    "winners": 2072994,
+    "amount": 11.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1518,
+  "date": "2025-06-19",
+  "main": [
+   5,
+   14,
+   21,
+   23,
+   25,
+   32,
+   34
+  ],
+  "supp": [
+   11
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 85102.7
+   },
+   {
+    "div": 3,
+    "winners": 31,
+    "amount": 10239.05
+   },
+   {
+    "div": 4,
+    "winners": 620,
+    "amount": 445.2
+   },
+   {
+    "div": 5,
+    "winners": 1159,
+    "amount": 178.6
+   },
+   {
+    "div": 6,
+    "winners": 16351,
+    "amount": 79.35
+   },
+   {
+    "div": 7,
+    "winners": 21357,
+    "amount": 47.15
+   },
+   {
+    "div": 8,
+    "winners": 104817,
+    "amount": 20.4
+   },
+   {
+    "div": 9,
+    "winners": 314967,
+    "amount": 11.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1519,
+  "date": "2025-06-26",
+  "main": [
+   2,
+   17,
+   23,
+   28,
+   29,
+   30,
+   33
+  ],
+  "supp": [
+   15
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 12000000.0
+   },
+   {
+    "div": 2,
+    "winners": 25,
+    "amount": 14723.1
+   },
+   {
+    "div": 3,
+    "winners": 29,
+    "amount": 15779.65
+   },
+   {
+    "div": 4,
+    "winners": 621,
+    "amount": 640.8
+   },
+   {
+    "div": 5,
+    "winners": 1573,
+    "amount": 189.75
+   },
+   {
+    "div": 6,
+    "winners": 23541,
+    "amount": 79.45
+   },
+   {
+    "div": 7,
+    "winners": 29344,
+    "amount": 49.5
+   },
+   {
+    "div": 8,
+    "winners": 150947,
+    "amount": 20.45
+   },
+   {
+    "div": 9,
+    "winners": 441025,
+    "amount": 12.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1520,
+  "date": "2025-07-03",
+  "main": [
+   1,
+   7,
+   10,
+   18,
+   25,
+   32,
+   35
+  ],
+  "supp": [
+   14
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 254733.1
+   },
+   {
+    "div": 3,
+    "winners": 21,
+    "amount": 15080.7
+   },
+   {
+    "div": 4,
+    "winners": 537,
+    "amount": 512.85
+   },
+   {
+    "div": 5,
+    "winners": 1111,
+    "amount": 185.9
+   },
+   {
+    "div": 6,
+    "winners": 15843,
+    "amount": 81.7
+   },
+   {
+    "div": 7,
+    "winners": 22752,
+    "amount": 44.2
+   },
+   {
+    "div": 8,
+    "winners": 102079,
+    "amount": 20.9
+   },
+   {
+    "div": 9,
+    "winners": 299451,
+    "amount": 12.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1521,
+  "date": "2025-07-10",
+  "main": [
+   3,
+   5,
+   14,
+   23,
+   24,
+   31,
+   35
+  ],
+  "supp": [
+   10
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 388173.2
+   },
+   {
+    "div": 3,
+    "winners": 31,
+    "amount": 15567.55
+   },
+   {
+    "div": 4,
+    "winners": 755,
+    "amount": 555.8
+   },
+   {
+    "div": 5,
+    "winners": 1614,
+    "amount": 195.0
+   },
+   {
+    "div": 6,
+    "winners": 25441,
+    "amount": 77.55
+   },
+   {
+    "div": 7,
+    "winners": 31983,
+    "amount": 47.9
+   },
+   {
+    "div": 8,
+    "winners": 162666,
+    "amount": 20.0
+   },
+   {
+    "div": 9,
+    "winners": 478771,
+    "amount": 11.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1522,
+  "date": "2025-07-17",
+  "main": [
+   4,
+   18,
+   21,
+   22,
+   29,
+   33,
+   34
+  ],
+  "supp": [
+   3
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 241385.3
+   },
+   {
+    "div": 3,
+    "winners": 37,
+    "amount": 16221.65
+   },
+   {
+    "div": 4,
+    "winners": 774,
+    "amount": 674.3
+   },
+   {
+    "div": 5,
+    "winners": 2005,
+    "amount": 195.25
+   },
+   {
+    "div": 6,
+    "winners": 30427,
+    "amount": 80.6
+   },
+   {
+    "div": 7,
+    "winners": 38124,
+    "amount": 49.95
+   },
+   {
+    "div": 8,
+    "winners": 196695,
+    "amount": 20.55
+   },
+   {
+    "div": 9,
+    "winners": 579243,
+    "amount": 12.0
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1523,
+  "date": "2025-07-24",
+  "main": [
+   2,
+   4,
+   6,
+   19,
+   25,
+   31,
+   34
+  ],
+  "supp": [
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30628398.22
+   },
+   {
+    "div": 2,
+    "winners": 21,
+    "amount": 26947.75
+   },
+   {
+    "div": 3,
+    "winners": 56,
+    "amount": 12563.5
+   },
+   {
+    "div": 4,
+    "winners": 1085,
+    "amount": 563.85
+   },
+   {
+    "div": 5,
+    "winners": 2502,
+    "amount": 183.4
+   },
+   {
+    "div": 6,
+    "winners": 36321,
+    "amount": 79.15
+   },
+   {
+    "div": 7,
+    "winners": 47668,
+    "amount": 46.85
+   },
+   {
+    "div": 8,
+    "winners": 230017,
+    "amount": 20.6
+   },
+   {
+    "div": 9,
+    "winners": 676821,
+    "amount": 12.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1524,
+  "date": "2025-07-31",
+  "main": [
+   5,
+   12,
+   15,
+   16,
+   20,
+   22,
+   29
+  ],
+  "supp": [
+   4
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 125110.9
+   },
+   {
+    "div": 3,
+    "winners": 31,
+    "amount": 10035.05
+   },
+   {
+    "div": 4,
+    "winners": 539,
+    "amount": 501.85
+   },
+   {
+    "div": 5,
+    "winners": 1125,
+    "amount": 180.35
+   },
+   {
+    "div": 6,
+    "winners": 16114,
+    "amount": 78.9
+   },
+   {
+    "div": 7,
+    "winners": 21309,
+    "amount": 46.35
+   },
+   {
+    "div": 8,
+    "winners": 104300,
+    "amount": 20.1
+   },
+   {
+    "div": 9,
+    "winners": 304992,
+    "amount": 11.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1525,
+  "date": "2025-08-07",
+  "main": [
+   8,
+   11,
+   12,
+   14,
+   21,
+   30,
+   33
+  ],
+  "supp": [
+   19
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 182242.75
+   },
+   {
+    "div": 3,
+    "winners": 49,
+    "amount": 9247.85
+   },
+   {
+    "div": 4,
+    "winners": 897,
+    "amount": 439.3
+   },
+   {
+    "div": 5,
+    "winners": 1726,
+    "amount": 171.2
+   },
+   {
+    "div": 6,
+    "winners": 24487,
+    "amount": 75.65
+   },
+   {
+    "div": 7,
+    "winners": 32712,
+    "amount": 43.95
+   },
+   {
+    "div": 8,
+    "winners": 154205,
+    "amount": 19.8
+   },
+   {
+    "div": 9,
+    "winners": 450352,
+    "amount": 11.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1526,
+  "date": "2025-08-14",
+  "main": [
+   1,
+   5,
+   12,
+   14,
+   19,
+   32,
+   33
+  ],
+  "supp": [
+   10
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 168353.55
+   },
+   {
+    "div": 3,
+    "winners": 51,
+    "amount": 12312.05
+   },
+   {
+    "div": 4,
+    "winners": 1031,
+    "amount": 529.6
+   },
+   {
+    "div": 5,
+    "winners": 2245,
+    "amount": 182.4
+   },
+   {
+    "div": 6,
+    "winners": 32871,
+    "amount": 78.05
+   },
+   {
+    "div": 7,
+    "winners": 42893,
+    "amount": 46.45
+   },
+   {
+    "div": 8,
+    "winners": 210801,
+    "amount": 20.05
+   },
+   {
+    "div": 9,
+    "winners": 618765,
+    "amount": 11.75
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1527,
+  "date": "2025-08-21",
+  "main": [
+   1,
+   4,
+   8,
+   12,
+   14,
+   16,
+   18
+  ],
+  "supp": [
+   14
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 147381.0
+   },
+   {
+    "div": 3,
+    "winners": 79,
+    "amount": 9277.5
+   },
+   {
+    "div": 4,
+    "winners": 1492,
+    "amount": 427.15
+   },
+   {
+    "div": 5,
+    "winners": 2975,
+    "amount": 160.65
+   },
+   {
+    "div": 6,
+    "winners": 41011,
+    "amount": 73.05
+   },
+   {
+    "div": 7,
+    "winners": 57316,
+    "amount": 40.6
+   },
+   {
+    "div": 8,
+    "winners": 249435,
+    "amount": 19.8
+   },
+   {
+    "div": 9,
+    "winners": 706024,
+    "amount": 12.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1528,
+  "date": "2025-08-28",
+  "main": [
+   1,
+   4,
+   10,
+   14,
+   21,
+   30,
+   33
+  ],
+  "supp": [
+   6
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 139013.45
+   },
+   {
+    "div": 3,
+    "winners": 109,
+    "amount": 9513.45
+   },
+   {
+    "div": 4,
+    "winners": 1924,
+    "amount": 468.65
+   },
+   {
+    "div": 5,
+    "winners": 3798,
+    "amount": 178.05
+   },
+   {
+    "div": 6,
+    "winners": 55911,
+    "amount": 75.8
+   },
+   {
+    "div": 7,
+    "winners": 72341,
+    "amount": 45.5
+   },
+   {
+    "div": 8,
+    "winners": 347948,
+    "amount": 20.1
+   },
+   {
+    "div": 9,
+    "winners": 1007029,
+    "amount": 11.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1529,
+  "date": "2025-09-04",
+  "main": [
+   3,
+   9,
+   13,
+   22,
+   23,
+   28,
+   32
+  ],
+  "supp": [
+   5
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 4,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 43,
+    "amount": 29746.25
+   },
+   {
+    "div": 3,
+    "winners": 150,
+    "amount": 10601.45
+   },
+   {
+    "div": 4,
+    "winners": 2923,
+    "amount": 473.1
+   },
+   {
+    "div": 5,
+    "winners": 6364,
+    "amount": 162.95
+   },
+   {
+    "div": 6,
+    "winners": 90360,
+    "amount": 71.95
+   },
+   {
+    "div": 7,
+    "winners": 120502,
+    "amount": 41.9
+   },
+   {
+    "div": 8,
+    "winners": 555655,
+    "amount": 19.3
+   },
+   {
+    "div": 9,
+    "winners": 1585563,
+    "amount": 11.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1530,
+  "date": "2025-09-11",
+  "main": [
+   4,
+   18,
+   19,
+   21,
+   28,
+   32,
+   33
+  ],
+  "supp": [
+   17
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 3,
+    "winners": 28,
+    "amount": 20593.1
+   },
+   {
+    "div": 4,
+    "winners": 595,
+    "amount": 467.05
+   },
+   {
+    "div": 5,
+    "winners": 1137,
+    "amount": 183.3
+   },
+   {
+    "div": 6,
+    "winners": 16218,
+    "amount": 80.55
+   },
+   {
+    "div": 7,
+    "winners": 21756,
+    "amount": 46.6
+   },
+   {
+    "div": 8,
+    "winners": 104141,
+    "amount": 20.7
+   },
+   {
+    "div": 9,
+    "winners": 304241,
+    "amount": 12.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1531,
+  "date": "2025-09-18",
+  "main": [
+   1,
+   12,
+   18,
+   24,
+   29,
+   32,
+   33
+  ],
+  "supp": [
+   8
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 96979.45
+   },
+   {
+    "div": 3,
+    "winners": 43,
+    "amount": 11215.7
+   },
+   {
+    "div": 4,
+    "winners": 871,
+    "amount": 481.5
+   },
+   {
+    "div": 5,
+    "winners": 1832,
+    "amount": 171.7
+   },
+   {
+    "div": 6,
+    "winners": 25282,
+    "amount": 77.95
+   },
+   {
+    "div": 7,
+    "winners": 32946,
+    "amount": 46.45
+   },
+   {
+    "div": 8,
+    "winners": 164257,
+    "amount": 19.8
+   },
+   {
+    "div": 9,
+    "winners": 485505,
+    "amount": 11.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1532,
+  "date": "2025-09-25",
+  "main": [
+   1,
+   5,
+   6,
+   8,
+   17,
+   19,
+   20
+  ],
+  "supp": [
+   12
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 63334.3
+   },
+   {
+    "div": 3,
+    "winners": 63,
+    "amount": 9998.7
+   },
+   {
+    "div": 4,
+    "winners": 1417,
+    "amount": 386.55
+   },
+   {
+    "div": 5,
+    "winners": 2459,
+    "amount": 167.05
+   },
+   {
+    "div": 6,
+    "winners": 35449,
+    "amount": 72.6
+   },
+   {
+    "div": 7,
+    "winners": 47241,
+    "amount": 42.3
+   },
+   {
+    "div": 8,
+    "winners": 219995,
+    "amount": 19.3
+   },
+   {
+    "div": 9,
+    "winners": 625307,
+    "amount": 11.65
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1533,
+  "date": "2025-10-02",
+  "main": [
+   11,
+   14,
+   15,
+   23,
+   26,
+   28,
+   30
+  ],
+  "supp": [
+   9
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 150215.4
+   },
+   {
+    "div": 3,
+    "winners": 64,
+    "amount": 11672.15
+   },
+   {
+    "div": 4,
+    "winners": 1188,
+    "amount": 546.8
+   },
+   {
+    "div": 5,
+    "winners": 2884,
+    "amount": 168.95
+   },
+   {
+    "div": 6,
+    "winners": 41044,
+    "amount": 74.4
+   },
+   {
+    "div": 7,
+    "winners": 52532,
+    "amount": 45.15
+   },
+   {
+    "div": 8,
+    "winners": 258288,
+    "amount": 19.5
+   },
+   {
+    "div": 9,
+    "winners": 744821,
+    "amount": 11.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1534,
+  "date": "2025-10-09",
+  "main": [
+   10,
+   11,
+   15,
+   20,
+   21,
+   24,
+   28
+  ],
+  "supp": [
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 25000000.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 121536.1
+   },
+   {
+    "div": 3,
+    "winners": 85,
+    "amount": 12443.45
+   },
+   {
+    "div": 4,
+    "winners": 1466,
+    "amount": 627.4
+   },
+   {
+    "div": 5,
+    "winners": 3928,
+    "amount": 175.6
+   },
+   {
+    "div": 6,
+    "winners": 57756,
+    "amount": 74.85
+   },
+   {
+    "div": 7,
+    "winners": 74691,
+    "amount": 44.95
+   },
+   {
+    "div": 8,
+    "winners": 359902,
+    "amount": 19.8
+   },
+   {
+    "div": 9,
+    "winners": 1033773,
+    "amount": 11.85
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1535,
+  "date": "2025-10-16",
+  "main": [
+   13,
+   14,
+   22,
+   27,
+   28,
+   29,
+   33
+  ],
+  "supp": [
+   16
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 268912.2
+   },
+   {
+    "div": 3,
+    "winners": 27,
+    "amount": 12382.35
+   },
+   {
+    "div": 4,
+    "winners": 519,
+    "amount": 560.15
+   },
+   {
+    "div": 5,
+    "winners": 1169,
+    "amount": 186.5
+   },
+   {
+    "div": 6,
+    "winners": 16712,
+    "amount": 81.75
+   },
+   {
+    "div": 7,
+    "winners": 22456,
+    "amount": 47.25
+   },
+   {
+    "div": 8,
+    "winners": 108142,
+    "amount": 20.85
+   },
+   {
+    "div": 9,
+    "winners": 315069,
+    "amount": 12.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1536,
+  "date": "2025-10-23",
+  "main": [
+   4,
+   8,
+   14,
+   19,
+   20,
+   24,
+   33
+  ],
+  "supp": [
+   16
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 201219.05
+   },
+   {
+    "div": 3,
+    "winners": 44,
+    "amount": 11371.1
+   },
+   {
+    "div": 4,
+    "winners": 872,
+    "amount": 498.95
+   },
+   {
+    "div": 5,
+    "winners": 1807,
+    "amount": 180.6
+   },
+   {
+    "div": 6,
+    "winners": 26520,
+    "amount": 77.1
+   },
+   {
+    "div": 7,
+    "winners": 35376,
+    "amount": 44.9
+   },
+   {
+    "div": 8,
+    "winners": 163641,
+    "amount": 20.6
+   },
+   {
+    "div": 9,
+    "winners": 471531,
+    "amount": 12.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1537,
+  "date": "2025-10-30",
+  "main": [
+   1,
+   13,
+   18,
+   19,
+   21,
+   30,
+   32
+  ],
+  "supp": [
+   17
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 100287.0
+   },
+   {
+    "div": 3,
+    "winners": 54,
+    "amount": 11544.55
+   },
+   {
+    "div": 4,
+    "winners": 1078,
+    "amount": 502.85
+   },
+   {
+    "div": 5,
+    "winners": 2158,
+    "amount": 188.4
+   },
+   {
+    "div": 6,
+    "winners": 32323,
+    "amount": 78.8
+   },
+   {
+    "div": 7,
+    "winners": 41916,
+    "amount": 47.2
+   },
+   {
+    "div": 8,
+    "winners": 204365,
+    "amount": 20.55
+   },
+   {
+    "div": 9,
+    "winners": 600555,
+    "amount": 12.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1538,
+  "date": "2025-11-06",
+  "main": [
+   7,
+   11,
+   15,
+   16,
+   22,
+   33,
+   34
+  ],
+  "supp": [
+   13
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 134254.7
+   },
+   {
+    "div": 3,
+    "winners": 64,
+    "amount": 12972.8
+   },
+   {
+    "div": 4,
+    "winners": 1020,
+    "amount": 710.05
+   },
+   {
+    "div": 5,
+    "winners": 2524,
+    "amount": 216.95
+   },
+   {
+    "div": 6,
+    "winners": 37274,
+    "amount": 91.45
+   },
+   {
+    "div": 7,
+    "winners": 48717,
+    "amount": 54.4
+   },
+   {
+    "div": 8,
+    "winners": 236995,
+    "amount": 23.85
+   },
+   {
+    "div": 9,
+    "winners": 683485,
+    "amount": 14.2
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1539,
+  "date": "2025-11-13",
+  "main": [
+   2,
+   6,
+   7,
+   8,
+   10,
+   15,
+   22
+  ],
+  "supp": [
+   13
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 50000000.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 160671.15
+   },
+   {
+    "div": 3,
+    "winners": 93,
+    "amount": 12820.95
+   },
+   {
+    "div": 4,
+    "winners": 1878,
+    "amount": 553.85
+   },
+   {
+    "div": 5,
+    "winners": 3953,
+    "amount": 198.95
+   },
+   {
+    "div": 6,
+    "winners": 56518,
+    "amount": 86.65
+   },
+   {
+    "div": 7,
+    "winners": 74097,
+    "amount": 51.35
+   },
+   {
+    "div": 8,
+    "winners": 348250,
+    "amount": 23.3
+   },
+   {
+    "div": 9,
+    "winners": 991205,
+    "amount": 14.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1540,
+  "date": "2025-11-20",
+  "main": [
+   4,
+   11,
+   12,
+   13,
+   19,
+   27,
+   29
+  ],
+  "supp": [
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 5251280.07
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 105774.2
+   },
+   {
+    "div": 3,
+    "winners": 51,
+    "amount": 7695.65
+   },
+   {
+    "div": 4,
+    "winners": 667,
+    "amount": 513.3
+   },
+   {
+    "div": 5,
+    "winners": 1350,
+    "amount": 191.75
+   },
+   {
+    "div": 6,
+    "winners": 19199,
+    "amount": 83.95
+   },
+   {
+    "div": 7,
+    "winners": 25854,
+    "amount": 48.45
+   },
+   {
+    "div": 8,
+    "winners": 115999,
+    "amount": 23.05
+   },
+   {
+    "div": 9,
+    "winners": 326292,
+    "amount": 14.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1541,
+  "date": "2025-11-27",
+  "main": [
+   2,
+   9,
+   11,
+   17,
+   19,
+   24,
+   28
+  ],
+  "supp": [
+   1
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 5033075.6
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 101237.3
+   },
+   {
+    "div": 3,
+    "winners": 39,
+    "amount": 9631.9
+   },
+   {
+    "div": 4,
+    "winners": 843,
+    "amount": 388.7
+   },
+   {
+    "div": 5,
+    "winners": 1441,
+    "amount": 171.95
+   },
+   {
+    "div": 6,
+    "winners": 18506,
+    "amount": 83.35
+   },
+   {
+    "div": 7,
+    "winners": 30474,
+    "amount": 39.35
+   },
+   {
+    "div": 8,
+    "winners": 106166,
+    "amount": 24.1
+   },
+   {
+    "div": 9,
+    "winners": 294095,
+    "amount": 14.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1542,
+  "date": "2025-12-04",
+  "main": [
+   9,
+   11,
+   12,
+   15,
+   19,
+   23,
+   32
+  ],
+  "supp": [
+   14
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 98824.85
+   },
+   {
+    "div": 3,
+    "winners": 24,
+    "amount": 15278.85
+   },
+   {
+    "div": 4,
+    "winners": 639,
+    "amount": 500.6
+   },
+   {
+    "div": 5,
+    "winners": 1121,
+    "amount": 215.75
+   },
+   {
+    "div": 6,
+    "winners": 17011,
+    "amount": 88.5
+   },
+   {
+    "div": 7,
+    "winners": 22490,
+    "amount": 52.05
+   },
+   {
+    "div": 8,
+    "winners": 103188,
+    "amount": 24.2
+   },
+   {
+    "div": 9,
+    "winners": 291624,
+    "amount": 14.7
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1543,
+  "date": "2025-12-11",
+  "main": [
+   4,
+   5,
+   10,
+   12,
+   16,
+   23,
+   25
+  ],
+  "supp": [
+   10
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 3,
+    "amount": 4000000.0
+   },
+   {
+    "div": 2,
+    "winners": 26,
+    "amount": 15945.65
+   },
+   {
+    "div": 3,
+    "winners": 57,
+    "amount": 8996.1
+   },
+   {
+    "div": 4,
+    "winners": 822,
+    "amount": 544.2
+   },
+   {
+    "div": 5,
+    "winners": 1788,
+    "amount": 189.15
+   },
+   {
+    "div": 6,
+    "winners": 25150,
+    "amount": 83.7
+   },
+   {
+    "div": 7,
+    "winners": 32422,
+    "amount": 50.5
+   },
+   {
+    "div": 8,
+    "winners": 152297,
+    "amount": 22.9
+   },
+   {
+    "div": 9,
+    "winners": 425862,
+    "amount": 14.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1544,
+  "date": "2025-12-18",
+  "main": [
+   2,
+   15,
+   16,
+   19,
+   25,
+   31,
+   35
+  ],
+  "supp": [
+   14
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 206208.8
+   },
+   {
+    "div": 3,
+    "winners": 37,
+    "amount": 13786.35
+   },
+   {
+    "div": 4,
+    "winners": 648,
+    "amount": 686.7
+   },
+   {
+    "div": 5,
+    "winners": 1467,
+    "amount": 229.35
+   },
+   {
+    "div": 6,
+    "winners": 20733,
+    "amount": 101.05
+   },
+   {
+    "div": 7,
+    "winners": 27743,
+    "amount": 58.7
+   },
+   {
+    "div": 8,
+    "winners": 133522,
+    "amount": 26.0
+   },
+   {
+    "div": 9,
+    "winners": 394985,
+    "amount": 15.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1545,
+  "date": "2025-12-25",
+  "main": [
+   7,
+   11,
+   16,
+   17,
+   20,
+   23,
+   29
+  ],
+  "supp": [
+   17
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 212741.65
+   },
+   {
+    "div": 3,
+    "winners": 89,
+    "amount": 8869.5
+   },
+   {
+    "div": 4,
+    "winners": 1360,
+    "amount": 506.35
+   },
+   {
+    "div": 5,
+    "winners": 3055,
+    "amount": 170.45
+   },
+   {
+    "div": 6,
+    "winners": 41087,
+    "amount": 78.9
+   },
+   {
+    "div": 7,
+    "winners": 54652,
+    "amount": 46.1
+   },
+   {
+    "div": 8,
+    "winners": 235006,
+    "amount": 22.85
+   },
+   {
+    "div": 9,
+    "winners": 643902,
+    "amount": 14.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1546,
+  "date": "2026-01-01",
+  "main": [
+   7,
+   9,
+   15,
+   18,
+   27,
+   29,
+   30
+  ],
+  "supp": [
+   3
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 128276.4
+   },
+   {
+    "div": 3,
+    "winners": 41,
+    "amount": 11609.1
+   },
+   {
+    "div": 4,
+    "winners": 836,
+    "amount": 496.65
+   },
+   {
+    "div": 5,
+    "winners": 1456,
+    "amount": 215.6
+   },
+   {
+    "div": 6,
+    "winners": 22270,
+    "amount": 87.75
+   },
+   {
+    "div": 7,
+    "winners": 28911,
+    "amount": 52.55
+   },
+   {
+    "div": 8,
+    "winners": 137184,
+    "amount": 23.6
+   },
+   {
+    "div": 9,
+    "winners": 389933,
+    "amount": 14.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1547,
+  "date": "2026-01-08",
+  "main": [
+   7,
+   15,
+   16,
+   17,
+   25,
+   26,
+   27
+  ],
+  "supp": [
+   9
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 10000000.0
+   },
+   {
+    "div": 2,
+    "winners": 47,
+    "amount": 11604.45
+   },
+   {
+    "div": 3,
+    "winners": 54,
+    "amount": 12492.35
+   },
+   {
+    "div": 4,
+    "winners": 1199,
+    "amount": 490.8
+   },
+   {
+    "div": 5,
+    "winners": 2006,
+    "amount": 221.8
+   },
+   {
+    "div": 6,
+    "winners": 29683,
+    "amount": 93.3
+   },
+   {
+    "div": 7,
+    "winners": 40156,
+    "amount": 53.6
+   },
+   {
+    "div": 8,
+    "winners": 191268,
+    "amount": 24.0
+   },
+   {
+    "div": 9,
+    "winners": 554113,
+    "amount": 14.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1548,
+  "date": "2026-01-15",
+  "main": [
+   1,
+   2,
+   4,
+   24,
+   25,
+   27,
+   35
+  ],
+  "supp": [
+   14
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 208263.1
+   },
+   {
+    "div": 3,
+    "winners": 25,
+    "amount": 20607.1
+   },
+   {
+    "div": 4,
+    "winners": 551,
+    "amount": 815.65
+   },
+   {
+    "div": 5,
+    "winners": 1347,
+    "amount": 252.25
+   },
+   {
+    "div": 6,
+    "winners": 20884,
+    "amount": 101.3
+   },
+   {
+    "div": 7,
+    "winners": 27053,
+    "amount": 60.8
+   },
+   {
+    "div": 8,
+    "winners": 137847,
+    "amount": 25.45
+   },
+   {
+    "div": 9,
+    "winners": 404602,
+    "amount": 14.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1549,
+  "date": "2026-01-22",
+  "main": [
+   6,
+   9,
+   20,
+   21,
+   22,
+   30,
+   34
+  ],
+  "supp": [
+   5
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 282185.15
+   },
+   {
+    "div": 3,
+    "winners": 40,
+    "amount": 17450.9
+   },
+   {
+    "div": 4,
+    "winners": 769,
+    "amount": 791.85
+   },
+   {
+    "div": 5,
+    "winners": 2058,
+    "amount": 223.7
+   },
+   {
+    "div": 6,
+    "winners": 29561,
+    "amount": 96.95
+   },
+   {
+    "div": 7,
+    "winners": 38483,
+    "amount": 57.9
+   },
+   {
+    "div": 8,
+    "winners": 190391,
+    "amount": 24.95
+   },
+   {
+    "div": 9,
+    "winners": 559646,
+    "amount": 14.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1550,
+  "date": "2026-01-29",
+  "main": [
+   4,
+   6,
+   14,
+   18,
+   25,
+   27,
+   34
+  ],
+  "supp": [
+   6
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 166296.85
+   },
+   {
+    "div": 3,
+    "winners": 59,
+    "amount": 13944.6
+   },
+   {
+    "div": 4,
+    "winners": 1226,
+    "amount": 585.4
+   },
+   {
+    "div": 5,
+    "winners": 2502,
+    "amount": 216.9
+   },
+   {
+    "div": 6,
+    "winners": 36389,
+    "amount": 92.85
+   },
+   {
+    "div": 7,
+    "winners": 46976,
+    "amount": 55.9
+   },
+   {
+    "div": 8,
+    "winners": 227776,
+    "amount": 24.6
+   },
+   {
+    "div": 9,
+    "winners": 662591,
+    "amount": 14.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1551,
+  "date": "2026-02-05",
+  "main": [
+   9,
+   12,
+   15,
+   18,
+   22,
+   25,
+   33
+  ],
+  "supp": [
+   8
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 314018.1
+   },
+   {
+    "div": 3,
+    "winners": 88,
+    "amount": 13240.6
+   },
+   {
+    "div": 4,
+    "winners": 1667,
+    "amount": 609.75
+   },
+   {
+    "div": 5,
+    "winners": 3773,
+    "amount": 203.7
+   },
+   {
+    "div": 6,
+    "winners": 53448,
+    "amount": 89.5
+   },
+   {
+    "div": 7,
+    "winners": 72900,
+    "amount": 51.0
+   },
+   {
+    "div": 8,
+    "winners": 332301,
+    "amount": 23.85
+   },
+   {
+    "div": 9,
+    "winners": 953186,
+    "amount": 14.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1552,
+  "date": "2026-02-12",
+  "main": [
+   11,
+   12,
+   14,
+   18,
+   20,
+   21,
+   30
+  ],
+  "supp": [
+   7
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 80000000.0
+   },
+   {
+    "div": 2,
+    "winners": 13,
+    "amount": 106768.7
+   },
+   {
+    "div": 3,
+    "winners": 139,
+    "amount": 12350.55
+   },
+   {
+    "div": 4,
+    "winners": 2597,
+    "amount": 576.65
+   },
+   {
+    "div": 5,
+    "winners": 5379,
+    "amount": 210.5
+   },
+   {
+    "div": 6,
+    "winners": 79065,
+    "amount": 89.15
+   },
+   {
+    "div": 7,
+    "winners": 99473,
+    "amount": 55.1
+   },
+   {
+    "div": 8,
+    "winners": 500112,
+    "amount": 23.35
+   },
+   {
+    "div": 9,
+    "winners": 1446541,
+    "amount": 13.9
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1553,
+  "date": "2026-02-19",
+  "main": [
+   7,
+   12,
+   15,
+   17,
+   26,
+   28,
+   30
+  ],
+  "supp": [
+   9
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 185993.85
+   },
+   {
+    "div": 3,
+    "winners": 31,
+    "amount": 14841.6
+   },
+   {
+    "div": 4,
+    "winners": 637,
+    "amount": 630.05
+   },
+   {
+    "div": 5,
+    "winners": 1436,
+    "amount": 211.35
+   },
+   {
+    "div": 6,
+    "winners": 21672,
+    "amount": 87.2
+   },
+   {
+    "div": 7,
+    "winners": 27846,
+    "amount": 52.75
+   },
+   {
+    "div": 8,
+    "winners": 134158,
+    "amount": 23.35
+   },
+   {
+    "div": 9,
+    "winners": 382621,
+    "amount": 14.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1554,
+  "date": "2026-02-26",
+  "main": [
+   6,
+   8,
+   12,
+   18,
+   25,
+   26,
+   27
+  ],
+  "supp": [
+   5
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 126538.7
+   },
+   {
+    "div": 3,
+    "winners": 47,
+    "amount": 13319.85
+   },
+   {
+    "div": 4,
+    "winners": 869,
+    "amount": 628.45
+   },
+   {
+    "div": 5,
+    "winners": 2010,
+    "amount": 205.45
+   },
+   {
+    "div": 6,
+    "winners": 28870,
+    "amount": 89.05
+   },
+   {
+    "div": 7,
+    "winners": 38667,
+    "amount": 51.65
+   },
+   {
+    "div": 8,
+    "winners": 179468,
+    "amount": 23.75
+   },
+   {
+    "div": 9,
+    "winners": 509427,
+    "amount": 14.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1555,
+  "date": "2026-03-05",
+  "main": [
+   1,
+   5,
+   9,
+   20,
+   22,
+   23,
+   34
+  ],
+  "supp": [
+   17
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 159415.6
+   },
+   {
+    "div": 3,
+    "winners": 65,
+    "amount": 12133.65
+   },
+   {
+    "div": 4,
+    "winners": 1001,
+    "amount": 687.3
+   },
+   {
+    "div": 5,
+    "winners": 2344,
+    "amount": 221.95
+   },
+   {
+    "div": 6,
+    "winners": 34471,
+    "amount": 93.95
+   },
+   {
+    "div": 7,
+    "winners": 44357,
+    "amount": 56.75
+   },
+   {
+    "div": 8,
+    "winners": 217782,
+    "amount": 24.65
+   },
+   {
+    "div": 9,
+    "winners": 635044,
+    "amount": 14.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1556,
+  "date": "2026-03-12",
+  "main": [
+   4,
+   5,
+   6,
+   9,
+   13,
+   14,
+   18
+  ],
+  "supp": [
+   14
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 50000000.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 295715.05
+   },
+   {
+    "div": 3,
+    "winners": 88,
+    "amount": 12468.85
+   },
+   {
+    "div": 4,
+    "winners": 1731,
+    "amount": 552.95
+   },
+   {
+    "div": 5,
+    "winners": 3429,
+    "amount": 211.05
+   },
+   {
+    "div": 6,
+    "winners": 51003,
+    "amount": 88.35
+   },
+   {
+    "div": 7,
+    "winners": 65180,
+    "amount": 53.75
+   },
+   {
+    "div": 8,
+    "winners": 315303,
+    "amount": 23.7
+   },
+   {
+    "div": 9,
+    "winners": 893161,
+    "amount": 14.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1557,
+  "date": "2026-03-19",
+  "main": [
+   4,
+   9,
+   18,
+   20,
+   22,
+   25,
+   35
+  ],
+  "supp": [
+   15
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 5000000.0
+   },
+   {
+    "div": 2,
+    "winners": 20,
+    "amount": 19310.9
+   },
+   {
+    "div": 3,
+    "winners": 43,
+    "amount": 11109.1
+   },
+   {
+    "div": 4,
+    "winners": 837,
+    "amount": 497.85
+   },
+   {
+    "div": 5,
+    "winners": 1439,
+    "amount": 218.95
+   },
+   {
+    "div": 6,
+    "winners": 21430,
+    "amount": 91.55
+   },
+   {
+    "div": 7,
+    "winners": 29380,
+    "amount": 51.9
+   },
+   {
+    "div": 8,
+    "winners": 135439,
+    "amount": 24.0
+   },
+   {
+    "div": 9,
+    "winners": 387358,
+    "amount": 14.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1558,
+  "date": "2026-03-26",
+  "main": [
+   5,
+   9,
+   20,
+   22,
+   24,
+   25,
+   28
+  ],
+  "supp": [
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 3,
+    "winners": 43,
+    "amount": 19930.25
+   },
+   {
+    "div": 4,
+    "winners": 744,
+    "amount": 555.6
+   },
+   {
+    "div": 5,
+    "winners": 1553,
+    "amount": 201.25
+   },
+   {
+    "div": 6,
+    "winners": 22541,
+    "amount": 86.35
+   },
+   {
+    "div": 7,
+    "winners": 28256,
+    "amount": 53.5
+   },
+   {
+    "div": 8,
+    "winners": 137612,
+    "amount": 23.45
+   },
+   {
+    "div": 9,
+    "winners": 390254,
+    "amount": 14.2
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1559,
+  "date": "2026-04-02",
+  "main": [
+   20,
+   23,
+   27,
+   30,
+   32,
+   34,
+   35
+  ],
+  "supp": [
+   18
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 78371.8
+   },
+   {
+    "div": 3,
+    "winners": 36,
+    "amount": 18848.2
+   },
+   {
+    "div": 4,
+    "winners": 1042,
+    "amount": 568.05
+   },
+   {
+    "div": 5,
+    "winners": 1993,
+    "amount": 224.55
+   },
+   {
+    "div": 6,
+    "winners": 28787,
+    "amount": 96.8
+   },
+   {
+    "div": 7,
+    "winners": 39331,
+    "amount": 55.05
+   },
+   {
+    "div": 8,
+    "winners": 181848,
+    "amount": 25.4
+   },
+   {
+    "div": 9,
+    "winners": 535806,
+    "amount": 14.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1560,
+  "date": "2026-04-09",
+  "main": [
+   3,
+   15,
+   17,
+   26,
+   27,
+   32,
+   33
+  ],
+  "supp": [
+   20
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 209625.35
+   },
+   {
+    "div": 3,
+    "winners": 60,
+    "amount": 12963.65
+   },
+   {
+    "div": 4,
+    "winners": 1157,
+    "amount": 586.45
+   },
+   {
+    "div": 5,
+    "winners": 2251,
+    "amount": 227.9
+   },
+   {
+    "div": 6,
+    "winners": 33366,
+    "amount": 95.75
+   },
+   {
+    "div": 7,
+    "winners": 44127,
+    "amount": 56.25
+   },
+   {
+    "div": 8,
+    "winners": 212961,
+    "amount": 24.85
+   },
+   {
+    "div": 9,
+    "winners": 626520,
+    "amount": 14.55
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1561,
+  "date": "2026-04-16",
+  "main": [
+   3,
+   7,
+   13,
+   14,
+   15,
+   19,
+   27
+  ],
+  "supp": [
+   18
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 40000000.0
+   },
+   {
+    "div": 2,
+    "winners": 21,
+    "amount": 36310.6
+   },
+   {
+    "div": 3,
+    "winners": 104,
+    "amount": 9068.45
+   },
+   {
+    "div": 4,
+    "winners": 1862,
+    "amount": 441.85
+   },
+   {
+    "div": 5,
+    "winners": 3160,
+    "amount": 196.85
+   },
+   {
+    "div": 6,
+    "winners": 45162,
+    "amount": 85.75
+   },
+   {
+    "div": 7,
+    "winners": 64004,
+    "amount": 47.05
+   },
+   {
+    "div": 8,
+    "winners": 275621,
+    "amount": 23.3
+   },
+   {
+    "div": 9,
+    "winners": 774901,
+    "amount": 14.25
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1562,
+  "date": "2026-04-23",
+  "main": [
+   4,
+   11,
+   28,
+   29,
+   30,
+   34,
+   35
+  ],
+  "supp": [
+   3
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 5213380.2
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 314467.75
+   },
+   {
+    "div": 3,
+    "winners": 25,
+    "amount": 15557.9
+   },
+   {
+    "div": 4,
+    "winners": 574,
+    "amount": 591.1
+   },
+   {
+    "div": 5,
+    "winners": 1068,
+    "amount": 240.2
+   },
+   {
+    "div": 6,
+    "winners": 16288,
+    "amount": 98.05
+   },
+   {
+    "div": 7,
+    "winners": 20865,
+    "amount": 59.5
+   },
+   {
+    "div": 8,
+    "winners": 105774,
+    "amount": 25.05
+   },
+   {
+    "div": 9,
+    "winners": 315984,
+    "amount": 14.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1563,
+  "date": "2026-04-30",
+  "main": [
+   4,
+   13,
+   16,
+   17,
+   21,
+   24,
+   27
+  ],
+  "supp": [
+   17
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 155158.55
+   },
+   {
+    "div": 3,
+    "winners": 32,
+    "amount": 11994.15
+   },
+   {
+    "div": 4,
+    "winners": 597,
+    "amount": 560.85
+   },
+   {
+    "div": 5,
+    "winners": 1234,
+    "amount": 205.15
+   },
+   {
+    "div": 6,
+    "winners": 18025,
+    "amount": 87.45
+   },
+   {
+    "div": 7,
+    "winners": 23356,
+    "amount": 52.45
+   },
+   {
+    "div": 8,
+    "winners": 111761,
+    "amount": 23.4
+   },
+   {
+    "div": 9,
+    "winners": 314151,
+    "amount": 14.3
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1564,
+  "date": "2026-05-07",
+  "main": [
+   7,
+   15,
+   17,
+   23,
+   28,
+   30,
+   31
+  ],
+  "supp": [
+   18
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 208029.2
+   },
+   {
+    "div": 3,
+    "winners": 29,
+    "amount": 17744.8
+   },
+   {
+    "div": 4,
+    "winners": 636,
+    "amount": 705.85
+   },
+   {
+    "div": 5,
+    "winners": 1569,
+    "amount": 216.35
+   },
+   {
+    "div": 6,
+    "winners": 23595,
+    "amount": 89.55
+   },
+   {
+    "div": 7,
+    "winners": 31188,
+    "amount": 52.65
+   },
+   {
+    "div": 8,
+    "winners": 146768,
+    "amount": 23.85
+   },
+   {
+    "div": 9,
+    "winners": 420277,
+    "amount": 14.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1565,
+  "date": "2026-05-14",
+  "main": [
+   1,
+   2,
+   3,
+   16,
+   19,
+   22,
+   25
+  ],
+  "supp": [
+   18
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 272084.3
+   },
+   {
+    "div": 3,
+    "winners": 43,
+    "amount": 15652.35
+   },
+   {
+    "div": 4,
+    "winners": 979,
+    "amount": 599.7
+   },
+   {
+    "div": 5,
+    "winners": 1961,
+    "amount": 226.4
+   },
+   {
+    "div": 6,
+    "winners": 29850,
+    "amount": 92.6
+   },
+   {
+    "div": 7,
+    "winners": 39212,
+    "amount": 54.8
+   },
+   {
+    "div": 8,
+    "winners": 189028,
+    "amount": 24.25
+   },
+   {
+    "div": 9,
+    "winners": 548199,
+    "amount": 14.35
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1566,
+  "date": "2026-05-21",
+  "main": [
+   1,
+   13,
+   15,
+   16,
+   29,
+   32,
+   34
+  ],
+  "supp": [
+   6
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 369858.25
+   },
+   {
+    "div": 3,
+    "winners": 59,
+    "amount": 15507.0
+   },
+   {
+    "div": 4,
+    "winners": 1147,
+    "amount": 695.85
+   },
+   {
+    "div": 5,
+    "winners": 2499,
+    "amount": 241.5
+   },
+   {
+    "div": 6,
+    "winners": 37533,
+    "amount": 100.1
+   },
+   {
+    "div": 7,
+    "winners": 47825,
+    "amount": 61.05
+   },
+   {
+    "div": 8,
+    "winners": 244402,
+    "amount": 25.5
+   },
+   {
+    "div": 9,
+    "winners": 733427,
+    "amount": 14.6
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1567,
+  "date": "2026-05-28",
+  "main": [
+   5,
+   10,
+   12,
+   16,
+   26,
+   30,
+   34
+  ],
+  "supp": [
+   11
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 60000000.0
+   },
+   {
+    "div": 2,
+    "winners": 30,
+    "amount": 33614.65
+   },
+   {
+    "div": 3,
+    "winners": 103,
+    "amount": 12109.5
+   },
+   {
+    "div": 4,
+    "winners": 1888,
+    "amount": 576.3
+   },
+   {
+    "div": 5,
+    "winners": 3819,
+    "amount": 215.4
+   },
+   {
+    "div": 6,
+    "winners": 56181,
+    "amount": 91.15
+   },
+   {
+    "div": 7,
+    "winners": 72835,
+    "amount": 54.65
+   },
+   {
+    "div": 8,
+    "winners": 355772,
+    "amount": 23.85
+   },
+   {
+    "div": 9,
+    "winners": 1032227,
+    "amount": 14.15
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1568,
+  "date": "2026-06-04",
+  "main": [
+   3,
+   5,
+   12,
+   27,
+   32,
+   33,
+   34
+  ],
+  "supp": [
+   10
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 61989.45
+   },
+   {
+    "div": 3,
+    "winners": 28,
+    "amount": 13691.25
+   },
+   {
+    "div": 4,
+    "winners": 532,
+    "amount": 628.6
+   },
+   {
+    "div": 5,
+    "winners": 1083,
+    "amount": 233.45
+   },
+   {
+    "div": 6,
+    "winners": 16819,
+    "amount": 93.6
+   },
+   {
+    "div": 7,
+    "winners": 20872,
+    "amount": 58.6
+   },
+   {
+    "div": 8,
+    "winners": 107125,
+    "amount": 24.35
+   },
+   {
+    "div": 9,
+    "winners": 315564,
+    "amount": 14.2
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1569,
+  "date": "2026-06-11",
+  "main": [
+   2,
+   8,
+   9,
+   11,
+   17,
+   24,
+   25
+  ],
+  "supp": [
+   18
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 215348.4
+   },
+   {
+    "div": 3,
+    "winners": 42,
+    "amount": 12683.45
+   },
+   {
+    "div": 4,
+    "winners": 1019,
+    "amount": 456.05
+   },
+   {
+    "div": 5,
+    "winners": 2109,
+    "amount": 166.6
+   },
+   {
+    "div": 6,
+    "winners": 27075,
+    "amount": 80.8
+   },
+   {
+    "div": 7,
+    "winners": 42772,
+    "amount": 39.75
+   },
+   {
+    "div": 8,
+    "winners": 157335,
+    "amount": 23.05
+   },
+   {
+    "div": 9,
+    "winners": 439267,
+    "amount": 14.2
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
   "draw": 1570,
   "date": "2026-06-18",
   "main": [

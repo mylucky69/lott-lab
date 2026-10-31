@@ -1062,341 +1062,347 @@
   "prize_lines": 0
  },
  "stats": {
-  "n_draws": 20,
-  "first": "2026-06-16",
+  "n_draws": 231,
+  "first": "2022-05-31",
   "last": "2026-10-27",
   "numbers": [
    {
     "n": 1,
-    "count": 2,
+    "count": 34,
     "recent": 2,
     "gap": 3
    },
    {
     "n": 2,
-    "count": 4,
+    "count": 38,
     "recent": 4,
     "gap": 4
    },
    {
     "n": 3,
-    "count": 1,
+    "count": 38,
     "recent": 1,
     "gap": 16
    },
    {
     "n": 4,
-    "count": 5,
+    "count": 40,
     "recent": 5,
     "gap": 5
    },
    {
     "n": 5,
-    "count": 1,
+    "count": 32,
     "recent": 1,
     "gap": 2
    },
    {
     "n": 6,
-    "count": 3,
+    "count": 35,
     "recent": 3,
     "gap": 1
    },
    {
     "n": 7,
-    "count": 3,
+    "count": 32,
     "recent": 3,
     "gap": 5
    },
    {
     "n": 8,
-    "count": 6,
+    "count": 31,
     "recent": 6,
     "gap": 0
    },
    {
     "n": 9,
-    "count": 2,
+    "count": 36,
     "recent": 2,
     "gap": 7
    },
    {
     "n": 10,
-    "count": 2,
+    "count": 29,
     "recent": 2,
     "gap": 15
    },
    {
     "n": 11,
-    "count": 1,
+    "count": 25,
     "recent": 1,
     "gap": 12
    },
    {
     "n": 12,
-    "count": 1,
+    "count": 35,
     "recent": 1,
     "gap": 1
    },
    {
     "n": 13,
-    "count": 5,
+    "count": 32,
     "recent": 5,
     "gap": 0
    },
    {
     "n": 14,
-    "count": 3,
+    "count": 33,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 15,
-    "count": 1,
+    "count": 25,
     "recent": 1,
     "gap": 12
    },
    {
     "n": 16,
-    "count": 1,
+    "count": 26,
     "recent": 1,
     "gap": 15
    },
    {
     "n": 17,
-    "count": 4,
+    "count": 42,
     "recent": 4,
     "gap": 2
    },
    {
     "n": 18,
-    "count": 2,
+    "count": 36,
     "recent": 2,
     "gap": 4
    },
    {
     "n": 19,
-    "count": 4,
+    "count": 38,
     "recent": 4,
     "gap": 1
    },
    {
     "n": 20,
-    "count": 1,
+    "count": 28,
     "recent": 1,
     "gap": 14
    },
    {
     "n": 21,
-    "count": 6,
+    "count": 51,
     "recent": 6,
     "gap": 0
    },
    {
     "n": 22,
-    "count": 4,
+    "count": 37,
     "recent": 4,
     "gap": 1
    },
    {
     "n": 23,
-    "count": 0,
+    "count": 28,
     "recent": 0,
-    "gap": 20
+    "gap": 26
    },
    {
     "n": 24,
-    "count": 2,
+    "count": 38,
     "recent": 2,
     "gap": 6
    },
    {
     "n": 25,
-    "count": 1,
+    "count": 30,
     "recent": 1,
     "gap": 3
    },
    {
     "n": 26,
-    "count": 2,
+    "count": 30,
     "recent": 2,
     "gap": 16
    },
    {
     "n": 27,
-    "count": 4,
+    "count": 38,
     "recent": 4,
     "gap": 9
    },
    {
     "n": 28,
-    "count": 2,
+    "count": 39,
     "recent": 2,
     "gap": 16
    },
    {
     "n": 29,
-    "count": 5,
+    "count": 35,
     "recent": 5,
     "gap": 2
    },
    {
     "n": 30,
-    "count": 6,
+    "count": 43,
     "recent": 6,
     "gap": 7
    },
    {
     "n": 31,
-    "count": 1,
+    "count": 31,
     "recent": 1,
     "gap": 18
    },
    {
     "n": 32,
-    "count": 3,
+    "count": 37,
     "recent": 3,
     "gap": 2
    },
    {
     "n": 33,
-    "count": 3,
+    "count": 39,
     "recent": 3,
     "gap": 1
    },
    {
     "n": 34,
-    "count": 2,
+    "count": 31,
     "recent": 2,
     "gap": 0
    },
    {
     "n": 35,
-    "count": 7,
+    "count": 34,
     "recent": 7,
     "gap": 2
    },
    {
     "n": 36,
-    "count": 4,
+    "count": 32,
     "recent": 4,
     "gap": 0
    },
    {
     "n": 37,
-    "count": 1,
+    "count": 35,
     "recent": 1,
     "gap": 13
    },
    {
     "n": 38,
-    "count": 5,
+    "count": 35,
     "recent": 5,
     "gap": 3
    },
    {
     "n": 39,
-    "count": 2,
+    "count": 40,
     "recent": 2,
     "gap": 10
    },
    {
     "n": 40,
-    "count": 5,
+    "count": 32,
     "recent": 5,
     "gap": 0
    },
    {
     "n": 41,
-    "count": 6,
+    "count": 37,
     "recent": 6,
     "gap": 3
    },
    {
     "n": 42,
-    "count": 3,
+    "count": 32,
     "recent": 3,
     "gap": 0
    },
    {
     "n": 43,
-    "count": 4,
+    "count": 38,
     "recent": 4,
     "gap": 4
    },
    {
     "n": 44,
-    "count": 1,
+    "count": 32,
     "recent": 1,
     "gap": 8
    },
    {
     "n": 45,
-    "count": 3,
+    "count": 29,
     "recent": 3,
     "gap": 4
    },
    {
     "n": 46,
-    "count": 2,
+    "count": 28,
     "recent": 2,
     "gap": 2
    },
    {
     "n": 47,
-    "count": 4,
+    "count": 41,
     "recent": 4,
     "gap": 9
    }
   ],
-  "expected_count": 2.978723404255319,
-  "chi2": 48.00000000000001,
-  "p_chi2": 0.39169821802049204,
-  "mean_overlap": 1.0,
+  "expected_count": 34.40425531914894,
+  "chi2": 35.03401360544218,
+  "p_chi2": 0.8806547687396205,
+  "mean_overlap": 1.0695652173913044,
   "expected_overlap": 1.0425531914893618,
-  "p_serial": 0.7840084993864255,
+  "p_serial": 0.666877398237888,
   "odd": [
    {
     "odd": 0,
     "observed": 0,
-    "expected": 0.07796188798107674
+    "expected": 0.9004598061814364
    },
    {
     "odd": 1,
-    "observed": 0,
-    "expected": 0.7704468929894643
+    "observed": 6,
+    "expected": 8.898661614028313
    },
    {
     "odd": 2,
-    "observed": 4,
-    "expected": 2.953379756459613
+    "observed": 34,
+    "expected": 34.111536187108534
    },
    {
     "odd": 3,
-    "observed": 4,
-    "expected": 5.699504793167675
+    "observed": 62,
+    "expected": 65.82928036108665
    },
    {
     "odd": 4,
-    "observed": 9,
-    "expected": 5.984480032826058
+    "observed": 77,
+    "expected": 69.12074437914097
    },
    {
     "odd": 5,
-    "observed": 3,
-    "expected": 3.4197028759006045
+    "observed": 41,
+    "expected": 39.497568216651985
    },
    {
     "odd": 6,
-    "observed": 0,
-    "expected": 0.984459918819871
+    "observed": 10,
+    "expected": 11.37051206236951
    },
    {
     "odd": 7,
-    "observed": 0,
-    "expected": 0.11006384185563775
+    "observed": 1,
+    "expected": 1.2712373734326161
    }
   ]
  },
- "backtest": null
+ "backtest": null,
+ "history": {
+  "cursor": "2022-05-24",
+  "done": true,
+  "misses": 0,
+  "stop": "2022-05-31"
+ }
 }

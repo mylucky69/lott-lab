@@ -1150,353 +1150,358 @@
   "prize_lines": 0
  },
  "stats": {
-  "n_draws": 20,
-  "first": "2026-06-18",
+  "n_draws": 109,
+  "first": "2024-10-03",
   "last": "2026-10-29",
   "numbers": [
    {
     "n": 1,
-    "count": 5,
+    "count": 27,
     "recent": 5,
     "gap": 5
    },
    {
     "n": 2,
-    "count": 3,
+    "count": 17,
     "recent": 3,
     "gap": 4
    },
    {
     "n": 3,
-    "count": 6,
+    "count": 22,
     "recent": 6,
     "gap": 0
    },
    {
     "n": 4,
-    "count": 3,
+    "count": 20,
     "recent": 3,
     "gap": 1
    },
    {
     "n": 5,
-    "count": 3,
+    "count": 20,
     "recent": 3,
     "gap": 0
    },
    {
     "n": 6,
-    "count": 4,
+    "count": 17,
     "recent": 4,
     "gap": 4
    },
    {
     "n": 7,
-    "count": 5,
+    "count": 22,
     "recent": 5,
     "gap": 0
    },
    {
     "n": 8,
-    "count": 2,
+    "count": 14,
     "recent": 2,
     "gap": 3
    },
    {
     "n": 9,
-    "count": 2,
+    "count": 25,
     "recent": 2,
     "gap": 10
    },
    {
     "n": 10,
-    "count": 3,
+    "count": 17,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 11,
-    "count": 6,
+    "count": 30,
     "recent": 6,
     "gap": 4
    },
    {
     "n": 12,
-    "count": 3,
+    "count": 22,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 13,
-    "count": 5,
+    "count": 18,
     "recent": 5,
     "gap": 1
    },
    {
     "n": 14,
-    "count": 6,
+    "count": 30,
     "recent": 6,
     "gap": 0
    },
    {
     "n": 15,
-    "count": 7,
+    "count": 31,
     "recent": 7,
     "gap": 2
    },
    {
     "n": 16,
-    "count": 3,
+    "count": 21,
     "recent": 3,
     "gap": 4
    },
    {
     "n": 17,
-    "count": 5,
+    "count": 20,
     "recent": 5,
     "gap": 6
    },
    {
     "n": 18,
-    "count": 4,
+    "count": 24,
     "recent": 4,
     "gap": 5
    },
    {
     "n": 19,
-    "count": 3,
+    "count": 26,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 20,
-    "count": 4,
+    "count": 17,
     "recent": 4,
     "gap": 1
    },
    {
     "n": 21,
-    "count": 2,
+    "count": 20,
     "recent": 2,
     "gap": 9
    },
    {
     "n": 22,
-    "count": 8,
+    "count": 27,
     "recent": 8,
     "gap": 1
    },
    {
     "n": 23,
-    "count": 2,
+    "count": 23,
     "recent": 2,
     "gap": 9
    },
    {
     "n": 24,
-    "count": 4,
+    "count": 20,
     "recent": 4,
     "gap": 2
    },
    {
     "n": 25,
-    "count": 1,
+    "count": 19,
     "recent": 1,
     "gap": 18
    },
    {
     "n": 26,
-    "count": 6,
+    "count": 22,
     "recent": 6,
     "gap": 1
    },
    {
     "n": 27,
-    "count": 5,
+    "count": 23,
     "recent": 5,
     "gap": 0
    },
    {
     "n": 28,
-    "count": 4,
+    "count": 20,
     "recent": 4,
     "gap": 7
    },
    {
     "n": 29,
-    "count": 4,
+    "count": 17,
     "recent": 4,
     "gap": 7
    },
    {
     "n": 30,
-    "count": 4,
+    "count": 27,
     "recent": 4,
     "gap": 2
    },
    {
     "n": 31,
-    "count": 2,
+    "count": 13,
     "recent": 2,
     "gap": 0
    },
    {
     "n": 32,
-    "count": 5,
+    "count": 25,
     "recent": 5,
     "gap": 2
    },
    {
     "n": 33,
-    "count": 1,
+    "count": 22,
     "recent": 1,
     "gap": 1
    },
    {
     "n": 34,
-    "count": 7,
+    "count": 28,
     "recent": 7,
     "gap": 0
    },
    {
     "n": 35,
-    "count": 3,
+    "count": 17,
     "recent": 3,
     "gap": 11
    }
   ],
-  "expected_count": 4.0,
-  "chi2": 25.5,
-  "p_chi2": 0.8529390016815723,
-  "mean_overlap": 1.5263157894736843,
+  "expected_count": 21.8,
+  "chi2": 32.27522935779816,
+  "p_chi2": 0.5523113157230464,
+  "mean_overlap": 1.5277777777777777,
   "expected_overlap": 1.4,
-  "p_serial": 0.6442260573418747,
+  "p_serial": 0.23611997640053303,
   "odd": [
    {
     "odd": 0,
     "observed": 0,
-    "expected": 0.05784204671857619
+    "expected": 0.31523915461624025
    },
    {
     "odd": 1,
-    "observed": 1,
-    "expected": 0.6625543533218727
+    "observed": 3,
+    "expected": 3.6109212256042067
    },
    {
     "odd": 2,
-    "observed": 4,
-    "expected": 2.8158560016179592
+    "observed": 12,
+    "expected": 15.346415208817879
    },
    {
     "odd": 3,
-    "observed": 7,
-    "expected": 5.7761148751137625
+    "observed": 34,
+    "expected": 31.479826069370006
    },
    {
     "odd": 4,
-    "observed": 3,
-    "expected": 6.18869450905046
+    "observed": 36,
+    "expected": 33.728385074325004
    },
    {
     "odd": 5,
-    "observed": 5,
-    "expected": 3.4656689250682575
+    "observed": 22,
+    "expected": 18.887895641622006
    },
    {
     "odd": 6,
-    "observed": 0,
-    "expected": 0.9386186672059864
+    "observed": 2,
+    "expected": 5.115471736272626
    },
    {
     "odd": 7,
     "observed": 0,
-    "expected": 0.09465062190312469
+    "expected": 0.5158458893720296
    }
   ],
   "pb": [
    {
     "n": 1,
-    "count": 1
+    "count": 4
    },
    {
     "n": 2,
-    "count": 2
+    "count": 7
    },
    {
     "n": 3,
-    "count": 0
+    "count": 5
    },
    {
     "n": 4,
-    "count": 0
+    "count": 3
    },
    {
     "n": 5,
-    "count": 0
+    "count": 3
    },
    {
     "n": 6,
-    "count": 0
+    "count": 5
    },
    {
     "n": 7,
-    "count": 2
+    "count": 5
    },
    {
     "n": 8,
-    "count": 0
-   },
-   {
-    "n": 9,
-    "count": 0
-   },
-   {
-    "n": 10,
-    "count": 0
-   },
-   {
-    "n": 11,
-    "count": 3
-   },
-   {
-    "n": 12,
-    "count": 1
-   },
-   {
-    "n": 13,
-    "count": 3
-   },
-   {
-    "n": 14,
-    "count": 1
-   },
-   {
-    "n": 15,
-    "count": 0
-   },
-   {
-    "n": 16,
-    "count": 3
-   },
-   {
-    "n": 17,
-    "count": 0
-   },
-   {
-    "n": 18,
     "count": 2
    },
    {
+    "n": 9,
+    "count": 4
+   },
+   {
+    "n": 10,
+    "count": 7
+   },
+   {
+    "n": 11,
+    "count": 8
+   },
+   {
+    "n": 12,
+    "count": 3
+   },
+   {
+    "n": 13,
+    "count": 6
+   },
+   {
+    "n": 14,
+    "count": 9
+   },
+   {
+    "n": 15,
+    "count": 2
+   },
+   {
+    "n": 16,
+    "count": 7
+   },
+   {
+    "n": 17,
+    "count": 7
+   },
+   {
+    "n": 18,
+    "count": 9
+   },
+   {
     "n": 19,
-    "count": 1
+    "count": 4
    },
    {
     "n": 20,
-    "count": 1
+    "count": 9
    }
   ],
-  "pb_expected": 1.0,
-  "p_chi2_pb": 0.19615235720749558
+  "pb_expected": 5.45,
+  "p_chi2_pb": 0.46391889162320954
  },
- "backtest": null
+ "backtest": null,
+ "history": {
+  "cursor": "2024-09-26",
+  "misses": 0,
+  "stop": "2018-04-19"
+ }
 }
