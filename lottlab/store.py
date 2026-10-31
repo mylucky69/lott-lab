@@ -86,6 +86,21 @@ def set_dividends(game: Game, draw: int, dividends: list[dict]) -> bool:
     return False
 
 
+def set_jackpots(game: Game, items: list[dict]) -> int:
+    """Attach the advertised division-1 jackpot to stored draws, matched by date."""
+    by_date = {i["date"]: i["jackpot"] for i in items}
+    current = read_json(draws_path(game), [])
+    n = 0
+    for d in current:
+        j = by_date.get(d["date"])
+        if j and d.get("jackpot") != j:
+            d["jackpot"] = j
+            n += 1
+    if n:
+        write_json(draws_path(game), current)
+    return n
+
+
 def latest_due_date(game: Game) -> dt.date:
     """Date of the most recent draw whose result should be published by now (21:00 Sydney)."""
     now = now_sydney()

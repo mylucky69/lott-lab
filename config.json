@@ -2,9 +2,9 @@
  "lines": 50,
  "strategy": "balanced",
  "ticket_price": {
-  "oz": 1.45,
-  "powerball": 1.4,
-  "saturday": 0.85
+  "oz": 1.46,
+  "powerball": 1.572,
+  "saturday": 0.976
  },
- "ticket_price_note": "Ước tính giá gốc mỗi dòng, chưa gồm hoa hồng đại lý. Sửa theo giá bạn thực trả."
+ "ticket_price_note": "Giá thật bạn trả cho 50 dòng: Oz Lotto $73, Powerball $78.60, Saturday Lotto $48.80 (chia 50)."
 }

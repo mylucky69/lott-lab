@@ -203,3 +203,37 @@ def next_jackpot(game: Game) -> dict | None:
         if found:
             return found
     return None
+
+
+def lg_history_url(game: Game, page: int = 1) -> str:
+    slug = LG_SLUG[game.id]
+    url = f"{LG_INDEX}/{slug}/{slug}-results-history"
+    return url if page <= 1 else f"{url}?page={page}"
+
+
+def parse_lotteryguru_history(page: str) -> dict:
+    """Jackpot of each draw on a history page, plus paging info and the next jackpot."""
+    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", _clean(page))))
+    draws = []
+    pat = r"(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) (\d{1,2} [A-Z][a-z]{2} \d{4})(?: \d{1,2})+ Jackpot A\$ ?([\d,]+)"
+    for date, amount in re.findall(pat, text):
+        try:
+            iso = dt.datetime.strptime(date, "%d %b %Y").date().isoformat()
+        except ValueError:
+            continue
+        draws.append({"date": iso, "jackpot": float(amount.replace(",", ""))})
+    last = re.search(r'lastPage="(\d+)"', page)
+    nxt = re.search(r"Next Jackpot A\$ ?([\d,]+)", text)
+    nd = re.search(r"Next draw \w+day (\d{1,2} [A-Z][a-z]{2}) (\d{4})", text)
+    next_date = None
+    if nd:
+        try:
+            next_date = dt.datetime.strptime(f"{nd.group(1)} {nd.group(2)}", "%d %b %Y").date().isoformat()
+        except ValueError:
+            pass
+    return {"draws": draws, "last_page": int(last.group(1)) if last else 1,
+            "next": {"jackpot": float(nxt.group(1).replace(",", "")), "date": next_date} if nxt else None}
+
+
+def lotteryguru_history(game: Game, page: int = 1) -> dict:
+    return parse_lotteryguru_history(polite_get(lg_history_url(game, page)))

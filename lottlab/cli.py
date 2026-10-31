@@ -5,6 +5,7 @@
   add-result GAME DRAW DATE "MAIN" "SUPP"   manual result entry (fallback)
   import-csv GAME FILE                      CSV: draw,date,main,supp  (numbers space separated)
   history [pages]   crawl older draws backwards, a limited number of pages per run
+  jackpots [game]   download the advertised jackpot of past draws (lotteryguru, ~10 pages/game)
   backtest [game]   walk-forward experiment (slow, run weekly)
   build             rebuild docs/data/*.json only
 """
@@ -21,6 +22,7 @@ from .games import GAMES, Game, check_line
 from .generator import STRATEGIES, generate
 from .value import value as draw_value
 from .store import (DATA, ROOT, SITE_DATA, all_picks, latest_due_date, load_draws, load_pick, merge_draws, set_dividends,
+                    set_jackpots,
                     next_draw, now_sydney, read_json, save_pick, write_json)
 
 CONFIG = read_json(ROOT / "config.json", {}) or {}
@@ -199,10 +201,18 @@ def fetch_new(game: Game, st: dict) -> None:
         jp_path = DATA / game.id / "jackpot.json"
         jp = read_json(jp_path, {}) or {}
         if jp.get("for_draw") != nxt["draw"]:
-            try:
-                found = src.next_jackpot(game)
+            found = None
+            try:  # history page 1: next jackpot + jackpots of the last 10 draws
+                page = src.lotteryguru_history(game, 1)
+                set_jackpots(game, page["draws"])
+                found = page["next"]
             except Exception as e:  # optional information
-                found, _ = None, errors.append(f"jackpot: {e}")
+                errors.append(f"jackpot: {e}")
+            if not found:
+                try:
+                    found = src.next_jackpot(game)
+                except Exception as e:
+                    errors.append(f"jackpot: {e}")
             if found and (not found.get("date") or found["date"] == nxt["date"]):
                 write_json(jp_path, {**found, "for_draw": nxt["draw"],
                                      "fetched_at": now_sydney().isoformat(timespec="minutes")})
@@ -380,6 +390,33 @@ def history_game(game: Game, budget: int) -> int:
     return used
 
 
+def cmd_jackpots(args: list[str]) -> int:
+    """Download the jackpot of every draw lotteryguru lists (about 10 pages per game, once)."""
+    src.PAUSE = 4.0
+    for game in GAMES.values():
+        if args and game.id not in args:
+            continue
+        state_path = DATA / game.id / "jackpots.json"
+        state = read_json(state_path, {}) or {}
+        if state.get("done"):
+            continue
+        first = src.lotteryguru_history(game, 1)
+        n = set_jackpots(game, first["draws"])
+        pages = range(max(2, state.get("next_page", 2)), first["last_page"] + 1)
+        for p in pages:
+            try:
+                n += set_jackpots(game, src.lotteryguru_history(game, p)["draws"])
+            except src.SourceError as e:
+                log(f"  page {p}: {e}")
+                state["next_page"] = p
+                break
+        else:
+            state["done"] = True
+        write_json(state_path, state)
+        log(f"  {game.name}: jackpots set on {n} draw(s)")
+    return cmd_build([])
+
+
 def cmd_history(args: list[str]) -> int:
     budget = int(args[0]) if args else 300
     src.PAUSE = 4.0
@@ -453,7 +490,7 @@ def main(argv: list[str]) -> int:
         return 1
     cmds = {"update": cmd_update, "backfill": cmd_backfill, "add-result": cmd_add_result,
             "import-csv": cmd_import_csv, "backtest": cmd_backtest, "build": cmd_build,
-            "history": cmd_history}
+            "history": cmd_history, "jackpots": cmd_jackpots}
     if argv[0] not in cmds:
         print(__doc__)
         return 1

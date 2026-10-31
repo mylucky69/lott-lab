@@ -26,6 +26,7 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - run: python -m lottlab jackpots
       - run: python -m lottlab history 300
       - name: Lưu thay đổi
         run: bash .github/scripts/save.sh "Tải thêm lịch sử kết quả"
