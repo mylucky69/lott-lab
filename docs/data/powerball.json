@@ -102,7 +102,7 @@
  "config": {
   "lines": 50,
   "strategy": "balanced",
-  "ticket_price": null
+  "ticket_price": 1.4
  },
  "next": {
   "game": "powerball",
@@ -1745,270 +1745,271 @@
   "draws": 0,
   "lines": 0,
   "prize": 0,
-  "prize_lines": 0
+  "prize_lines": 0,
+  "cost": 0.0
  },
  "stats": {
-  "n_draws": 371,
-  "first": "2019-09-19",
+  "n_draws": 445,
+  "first": "2018-04-19",
   "last": "2026-10-29",
   "numbers": [
    {
     "n": 1,
-    "count": 77,
+    "count": 87,
     "recent": 5,
     "gap": 5
    },
    {
     "n": 2,
-    "count": 69,
+    "count": 89,
     "recent": 3,
     "gap": 4
    },
    {
     "n": 3,
-    "count": 80,
+    "count": 94,
     "recent": 6,
     "gap": 0
    },
    {
     "n": 4,
-    "count": 72,
+    "count": 88,
     "recent": 3,
     "gap": 1
    },
    {
     "n": 5,
-    "count": 69,
+    "count": 84,
     "recent": 3,
     "gap": 0
    },
    {
     "n": 6,
-    "count": 76,
+    "count": 89,
     "recent": 4,
     "gap": 4
    },
    {
     "n": 7,
-    "count": 84,
+    "count": 102,
     "recent": 5,
     "gap": 0
    },
    {
     "n": 8,
-    "count": 62,
+    "count": 77,
     "recent": 2,
     "gap": 3
    },
    {
     "n": 9,
-    "count": 86,
+    "count": 102,
     "recent": 2,
     "gap": 10
    },
    {
     "n": 10,
-    "count": 74,
+    "count": 86,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 11,
-    "count": 81,
+    "count": 101,
     "recent": 6,
     "gap": 4
    },
    {
     "n": 12,
-    "count": 87,
+    "count": 93,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 13,
-    "count": 67,
+    "count": 79,
     "recent": 5,
     "gap": 1
    },
    {
     "n": 14,
-    "count": 80,
+    "count": 96,
     "recent": 6,
     "gap": 0
    },
    {
     "n": 15,
-    "count": 77,
+    "count": 87,
     "recent": 7,
     "gap": 2
    },
    {
     "n": 16,
-    "count": 79,
+    "count": 91,
     "recent": 3,
     "gap": 4
    },
    {
     "n": 17,
-    "count": 79,
+    "count": 102,
     "recent": 5,
     "gap": 6
    },
    {
     "n": 18,
-    "count": 84,
+    "count": 95,
     "recent": 4,
     "gap": 5
    },
    {
     "n": 19,
-    "count": 80,
+    "count": 94,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 20,
-    "count": 75,
+    "count": 93,
     "recent": 4,
     "gap": 1
    },
    {
     "n": 21,
-    "count": 72,
+    "count": 84,
     "recent": 2,
     "gap": 9
    },
    {
     "n": 22,
-    "count": 75,
+    "count": 93,
     "recent": 8,
     "gap": 1
    },
    {
     "n": 23,
-    "count": 76,
+    "count": 93,
     "recent": 2,
     "gap": 9
    },
    {
     "n": 24,
-    "count": 70,
+    "count": 86,
     "recent": 4,
     "gap": 2
    },
    {
     "n": 25,
-    "count": 71,
+    "count": 88,
     "recent": 1,
     "gap": 18
    },
    {
     "n": 26,
-    "count": 70,
+    "count": 79,
     "recent": 6,
     "gap": 1
    },
    {
     "n": 27,
-    "count": 71,
+    "count": 88,
     "recent": 5,
     "gap": 0
    },
    {
     "n": 28,
-    "count": 75,
+    "count": 88,
     "recent": 4,
     "gap": 7
    },
    {
     "n": 29,
-    "count": 60,
+    "count": 78,
     "recent": 4,
     "gap": 7
    },
    {
     "n": 30,
-    "count": 80,
+    "count": 95,
     "recent": 4,
     "gap": 2
    },
    {
     "n": 31,
-    "count": 59,
+    "count": 71,
     "recent": 2,
     "gap": 0
    },
    {
     "n": 32,
-    "count": 78,
+    "count": 95,
     "recent": 5,
     "gap": 2
    },
    {
     "n": 33,
-    "count": 65,
+    "count": 78,
     "recent": 1,
     "gap": 1
    },
    {
     "n": 34,
-    "count": 72,
+    "count": 89,
     "recent": 7,
     "gap": 0
    },
    {
     "n": 35,
-    "count": 65,
+    "count": 81,
     "recent": 3,
     "gap": 11
    }
   ],
-  "expected_count": 74.2,
-  "chi2": 22.74393530997304,
-  "p_chi2": 0.9292571233153862,
-  "mean_overlap": 1.4243243243243244,
+  "expected_count": 89.0,
+  "chi2": 22.247191011235955,
+  "p_chi2": 0.9394140398159925,
+  "mean_overlap": 1.4436936936936937,
   "expected_overlap": 1.4,
-  "p_serial": 0.6284439156714791,
+  "p_serial": 0.3411842080792164,
   "odd": [
    {
     "odd": 0,
     "observed": 4,
-    "expected": 1.0729699666295884
+    "expected": 1.2869855394883203
    },
    {
     "odd": 1,
-    "observed": 9,
-    "expected": 12.29038325412074
+    "observed": 11,
+    "expected": 14.74183436141167
    },
    {
     "odd": 2,
-    "observed": 50,
-    "expected": 52.23412883001315
+    "observed": 59,
+    "expected": 62.65279603599959
    },
    {
     "odd": 3,
-    "observed": 113,
-    "expected": 107.1469309333603
+    "observed": 137,
+    "expected": 128.51855597128122
    },
    {
     "odd": 4,
-    "observed": 118,
-    "expected": 114.80028314288603
+    "observed": 135,
+    "expected": 137.69845282637274
    },
    {
     "odd": 5,
-    "observed": 64,
-    "expected": 64.28815856001619
+    "observed": 82,
+    "expected": 77.11113358276873
    },
    {
     "odd": 6,
-    "observed": 12,
-    "expected": 17.41137627667105
+    "observed": 16,
+    "expected": 20.884265345333198
    },
    {
     "odd": 7,
     "observed": 1,
-    "expected": 1.755769036302963
+    "expected": 2.1059763373445244
    }
   ],
   "pb": [
@@ -2018,83 +2019,83 @@
    },
    {
     "n": 2,
-    "count": 27
+    "count": 31
    },
    {
     "n": 3,
-    "count": 18
+    "count": 25
    },
    {
     "n": 4,
-    "count": 22
+    "count": 26
    },
    {
     "n": 5,
-    "count": 12
-   },
-   {
-    "n": 6,
-    "count": 23
-   },
-   {
-    "n": 7,
-    "count": 18
-   },
-   {
-    "n": 8,
-    "count": 11
-   },
-   {
-    "n": 9,
-    "count": 18
-   },
-   {
-    "n": 10,
-    "count": 25
-   },
-   {
-    "n": 11,
-    "count": 23
-   },
-   {
-    "n": 12,
-    "count": 10
-   },
-   {
-    "n": 13,
     "count": 15
    },
    {
-    "n": 14,
+    "n": 6,
+    "count": 27
+   },
+   {
+    "n": 7,
+    "count": 23
+   },
+   {
+    "n": 8,
     "count": 14
    },
    {
+    "n": 9,
+    "count": 22
+   },
+   {
+    "n": 10,
+    "count": 27
+   },
+   {
+    "n": 11,
+    "count": 26
+   },
+   {
+    "n": 12,
+    "count": 13
+   },
+   {
+    "n": 13,
+    "count": 22
+   },
+   {
+    "n": 14,
+    "count": 17
+   },
+   {
     "n": 15,
-    "count": 20
+    "count": 23
    },
    {
     "n": 16,
-    "count": 16
-   },
-   {
-    "n": 17,
     "count": 19
    },
    {
+    "n": 17,
+    "count": 22
+   },
+   {
     "n": 18,
-    "count": 25
+    "count": 26
    },
    {
     "n": 19,
-    "count": 18
+    "count": 25
    },
    {
     "n": 20,
-    "count": 21
+    "count": 26
    }
   ],
-  "pb_expected": 18.55,
-  "p_chi2_pb": 0.21820815908715757
+  "pb_expected": 22.25,
+  "p_chi2_pb": 0.3113204767878145
  },
  "backtest": {
   "strategies": {
@@ -2179,9 +2180,10 @@
   "run_at": "2026-11-01T01:02+11:00"
  },
  "history": {
-  "cursor": "2019-09-12",
+  "cursor": "2018-04-12",
   "misses": 0,
   "dividends_tried": [],
+  "done": true,
   "stop": "2018-04-19"
  }
 }

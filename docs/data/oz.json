@@ -90,7 +90,7 @@
  "config": {
   "lines": 50,
   "strategy": "balanced",
-  "ticket_price": null
+  "ticket_price": 1.45
  },
  "next": {
   "game": "oz",
@@ -1563,7 +1563,8 @@
   "draws": 0,
   "lines": 0,
   "prize": 0,
-  "prize_lines": 0
+  "prize_lines": 0,
+  "cost": 0.0
  },
  "stats": {
   "n_draws": 231,
