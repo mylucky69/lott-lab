@@ -1,0 +1,87 @@
+[
+ {
+  "url": "https://www.thelott.com/oz-lotto/results",
+  "robots_status": 403,
+  "robots_allows": true,
+  "status": 403,
+  "length": 14966,
+  "type": "text/html",
+  "saved": "www.thelott.com_oz-lotto_results.html"
+ },
+ {
+  "url": "https://www.lotteryextreme.com/australia/ozlotto-results",
+  "robots_status": 200,
+  "robots_allows": true,
+  "status": 200,
+  "length": 26600,
+  "type": "text/html; charset=UTF-8",
+  "saved": "www.lotteryextreme.com_australia_ozlotto-results.html"
+ },
+ {
+  "url": "https://www.lotteryextreme.com/australia/powerball-results",
+  "robots_allows": true,
+  "status": 200,
+  "length": 26975,
+  "type": "text/html; charset=UTF-8",
+  "saved": "www.lotteryextreme.com_australia_powerball-results.html"
+ },
+ {
+  "url": "https://www.lotteryextreme.com/australia/saturdaylotto-results",
+  "robots_allows": true,
+  "status": 200,
+  "length": 27074,
+  "type": "text/html; charset=UTF-8",
+  "saved": "www.lotteryextreme.com_australia_saturdaylotto-results.html"
+ },
+ {
+  "url": "https://www.lotteryvalley.com/australia/past-results",
+  "robots_status": 200,
+  "robots_allows": true,
+  "status": 200,
+  "length": 1060255,
+  "type": "text/html; charset=utf-8",
+  "saved": "www.lotteryvalley.com_australia_past-results.html"
+ },
+ {
+  "url": "https://lotteryguru.com/australia-lottery-results/au-oz-lotto/au-oz-lotto-results-history",
+  "robots_status": 200,
+  "robots_allows": true,
+  "status": 200,
+  "length": 82058,
+  "type": "text/html;charset=UTF-8",
+  "saved": "lotteryguru.com_australia-lottery-results_au-oz-lotto_au-oz-lotto-results-history.html"
+ },
+ {
+  "url": "https://australia.national-lottery.com/oz-lotto/results-archive-2025",
+  "robots_status": 200,
+  "robots_allows": true,
+  "status": 200,
+  "length": 84378,
+  "type": "text/html; charset=utf-8",
+  "saved": "australia.national-lottery.com_oz-lotto_results-archive-2025.html"
+ },
+ {
+  "url": "https://www.lottolyzer.com/history/australia/oz-lotto",
+  "robots_error": "HTTPSConnectionPool(host='www.lottolyzer.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.lottolyzer.com', port=443) at 0x7f717c18b",
+  "robots_allows": true,
+  "error": "HTTPSConnectionPool(host='www.lottolyzer.com', port=443): Max retries exceeded with url: /history/australia/oz-lotto (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.lottolyzer.com', port=443"
+ },
+ {
+  "url": "https://www.ozlotteries.com/oz-lotto/results",
+  "robots_status": 200,
+  "robots_allows": true,
+  "status": 200,
+  "length": 1134943,
+  "type": "text/html; charset=utf-8",
+  "saved": "www.ozlotteries.com_oz-lotto_results.html"
+ },
+ {
+  "url": "https://www.lotterywest.wa.gov.au/games/oz-lotto",
+  "robots_status": 200,
+  "robots_allows": true,
+  "status": 200,
+  "length": 219285,
+  "type": "text/html",
+  "saved": "www.lotterywest.wa.gov.au_games_oz-lotto.html"
+ }
+]

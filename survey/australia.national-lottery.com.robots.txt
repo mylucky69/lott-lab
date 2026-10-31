@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /en/play/
+Sitemap: https://australia.national-lottery.com/sitemap.xml

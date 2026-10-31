@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lotterywest.wa.gov.au/sitemap-index.xml

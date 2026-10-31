@@ -1,0 +1,26 @@
+# www.ozlotteries.com - Australia's favourite lotto games online
+# Support Australian Charities!
+# Play online with Oz Lotteries
+# Win Daily Prizes with Daily Winners
+
+User-agent: *
+Disallow: /blog/search/*
+Disallow: /by-id/*
+Disallow: /force-password-change
+Disallow: /blog/tag/*
+Disallow: /blog/4075-2
+Disallow: /cdn-cgi/l/email-protection
+Disallow: /close-my-account/success
+Disallow: /terms-and-conditions/
+Disallow: /sunshine-lottery/draw/13
+Disallow: /sunshine-lottery/your-support
+Disallow: /sunshine-lottery/terms-and-conditions/13
+Disallow: /sunshine-lottery/terms-and-conditions/8
+Disallow: /sunshine-lottery/terms-and-conditions/7
+Disallow: /my-account/*
+Disallow: /*?*state=WA
+Disallow: /*?*tab=winners
+
+Sitemap: https://www.ozlotteries.com/sitemap-index.xml
+Sitemap: https://www.ozlotteries.com/sitemap.xml
+Sitemap: https://www.ozlotteries.com/sitemap-blog.xml
