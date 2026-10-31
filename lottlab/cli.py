@@ -263,21 +263,56 @@ def cmd_backfill(only: list[str]) -> int:
 HISTORY_STOP = {"oz": "2022-05-31", "powerball": "2018-04-19", "saturday": "2000-01-01"}
 
 
+def fill_dividends(game: Game, budget: int) -> int:
+    """Fetch the prize table for stored draws that do not have one yet (newest first).
+    Each draw is tried once; draws whose page has no prize table are not retried."""
+    path = DATA / game.id / "history.json"
+    state = read_json(path, {}) or {}
+    tried = set(state.get("dividends_tried", []))
+    used = 0
+    missing = [d for d in load_draws(game) if not d.get("dividends") and d["draw"] not in tried]
+    for d in reversed(missing):
+        if used >= budget:
+            break
+        used += 1
+        try:
+            draw, _ = src.lotteryextreme_draw(game, d["date"])
+        except src.SourceError as e:
+            log(f"  dividends {d['date']}: {e}")
+            if "HTTP 404" not in str(e):
+                break
+            draw = None
+        if draw and draw["draw"] == d["draw"] and draw["dividends"]:
+            set_dividends(game, d["draw"], draw["dividends"])
+        else:
+            tried.add(d["draw"])
+    if used:
+        log(f"  {game.name}: filled prize tables, {used} page(s)")
+        state = read_json(path, {}) or {}
+        state["dividends_tried"] = sorted(tried)
+        write_json(path, state)
+    return used
+
+
 def history_game(game: Game, budget: int) -> int:
     """Walk lotteryextreme's per-draw pages backwards from the oldest stored draw.
     Returns pages used. Progress is saved so the next run continues where this one stopped."""
+    used = fill_dividends(game, budget)
+    budget -= used
     path = DATA / game.id / "history.json"
     state = read_json(path, {}) or {}
-    if state.get("done"):
-        return 0
+    if state.get("done") or budget <= 0:
+        return used
     stop = HISTORY_STOP[game.id]
     draws = load_draws(game, valid_only=False)
     if not state.get("cursor"):
         if not draws:
-            return 0
+            return used
         oldest = dt.date.fromisoformat(draws[0]["date"])
         state["cursor"] = (oldest - dt.timedelta(days=7)).isoformat()
-    used, misses, added = 0, state.get("misses", 0), 0
+    start_used = used
+    budget += used
+    misses, added = state.get("misses", 0), 0
     try:
         while used < budget and state["cursor"] >= stop:
             used += 1
@@ -311,7 +346,7 @@ def history_game(game: Game, budget: int) -> int:
     finally:
         state["misses"] = misses
         write_json(path, state)
-    log(f"  {game.name}: {used} page(s), {added} new draw(s), next {state['cursor']}"
+    log(f"  {game.name}: {used - start_used} page(s), {added} new draw(s), next {state['cursor']}"
         + (" - finished" if state.get("done") else ""))
     return used
 
