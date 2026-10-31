@@ -11,16 +11,13 @@ import requests
 
 UA = "LottLab/1.0 (personal results tracker; +https://github.com/mylucky69/lott-lab)"
 PAGES = [
-    "https://www.thelott.com/oz-lotto/results",
-    "https://www.lotteryextreme.com/australia/ozlotto-results",
-    "https://www.lotteryextreme.com/australia/powerball-results",
-    "https://www.lotteryextreme.com/australia/saturdaylotto-results",
-    "https://www.lotteryvalley.com/australia/past-results",
-    "https://lotteryguru.com/australia-lottery-results/au-oz-lotto/au-oz-lotto-results-history",
-    "https://australia.national-lottery.com/oz-lotto/results-archive-2025",
-    "https://www.lottolyzer.com/history/australia/oz-lotto",
-    "https://www.ozlotteries.com/oz-lotto/results",
-    "https://www.lotterywest.wa.gov.au/games/oz-lotto",
+    "https://www.national-lottery.com/terms",
+    "https://australia.national-lottery.com/powerball/results-archive-2025",
+    "https://australia.national-lottery.com/saturday-lotto/results-archive-2025",
+    "https://australia.national-lottery.com/saturday-lotto/results-archive-1990",
+    "https://australia.national-lottery.com/powerball/results-archive-2018",
+    "https://www.lotteryextreme.com/australia/ozlotto-dividends(2026-10-27)",
+    "https://www.lotteryextreme.com/info/terms",
 ]
 out_dir = Path(sys.argv[1]); out_dir.mkdir(parents=True, exist_ok=True)
 report, robots = [], {}
