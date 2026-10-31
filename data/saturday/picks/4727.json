@@ -3,7 +3,7 @@
  "draw": 4727,
  "date": "2026-11-07",
  "lock_at": "2026-11-06T17:00:00+11:00",
- "jackpot": null,
+ "jackpot": 10000000.0,
  "status": "preview",
  "strategy": "balanced",
  "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
@@ -526,5 +526,8 @@
   "mean_prizes": 1.19965,
   "p_any_independent": 0.7006480410562935,
   "mean_prizes_theory": 1.1917039285161803
- }
+ },
+ "play": false,
+ "play_reason": "Jackpot $10,000,000 < $20,000,000",
+ "min_jackpot": 20000000.0
 }
