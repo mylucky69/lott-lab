@@ -884,7 +884,53 @@
    "supp": [
     16
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 1,
+     "amount": 100000000.0
+    },
+    {
+     "div": 2,
+     "winners": 12,
+     "amount": 172306.45
+    },
+    {
+     "div": 3,
+     "winners": 186,
+     "amount": 13749.4
+    },
+    {
+     "div": 4,
+     "winners": 3599,
+     "amount": 619.85
+    },
+    {
+     "div": 5,
+     "winners": 7706,
+     "amount": 218.9
+    },
+    {
+     "div": 6,
+     "winners": 112221,
+     "amount": 93.6
+    },
+    {
+     "div": 7,
+     "winners": 148546,
+     "amount": 54.95
+    },
+    {
+     "div": 8,
+     "winners": 708527,
+     "amount": 24.55
+    },
+    {
+     "div": 9,
+     "winners": 2063843,
+     "amount": 14.5
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -905,7 +951,53 @@
    "supp": [
     7
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 5,
+     "amount": 206779.4
+    },
+    {
+     "div": 3,
+     "winners": 123,
+     "amount": 10396.5
+    },
+    {
+     "div": 4,
+     "winners": 2183,
+     "amount": 511.0
+    },
+    {
+     "div": 5,
+     "winners": 4602,
+     "amount": 183.3
+    },
+    {
+     "div": 6,
+     "winners": 64976,
+     "amount": 80.8
+    },
+    {
+     "div": 7,
+     "winners": 81370,
+     "amount": 50.15
+    },
+    {
+     "div": 8,
+     "winners": 397361,
+     "amount": 21.9
+    },
+    {
+     "div": 9,
+     "winners": 1109688,
+     "amount": 13.5
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -926,7 +1018,53 @@
    "supp": [
     14
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 10,
+     "amount": 73060.7
+    },
+    {
+     "div": 3,
+     "winners": 78,
+     "amount": 11585.2
+    },
+    {
+     "div": 4,
+     "winners": 1523,
+     "amount": 517.6
+    },
+    {
+     "div": 5,
+     "winners": 2873,
+     "amount": 207.45
+    },
+    {
+     "div": 6,
+     "winners": 41764,
+     "amount": 88.85
+    },
+    {
+     "div": 7,
+     "winners": 56809,
+     "amount": 50.75
+    },
+    {
+     "div": 8,
+     "winners": 259554,
+     "amount": 23.7
+    },
+    {
+     "div": 9,
+     "winners": 737446,
+     "amount": 14.35
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -947,7 +1085,53 @@
    "supp": [
     12
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 1,
+     "amount": 543579.7
+    },
+    {
+     "div": 3,
+     "winners": 56,
+     "amount": 12005.75
+    },
+    {
+     "div": 4,
+     "winners": 979,
+     "amount": 599.05
+    },
+    {
+     "div": 5,
+     "winners": 2130,
+     "amount": 208.2
+    },
+    {
+     "div": 6,
+     "winners": 31069,
+     "amount": 88.85
+    },
+    {
+     "div": 7,
+     "winners": 41267,
+     "amount": 52.0
+    },
+    {
+     "div": 8,
+     "winners": 195437,
+     "amount": 23.4
+    },
+    {
+     "div": 9,
+     "winners": 561325,
+     "amount": 14.0
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -968,7 +1152,53 @@
    "supp": [
     2
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 3,
+     "amount": 140235.05
+    },
+    {
+     "div": 3,
+     "winners": 47,
+     "amount": 11071.2
+    },
+    {
+     "div": 4,
+     "winners": 743,
+     "amount": 610.95
+    },
+    {
+     "div": 5,
+     "winners": 1594,
+     "amount": 215.3
+    },
+    {
+     "div": 6,
+     "winners": 23101,
+     "amount": 92.5
+    },
+    {
+     "div": 7,
+     "winners": 30592,
+     "amount": 54.3
+    },
+    {
+     "div": 8,
+     "winners": 144667,
+     "amount": 24.5
+    },
+    {
+     "div": 9,
+     "winners": 422906,
+     "amount": 14.4
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -989,7 +1219,53 @@
    "supp": [
     13
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 2,
+     "amount": 147480.65
+    },
+    {
+     "div": 3,
+     "winners": 21,
+     "amount": 17372.4
+    },
+    {
+     "div": 4,
+     "winners": 484,
+     "amount": 657.55
+    },
+    {
+     "div": 5,
+     "winners": 1044,
+     "amount": 230.5
+    },
+    {
+     "div": 6,
+     "winners": 15662,
+     "amount": 95.65
+    },
+    {
+     "div": 7,
+     "winners": 19714,
+     "amount": 59.05
+    },
+    {
+     "div": 8,
+     "winners": 100963,
+     "amount": 24.6
+    },
+    {
+     "div": 9,
+     "winners": 300279,
+     "amount": 14.2
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -1010,7 +1286,53 @@
    "supp": [
     11
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 4,
+     "amount": 5200007.13
+    },
+    {
+     "div": 2,
+     "winners": 40,
+     "amount": 13089.15
+    },
+    {
+     "div": 3,
+     "winners": 34,
+     "amount": 19046.15
+    },
+    {
+     "div": 4,
+     "winners": 756,
+     "amount": 747.2
+    },
+    {
+     "div": 5,
+     "winners": 2047,
+     "amount": 208.65
+    },
+    {
+     "div": 6,
+     "winners": 29648,
+     "amount": 89.7
+    },
+    {
+     "div": 7,
+     "winners": 37392,
+     "amount": 55.25
+    },
+    {
+     "div": 8,
+     "winners": 190142,
+     "amount": 23.2
+    },
+    {
+     "div": 9,
+     "winners": 552916,
+     "amount": 13.7
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -1031,7 +1353,53 @@
    "supp": [
     11
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 1,
+     "amount": 426846.4
+    },
+    {
+     "div": 3,
+     "winners": 55,
+     "amount": 9598.95
+    },
+    {
+     "div": 4,
+     "winners": 850,
+     "amount": 541.8
+    },
+    {
+     "div": 5,
+     "winners": 1833,
+     "amount": 189.95
+    },
+    {
+     "div": 6,
+     "winners": 25513,
+     "amount": 84.95
+    },
+    {
+     "div": 7,
+     "winners": 33160,
+     "amount": 50.8
+    },
+    {
+     "div": 8,
+     "winners": 156345,
+     "amount": 23.0
+    },
+    {
+     "div": 9,
+     "winners": 445963,
+     "amount": 13.85
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -1052,7 +1420,53 @@
    "supp": [
     20
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 1,
+     "amount": 303995.0
+    },
+    {
+     "div": 3,
+     "winners": 32,
+     "amount": 11749.8
+    },
+    {
+     "div": 4,
+     "winners": 699,
+     "amount": 469.25
+    },
+    {
+     "div": 5,
+     "winners": 1304,
+     "amount": 190.2
+    },
+    {
+     "div": 6,
+     "winners": 18585,
+     "amount": 83.1
+    },
+    {
+     "div": 7,
+     "winners": 25207,
+     "amount": 47.6
+    },
+    {
+     "div": 8,
+     "winners": 113535,
+     "amount": 22.55
+    },
+    {
+     "div": 9,
+     "winners": 314167,
+     "amount": 14.0
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -1073,7 +1487,53 @@
    "supp": [
     11
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 1,
+     "amount": 20000000.0
+    },
+    {
+     "div": 2,
+     "winners": 20,
+     "amount": 25539.65
+    },
+    {
+     "div": 3,
+     "winners": 62,
+     "amount": 10189.85
+    },
+    {
+     "div": 4,
+     "winners": 1083,
+     "amount": 508.9
+    },
+    {
+     "div": 5,
+     "winners": 2194,
+     "amount": 189.95
+    },
+    {
+     "div": 6,
+     "winners": 30623,
+     "amount": 84.7
+    },
+    {
+     "div": 7,
+     "winners": 38373,
+     "amount": 52.55
+    },
+    {
+     "div": 8,
+     "winners": 191842,
+     "amount": 22.4
+    },
+    {
+     "div": 9,
+     "winners": 541872,
+     "amount": 13.65
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -1094,7 +1554,53 @@
    "supp": [
     7
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 4,
+     "amount": 96702.8
+    },
+    {
+     "div": 3,
+     "winners": 30,
+     "amount": 15947.5
+    },
+    {
+     "div": 4,
+     "winners": 497,
+     "amount": 839.75
+    },
+    {
+     "div": 5,
+     "winners": 1365,
+     "amount": 231.2
+    },
+    {
+     "div": 6,
+     "winners": 21077,
+     "amount": 93.2
+    },
+    {
+     "div": 7,
+     "winners": 25785,
+     "amount": 59.2
+    },
+    {
+     "div": 8,
+     "winners": 137316,
+     "amount": 23.7
+    },
+    {
+     "div": 9,
+     "winners": 408516,
+     "amount": 13.7
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -1115,7 +1621,53 @@
    "supp": [
     18
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 1,
+     "amount": 291030.55
+    },
+    {
+     "div": 3,
+     "winners": 28,
+     "amount": 12855.65
+    },
+    {
+     "div": 4,
+     "winners": 588,
+     "amount": 534.0
+    },
+    {
+     "div": 5,
+     "winners": 1086,
+     "amount": 218.6
+    },
+    {
+     "div": 6,
+     "winners": 15201,
+     "amount": 97.25
+    },
+    {
+     "div": 7,
+     "winners": 19656,
+     "amount": 58.45
+    },
+    {
+     "div": 8,
+     "winners": 98226,
+     "amount": 24.95
+    },
+    {
+     "div": 9,
+     "winners": 289634,
+     "amount": 14.55
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -1136,7 +1688,53 @@
    "supp": [
     16
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 1,
+     "amount": 40000000.0
+    },
+    {
+     "div": 2,
+     "winners": 20,
+     "amount": 38148.45
+    },
+    {
+     "div": 3,
+     "winners": 81,
+     "amount": 11650.25
+    },
+    {
+     "div": 4,
+     "winners": 1648,
+     "amount": 499.5
+    },
+    {
+     "div": 5,
+     "winners": 3175,
+     "amount": 196.05
+    },
+    {
+     "div": 6,
+     "winners": 44609,
+     "amount": 86.85
+    },
+    {
+     "div": 7,
+     "winners": 61436,
+     "amount": 49.0
+    },
+    {
+     "div": 8,
+     "winners": 272585,
+     "amount": 23.55
+    },
+    {
+     "div": 9,
+     "winners": 768155,
+     "amount": 14.4
+    }
+   ],
    "sources": [
     "lotteryextreme"
    ]
@@ -1150,353 +1748,353 @@
   "prize_lines": 0
  },
  "stats": {
-  "n_draws": 109,
-  "first": "2024-10-03",
+  "n_draws": 371,
+  "first": "2019-09-19",
   "last": "2026-10-29",
   "numbers": [
    {
     "n": 1,
-    "count": 27,
+    "count": 77,
     "recent": 5,
     "gap": 5
    },
    {
     "n": 2,
-    "count": 17,
+    "count": 69,
     "recent": 3,
     "gap": 4
    },
    {
     "n": 3,
-    "count": 22,
+    "count": 80,
     "recent": 6,
     "gap": 0
    },
    {
     "n": 4,
-    "count": 20,
+    "count": 72,
     "recent": 3,
     "gap": 1
    },
    {
     "n": 5,
-    "count": 20,
+    "count": 69,
     "recent": 3,
     "gap": 0
    },
    {
     "n": 6,
-    "count": 17,
+    "count": 76,
     "recent": 4,
     "gap": 4
    },
    {
     "n": 7,
-    "count": 22,
+    "count": 84,
     "recent": 5,
     "gap": 0
    },
    {
     "n": 8,
-    "count": 14,
+    "count": 62,
     "recent": 2,
     "gap": 3
    },
    {
     "n": 9,
-    "count": 25,
+    "count": 86,
     "recent": 2,
     "gap": 10
    },
    {
     "n": 10,
-    "count": 17,
+    "count": 74,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 11,
-    "count": 30,
+    "count": 81,
     "recent": 6,
     "gap": 4
    },
    {
     "n": 12,
-    "count": 22,
+    "count": 87,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 13,
-    "count": 18,
+    "count": 67,
     "recent": 5,
     "gap": 1
    },
    {
     "n": 14,
-    "count": 30,
+    "count": 80,
     "recent": 6,
     "gap": 0
    },
    {
     "n": 15,
-    "count": 31,
+    "count": 77,
     "recent": 7,
     "gap": 2
    },
    {
     "n": 16,
-    "count": 21,
+    "count": 79,
     "recent": 3,
     "gap": 4
    },
    {
     "n": 17,
-    "count": 20,
+    "count": 79,
     "recent": 5,
     "gap": 6
    },
    {
     "n": 18,
-    "count": 24,
+    "count": 84,
     "recent": 4,
     "gap": 5
    },
    {
     "n": 19,
-    "count": 26,
+    "count": 80,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 20,
-    "count": 17,
+    "count": 75,
     "recent": 4,
     "gap": 1
    },
    {
     "n": 21,
-    "count": 20,
+    "count": 72,
     "recent": 2,
     "gap": 9
    },
    {
     "n": 22,
-    "count": 27,
+    "count": 75,
     "recent": 8,
     "gap": 1
    },
    {
     "n": 23,
-    "count": 23,
+    "count": 76,
     "recent": 2,
     "gap": 9
    },
    {
     "n": 24,
-    "count": 20,
+    "count": 70,
     "recent": 4,
     "gap": 2
    },
    {
     "n": 25,
-    "count": 19,
+    "count": 71,
     "recent": 1,
     "gap": 18
    },
    {
     "n": 26,
-    "count": 22,
+    "count": 70,
     "recent": 6,
     "gap": 1
    },
    {
     "n": 27,
-    "count": 23,
+    "count": 71,
     "recent": 5,
     "gap": 0
    },
    {
     "n": 28,
-    "count": 20,
+    "count": 75,
     "recent": 4,
     "gap": 7
    },
    {
     "n": 29,
-    "count": 17,
+    "count": 60,
     "recent": 4,
     "gap": 7
    },
    {
     "n": 30,
-    "count": 27,
+    "count": 80,
     "recent": 4,
     "gap": 2
    },
    {
     "n": 31,
-    "count": 13,
+    "count": 59,
     "recent": 2,
     "gap": 0
    },
    {
     "n": 32,
-    "count": 25,
+    "count": 78,
     "recent": 5,
     "gap": 2
    },
    {
     "n": 33,
-    "count": 22,
+    "count": 65,
     "recent": 1,
     "gap": 1
    },
    {
     "n": 34,
-    "count": 28,
+    "count": 72,
     "recent": 7,
     "gap": 0
    },
    {
     "n": 35,
-    "count": 17,
+    "count": 65,
     "recent": 3,
     "gap": 11
    }
   ],
-  "expected_count": 21.8,
-  "chi2": 32.27522935779816,
-  "p_chi2": 0.5523113157230464,
-  "mean_overlap": 1.5277777777777777,
+  "expected_count": 74.2,
+  "chi2": 22.74393530997304,
+  "p_chi2": 0.9292571233153862,
+  "mean_overlap": 1.4243243243243244,
   "expected_overlap": 1.4,
-  "p_serial": 0.23611997640053303,
+  "p_serial": 0.6284439156714791,
   "odd": [
    {
     "odd": 0,
-    "observed": 0,
-    "expected": 0.31523915461624025
+    "observed": 4,
+    "expected": 1.0729699666295884
    },
    {
     "odd": 1,
-    "observed": 3,
-    "expected": 3.6109212256042067
+    "observed": 9,
+    "expected": 12.29038325412074
    },
    {
     "odd": 2,
-    "observed": 12,
-    "expected": 15.346415208817879
+    "observed": 50,
+    "expected": 52.23412883001315
    },
    {
     "odd": 3,
-    "observed": 34,
-    "expected": 31.479826069370006
+    "observed": 113,
+    "expected": 107.1469309333603
    },
    {
     "odd": 4,
-    "observed": 36,
-    "expected": 33.728385074325004
+    "observed": 118,
+    "expected": 114.80028314288603
    },
    {
     "odd": 5,
-    "observed": 22,
-    "expected": 18.887895641622006
+    "observed": 64,
+    "expected": 64.28815856001619
    },
    {
     "odd": 6,
-    "observed": 2,
-    "expected": 5.115471736272626
+    "observed": 12,
+    "expected": 17.41137627667105
    },
    {
     "odd": 7,
-    "observed": 0,
-    "expected": 0.5158458893720296
+    "observed": 1,
+    "expected": 1.755769036302963
    }
   ],
   "pb": [
    {
     "n": 1,
-    "count": 4
+    "count": 16
    },
    {
     "n": 2,
-    "count": 7
+    "count": 27
    },
    {
     "n": 3,
-    "count": 5
+    "count": 18
    },
    {
     "n": 4,
-    "count": 3
+    "count": 22
    },
    {
     "n": 5,
-    "count": 3
+    "count": 12
    },
    {
     "n": 6,
-    "count": 5
+    "count": 23
    },
    {
     "n": 7,
-    "count": 5
+    "count": 18
    },
    {
     "n": 8,
-    "count": 2
+    "count": 11
    },
    {
     "n": 9,
-    "count": 4
+    "count": 18
    },
    {
     "n": 10,
-    "count": 7
+    "count": 25
    },
    {
     "n": 11,
-    "count": 8
+    "count": 23
    },
    {
     "n": 12,
-    "count": 3
+    "count": 10
    },
    {
     "n": 13,
-    "count": 6
+    "count": 15
    },
    {
     "n": 14,
-    "count": 9
+    "count": 14
    },
    {
     "n": 15,
-    "count": 2
+    "count": 20
    },
    {
     "n": 16,
-    "count": 7
+    "count": 16
    },
    {
     "n": 17,
-    "count": 7
+    "count": 19
    },
    {
     "n": 18,
-    "count": 9
+    "count": 25
    },
    {
     "n": 19,
-    "count": 4
+    "count": 18
    },
    {
     "n": 20,
-    "count": 9
+    "count": 21
    }
   ],
-  "pb_expected": 5.45,
-  "p_chi2_pb": 0.46391889162320954
+  "pb_expected": 18.55,
+  "p_chi2_pb": 0.21820815908715757
  },
  "backtest": {
   "strategies": {
@@ -1581,8 +2179,9 @@
   "run_at": "2026-11-01T01:02+11:00"
  },
  "history": {
-  "cursor": "2024-09-26",
+  "cursor": "2019-09-12",
   "misses": 0,
+  "dividends_tried": [],
   "stop": "2018-04-19"
  }
 }

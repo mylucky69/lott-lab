@@ -12466,7 +12466,43 @@
    7,
    15
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 9,
+    "amount": 27342.6
+   },
+   {
+    "div": 3,
+    "winners": 52,
+    "amount": 5592.8
+   },
+   {
+    "div": 4,
+    "winners": 536,
+    "amount": 417.35
+   },
+   {
+    "div": 5,
+    "winners": 2969,
+    "amount": 60.3
+   },
+   {
+    "div": 6,
+    "winners": 76907,
+    "amount": 28.8
+   },
+   {
+    "div": 7,
+    "winners": 211869,
+    "amount": 16.8
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12489,7 +12525,43 @@
    19,
    38
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 47273.65
+   },
+   {
+    "div": 3,
+    "winners": 76,
+    "amount": 4410.7
+   },
+   {
+    "div": 4,
+    "winners": 791,
+    "amount": 326.0
+   },
+   {
+    "div": 5,
+    "winners": 4307,
+    "amount": 47.9
+   },
+   {
+    "div": 6,
+    "winners": 106180,
+    "amount": 24.05
+   },
+   {
+    "div": 7,
+    "winners": 273491,
+    "amount": 15.0
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12512,7 +12584,43 @@
    12,
    26
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 30000000.0
+   },
+   {
+    "div": 2,
+    "winners": 10,
+    "amount": 39970.05
+   },
+   {
+    "div": 3,
+    "winners": 124,
+    "amount": 3809.45
+   },
+   {
+    "div": 4,
+    "winners": 864,
+    "amount": 420.55
+   },
+   {
+    "div": 5,
+    "winners": 5252,
+    "amount": 55.35
+   },
+   {
+    "div": 6,
+    "winners": 137279,
+    "amount": 26.2
+   },
+   {
+    "div": 7,
+    "winners": 372079,
+    "amount": 15.55
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12535,7 +12643,43 @@
    31,
    41
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 1,
+    "amount": 157245.2
+   },
+   {
+    "div": 3,
+    "winners": 33,
+    "amount": 5631.35
+   },
+   {
+    "div": 4,
+    "winners": 326,
+    "amount": 438.5
+   },
+   {
+    "div": 5,
+    "winners": 2180,
+    "amount": 52.45
+   },
+   {
+    "div": 6,
+    "winners": 52655,
+    "amount": 26.9
+   },
+   {
+    "div": 7,
+    "winners": 129972,
+    "amount": 17.5
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12558,7 +12702,43 @@
    21,
    36
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 96056.2
+   },
+   {
+    "div": 3,
+    "winners": 36,
+    "amount": 6306.7
+   },
+   {
+    "div": 4,
+    "winners": 463,
+    "amount": 377.2
+   },
+   {
+    "div": 5,
+    "winners": 2731,
+    "amount": 51.15
+   },
+   {
+    "div": 6,
+    "winners": 68230,
+    "amount": 25.35
+   },
+   {
+    "div": 7,
+    "winners": 179557,
+    "amount": 15.45
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12581,7 +12761,43 @@
    15,
    41
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 77721.05
+   },
+   {
+    "div": 3,
+    "winners": 50,
+    "amount": 5511.15
+   },
+   {
+    "div": 4,
+    "winners": 550,
+    "amount": 385.4
+   },
+   {
+    "div": 5,
+    "winners": 3322,
+    "amount": 51.05
+   },
+   {
+    "div": 6,
+    "winners": 82649,
+    "amount": 25.4
+   },
+   {
+    "div": 7,
+    "winners": 215815,
+    "amount": 15.6
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12604,7 +12820,43 @@
    39,
    43
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 39307.35
+   },
+   {
+    "div": 3,
+    "winners": 59,
+    "amount": 6298.85
+   },
+   {
+    "div": 4,
+    "winners": 630,
+    "amount": 453.75
+   },
+   {
+    "div": 5,
+    "winners": 3754,
+    "amount": 60.9
+   },
+   {
+    "div": 6,
+    "winners": 95868,
+    "amount": 29.5
+   },
+   {
+    "div": 7,
+    "winners": 252711,
+    "amount": 18.0
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12627,7 +12879,43 @@
    33,
    43
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 11,
+    "amount": 37990.6
+   },
+   {
+    "div": 3,
+    "winners": 113,
+    "amount": 4370.6
+   },
+   {
+    "div": 4,
+    "winners": 1000,
+    "amount": 379.9
+   },
+   {
+    "div": 5,
+    "winners": 6076,
+    "amount": 50.0
+   },
+   {
+    "div": 6,
+    "winners": 143160,
+    "amount": 26.25
+   },
+   {
+    "div": 7,
+    "winners": 361061,
+    "amount": 16.75
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12650,7 +12938,43 @@
    37,
    41
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 2,
+    "amount": 20000000.0
+   },
+   {
+    "div": 2,
+    "winners": 15,
+    "amount": 33658.3
+   },
+   {
+    "div": 3,
+    "winners": 187,
+    "amount": 3190.75
+   },
+   {
+    "div": 4,
+    "winners": 1266,
+    "amount": 362.55
+   },
+   {
+    "div": 5,
+    "winners": 8654,
+    "amount": 42.45
+   },
+   {
+    "div": 6,
+    "winners": 199081,
+    "amount": 22.8
+   },
+   {
+    "div": 7,
+    "winners": 450035,
+    "amount": 16.2
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12673,7 +12997,43 @@
    44,
    46
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 4000000.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 33020.05
+   },
+   {
+    "div": 3,
+    "winners": 31,
+    "amount": 6294.15
+   },
+   {
+    "div": 4,
+    "winners": 310,
+    "amount": 484.15
+   },
+   {
+    "div": 5,
+    "winners": 1961,
+    "amount": 61.25
+   },
+   {
+    "div": 6,
+    "winners": 50999,
+    "amount": 29.15
+   },
+   {
+    "div": 7,
+    "winners": 130310,
+    "amount": 18.3
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12696,7 +13056,43 @@
    17,
    19
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 4000000.0
+   },
+   {
+    "div": 2,
+    "winners": 3,
+    "amount": 52446.3
+   },
+   {
+    "div": 3,
+    "winners": 33,
+    "amount": 5634.75
+   },
+   {
+    "div": 4,
+    "winners": 413,
+    "amount": 346.35
+   },
+   {
+    "div": 5,
+    "winners": 2027,
+    "amount": 56.45
+   },
+   {
+    "div": 6,
+    "winners": 53143,
+    "amount": 26.65
+   },
+   {
+    "div": 7,
+    "winners": 145637,
+    "amount": 15.6
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12719,7 +13115,43 @@
    18,
    46
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 37035.0
+   },
+   {
+    "div": 3,
+    "winners": 40,
+    "amount": 4376.85
+   },
+   {
+    "div": 4,
+    "winners": 331,
+    "amount": 406.85
+   },
+   {
+    "div": 5,
+    "winners": 1895,
+    "amount": 56.85
+   },
+   {
+    "div": 6,
+    "winners": 48639,
+    "amount": 27.4
+   },
+   {
+    "div": 7,
+    "winners": 119985,
+    "amount": 17.85
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12742,7 +13174,43 @@
    40,
    45
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 8000000.0
+   },
+   {
+    "div": 2,
+    "winners": 8,
+    "amount": 25327.15
+   },
+   {
+    "div": 3,
+    "winners": 113,
+    "amount": 2119.1
+   },
+   {
+    "div": 4,
+    "winners": 599,
+    "amount": 307.5
+   },
+   {
+    "div": 5,
+    "winners": 3623,
+    "amount": 40.65
+   },
+   {
+    "div": 6,
+    "winners": 75621,
+    "amount": 24.1
+   },
+   {
+    "div": 7,
+    "winners": 181855,
+    "amount": 16.1
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12765,7 +13233,43 @@
    37,
    43
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 37619.2
+   },
+   {
+    "div": 3,
+    "winners": 50,
+    "amount": 3556.7
+   },
+   {
+    "div": 4,
+    "winners": 295,
+    "amount": 463.7
+   },
+   {
+    "div": 5,
+    "winners": 2013,
+    "amount": 54.35
+   },
+   {
+    "div": 6,
+    "winners": 48920,
+    "amount": 27.7
+   },
+   {
+    "div": 7,
+    "winners": 124377,
+    "amount": 17.5
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12788,7 +13292,43 @@
    26,
    32
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 36747.3
+   },
+   {
+    "div": 3,
+    "winners": 40,
+    "amount": 5428.6
+   },
+   {
+    "div": 4,
+    "winners": 437,
+    "amount": 382.25
+   },
+   {
+    "div": 5,
+    "winners": 2677,
+    "amount": 49.9
+   },
+   {
+    "div": 6,
+    "winners": 66887,
+    "amount": 24.7
+   },
+   {
+    "div": 7,
+    "winners": 162256,
+    "amount": 16.35
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12811,7 +13351,43 @@
    9,
    23
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 38768.05
+   },
+   {
+    "div": 3,
+    "winners": 46,
+    "amount": 5976.1
+   },
+   {
+    "div": 4,
+    "winners": 549,
+    "amount": 385.2
+   },
+   {
+    "div": 5,
+    "winners": 2993,
+    "amount": 56.5
+   },
+   {
+    "div": 6,
+    "winners": 73933,
+    "amount": 28.3
+   },
+   {
+    "div": 7,
+    "winners": 198397,
+    "amount": 16.95
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12834,7 +13410,43 @@
    30,
    47
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 136956.15
+   },
+   {
+    "div": 3,
+    "winners": 58,
+    "amount": 5581.3
+   },
+   {
+    "div": 4,
+    "winners": 509,
+    "amount": 489.2
+   },
+   {
+    "div": 5,
+    "winners": 3500,
+    "amount": 56.9
+   },
+   {
+    "div": 6,
+    "winners": 86528,
+    "amount": 28.5
+   },
+   {
+    "div": 7,
+    "winners": 223152,
+    "amount": 17.75
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12857,7 +13469,43 @@
    24,
    30
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 54949.8
+   },
+   {
+    "div": 3,
+    "winners": 68,
+    "amount": 5730.05
+   },
+   {
+    "div": 4,
+    "winners": 682,
+    "amount": 439.5
+   },
+   {
+    "div": 5,
+    "winners": 3985,
+    "amount": 60.15
+   },
+   {
+    "div": 6,
+    "winners": 103637,
+    "amount": 28.65
+   },
+   {
+    "div": 7,
+    "winners": 274896,
+    "amount": 17.35
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
@@ -12880,7 +13528,43 @@
    27,
    38
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 14,
+    "amount": 37243.0
+   },
+   {
+    "div": 3,
+    "winners": 163,
+    "amount": 3780.4
+   },
+   {
+    "div": 4,
+    "winners": 1427,
+    "amount": 332.15
+   },
+   {
+    "div": 5,
+    "winners": 8002,
+    "amount": 47.4
+   },
+   {
+    "div": 6,
+    "winners": 195025,
+    "amount": 24.05
+   },
+   {
+    "div": 7,
+    "winners": 493670,
+    "amount": 15.25
+   }
+  ],
   "sources": [
    "lotteryextreme"
   ]
