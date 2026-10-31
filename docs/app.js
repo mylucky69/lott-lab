@@ -74,7 +74,7 @@ function tile(k, v, d = "") { return `<div class="tile"><div class="k">${k}</div
 
 /* ---------- main render ---------- */
 function render(g) {
-  const parts = [nextCard(g), latestCard(g), trackingCard(g), statsCard(g), backtestCard(g), modelsCard(g), oddsCard(g)];
+  const parts = [nextCard(g), latestCard(g), trackingCard(g), statsCard(g), studyCard(g), backtestCard(g), modelsCard(g), oddsCard(g)];
   $("#app").innerHTML = parts.join("");
   bindCharts();
   bindNext(g);
@@ -97,6 +97,16 @@ function sourceText(d) {
   return list.length >= 2 ? `✓ Đã đối chiếu ${list.length} nguồn (${esc(names)})` : `Nguồn: ${esc(names)}`;
 }
 
+function playBanner(g, n) {
+  if (!g.config || !g.config.min_jackpot) return "";
+  const cls = n.play === true ? "go" : n.play === false ? "wait" : "unknown";
+  const head = n.play === true ? "✓ NÊN CHƠI kỳ này" : n.play === false ? "⏸ CHỜ, không chơi kỳ này" : "? Chưa đủ thông tin";
+  const v = g.value && g.value.per_dollar != null ? ` · Giá trị kỳ vọng ${money2(g.value.per_dollar_busy)}–${money2(g.value.per_dollar)} mỗi $1 (vẫn lỗ trung bình)` : "";
+  const cost = g.config.ticket_price ? ` · Chi phí ${fmtMoney(Math.round(n.lines.length * g.config.ticket_price * 100) / 100)}` : "";
+  return `<div class="play ${cls}"><strong>${head}</strong><span>${esc(n.play_reason || "")}${cost}${v}</span>
+    <span class="muted">Quy tắc: chỉ chơi khi jackpot ≥ ${fmtMoney(g.config.min_jackpot)}${n.status === "locked" ? " · quyết định đã chốt" : " · có thể thay đổi đến lúc chốt"}</span></div>`;
+}
+
 function nextCard(g) {
   const n = g.next;
   if (!n) return `<section class="card"><h2>Kỳ quay tiếp theo</h2><p class="muted">Chưa có kết quả nào nên chưa tạo được bộ số. Hệ thống đang tải dữ liệu.</p>${statusWarn(g)}</section>`;
@@ -115,6 +125,7 @@ function nextCard(g) {
       </div>
       <span class="badge ${n.status}">${n.status === "locked" ? "🔒" : "✎"} ${STATUS[n.status] || n.status}</span>
     </div>
+    ${playBanner(g, n)}
     <div class="stats-row">
       ${tile("Có ≥ 1 dòng trúng giải", sim.p_any != null ? pct(sim.p_any) : "—", `50 dòng ngẫu nhiên: ${rnd.p_any != null ? pct(rnd.p_any) : "—"}`)}
       ${tile("Số dòng trúng trung bình / kỳ", sim.mean_prizes != null ? num(sim.mean_prizes) : "—", "Không chiến lược nào thay đổi được con số này")}
@@ -208,7 +219,8 @@ function trackingCard(g) {
       const pbHit = isPB && l.pb === (r.supp || [])[0];
       return `<div class="line"><span class="idx">${pad(i + 1)}</span>${balls(l.main, [], { hitMain, hitSupp, pb: isPB ? l.pb : null })}${pbHit ? "" : ""}${c.div ? `<span class="div-tag">Giải ${c.div}</span>` : ""}</div>`;
     }).join("");
-    return `<details><summary><strong>#${p.draw}</strong><span class="muted">${fmtDate(p.date)}</span>
+    const playTag = p.play === false ? `<span class="muted">(không chơi)</span>` : p.play === true ? `<span class="muted">(đã chơi)</span>` : "";
+    return `<details><summary><strong>#${p.draw}</strong><span class="muted">${fmtDate(p.date)}</span>${playTag}
       <span>${wins ? `<span class="good">✓ ${wins}</span>` : "Không trúng"}</span>
       <span class="muted">trùng nhiều nhất ${p.best} số</span>${p.prize ? `<span class="good">${fmtMoney(p.prize)}</span>` : ""}</summary>
       <div style="margin:6px 0 10px">Kết quả: ${drawBalls(g, r)}</div>
@@ -222,6 +234,9 @@ function trackingCard(g) {
       ${tile("Số kỳ đã theo dõi", fmtInt(tot.draws || 0), `${fmtInt(tot.lines || 0)} dòng`)}
       ${tile("Dòng trúng giải", fmtInt(tot.prize_lines || 0), `Kỳ vọng: ${num(expected, 1)}`)}
       ${tile("Tổng tiền thưởng", fmtMoney(tot.prize || 0), tot.cost != null ? `Chi phí vé: ${fmtMoney(tot.cost)}` : "Điền giá vé trong config.json để tính lãi/lỗ")}
+      ${tot.played && g.config && g.config.min_jackpot ? tile(`Chỉ các kỳ "nên chơi" (${fmtInt(tot.played.draws)} kỳ)`,
+        tot.played.net != null ? (tot.played.net >= 0 ? "+" : "−") + fmtMoney(Math.abs(tot.played.net)) : "—",
+        `Chi ${fmtMoney(tot.played.cost || 0)}, nhận ${fmtMoney(tot.played.prize || 0)}`) : ""}
     </div>
     ${body}
   </section>`;
@@ -323,6 +338,26 @@ function modelsCard(g) {
     <div class="table-scroll"><table><thead><tr><th>Phương pháp</th><th class="num">Trùng / ${g.meta.pick} số</th><th class="num">p</th><th class="num">Điểm xếp hạng</th><th class="num">p</th></tr></thead>
     <tbody>${rows}<tr><td><em>Mức ngẫu nhiên</em></td><td class="num">${num(m.chance_topk, 3)}</td><td></td><td class="num">0,500</td><td></td></tr></tbody></table></div>
     <p class="sub" style="margin-top:10px">“Trùng” = số trùng trung bình giữa ${g.meta.pick} số được mô hình chọn và kết quả thật. “Điểm xếp hạng” = mô hình xếp các số thật sự trúng cao đến đâu (0,5 = như đoán bừa). Không phương pháp nào vượt mức ngẫu nhiên một cách có ý nghĩa (p &gt; 0,05).</p>
+  </section>`;
+}
+
+function studyCard(g) {
+  const st = g.study;
+  if (!st || !st.thresholds) return "";
+  const min = g.config && g.config.min_jackpot;
+  const rows = st.thresholds.filter((r) => r.draws).map((r) => {
+    const s10 = r.simulated["10"], s30 = r.simulated["30"];
+    const mine = min && r.threshold === min ? ' style="font-weight:600"' : "";
+    return `<tr${mine}><td>≥ ${fmtMoney(r.threshold)}</td><td class="num">${fmtInt(r.draws)} (${Math.round(r.share_of_draws * 100)}%)</td>
+      <td class="num">${money2(r.expected_per_dollar)}</td><td class="num">${(r.realised.net >= 0 ? "+" : "−") + fmtMoney(Math.abs(Math.round(r.realised.net)))}</td>
+      <td class="num">${pct(s10.p_profit)}</td><td class="num">${pct(s30.p_profit)}</td></tr>`;
+  }).join("");
+  return `<section class="card">
+    <h2>Nghiên cứu: chỉ chơi khi jackpot lớn</h2>
+    <div class="sub" style="margin-bottom:12px">${fmtInt(st.draws_with_jackpot)} kỳ có jackpot thật (${fmtDate(st.from)} → ${fmtDate(st.to)}), ${st.lines} dòng mỗi kỳ, giá ${money2(st.price)}/dòng. Mô phỏng 20.000 lần cho mỗi ngưỡng.</div>
+    <div class="table-scroll"><table><thead><tr><th>Ngưỡng jackpot</th><th class="num">Số kỳ chơi</th><th class="num">Giá trị / $1</th><th class="num">Lời/lỗ thật</th><th class="num">Có lời sau 10 năm</th><th class="num">sau 30 năm</th></tr></thead>
+    <tbody>${rows}</tbody></table></div>
+    <p class="sub" style="margin-top:10px">“Giá trị / $1” = trung bình nhận lại cho mỗi $1, tính từ jackpot và lượng vé bán thật của từng kỳ. Dưới $1 nghĩa là lỗ về lâu dài. Chơi theo ngưỡng giúp lỗ ít hơn (ít kỳ hơn, giá trị mỗi $1 cao hơn) nhưng không ngưỡng nào có giá trị ≥ $1, vì jackpot càng lớn càng nhiều người mua và chia giải.</p>
   </section>`;
 }
 

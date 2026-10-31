@@ -162,3 +162,16 @@ details[open] summary::before { content: "▾"; }
   .lines { grid-template-columns: 1fr; }
   .card { padding: 14px; }
 }
+
+.play { display: flex; flex-direction: column; gap: 2px; border-radius: 10px; padding: 10px 14px; margin: 0 0 14px; font-size: 14px; border: 1px solid; }
+.play strong { font-size: 16px; }
+.play.go { background: #e3f3e3; border-color: #9fd49f; color: #0a4a0a; }
+.play.wait { background: #f0efec; border-color: #d6d4cd; color: #33322f; }
+.play.unknown { background: var(--warn-bg); border-color: var(--warn-border); color: var(--warn-ink); }
+.play .muted { color: inherit; opacity: .75; }
+:root[data-theme="dark"] .play.go { background: #183318; border-color: #2f5f2f; color: #bfeebf; }
+:root[data-theme="dark"] .play.wait { background: #262624; border-color: #45453f; color: #d8d7d0; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .play.go { background: #183318; border-color: #2f5f2f; color: #bfeebf; }
+  :root:not([data-theme="light"]) .play.wait { background: #262624; border-color: #45453f; color: #d8d7d0; }
+}

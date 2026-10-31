@@ -34,6 +34,16 @@ Chiến lược mặc định `balanced` chỉ tối ưu những gì tối ưu �
    cùng chữ số cuối, bội số của 5 hoặc 7, lặp lại số kỳ trước, bộ số đã từng ra.
    Nếu trúng thì ít người phải chia giải hơn.
 
+## Quy tắc "chỉ chơi khi jackpot lớn"
+
+`config.json` → `min_jackpot` (mặc định 20000000). Mỗi kỳ trang web hiện **NÊN CHƠI** hoặc **CHỜ** theo jackpot
+kỳ đó (lấy từ lotteryguru.com). Quyết định được chốt cùng bộ số lúc 17:00 ngày trước kỳ quay.
+Phần theo dõi tính lãi/lỗ riêng cho các kỳ đã chơi.
+
+Nghiên cứu trên jackpot và lượng vé thật (`python -m lottlab.study`) cho thấy quy tắc này giảm lỗ
+(giá trị mỗi $1 tăng từ ~$0,46 lên ~$0,59 với Oz Lotto, và số kỳ phải chơi giảm còn ~1/3), nhưng
+không ngưỡng nào cho giá trị ≥ $1: jackpot càng lớn càng nhiều người mua và chia giải.
+
 Đổi chiến lược trong `config.json` (`balanced`, `hot`, `cold`, `random`) và số dòng (`lines`).
 Điền giá vé vào `ticket_price` để trang web tính chi phí.
 
@@ -83,6 +93,10 @@ lottlab/sources.py    đọc kết quả từ các trang công bố (tôn trọn
 lottlab/generator.py  tạo 50 dòng (phủ đều + tránh số phổ biến)
 lottlab/analysis.py   thống kê, kiểm định ngẫu nhiên, mô phỏng, thử nghiệm
 lottlab/cli.py        cập nhật, chốt, đối chiếu, dựng dữ liệu web
+lottlab/value.py      giá trị kỳ vọng mỗi dòng theo jackpot
+lottlab/study.py      nghiên cứu quy tắc ngưỡng jackpot (thực tế + mô phỏng)
+lottlab/models.py     kiểm chứng các phương pháp dự đoán (LSTM-like, Random Forest, Markov...)
+lottlab/replay.py     chạy lùi theo ngân sách
 data/<trò chơi>/      kết quả (draws.json) và các bộ số đã chốt (picks/)
 docs/                 trang web tĩnh (GitHub Pages)
 ```
