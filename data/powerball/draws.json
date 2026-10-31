@@ -1,0 +1,514 @@
+[
+ {
+  "game": "powerball",
+  "draw": 1570,
+  "date": "2026-06-18",
+  "main": [
+   1,
+   6,
+   20,
+   21,
+   26,
+   28,
+   29
+  ],
+  "supp": [
+   19
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1571,
+  "date": "2026-06-25",
+  "main": [
+   7,
+   17,
+   18,
+   23,
+   25,
+   26,
+   29
+  ],
+  "supp": [
+   16
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1572,
+  "date": "2026-07-02",
+  "main": [
+   6,
+   12,
+   17,
+   22,
+   24,
+   30,
+   32
+  ],
+  "supp": [
+   2
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1573,
+  "date": "2026-07-09",
+  "main": [
+   1,
+   4,
+   5,
+   14,
+   15,
+   22,
+   27
+  ],
+  "supp": [
+   18
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1574,
+  "date": "2026-07-16",
+  "main": [
+   4,
+   5,
+   13,
+   14,
+   15,
+   22,
+   28
+  ],
+  "supp": [
+   13
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1575,
+  "date": "2026-07-23",
+  "main": [
+   7,
+   11,
+   12,
+   18,
+   27,
+   30,
+   34
+  ],
+  "supp": [
+   16
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1576,
+  "date": "2026-07-30",
+  "main": [
+   18,
+   20,
+   22,
+   26,
+   31,
+   34,
+   35
+  ],
+  "supp": [
+   18
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1577,
+  "date": "2026-08-06",
+  "main": [
+   9,
+   13,
+   15,
+   16,
+   26,
+   30,
+   35
+  ],
+  "supp": [
+   7
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1578,
+  "date": "2026-08-13",
+  "main": [
+   6,
+   11,
+   15,
+   17,
+   26,
+   27,
+   35
+  ],
+  "supp": [
+   11
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1579,
+  "date": "2026-08-20",
+  "main": [
+   3,
+   9,
+   11,
+   13,
+   14,
+   22,
+   29
+  ],
+  "supp": [
+   20
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1580,
+  "date": "2026-08-27",
+  "main": [
+   3,
+   13,
+   17,
+   21,
+   23,
+   28,
+   34
+  ],
+  "supp": [
+   11
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1581,
+  "date": "2026-09-03",
+  "main": [
+   1,
+   10,
+   11,
+   14,
+   16,
+   19,
+   32
+  ],
+  "supp": [
+   11
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1582,
+  "date": "2026-09-10",
+  "main": [
+   2,
+   11,
+   24,
+   28,
+   29,
+   32,
+   34
+  ],
+  "supp": [
+   13
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1583,
+  "date": "2026-09-17",
+  "main": [
+   1,
+   8,
+   15,
+   17,
+   19,
+   22,
+   34
+  ],
+  "supp": [
+   2
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1584,
+  "date": "2026-09-24",
+  "main": [
+   1,
+   2,
+   3,
+   7,
+   18,
+   22,
+   32
+  ],
+  "supp": [
+   12
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1585,
+  "date": "2026-10-01",
+  "main": [
+   2,
+   3,
+   6,
+   10,
+   11,
+   16,
+   24
+  ],
+  "supp": [
+   14
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1586,
+  "date": "2026-10-08",
+  "main": [
+   7,
+   8,
+   10,
+   12,
+   15,
+   19,
+   20
+  ],
+  "supp": [
+   7
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1587,
+  "date": "2026-10-15",
+  "main": [
+   3,
+   14,
+   15,
+   24,
+   27,
+   30,
+   32
+  ],
+  "supp": [
+   16
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1588,
+  "date": "2026-10-22",
+  "main": [
+   4,
+   13,
+   20,
+   22,
+   26,
+   33,
+   34
+  ],
+  "supp": [
+   13
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 75954.6
+   },
+   {
+    "div": 3,
+    "winners": 31,
+    "amount": 15152.25
+   },
+   {
+    "div": 4,
+    "winners": 568,
+    "amount": 721.4
+   },
+   {
+    "div": 5,
+    "winners": 1476,
+    "amount": 209.9
+   },
+   {
+    "div": 6,
+    "winners": 21649,
+    "amount": 89.1
+   },
+   {
+    "div": 7,
+    "winners": 25886,
+    "amount": 57.9
+   },
+   {
+    "div": 8,
+    "winners": 135460,
+    "amount": 23.6
+   },
+   {
+    "div": 9,
+    "winners": 391883,
+    "amount": 14.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "powerball",
+  "draw": 1589,
+  "date": "2026-10-29",
+  "main": [
+   3,
+   5,
+   7,
+   14,
+   27,
+   31,
+   34
+  ],
+  "supp": [
+   1
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 4,
+    "amount": 116534.8
+   },
+   {
+    "div": 3,
+    "winners": 46,
+    "amount": 12533.5
+   },
+   {
+    "div": 4,
+    "winners": 1023,
+    "amount": 491.65
+   },
+   {
+    "div": 5,
+    "winners": 1784,
+    "amount": 213.15
+   },
+   {
+    "div": 6,
+    "winners": 25463,
+    "amount": 93.0
+   },
+   {
+    "div": 7,
+    "winners": 35250,
+    "amount": 52.2
+   },
+   {
+    "div": 8,
+    "winners": 158485,
+    "amount": 24.75
+   },
+   {
+    "div": 9,
+    "winners": 456341,
+    "amount": 14.8
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ }
+]

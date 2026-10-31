@@ -1,0 +1,498 @@
+[
+ {
+  "game": "oz",
+  "draw": 1687,
+  "date": "2026-06-16",
+  "main": [
+   4,
+   10,
+   28,
+   30,
+   39,
+   41,
+   47
+  ],
+  "supp": [
+   3,
+   7,
+   15
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1688,
+  "date": "2026-06-23",
+  "main": [
+   4,
+   13,
+   21,
+   26,
+   27,
+   31,
+   43
+  ],
+  "supp": [
+   11,
+   19,
+   38
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1689,
+  "date": "2026-06-30",
+  "main": [
+   2,
+   8,
+   17,
+   19,
+   24,
+   41,
+   43
+  ],
+  "supp": [
+   7,
+   12,
+   26
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1690,
+  "date": "2026-07-07",
+  "main": [
+   3,
+   26,
+   28,
+   30,
+   32,
+   35,
+   38
+  ],
+  "supp": [
+   14,
+   31,
+   41
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1691,
+  "date": "2026-07-14",
+  "main": [
+   10,
+   16,
+   22,
+   27,
+   29,
+   30,
+   38
+  ],
+  "supp": [
+   11,
+   21,
+   36
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1692,
+  "date": "2026-07-21",
+  "main": [
+   6,
+   7,
+   8,
+   19,
+   20,
+   33,
+   47
+  ],
+  "supp": [
+   3,
+   15,
+   41
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1693,
+  "date": "2026-07-28",
+  "main": [
+   17,
+   30,
+   35,
+   37,
+   40,
+   42,
+   47
+  ],
+  "supp": [
+   31,
+   39,
+   43
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1694,
+  "date": "2026-08-04",
+  "main": [
+   4,
+   11,
+   15,
+   18,
+   29,
+   35,
+   46
+  ],
+  "supp": [
+   28,
+   33,
+   43
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1695,
+  "date": "2026-08-11",
+  "main": [
+   2,
+   7,
+   19,
+   22,
+   27,
+   30,
+   35
+  ],
+  "supp": [
+   32,
+   37,
+   41
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1696,
+  "date": "2026-08-18",
+  "main": [
+   9,
+   13,
+   21,
+   38,
+   39,
+   40,
+   41
+  ],
+  "supp": [
+   6,
+   44,
+   46
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1697,
+  "date": "2026-08-25",
+  "main": [
+   2,
+   4,
+   21,
+   27,
+   33,
+   43,
+   47
+  ],
+  "supp": [
+   12,
+   17,
+   19
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1698,
+  "date": "2026-09-01",
+  "main": [
+   1,
+   8,
+   21,
+   34,
+   38,
+   44,
+   45
+  ],
+  "supp": [
+   15,
+   18,
+   46
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1699,
+  "date": "2026-09-08",
+  "main": [
+   8,
+   9,
+   17,
+   22,
+   29,
+   30,
+   32
+  ],
+  "supp": [
+   23,
+   40,
+   45
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1700,
+  "date": "2026-09-15",
+  "main": [
+   8,
+   14,
+   24,
+   29,
+   40,
+   42,
+   45
+  ],
+  "supp": [
+   36,
+   37,
+   43
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1701,
+  "date": "2026-09-22",
+  "main": [
+   4,
+   7,
+   14,
+   21,
+   35,
+   36,
+   41
+  ],
+  "supp": [
+   20,
+   26,
+   32
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1702,
+  "date": "2026-09-29",
+  "main": [
+   2,
+   6,
+   18,
+   35,
+   41,
+   43,
+   45
+  ],
+  "supp": [
+   3,
+   9,
+   23
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1703,
+  "date": "2026-10-06",
+  "main": [
+   1,
+   13,
+   14,
+   25,
+   38,
+   40,
+   41
+  ],
+  "supp": [
+   28,
+   30,
+   47
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1704,
+  "date": "2026-10-13",
+  "main": [
+   5,
+   17,
+   29,
+   32,
+   35,
+   36,
+   46
+  ],
+  "supp": [
+   7,
+   24,
+   30
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1705,
+  "date": "2026-10-20",
+  "main": [
+   6,
+   12,
+   13,
+   19,
+   22,
+   33,
+   36
+  ],
+  "supp": [
+   10,
+   27,
+   38
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "oz",
+  "draw": 1706,
+  "date": "2026-10-27",
+  "main": [
+   8,
+   13,
+   21,
+   34,
+   36,
+   40,
+   42
+  ],
+  "supp": [
+   10,
+   15,
+   27
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 11,
+    "amount": 57815.9
+   },
+   {
+    "div": 3,
+    "winners": 150,
+    "amount": 5010.7
+   },
+   {
+    "div": 4,
+    "winners": 1471,
+    "amount": 393.05
+   },
+   {
+    "div": 5,
+    "winners": 8466,
+    "amount": 54.65
+   },
+   {
+    "div": 6,
+    "winners": 213323,
+    "amount": 26.85
+   },
+   {
+    "div": 7,
+    "winners": 557482,
+    "amount": 16.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ }
+]

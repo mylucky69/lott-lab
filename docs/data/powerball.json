@@ -67,18 +67,1081 @@
   "any_prize_p": 0.022736678603082452
  },
  "status": {
-  "fetch_ok": false,
-  "error": "FetchError: results/search/daterange: 403 Client Error: Forbidden for url: https://data.api.thelott.com/sales/vmax/web/data/lotto/results/search/daterange",
-  "changed": false,
-  "checked_at": "2026-11-01T00:12+11:00"
+  "fetch_ok": true,
+  "error": "national-lottery: https://australia.national-lottery.com/powerball/results-archive-2026: HTTPSConnectionPool(host='australia.national-lottery.com', port=443): Max retries exceeded with url: /powerball/results-archive-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='australia.national-lottery.com', port=443) at 0x7f96f97c4e30>, 'Connection to australia.national-lottery.com timed out. (con",
+  "changed": true,
+  "checked_at": "2026-11-01T00:33+11:00",
+  "sources_ok": [
+   "lotteryextreme"
+  ],
+  "new_draws": [
+   1570,
+   1571,
+   1572,
+   1573,
+   1574,
+   1575,
+   1576,
+   1577,
+   1578,
+   1579,
+   1580,
+   1581,
+   1582,
+   1583,
+   1584,
+   1585,
+   1586,
+   1587,
+   1588,
+   1589
+  ],
+  "last_ok": "2026-11-01T00:33+11:00",
+  "history_years": 0
  },
  "config": {
   "lines": 50,
   "strategy": "balanced",
   "ticket_price": null
  },
- "next": null,
- "latest": [],
+ "next": {
+  "game": "powerball",
+  "draw": 1590,
+  "date": "2026-11-05",
+  "lock_at": "2026-11-04T17:00:00+11:00",
+  "jackpot": null,
+  "status": "preview",
+  "strategy": "balanced",
+  "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
+  "based_on": 1589,
+  "generated_at": "2026-11-01T00:35:40+11:00",
+  "locked_at": null,
+  "lines": [
+   {
+    "main": [
+     1,
+     2,
+     10,
+     13,
+     16,
+     26,
+     33
+    ],
+    "pb": 4
+   },
+   {
+    "main": [
+     1,
+     2,
+     12,
+     15,
+     19,
+     32,
+     34
+    ],
+    "pb": 7
+   },
+   {
+    "main": [
+     1,
+     3,
+     12,
+     21,
+     23,
+     27,
+     35
+    ],
+    "pb": 8
+   },
+   {
+    "main": [
+     1,
+     4,
+     14,
+     17,
+     21,
+     30,
+     32
+    ],
+    "pb": 4
+   },
+   {
+    "main": [
+     1,
+     5,
+     7,
+     15,
+     16,
+     21,
+     26
+    ],
+    "pb": 19
+   },
+   {
+    "main": [
+     1,
+     5,
+     11,
+     22,
+     25,
+     28,
+     31
+    ],
+    "pb": 7
+   },
+   {
+    "main": [
+     1,
+     6,
+     11,
+     20,
+     24,
+     27,
+     33
+    ],
+    "pb": 6
+   },
+   {
+    "main": [
+     1,
+     7,
+     8,
+     10,
+     12,
+     18,
+     35
+    ],
+    "pb": 20
+   },
+   {
+    "main": [
+     1,
+     8,
+     17,
+     19,
+     25,
+     30,
+     33
+    ],
+    "pb": 14
+   },
+   {
+    "main": [
+     2,
+     3,
+     5,
+     8,
+     23,
+     29,
+     33
+    ],
+    "pb": 3
+   },
+   {
+    "main": [
+     2,
+     4,
+     7,
+     14,
+     29,
+     31,
+     33
+    ],
+    "pb": 5
+   },
+   {
+    "main": [
+     2,
+     4,
+     9,
+     10,
+     17,
+     20,
+     28
+    ],
+    "pb": 13
+   },
+   {
+    "main": [
+     2,
+     5,
+     12,
+     18,
+     20,
+     27,
+     30
+    ],
+    "pb": 5
+   },
+   {
+    "main": [
+     2,
+     6,
+     14,
+     18,
+     19,
+     21,
+     24
+    ],
+    "pb": 1
+   },
+   {
+    "main": [
+     2,
+     7,
+     17,
+     22,
+     25,
+     26,
+     32
+    ],
+    "pb": 11
+   },
+   {
+    "main": [
+     2,
+     8,
+     11,
+     13,
+     15,
+     27,
+     35
+    ],
+    "pb": 8
+   },
+   {
+    "main": [
+     2,
+     9,
+     18,
+     25,
+     31,
+     34,
+     35
+    ],
+    "pb": 1
+   },
+   {
+    "main": [
+     3,
+     4,
+     8,
+     24,
+     26,
+     32,
+     34
+    ],
+    "pb": 13
+   },
+   {
+    "main": [
+     3,
+     6,
+     7,
+     17,
+     18,
+     25,
+     28
+    ],
+    "pb": 15
+   },
+   {
+    "main": [
+     3,
+     6,
+     13,
+     14,
+     16,
+     17,
+     35
+    ],
+    "pb": 13
+   },
+   {
+    "main": [
+     3,
+     6,
+     15,
+     26,
+     30,
+     31,
+     33
+    ],
+    "pb": 9
+   },
+   {
+    "main": [
+     3,
+     7,
+     13,
+     20,
+     21,
+     29,
+     32
+    ],
+    "pb": 8
+   },
+   {
+    "main": [
+     3,
+     9,
+     10,
+     15,
+     19,
+     22,
+     34
+    ],
+    "pb": 11
+   },
+   {
+    "main": [
+     3,
+     9,
+     11,
+     16,
+     18,
+     24,
+     30
+    ],
+    "pb": 20
+   },
+   {
+    "main": [
+     3,
+     12,
+     14,
+     19,
+     22,
+     28,
+     30
+    ],
+    "pb": 14
+   },
+   {
+    "main": [
+     4,
+     7,
+     11,
+     15,
+     19,
+     25,
+     35
+    ],
+    "pb": 11
+   },
+   {
+    "main": [
+     4,
+     8,
+     9,
+     12,
+     16,
+     20,
+     22
+    ],
+    "pb": 15
+   },
+   {
+    "main": [
+     4,
+     12,
+     15,
+     16,
+     27,
+     31,
+     34
+    ],
+    "pb": 20
+   },
+   {
+    "main": [
+     4,
+     12,
+     21,
+     22,
+     24,
+     28,
+     33
+    ],
+    "pb": 3
+   },
+   {
+    "main": [
+     4,
+     13,
+     18,
+     22,
+     23,
+     27,
+     34
+    ],
+    "pb": 9
+   },
+   {
+    "main": [
+     5,
+     6,
+     16,
+     22,
+     24,
+     29,
+     32
+    ],
+    "pb": 16
+   },
+   {
+    "main": [
+     5,
+     6,
+     20,
+     23,
+     25,
+     30,
+     34
+    ],
+    "pb": 18
+   },
+   {
+    "main": [
+     5,
+     8,
+     9,
+     14,
+     15,
+     18,
+     32
+    ],
+    "pb": 17
+   },
+   {
+    "main": [
+     5,
+     8,
+     10,
+     11,
+     13,
+     30,
+     32
+    ],
+    "pb": 2
+   },
+   {
+    "main": [
+     5,
+     9,
+     10,
+     21,
+     25,
+     27,
+     33
+    ],
+    "pb": 10
+   },
+   {
+    "main": [
+     5,
+     12,
+     13,
+     17,
+     24,
+     31,
+     35
+    ],
+    "pb": 3
+   },
+   {
+    "main": [
+     6,
+     8,
+     10,
+     21,
+     28,
+     31,
+     34
+    ],
+    "pb": 12
+   },
+   {
+    "main": [
+     6,
+     9,
+     12,
+     13,
+     19,
+     23,
+     26
+    ],
+    "pb": 18
+   },
+   {
+    "main": [
+     6,
+     9,
+     27,
+     29,
+     30,
+     32,
+     35
+    ],
+    "pb": 17
+   },
+   {
+    "main": [
+     7,
+     11,
+     19,
+     26,
+     28,
+     29,
+     34
+    ],
+    "pb": 12
+   },
+   {
+    "main": [
+     7,
+     13,
+     15,
+     23,
+     24,
+     28,
+     30
+    ],
+    "pb": 1
+   },
+   {
+    "main": [
+     8,
+     11,
+     14,
+     20,
+     23,
+     26,
+     31
+    ],
+    "pb": 19
+   },
+   {
+    "main": [
+     8,
+     16,
+     17,
+     19,
+     21,
+     27,
+     29
+    ],
+    "pb": 10
+   },
+   {
+    "main": [
+     9,
+     11,
+     17,
+     21,
+     23,
+     33,
+     34
+    ],
+    "pb": 2
+   },
+   {
+    "main": [
+     10,
+     11,
+     14,
+     16,
+     25,
+     29,
+     34
+    ],
+    "pb": 16
+   },
+   {
+    "main": [
+     10,
+     14,
+     20,
+     22,
+     26,
+     33,
+     35
+    ],
+    "pb": 6
+   },
+   {
+    "main": [
+     10,
+     15,
+     17,
+     24,
+     26,
+     27,
+     29
+    ],
+    "pb": 15
+   },
+   {
+    "main": [
+     10,
+     16,
+     19,
+     23,
+     31,
+     32,
+     35
+    ],
+    "pb": 12
+   },
+   {
+    "main": [
+     13,
+     16,
+     18,
+     25,
+     28,
+     32,
+     33
+    ],
+    "pb": 9
+   },
+   {
+    "main": [
+     15,
+     18,
+     20,
+     21,
+     29,
+     31,
+     35
+    ],
+    "pb": 5
+   }
+  ],
+  "simulation": {
+   "draws": 20000,
+   "p_any": 0.76735,
+   "mean_prizes": 1.14485,
+   "p_any_independent": 0.6833496606733933,
+   "mean_prizes_theory": 1.1368339301541226
+  },
+  "simulation_random": {
+   "draws": 20000,
+   "p_any": 0.7066,
+   "mean_prizes": 1.15105,
+   "p_any_independent": 0.6833496606733933,
+   "mean_prizes_theory": 1.1368339301541226
+  }
+ },
+ "latest": [
+  {
+   "game": "powerball",
+   "draw": 1589,
+   "date": "2026-10-29",
+   "main": [
+    3,
+    5,
+    7,
+    14,
+    27,
+    31,
+    34
+   ],
+   "supp": [
+    1
+   ],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 4,
+     "amount": 116534.8
+    },
+    {
+     "div": 3,
+     "winners": 46,
+     "amount": 12533.5
+    },
+    {
+     "div": 4,
+     "winners": 1023,
+     "amount": 491.65
+    },
+    {
+     "div": 5,
+     "winners": 1784,
+     "amount": 213.15
+    },
+    {
+     "div": 6,
+     "winners": 25463,
+     "amount": 93.0
+    },
+    {
+     "div": 7,
+     "winners": 35250,
+     "amount": 52.2
+    },
+    {
+     "div": 8,
+     "winners": 158485,
+     "amount": 24.75
+    },
+    {
+     "div": 9,
+     "winners": 456341,
+     "amount": 14.8
+    }
+   ],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1588,
+   "date": "2026-10-22",
+   "main": [
+    4,
+    13,
+    20,
+    22,
+    26,
+    33,
+    34
+   ],
+   "supp": [
+    13
+   ],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 5,
+     "amount": 75954.6
+    },
+    {
+     "div": 3,
+     "winners": 31,
+     "amount": 15152.25
+    },
+    {
+     "div": 4,
+     "winners": 568,
+     "amount": 721.4
+    },
+    {
+     "div": 5,
+     "winners": 1476,
+     "amount": 209.9
+    },
+    {
+     "div": 6,
+     "winners": 21649,
+     "amount": 89.1
+    },
+    {
+     "div": 7,
+     "winners": 25886,
+     "amount": 57.9
+    },
+    {
+     "div": 8,
+     "winners": 135460,
+     "amount": 23.6
+    },
+    {
+     "div": 9,
+     "winners": 391883,
+     "amount": 14.05
+    }
+   ],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1587,
+   "date": "2026-10-15",
+   "main": [
+    3,
+    14,
+    15,
+    24,
+    27,
+    30,
+    32
+   ],
+   "supp": [
+    16
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1586,
+   "date": "2026-10-08",
+   "main": [
+    7,
+    8,
+    10,
+    12,
+    15,
+    19,
+    20
+   ],
+   "supp": [
+    7
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1585,
+   "date": "2026-10-01",
+   "main": [
+    2,
+    3,
+    6,
+    10,
+    11,
+    16,
+    24
+   ],
+   "supp": [
+    14
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1584,
+   "date": "2026-09-24",
+   "main": [
+    1,
+    2,
+    3,
+    7,
+    18,
+    22,
+    32
+   ],
+   "supp": [
+    12
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1583,
+   "date": "2026-09-17",
+   "main": [
+    1,
+    8,
+    15,
+    17,
+    19,
+    22,
+    34
+   ],
+   "supp": [
+    2
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1582,
+   "date": "2026-09-10",
+   "main": [
+    2,
+    11,
+    24,
+    28,
+    29,
+    32,
+    34
+   ],
+   "supp": [
+    13
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1581,
+   "date": "2026-09-03",
+   "main": [
+    1,
+    10,
+    11,
+    14,
+    16,
+    19,
+    32
+   ],
+   "supp": [
+    11
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1580,
+   "date": "2026-08-27",
+   "main": [
+    3,
+    13,
+    17,
+    21,
+    23,
+    28,
+    34
+   ],
+   "supp": [
+    11
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1579,
+   "date": "2026-08-20",
+   "main": [
+    3,
+    9,
+    11,
+    13,
+    14,
+    22,
+    29
+   ],
+   "supp": [
+    20
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1578,
+   "date": "2026-08-13",
+   "main": [
+    6,
+    11,
+    15,
+    17,
+    26,
+    27,
+    35
+   ],
+   "supp": [
+    11
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1577,
+   "date": "2026-08-06",
+   "main": [
+    9,
+    13,
+    15,
+    16,
+    26,
+    30,
+    35
+   ],
+   "supp": [
+    7
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1576,
+   "date": "2026-07-30",
+   "main": [
+    18,
+    20,
+    22,
+    26,
+    31,
+    34,
+    35
+   ],
+   "supp": [
+    18
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  },
+  {
+   "game": "powerball",
+   "draw": 1575,
+   "date": "2026-07-23",
+   "main": [
+    7,
+    11,
+    12,
+    18,
+    27,
+    30,
+    34
+   ],
+   "supp": [
+    16
+   ],
+   "dividends": [],
+   "sources": [
+    "lotteryextreme"
+   ]
+  }
+ ],
  "tracking": [],
  "totals": {
   "draws": 0,
@@ -87,7 +1150,353 @@
   "prize_lines": 0
  },
  "stats": {
-  "n_draws": 0
+  "n_draws": 20,
+  "first": "2026-06-18",
+  "last": "2026-10-29",
+  "numbers": [
+   {
+    "n": 1,
+    "count": 5,
+    "recent": 5,
+    "gap": 5
+   },
+   {
+    "n": 2,
+    "count": 3,
+    "recent": 3,
+    "gap": 4
+   },
+   {
+    "n": 3,
+    "count": 6,
+    "recent": 6,
+    "gap": 0
+   },
+   {
+    "n": 4,
+    "count": 3,
+    "recent": 3,
+    "gap": 1
+   },
+   {
+    "n": 5,
+    "count": 3,
+    "recent": 3,
+    "gap": 0
+   },
+   {
+    "n": 6,
+    "count": 4,
+    "recent": 4,
+    "gap": 4
+   },
+   {
+    "n": 7,
+    "count": 5,
+    "recent": 5,
+    "gap": 0
+   },
+   {
+    "n": 8,
+    "count": 2,
+    "recent": 2,
+    "gap": 3
+   },
+   {
+    "n": 9,
+    "count": 2,
+    "recent": 2,
+    "gap": 10
+   },
+   {
+    "n": 10,
+    "count": 3,
+    "recent": 3,
+    "gap": 3
+   },
+   {
+    "n": 11,
+    "count": 6,
+    "recent": 6,
+    "gap": 4
+   },
+   {
+    "n": 12,
+    "count": 3,
+    "recent": 3,
+    "gap": 3
+   },
+   {
+    "n": 13,
+    "count": 5,
+    "recent": 5,
+    "gap": 1
+   },
+   {
+    "n": 14,
+    "count": 6,
+    "recent": 6,
+    "gap": 0
+   },
+   {
+    "n": 15,
+    "count": 7,
+    "recent": 7,
+    "gap": 2
+   },
+   {
+    "n": 16,
+    "count": 3,
+    "recent": 3,
+    "gap": 4
+   },
+   {
+    "n": 17,
+    "count": 5,
+    "recent": 5,
+    "gap": 6
+   },
+   {
+    "n": 18,
+    "count": 4,
+    "recent": 4,
+    "gap": 5
+   },
+   {
+    "n": 19,
+    "count": 3,
+    "recent": 3,
+    "gap": 3
+   },
+   {
+    "n": 20,
+    "count": 4,
+    "recent": 4,
+    "gap": 1
+   },
+   {
+    "n": 21,
+    "count": 2,
+    "recent": 2,
+    "gap": 9
+   },
+   {
+    "n": 22,
+    "count": 8,
+    "recent": 8,
+    "gap": 1
+   },
+   {
+    "n": 23,
+    "count": 2,
+    "recent": 2,
+    "gap": 9
+   },
+   {
+    "n": 24,
+    "count": 4,
+    "recent": 4,
+    "gap": 2
+   },
+   {
+    "n": 25,
+    "count": 1,
+    "recent": 1,
+    "gap": 18
+   },
+   {
+    "n": 26,
+    "count": 6,
+    "recent": 6,
+    "gap": 1
+   },
+   {
+    "n": 27,
+    "count": 5,
+    "recent": 5,
+    "gap": 0
+   },
+   {
+    "n": 28,
+    "count": 4,
+    "recent": 4,
+    "gap": 7
+   },
+   {
+    "n": 29,
+    "count": 4,
+    "recent": 4,
+    "gap": 7
+   },
+   {
+    "n": 30,
+    "count": 4,
+    "recent": 4,
+    "gap": 2
+   },
+   {
+    "n": 31,
+    "count": 2,
+    "recent": 2,
+    "gap": 0
+   },
+   {
+    "n": 32,
+    "count": 5,
+    "recent": 5,
+    "gap": 2
+   },
+   {
+    "n": 33,
+    "count": 1,
+    "recent": 1,
+    "gap": 1
+   },
+   {
+    "n": 34,
+    "count": 7,
+    "recent": 7,
+    "gap": 0
+   },
+   {
+    "n": 35,
+    "count": 3,
+    "recent": 3,
+    "gap": 11
+   }
+  ],
+  "expected_count": 4.0,
+  "chi2": 25.5,
+  "p_chi2": 0.8529390016815723,
+  "mean_overlap": 1.5263157894736843,
+  "expected_overlap": 1.4,
+  "p_serial": 0.6442260573418747,
+  "odd": [
+   {
+    "odd": 0,
+    "observed": 0,
+    "expected": 0.05784204671857619
+   },
+   {
+    "odd": 1,
+    "observed": 1,
+    "expected": 0.6625543533218727
+   },
+   {
+    "odd": 2,
+    "observed": 4,
+    "expected": 2.8158560016179592
+   },
+   {
+    "odd": 3,
+    "observed": 7,
+    "expected": 5.7761148751137625
+   },
+   {
+    "odd": 4,
+    "observed": 3,
+    "expected": 6.18869450905046
+   },
+   {
+    "odd": 5,
+    "observed": 5,
+    "expected": 3.4656689250682575
+   },
+   {
+    "odd": 6,
+    "observed": 0,
+    "expected": 0.9386186672059864
+   },
+   {
+    "odd": 7,
+    "observed": 0,
+    "expected": 0.09465062190312469
+   }
+  ],
+  "pb": [
+   {
+    "n": 1,
+    "count": 1
+   },
+   {
+    "n": 2,
+    "count": 2
+   },
+   {
+    "n": 3,
+    "count": 0
+   },
+   {
+    "n": 4,
+    "count": 0
+   },
+   {
+    "n": 5,
+    "count": 0
+   },
+   {
+    "n": 6,
+    "count": 0
+   },
+   {
+    "n": 7,
+    "count": 2
+   },
+   {
+    "n": 8,
+    "count": 0
+   },
+   {
+    "n": 9,
+    "count": 0
+   },
+   {
+    "n": 10,
+    "count": 0
+   },
+   {
+    "n": 11,
+    "count": 3
+   },
+   {
+    "n": 12,
+    "count": 1
+   },
+   {
+    "n": 13,
+    "count": 3
+   },
+   {
+    "n": 14,
+    "count": 1
+   },
+   {
+    "n": 15,
+    "count": 0
+   },
+   {
+    "n": 16,
+    "count": 3
+   },
+   {
+    "n": 17,
+    "count": 0
+   },
+   {
+    "n": 18,
+    "count": 2
+   },
+   {
+    "n": 19,
+    "count": 1
+   },
+   {
+    "n": 20,
+    "count": 1
+   }
+  ],
+  "pb_expected": 1.0,
+  "p_chi2_pb": 0.19615235720749558
  },
  "backtest": null
 }

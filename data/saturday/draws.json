@@ -1,0 +1,484 @@
+[
+ {
+  "game": "saturday",
+  "draw": 4687,
+  "date": "2026-06-20",
+  "main": [
+   3,
+   6,
+   9,
+   14,
+   21,
+   22
+  ],
+  "supp": [
+   20,
+   38
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4689,
+  "date": "2026-06-27",
+  "main": [
+   15,
+   17,
+   24,
+   28,
+   36,
+   37
+  ],
+  "supp": [
+   12,
+   18
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4691,
+  "date": "2026-07-04",
+  "main": [
+   4,
+   8,
+   15,
+   32,
+   43,
+   44
+  ],
+  "supp": [
+   22,
+   23
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4693,
+  "date": "2026-07-11",
+  "main": [
+   13,
+   14,
+   16,
+   21,
+   29,
+   41
+  ],
+  "supp": [
+   10,
+   17
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4695,
+  "date": "2026-07-18",
+  "main": [
+   5,
+   7,
+   13,
+   24,
+   30,
+   41
+  ],
+  "supp": [
+   23,
+   33
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4697,
+  "date": "2026-07-25",
+  "main": [
+   2,
+   6,
+   8,
+   12,
+   22,
+   43
+  ],
+  "supp": [
+   13,
+   28
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4699,
+  "date": "2026-08-01",
+  "main": [
+   3,
+   11,
+   15,
+   30,
+   32,
+   42
+  ],
+  "supp": [
+   38,
+   43
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4701,
+  "date": "2026-08-08",
+  "main": [
+   6,
+   22,
+   26,
+   28,
+   33,
+   36
+  ],
+  "supp": [
+   12,
+   32
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4703,
+  "date": "2026-08-15",
+  "main": [
+   2,
+   13,
+   17,
+   25,
+   31,
+   33
+  ],
+  "supp": [
+   1,
+   23
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4705,
+  "date": "2026-08-22",
+  "main": [
+   1,
+   2,
+   9,
+   11,
+   13,
+   20
+  ],
+  "supp": [
+   28,
+   45
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4707,
+  "date": "2026-08-29",
+  "main": [
+   17,
+   23,
+   25,
+   27,
+   33,
+   45
+  ],
+  "supp": [
+   26,
+   43
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4709,
+  "date": "2026-09-05",
+  "main": [
+   5,
+   17,
+   27,
+   38,
+   40,
+   43
+  ],
+  "supp": [
+   2,
+   39
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4711,
+  "date": "2026-09-12",
+  "main": [
+   3,
+   9,
+   20,
+   27,
+   30,
+   38
+  ],
+  "supp": [
+   4,
+   42
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4713,
+  "date": "2026-09-19",
+  "main": [
+   1,
+   10,
+   27,
+   32,
+   33,
+   39
+  ],
+  "supp": [
+   13,
+   26
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4715,
+  "date": "2026-09-26",
+  "main": [
+   2,
+   6,
+   25,
+   27,
+   31,
+   40
+  ],
+  "supp": [
+   24,
+   35
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4717,
+  "date": "2026-10-03",
+  "main": [
+   9,
+   18,
+   20,
+   32,
+   39,
+   45
+  ],
+  "supp": [
+   19,
+   24
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4719,
+  "date": "2026-10-10",
+  "main": [
+   2,
+   15,
+   16,
+   33,
+   41,
+   43
+  ],
+  "supp": [
+   5,
+   28
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4721,
+  "date": "2026-10-17",
+  "main": [
+   1,
+   11,
+   15,
+   22,
+   30,
+   32
+  ],
+  "supp": [
+   13,
+   43
+  ],
+  "dividends": [],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4723,
+  "date": "2026-10-24",
+  "main": [
+   13,
+   18,
+   32,
+   40,
+   42,
+   44
+  ],
+  "supp": [
+   27,
+   37
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 4,
+    "amount": 1523797.81
+   },
+   {
+    "div": 2,
+    "winners": 44,
+    "amount": 13255.65
+   },
+   {
+    "div": 3,
+    "winners": 853,
+    "amount": 1035.05
+   },
+   {
+    "div": 4,
+    "winners": 44845,
+    "amount": 29.25
+   },
+   {
+    "div": 5,
+    "winners": 116161,
+    "amount": 17.65
+   },
+   {
+    "div": 6,
+    "winners": 658384,
+    "amount": 10.5
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ },
+ {
+  "game": "saturday",
+  "draw": 4725,
+  "date": "2026-10-31",
+  "main": [
+   3,
+   4,
+   23,
+   36,
+   39,
+   40
+  ],
+  "supp": [
+   18,
+   26
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 3,
+    "amount": 6666666.67
+   },
+   {
+    "div": 2,
+    "winners": 75,
+    "amount": 13276.6
+   },
+   {
+    "div": 3,
+    "winners": 1336,
+    "amount": 1128.25
+   },
+   {
+    "div": 4,
+    "winners": 76577,
+    "amount": 29.25
+   },
+   {
+    "div": 5,
+    "winners": 203221,
+    "amount": 17.25
+   },
+   {
+    "div": 6,
+    "winners": 1134165,
+    "amount": 10.45
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ]
+ }
+]
