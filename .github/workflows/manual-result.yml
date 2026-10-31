@@ -1,0 +1,57 @@
+name: Nhập kết quả thủ công
+
+# Dùng khi The Lott chặn việc lấy dữ liệu tự động.
+# GitHub > Actions > "Nhập kết quả thủ công" > Run workflow.
+on:
+  workflow_dispatch:
+    inputs:
+      game:
+        description: "Trò chơi"
+        type: choice
+        options: [oz, powerball, saturday]
+      draw:
+        description: "Số kỳ quay (vd 1650)"
+        required: true
+      date:
+        description: "Ngày quay YYYY-MM-DD"
+        required: true
+      main:
+        description: "Số chính, cách nhau bằng dấu cách"
+        required: true
+      supp:
+        description: "Số phụ (Oz: 3 số, Saturday: 2 số) hoặc Powerball (1 số)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lott-data
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - env:
+          GAME: ${{ inputs.game }}
+          DRAW: ${{ inputs.draw }}
+          DATE: ${{ inputs.date }}
+          MAIN: ${{ inputs.main }}
+          SUPP: ${{ inputs.supp }}
+        run: python -m lottlab add-result "$GAME" "$DRAW" "$DATE" "$MAIN" "$SUPP"
+      - name: Lưu thay đổi
+        run: |
+          git config user.name "lott-lab-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs/data
+          git diff --cached --quiet && exit 0
+          git commit -m "Nhập tay kết quả ${{ inputs.game }} #${{ inputs.draw }}"
+          for i in 1 2 3 4; do git pull --rebase -q && git push && exit 0; sleep $((i*5)); done
+          exit 1
