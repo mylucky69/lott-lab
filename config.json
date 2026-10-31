@@ -1,5 +1,5 @@
 {
- "lines": 50,
+ "lines": "auto",
  "strategy": "balanced",
  "ticket_price": {
   "oz": 1.46,
@@ -12,5 +12,11 @@
   "powerball": 50000000,
   "saturday": 12000000
  },
- "min_jackpot_note": "Chỉ chơi khi jackpot >= ngưỡng (AUD), riêng cho từng trò. Chọn từ python -m lottlab.optimize: mức giá trị mỗi $1 cao nhất mà vẫn chơi >= 4 kỳ/năm. Đặt 0 để chơi mọi kỳ."
+ "min_jackpot_note": "Chỉ chơi khi jackpot >= ngưỡng (AUD), riêng cho từng trò. Chọn từ python -m lottlab.optimize: mức giá trị mỗi $1 cao nhất mà vẫn chơi >= 4 kỳ/năm. Đặt 0 để chơi mọi kỳ.",
+ "lines_auto": {
+  "max_expected_loss_per_draw": 5,
+  "min": 5,
+  "max": 50
+ },
+ "lines_note": "'auto': mỗi kỳ chọn nhiều dòng nhất mà lỗ kỳ vọng của kỳ đó <= max_expected_loss_per_draw (đô la), trong khoảng min..max. Đặt một số (vd 50) để luôn mua cố định."
 }

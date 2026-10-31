@@ -43,6 +43,16 @@ Chiến lược mặc định `balanced` chỉ tối ưu những gì tối ưu �
    phổ biến: cấp số cộng, toàn bội số của 5 hoặc 7, 4 số liền nhau, lặp lại số kỳ trước, bộ số đã từng ra.
    Nếu trúng thì ít người phải chia giải hơn.
 
+## Số dòng mỗi kỳ (`python -m lottlab.lines`)
+
+50 dòng không phải con số tốt nhất. Ít dòng thì mọi dòng đều dùng được số ít người chọn nhất, nên mỗi $1
+nhận lại nhiều hơn (Oz Lotto ở jackpot $60 triệu: 10 dòng $0,85 → 50 dòng $0,79), và vì mỗi dòng vẫn
+lỗ trung bình, lỗ tăng theo số dòng. Nhiều dòng chỉ tăng khả năng trúng một giải nào đó.
+
+`config.json` → `"lines": "auto"`: mỗi kỳ hệ thống chọn nhiều dòng nhất mà lỗ kỳ vọng của kỳ đó
+≤ `lines_auto.max_expected_loss_per_draw` (mặc định $5), trong khoảng 5–50 dòng. Jackpot càng lớn
+(giá trị mỗi dòng càng cao) thì mua càng nhiều dòng. Đặt `"lines": 50` để mua cố định.
+
 ## Quy tắc "chỉ chơi khi jackpot lớn"
 
 `config.json` → `min_jackpot`, riêng cho từng trò: Oz Lotto ≥ $50 triệu, Powerball ≥ $50 triệu,
@@ -110,6 +120,7 @@ lottlab/models.py     kiểm chứng các phương pháp dự đoán (LSTM-like,
 lottlab/replay.py     chạy lùi theo ngân sách
 lottlab/popularity.py đo mức phổ biến của từng số từ số người trúng thật
 lottlab/optimize.py   tìm ngưỡng jackpot tốt nhất, tổng hợp có/không Powerball
+lottlab/lines.py      so sánh số dòng mỗi kỳ (1–100)
 data/<trò chơi>/      kết quả (draws.json) và các bộ số đã chốt (picks/)
 docs/                 trang web tĩnh (GitHub Pages)
 ```

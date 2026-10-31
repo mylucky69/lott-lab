@@ -100,7 +100,7 @@ function renderOverview() {
   const pf = state.index.portfolio;
   const pfRow = (label, t) => t ? `<tr><td>${label}<div class="muted" style="font-size:12px">${esc(t.games.join(", "))}</div></td><td class="num">${num(t.per_year, 1)}</td><td class="num">${fmtMoney(t.spend_per_year)}</td><td class="num">−${fmtMoney(t.expected_loss_per_year)}</td><td class="num">${(t.real_net_per_year >= 0 ? "+" : "−") + fmtMoney(Math.abs(t.real_net_per_year))}</td></tr>` : "";
   const pfCard = pf ? `<section class="card"><h2>Kết quả kiểm thử theo quy tắc hiện tại</h2>
-    <div class="sub" style="margin-bottom:12px">Mỗi năm, với ngưỡng jackpot của từng trò và bộ 50 dòng khuyến nghị. "Lời/lỗ thật" là chạy lùi trên các kỳ đã qua (từ 01/2025).</div>
+    <div class="sub" style="margin-bottom:12px">Mỗi năm, với ngưỡng jackpot của từng trò và 50 dòng mỗi kỳ (để so sánh; số dòng tự động còn lỗ ít hơn, xem thẻ "Nên mua bao nhiêu dòng?" trong từng trò). "Lời/lỗ thật" là chạy lùi trên các kỳ đã qua (từ 01/2025).</div>
     <div class="table-scroll"><table><thead><tr><th>Phương án</th><th class="num">Kỳ chơi/năm</th><th class="num">Chi/năm</th><th class="num">Lỗ kỳ vọng/năm</th><th class="num">Lời/lỗ thật/năm</th></tr></thead>
     <tbody>${pfRow("Cả 3 trò", pf.with_powerball)}${pfRow("Không chơi Powerball", pf.without_powerball)}</tbody></table></div>
     <p class="sub" style="margin-top:10px">Chưa có phương án nào có lời theo kỳ vọng. Quy tắc ngưỡng jackpot và bộ số ít người chọn chỉ giúp lỗ ít hơn nhiều so với chơi mọi kỳ.</p></section>` : "";
@@ -160,7 +160,8 @@ function rulesCard() {
     <ol class="rules">
       <li><strong>Chỉ chơi khi jackpot đủ lớn:</strong> mỗi trò có ngưỡng riêng, chọn bằng dữ liệu jackpot và lượng vé thật.</li>
       <li><strong>Ưu tiên số ít người chọn</strong> (theo nghiên cứu trên): mọi hạng giải đều chia theo số người trúng, nên nếu trúng sẽ nhận nhiều hơn. Không dùng luật "tránh số liên tiếp" vì dữ liệu cho thấy người chơi vốn đã né chúng.</li>
-      <li><strong>Phủ đều 50 dòng:</strong> các dòng trùng nhau ít nhất có thể và dùng đủ mọi số, để kết quả mỗi kỳ ổn định hơn.</li>
+      <li><strong>Số dòng tự động theo từng kỳ:</strong> nhiều dòng nhất mà lỗ kỳ vọng của kỳ đó không vượt mức đặt trước. Ít dòng thì mỗi dòng đều dùng được số ít người chọn nhất, nên mỗi $1 nhận lại nhiều hơn; jackpot càng lớn thì hệ thống mua càng nhiều dòng.</li>
+      <li><strong>Phủ đều các dòng:</strong> các dòng trùng nhau ít nhất có thể và dùng đủ mọi số, để kết quả mỗi kỳ ổn định hơn.</li>
       <li><strong>Tránh mẫu hình phổ biến:</strong> cấp số cộng (5, 10, 15…), toàn bội số của 5 hoặc 7, 4 số liền nhau, lặp lại số kỳ trước, bộ số đã từng ra.</li>
       <li><strong>Không dùng "số nóng/lạnh", Markov hay AI dự đoán:</strong> đã thử trên dữ liệu thật, không cách nào đoán tốt hơn ngẫu nhiên.</li>
     </ol>
@@ -169,7 +170,7 @@ function rulesCard() {
 
 /* ---------- main render ---------- */
 function render(g) {
-  const parts = [nextCard(g), latestCard(g), trackingCard(g), statsCard(g), optimizeCard(g), studyCard(g), backtestCard(g), modelsCard(g), oddsCard(g)];
+  const parts = [nextCard(g), latestCard(g), trackingCard(g), statsCard(g), linesCard(g), optimizeCard(g), studyCard(g), backtestCard(g), modelsCard(g), oddsCard(g)];
   $("#app").innerHTML = parts.join("");
   bindCharts();
   bindNext(g);
@@ -198,7 +199,9 @@ function playBanner(g, n) {
   const head = n.play === true ? "✓ NÊN CHƠI kỳ này" : n.play === false ? "⏸ CHỜ, không chơi kỳ này" : "? Chưa đủ thông tin";
   const v = g.value && g.value.per_dollar != null ? ` · Giá trị kỳ vọng ${money2(g.value.per_dollar_busy)}–${money2(g.value.per_dollar)} mỗi $1 (vẫn lỗ trung bình)` : "";
   const cost = g.config.ticket_price ? ` · Chi phí ${fmtMoney(Math.round(n.lines.length * g.config.ticket_price * 100) / 100)}` : "";
-  return `<div class="play ${cls}"><strong>${head}</strong><span>${esc(n.play_reason || "")}${cost}${v}</span>
+  const plan = n.lines_plan || {};
+  const linesTxt = plan.mode === "auto" ? ` · ${n.lines.length} dòng (tự động: ${esc(plan.reason || "")})` : ` · ${n.lines.length} dòng`;
+  return `<div class="play ${cls}"><strong>${head}</strong><span>${esc(n.play_reason || "")}${linesTxt}${cost}${v}</span>
     <span class="muted">Quy tắc: chỉ chơi khi jackpot ≥ ${million(g.config.min_jackpot)}${n.status === "locked" ? " · quyết định đã chốt" : " · có thể thay đổi đến lúc chốt"}</span></div>`;
 }
 
@@ -222,7 +225,7 @@ function nextCard(g) {
     </div>
     ${playBanner(g, n)}
     <div class="stats-row">
-      ${tile("Có ≥ 1 dòng trúng giải", sim.p_any != null ? pct(sim.p_any) : "—", `50 dòng ngẫu nhiên: ${rnd.p_any != null ? pct(rnd.p_any) : "—"}`)}
+      ${tile("Có ≥ 1 dòng trúng giải", sim.p_any != null ? pct(sim.p_any) : "—", `${n.lines.length} dòng ngẫu nhiên: ${rnd.p_any != null ? pct(rnd.p_any) : "—"}`)}
       ${tile("Số dòng trúng trung bình / kỳ", sim.mean_prizes != null ? num(sim.mean_prizes) : "—", "Không chiến lược nào thay đổi được con số này")}
       ${tile("Xác suất giải độc đắc / dòng", "1 / " + fmtInt(g.meta.odds[0].one_in), `${n.lines.length} dòng: 1 / ${fmtInt(Math.round(g.meta.odds[0].one_in / n.lines.length))}`)}
       ${valueTile(g)}
@@ -475,6 +478,26 @@ function optimizeCard(g) {
     <p class="sub">${be} Cột mờ = vượt mức jackpot đã thấy trong dữ liệu.</p>
     <div class="table-scroll"><table><thead><tr><th>Chỉ chơi khi jackpot</th><th class="num">Kỳ/năm</th><th class="num">Nhận lại / $1</th><th class="num">Chi / năm</th><th class="num">Lỗ kỳ vọng / năm</th><th class="num">Lời/lỗ thật / năm</th></tr></thead><tbody>${rows}</tbody></table></div>
     <p class="sub" style="margin-top:10px">Ngưỡng đang dùng được chọn tự động: nhận lại mỗi $1 cao nhất mà vẫn chơi ít nhất 4 kỳ mỗi năm. Ngưỡng càng cao thì lỗ càng ít (chơi ít kỳ hơn), nhưng không ngưỡng nào cho lời theo kỳ vọng. “Lời/lỗ thật” là kết quả chạy lùi bộ 50 dòng của hệ thống trên các kỳ đó.</p>
+  </section>`;
+}
+
+function linesCard(g) {
+  const L = g.lines_study, plan = g.next && g.next.lines_plan;
+  if (!L || !L.sizes) return "";
+  const chosen = g.next ? g.next.lines.length : null;
+  const rows = L.sizes.map((r) => `<tr${r.lines === 50 ? ' class="muted"' : ""}><td>${r.lines}</td><td class="num">${fmtMoney(r.cost_per_draw)}</td><td class="num">${money2(r.per_dollar)}</td>
+    <td class="num">${pct(r.p_any_prize)}</td><td class="num">1 / ${fmtInt(r.jackpot_one_in)}</td><td class="num">−${fmtMoney(Math.round(r.expected_loss_per_year))}</td>
+    <td class="num">${(r.real_net_per_year >= 0 ? "+" : "−") + fmtMoney(Math.abs(Math.round(r.real_net_per_year)))}</td></tr>`).join("");
+  const planRows = plan && plan.table ? `<details style="margin-top:8px"><summary>Cách hệ thống chọn ${chosen} dòng cho kỳ #${g.next.draw}</summary>
+    <div class="table-scroll"><table><thead><tr><th>Số dòng</th><th class="num">Nhận lại / $1</th><th class="num">Lỗ kỳ vọng kỳ này</th></tr></thead><tbody>${
+      plan.table.map((r) => `<tr${r.lines === chosen ? ' style="font-weight:600"' : ""}><td>${r.lines}${r.lines === chosen ? " ← chọn" : ""}</td><td class="num">${money2(r.per_dollar)}</td><td class="num">−${fmtMoney(r.expected_loss)}</td></tr>`).join("")
+    }</tbody></table></div><p class="sub">Giới hạn: lỗ kỳ vọng mỗi kỳ ≤ ${fmtMoney(plan.budget)}.</p></details>` : "";
+  return `<section class="card">
+    <h2>Nên mua bao nhiêu dòng?</h2>
+    <div class="sub" style="margin-bottom:12px">Ở jackpot điển hình của các kỳ đủ điều kiện (${million(L.typical_jackpot)}), ${num(L.draws_per_year, 1)} kỳ/năm. “Thật/năm” = chạy lùi trên ${L.qualifying_draws} kỳ đủ điều kiện đã qua.</div>
+    <div class="table-scroll"><table><thead><tr><th>Dòng/kỳ</th><th class="num">Chi/kỳ</th><th class="num">Nhận lại / $1</th><th class="num">Có ≥ 1 giải</th><th class="num">Trúng jackpot</th><th class="num">Lỗ kỳ vọng/năm</th><th class="num">Thật/năm</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <p class="sub" style="margin-top:10px">Ít dòng hơn thì mỗi $1 nhận lại nhiều hơn (mọi dòng đều dùng được số ít người chọn nhất) và lỗ ít hơn. Nhiều dòng hơn chỉ tăng khả năng trúng một giải nào đó, mà tiền các giải đó vẫn nhỏ hơn tiền vé. 50 dòng không phải là con số tốt nhất.</p>
+    ${planRows}
   </section>`;
 }
 

@@ -26,8 +26,11 @@ from .store import (DATA, ROOT, SITE_DATA, all_picks, latest_due_date, load_draw
                     next_draw, now_sydney, read_json, save_pick, write_json)
 
 CONFIG = read_json(ROOT / "config.json", {}) or {}
-N_LINES = int(CONFIG.get("lines", 50))
-RULES_VERSION = 3  # bump when prize rules change, so unlocked previews are rebuilt
+LINES_CFG = CONFIG.get("lines", 50)
+N_LINES = int(LINES_CFG) if str(LINES_CFG).isdigit() else 50   # fixed size (also used by research)
+AUTO_LINES = {"max_expected_loss_per_draw": 5.0, "min": 5, "max": 50, **(CONFIG.get("lines_auto") or {})}
+LINE_SIZES = [5, 10, 15, 20, 25, 30, 40, 50, 75, 100]
+RULES_VERSION = 4  # bump when prize rules change, so unlocked previews are rebuilt
 def min_jackpot(game: Game) -> float:
     """Play only when the jackpot is at least this (per game in config.json, 0 = always)."""
     v = CONFIG.get("min_jackpot") or 0
@@ -37,6 +40,38 @@ def min_jackpot(game: Game) -> float:
 def announced_jackpot(game: Game, draw: int) -> float | None:
     jp = read_json(DATA / game.id / "jackpot.json", {}) or {}
     return jp.get("jackpot") if jp.get("for_draw") == draw else None
+
+
+def plan_lines(game: Game, draws: list[dict], history: list[dict], draw_no: int,
+               jackpot: float | None) -> tuple[int, dict]:
+    """How many lines to play. 'auto': the largest size whose expected loss for this draw
+    stays within the budget (fewer lines can all use the least popular numbers, so they
+    are worth more per $1; every line still costs more than it returns on average)."""
+    if LINES_CFG != "auto":
+        return N_LINES, {"mode": "fixed", "lines": N_LINES}
+    lo, hi = int(AUTO_LINES["min"]), int(AUTO_LINES["max"])
+    budget = float(AUTO_LINES["max_expected_loss_per_draw"])
+    price = (CONFIG.get("ticket_price") or {}).get(game.id)
+    sm = (read_json(DATA / game.id / "optimize.json", {}) or {}).get("sales_model")
+    if not jackpot or not price or not sm:
+        return lo, {"mode": "auto", "lines": lo, "reason": "Chưa có jackpot hoặc mô hình, dùng số dòng tối thiểu"}
+    import statistics as _st
+    from .popularity import set_value_exact
+    recent = [d for d in draws if d.get("dividends")][-30:]
+    pay = {o["division"]: _st.median([x["amount"] for d in recent for x in d["dividends"]
+                                      if x["div"] == o["division"] and x.get("amount")] or [0])
+           for o in game.division_odds()}
+    sales = max(sm["a"] + sm["b"] * jackpot, 1.0)
+    table, chosen = [], lo
+    for n in [x for x in LINE_SIZES if lo <= x <= hi]:
+        trial = generate(game, history, draw_no, STRATEGY, n, candidates=1500, polish=150)
+        v = set_value_exact(game, trial, pay, sales, jackpot)["value_set"] / price
+        loss = n * price * (1 - v)
+        table.append({"lines": n, "per_dollar": round(v, 3), "expected_loss": round(loss, 2)})
+        if loss <= budget:
+            chosen = n
+    return chosen, {"mode": "auto", "lines": chosen, "budget": budget, "table": table,
+                    "reason": f"Nhiều dòng nhất mà lỗ kỳ vọng kỳ này ≤ ${budget:g}"}
 
 
 def play_decision(game: Game, jackpot: float | None) -> dict:
@@ -102,8 +137,9 @@ def prepare_next(game: Game, draws: list[dict], open_info: dict | None) -> dict 
     history = [d for d in draws if d["date"] < nxt["date"]]
     based_on = history[-1]["draw"] if history else None
     jackpot = announced_jackpot(game, nxt["draw"])
+    lines_key = f"{LINES_CFG}|{AUTO_LINES}|{jackpot if LINES_CFG == 'auto' else ''}"
     if existing and existing.get("based_on") == based_on and existing.get("strategy") == STRATEGY \
-            and len(existing.get("lines", [])) == N_LINES and existing.get("rules") == RULES_VERSION \
+            and existing.get("lines_key") == lines_key and existing.get("rules") == RULES_VERSION \
             and now < lock_at:
         decision = {"jackpot": jackpot, **play_decision(game, jackpot), "min_jackpot": min_jackpot(game)}
         if any(existing.get(k) != v for k, v in decision.items()):
@@ -112,8 +148,10 @@ def prepare_next(game: Game, draws: list[dict], open_info: dict | None) -> dict 
         return existing
     if existing and existing.get("based_on") == based_on and now >= lock_at:
         lines = existing["lines"]
+        plan = existing.get("lines_plan") or {"mode": "fixed", "lines": len(lines)}
     else:
-        lines = generate(game, history, nxt["draw"], STRATEGY, N_LINES)
+        n, plan = plan_lines(game, draws, history, nxt["draw"], jackpot)
+        lines = generate(game, history, nxt["draw"], STRATEGY, n)
     status = "locked" if now >= lock_at else "preview"
     if status == "locked" and min_jackpot(game) > 0 and jackpot is None:
         log("  no jackpot information at lock time: marked as not played")
@@ -125,9 +163,9 @@ def prepare_next(game: Game, draws: list[dict], open_info: dict | None) -> dict 
         "generated_at": (existing or {}).get("generated_at") if existing and existing.get("lines") == lines
         else now.isoformat(timespec="seconds"),
         "locked_at": now.isoformat(timespec="seconds") if status == "locked" else None,
-        "lines": lines, "rules": RULES_VERSION,
+        "lines": lines, "rules": RULES_VERSION, "lines_key": lines_key, "lines_plan": plan,
         "simulation": simulate_set(game, lines),
-        "simulation_random": simulate_set(game, generate(game, history, nxt["draw"], "random", N_LINES)),
+        "simulation_random": simulate_set(game, generate(game, history, nxt["draw"], "random", len(lines))),
     }
     if status == "locked" and pick["play"] is None:
         pick.update(play=False, play_reason="Không có thông tin jackpot lúc chốt")
@@ -160,7 +198,7 @@ def build_game(game: Game, status: dict) -> None:
     totals = total(tracking)
     totals["played"] = total([t for t in tracking if t.get("play") is not False])
     write_json(SITE_DATA / f"{game.id}.json", {
-        "meta": game.to_meta(), "status": status, "config": {"lines": N_LINES, "strategy": STRATEGY,
+        "meta": game.to_meta(), "status": status, "config": {"lines": LINES_CFG, "lines_auto": AUTO_LINES, "strategy": STRATEGY,
                                                             "ticket_price": price, "min_jackpot": min_jackpot(game)},
         "next": nxt, "latest": list(reversed(draws[-15:])),
         "tracking": list(reversed(tracking)), "totals": totals,
@@ -169,6 +207,7 @@ def build_game(game: Game, status: dict) -> None:
         "models": read_json(DATA / game.id / "models.json"),
         "study": read_json(DATA / game.id / "study.json"),
         "optimize": read_json(DATA / game.id / "optimize.json"),
+        "lines_study": read_json(DATA / game.id / "lines.json"),
         "value": _value_for(game, draws, nxt, price),
         "history": {**(read_json(DATA / game.id / "history.json", {}) or {}), "stop": HISTORY_STOP[game.id]},
     })
