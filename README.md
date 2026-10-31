@@ -36,7 +36,9 @@ Chiến lược mặc định `balanced` chỉ tối ưu những gì tối ưu �
 
 ## Quy tắc "chỉ chơi khi jackpot lớn"
 
-`config.json` → `min_jackpot` (mặc định 20000000). Mỗi kỳ trang web hiện **NÊN CHƠI** hoặc **CHỜ** theo jackpot
+`config.json` → `min_jackpot`, riêng cho từng trò: Oz Lotto ≥ $50 triệu, Powerball ≥ $50 triệu,
+Saturday Lotto ≥ $12 triệu. Các ngưỡng này được chọn bằng `python -m lottlab.optimize` (chạy lại mỗi tuần):
+mức nhận lại mỗi $1 cao nhất mà vẫn chơi ít nhất 4 kỳ mỗi năm. Mỗi kỳ trang web hiện **NÊN CHƠI** hoặc **CHỜ** theo jackpot
 kỳ đó (lấy từ lotteryguru.com). Quyết định được chốt cùng bộ số lúc 17:00 ngày trước kỳ quay.
 Phần theo dõi tính lãi/lỗ riêng cho các kỳ đã chơi.
 

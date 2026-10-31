@@ -7,6 +7,10 @@
   "saturday": 0.976
  },
  "ticket_price_note": "Giá thật bạn trả cho 50 dòng: Oz Lotto $73, Powerball $78.60, Saturday Lotto $48.80 (chia 50).",
- "min_jackpot": 20000000,
- "min_jackpot_note": "Chỉ chơi khi jackpot kỳ đó >= số này (đô la Úc). Đặt 0 để chơi mọi kỳ."
+ "min_jackpot": {
+  "oz": 50000000,
+  "powerball": 50000000,
+  "saturday": 12000000
+ },
+ "min_jackpot_note": "Chỉ chơi khi jackpot >= ngưỡng (AUD), riêng cho từng trò. Chọn từ python -m lottlab.optimize: mức giá trị mỗi $1 cao nhất mà vẫn chơi >= 4 kỳ/năm. Đặt 0 để chơi mọi kỳ."
 }

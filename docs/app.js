@@ -74,7 +74,7 @@ function tile(k, v, d = "") { return `<div class="tile"><div class="k">${k}</div
 
 /* ---------- main render ---------- */
 function render(g) {
-  const parts = [nextCard(g), latestCard(g), trackingCard(g), statsCard(g), studyCard(g), backtestCard(g), modelsCard(g), oddsCard(g)];
+  const parts = [nextCard(g), latestCard(g), trackingCard(g), statsCard(g), optimizeCard(g), studyCard(g), backtestCard(g), modelsCard(g), oddsCard(g)];
   $("#app").innerHTML = parts.join("");
   bindCharts();
   bindNext(g);
@@ -104,7 +104,7 @@ function playBanner(g, n) {
   const v = g.value && g.value.per_dollar != null ? ` · Giá trị kỳ vọng ${money2(g.value.per_dollar_busy)}–${money2(g.value.per_dollar)} mỗi $1 (vẫn lỗ trung bình)` : "";
   const cost = g.config.ticket_price ? ` · Chi phí ${fmtMoney(Math.round(n.lines.length * g.config.ticket_price * 100) / 100)}` : "";
   return `<div class="play ${cls}"><strong>${head}</strong><span>${esc(n.play_reason || "")}${cost}${v}</span>
-    <span class="muted">Quy tắc: chỉ chơi khi jackpot ≥ ${fmtMoney(g.config.min_jackpot)}${n.status === "locked" ? " · quyết định đã chốt" : " · có thể thay đổi đến lúc chốt"}</span></div>`;
+    <span class="muted">Quy tắc: chỉ chơi khi jackpot ≥ ${million(g.config.min_jackpot)}${n.status === "locked" ? " · quyết định đã chốt" : " · có thể thay đổi đến lúc chốt"}</span></div>`;
 }
 
 function nextCard(g) {
@@ -155,6 +155,7 @@ function valueTile(g) {
     `Jackpot ${fmtMoney(v.jackpot)}. Hòa vốn khi jackpot ≈ ${fmtMoney(v.break_even_jackpot)}`);
 }
 const money2 = (x) => "$" + num(x, 2);
+const million = (x) => "$" + num(x / 1e6, x % 1e6 ? 1 : 0) + " triệu";
 
 function bindNext(g) {
   const n = g.next;
@@ -341,6 +342,46 @@ function modelsCard(g) {
   </section>`;
 }
 
+function curveChart(o) {
+  const narrow = (document.getElementById("app")?.clientWidth || 800) < 600;
+  const W = narrow ? 380 : 760, H = 220, m = { l: 34, r: 8, t: 16, b: 26 };
+  const data = o.curve, maxSeen = Math.max(...o.sweep.map((s) => s.threshold));
+  const top = Math.max(1.2, Math.ceil(Math.max(...data.map((d) => d.per_dollar)) * 5) / 5);
+  const iw = W - m.l - m.r, ih = H - m.t - m.b, bw = iw / data.length, barW = Math.min(24, bw - 4);
+  const y = (v) => m.t + ih - (v / top) * ih;
+  let s = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Giá trị mỗi $1 theo jackpot">`;
+  for (let v = 0; v <= top + 1e-9; v += 0.2) s += `<line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/><text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">$${num(v, 1)}</text>`;
+  data.forEach((d, i) => {
+    const cx = m.l + bw * i + bw / 2, x = cx - barW / 2, h = y(0) - y(d.per_dollar), r = Math.min(4, h);
+    const path = `M${x},${y(0)} V${y(0) - h + r} Q${x},${y(0) - h} ${x + r},${y(0) - h} H${x + barW - r} Q${x + barW},${y(0) - h} ${x + barW},${y(0) - h + r} V${y(0)} Z`;
+    const extra = d.jackpot > maxSeen;
+    const tip = `Jackpot ${fmtMoney(d.jackpot)}: nhận lại ${money2(d.per_dollar)} mỗi $1 (ước tính ${fmtInt(Math.round(d.sales / 1e6))} triệu dòng bán ra)${extra ? " – vượt mức jackpot đã thấy, là ước tính kéo dài" : ""}`;
+    s += `<g data-tip="${esc(tip)}"><rect class="hitbox" x="${m.l + bw * i}" y="${m.t}" width="${bw}" height="${ih}"/><path class="bar" d="${path}"${extra ? ' style="opacity:.4"' : ""}/></g>`;
+    if (!narrow || i % 2 === 0) s += `<text x="${cx}" y="${H - 8}" text-anchor="middle">${Math.round(d.jackpot / 1e6)}M</text>`;
+  });
+  s += `<line class="ref" x1="${m.l}" x2="${W - m.r}" y1="${y(1)}" y2="${y(1)}"/><text x="${m.l + 4}" y="${y(1) - 5}">hòa vốn $1</text>`;
+  return s + "</svg>";
+}
+
+function optimizeCard(g) {
+  const o = g.optimize;
+  if (!o || !o.sweep) return "";
+  const min = g.config && g.config.min_jackpot;
+  const rows = o.sweep.map((s) => `<tr${min && s.threshold === min ? ' style="font-weight:600"' : ""}><td>≥ ${million(s.threshold)}${min && s.threshold === min ? " ← đang dùng" : ""}</td>
+    <td class="num">${num(s.per_year, 1)}</td><td class="num">${money2(s.per_dollar)}</td><td class="num">${fmtMoney(s.spend_per_year)}</td>
+    <td class="num">−${fmtMoney(s.expected_loss_per_year)}</td><td class="num">${(s.real_net_per_year >= 0 ? "+" : "−") + fmtMoney(Math.abs(s.real_net_per_year))}</td></tr>`).join("");
+  const be = o.break_even ? `Theo mô hình, hòa vốn khi jackpot ≈ <strong>${fmtMoney(o.break_even)}</strong>${o.break_even > Math.max(...o.sweep.map((s) => s.threshold)) ? " (cao hơn mọi jackpot đã thấy, nên chỉ là ước tính)" : ""}.` : "Theo mô hình, <strong>không có mức jackpot nào hòa vốn</strong> (tính đến $200 triệu).";
+  return `<section class="card">
+    <h2>Tìm ngưỡng jackpot tốt nhất</h2>
+    <div class="sub" style="margin-bottom:12px">${fmtInt(o.draws)} kỳ thật trong ${num(o.years, 1)} năm, ${g.config.lines} dòng/kỳ, giá ${money2(o.price)}/dòng. Lượng vé bán ra tăng theo jackpot: khoảng ${num(o.sales_model.a / 1e6, 1)} triệu + ${num(o.sales_model.b, 2)} × jackpot (độ khớp R² = ${num(o.sales_model.r2, 2)}).</div>
+    <div class="legend"><span class="key"><i></i>Nhận lại mỗi $1 theo mức jackpot</span><span class="key"><i class="refkey"></i>Hòa vốn</span></div>
+    ${curveChart(o)}
+    <p class="sub">${be} Cột mờ = vượt mức jackpot đã thấy trong dữ liệu.</p>
+    <div class="table-scroll"><table><thead><tr><th>Chỉ chơi khi jackpot</th><th class="num">Kỳ/năm</th><th class="num">Nhận lại / $1</th><th class="num">Chi / năm</th><th class="num">Lỗ kỳ vọng / năm</th><th class="num">Lời/lỗ thật / năm</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <p class="sub" style="margin-top:10px">Ngưỡng đang dùng được chọn tự động: nhận lại mỗi $1 cao nhất mà vẫn chơi ít nhất 4 kỳ mỗi năm. Ngưỡng càng cao thì lỗ càng ít (chơi ít kỳ hơn), nhưng không ngưỡng nào cho lời theo kỳ vọng. “Lời/lỗ thật” là kết quả chạy lùi bộ 50 dòng của hệ thống trên các kỳ đó.</p>
+  </section>`;
+}
+
 function studyCard(g) {
   const st = g.study;
   if (!st || !st.thresholds) return "";
@@ -348,7 +389,7 @@ function studyCard(g) {
   const rows = st.thresholds.filter((r) => r.draws).map((r) => {
     const s10 = r.simulated["10"], s30 = r.simulated["30"];
     const mine = min && r.threshold === min ? ' style="font-weight:600"' : "";
-    return `<tr${mine}><td>≥ ${fmtMoney(r.threshold)}</td><td class="num">${fmtInt(r.draws)} (${Math.round(r.share_of_draws * 100)}%)</td>
+    return `<tr${mine}><td>≥ ${million(r.threshold)}</td><td class="num">${fmtInt(r.draws)} (${Math.round(r.share_of_draws * 100)}%)</td>
       <td class="num">${money2(r.expected_per_dollar)}</td><td class="num">${(r.realised.net >= 0 ? "+" : "−") + fmtMoney(Math.abs(Math.round(r.realised.net)))}</td>
       <td class="num">${pct(s10.p_profit)}</td><td class="num">${pct(s30.p_profit)}</td></tr>`;
   }).join("");

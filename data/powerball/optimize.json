@@ -1,0 +1,227 @@
+{
+ "game": "powerball",
+ "price": 1.572,
+ "draws": 96,
+ "years": 1.82,
+ "sales_model": {
+  "a": 15514155.940770425,
+  "b": 0.9892147205146411,
+  "r2": 0.91
+ },
+ "low_div_value_per_line": 0.5203,
+ "curve": [
+  {
+   "jackpot": 3000000.0,
+   "sales": 18481800,
+   "per_dollar": 0.344
+  },
+  {
+   "jackpot": 5000000.0,
+   "sales": 20460230,
+   "per_dollar": 0.353
+  },
+  {
+   "jackpot": 8000000.0,
+   "sales": 23427874,
+   "per_dollar": 0.366
+  },
+  {
+   "jackpot": 10000000.0,
+   "sales": 25406303,
+   "per_dollar": 0.374
+  },
+  {
+   "jackpot": 15000000.0,
+   "sales": 30352377,
+   "per_dollar": 0.394
+  },
+  {
+   "jackpot": 20000000.0,
+   "sales": 35298450,
+   "per_dollar": 0.414
+  },
+  {
+   "jackpot": 25000000.0,
+   "sales": 40244524,
+   "per_dollar": 0.433
+  },
+  {
+   "jackpot": 30000000.0,
+   "sales": 45190598,
+   "per_dollar": 0.451
+  },
+  {
+   "jackpot": 40000000.0,
+   "sales": 55082745,
+   "per_dollar": 0.486
+  },
+  {
+   "jackpot": 50000000.0,
+   "sales": 64974892,
+   "per_dollar": 0.519
+  },
+  {
+   "jackpot": 60000000.0,
+   "sales": 74867039,
+   "per_dollar": 0.549
+  },
+  {
+   "jackpot": 70000000.0,
+   "sales": 84759186,
+   "per_dollar": 0.577
+  },
+  {
+   "jackpot": 80000000.0,
+   "sales": 94651334,
+   "per_dollar": 0.603
+  },
+  {
+   "jackpot": 100000000.0,
+   "sales": 114435628,
+   "per_dollar": 0.649
+  },
+  {
+   "jackpot": 120000000.0,
+   "sales": 134219922,
+   "per_dollar": 0.69
+  },
+  {
+   "jackpot": 150000000.0,
+   "sales": 163896364,
+   "per_dollar": 0.741
+  },
+  {
+   "jackpot": 200000000.0,
+   "sales": 213357100,
+   "per_dollar": 0.805
+  }
+ ],
+ "curve_best": {
+  "jackpot": 200000000.0,
+  "sales": 213357100,
+  "per_dollar": 0.805
+ },
+ "break_even": null,
+ "sweep": [
+  {
+   "threshold": 4000000.0,
+   "draws": 96,
+   "per_year": 52.7,
+   "per_dollar": 0.42,
+   "spend_per_year": 4144.0,
+   "expected_loss_per_year": 2405.0,
+   "real_net": -5467.5,
+   "real_net_per_year": -3003.0
+  },
+  {
+   "threshold": 5000000.0,
+   "draws": 90,
+   "per_year": 49.4,
+   "per_dollar": 0.427,
+   "spend_per_year": 3885.0,
+   "expected_loss_per_year": 2228.0,
+   "real_net": -5051.55,
+   "real_net_per_year": -2775.0
+  },
+  {
+   "threshold": 10000000.0,
+   "draws": 80,
+   "per_year": 43.9,
+   "per_dollar": 0.433,
+   "spend_per_year": 3454.0,
+   "expected_loss_per_year": 1958.0,
+   "real_net": -4521.75,
+   "real_net_per_year": -2484.0
+  },
+  {
+   "threshold": 12000000.0,
+   "draws": 67,
+   "per_year": 36.8,
+   "per_dollar": 0.445,
+   "spend_per_year": 2892.0,
+   "expected_loss_per_year": 1605.0,
+   "real_net": -3737.1,
+   "real_net_per_year": -2053.0
+  },
+  {
+   "threshold": 20000000.0,
+   "draws": 54,
+   "per_year": 29.7,
+   "per_dollar": 0.46,
+   "spend_per_year": 2331.0,
+   "expected_loss_per_year": 1258.0,
+   "real_net": -3079.7,
+   "real_net_per_year": -1692.0
+  },
+  {
+   "threshold": 30000000.0,
+   "draws": 31,
+   "per_year": 17.0,
+   "per_dollar": 0.5,
+   "spend_per_year": 1338.0,
+   "expected_loss_per_year": 670.0,
+   "real_net": -1768.6,
+   "real_net_per_year": -971.0
+  },
+  {
+   "threshold": 40000000.0,
+   "draws": 20,
+   "per_year": 11.0,
+   "per_dollar": 0.533,
+   "spend_per_year": 863.0,
+   "expected_loss_per_year": 403.0,
+   "real_net": -1089.5,
+   "real_net_per_year": -598.0
+  },
+  {
+   "threshold": 50000000.0,
+   "draws": 14,
+   "per_year": 7.7,
+   "per_dollar": 0.549,
+   "spend_per_year": 604.0,
+   "expected_loss_per_year": 272.0,
+   "real_net": -732.9,
+   "real_net_per_year": -403.0
+  },
+  {
+   "threshold": 60000000.0,
+   "draws": 7,
+   "per_year": 3.8,
+   "per_dollar": 0.579,
+   "spend_per_year": 302.0,
+   "expected_loss_per_year": 127.0,
+   "real_net": -297.95,
+   "real_net_per_year": -164.0
+  },
+  {
+   "threshold": 80000000.0,
+   "draws": 4,
+   "per_year": 2.2,
+   "per_dollar": 0.606,
+   "spend_per_year": 173.0,
+   "expected_loss_per_year": 68.0,
+   "real_net": -223.65,
+   "real_net_per_year": -123.0
+  },
+  {
+   "threshold": 100000000.0,
+   "draws": 2,
+   "per_year": 1.1,
+   "per_dollar": 0.637,
+   "spend_per_year": 86.0,
+   "expected_loss_per_year": 31.0,
+   "real_net": -66.45,
+   "real_net_per_year": -36.0
+  }
+ ],
+ "recommended": {
+  "threshold": 50000000.0,
+  "draws": 14,
+  "per_year": 7.7,
+  "per_dollar": 0.549,
+  "spend_per_year": 604.0,
+  "expected_loss_per_year": 272.0,
+  "real_net": -732.9,
+  "real_net_per_year": -403.0
+ }
+}

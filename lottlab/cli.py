@@ -28,7 +28,10 @@ from .store import (DATA, ROOT, SITE_DATA, all_picks, latest_due_date, load_draw
 CONFIG = read_json(ROOT / "config.json", {}) or {}
 N_LINES = int(CONFIG.get("lines", 50))
 RULES_VERSION = 2  # bump when prize rules change, so unlocked previews are rebuilt
-MIN_JACKPOT = float(CONFIG.get("min_jackpot") or 0)  # play only when jackpot >= this
+def min_jackpot(game: Game) -> float:
+    """Play only when the jackpot is at least this (per game in config.json, 0 = always)."""
+    v = CONFIG.get("min_jackpot") or 0
+    return float(v.get(game.id, 0) if isinstance(v, dict) else v)
 
 
 def announced_jackpot(game: Game, draw: int) -> float | None:
@@ -36,14 +39,15 @@ def announced_jackpot(game: Game, draw: int) -> float | None:
     return jp.get("jackpot") if jp.get("for_draw") == draw else None
 
 
-def play_decision(jackpot: float | None) -> dict:
+def play_decision(game: Game, jackpot: float | None) -> dict:
+    MIN_JACKPOT = min_jackpot(game)
     if MIN_JACKPOT <= 0:
         return {"play": True, "play_reason": "Chơi mọi kỳ"}
     if jackpot is None:
         return {"play": None, "play_reason": "Chưa có thông tin jackpot"}
     if jackpot >= MIN_JACKPOT:
-        return {"play": True, "play_reason": f"Jackpot ${jackpot:,.0f} ≥ ${MIN_JACKPOT:,.0f}"}
-    return {"play": False, "play_reason": f"Jackpot ${jackpot:,.0f} < ${MIN_JACKPOT:,.0f}"}
+        return {"play": True, "play_reason": f"Jackpot ${jackpot / 1e6:g} triệu ≥ ${MIN_JACKPOT / 1e6:g} triệu"}
+    return {"play": False, "play_reason": f"Jackpot ${jackpot / 1e6:g} triệu < ${MIN_JACKPOT / 1e6:g} triệu"}
 STRATEGY = CONFIG.get("strategy", "balanced")
 
 
@@ -101,7 +105,7 @@ def prepare_next(game: Game, draws: list[dict], open_info: dict | None) -> dict 
     if existing and existing.get("based_on") == based_on and existing.get("strategy") == STRATEGY \
             and len(existing.get("lines", [])) == N_LINES and existing.get("rules") == RULES_VERSION \
             and now < lock_at:
-        decision = {"jackpot": jackpot, **play_decision(jackpot), "min_jackpot": MIN_JACKPOT}
+        decision = {"jackpot": jackpot, **play_decision(game, jackpot), "min_jackpot": min_jackpot(game)}
         if any(existing.get(k) != v for k, v in decision.items()):
             existing.update(decision)
             save_pick(game, existing)
@@ -111,11 +115,11 @@ def prepare_next(game: Game, draws: list[dict], open_info: dict | None) -> dict 
     else:
         lines = generate(game, history, nxt["draw"], STRATEGY, N_LINES)
     status = "locked" if now >= lock_at else "preview"
-    if status == "locked" and MIN_JACKPOT > 0 and jackpot is None:
+    if status == "locked" and min_jackpot(game) > 0 and jackpot is None:
         log("  no jackpot information at lock time: marked as not played")
     pick = {
         "game": game.id, "draw": nxt["draw"], "date": nxt["date"], "lock_at": nxt["lock_at"],
-        "jackpot": jackpot, **play_decision(jackpot), "min_jackpot": MIN_JACKPOT,
+        "jackpot": jackpot, **play_decision(game, jackpot), "min_jackpot": min_jackpot(game),
         "status": status, "strategy": STRATEGY,
         "strategy_label": STRATEGIES[STRATEGY], "based_on": based_on,
         "generated_at": (existing or {}).get("generated_at") if existing and existing.get("lines") == lines
@@ -157,13 +161,14 @@ def build_game(game: Game, status: dict) -> None:
     totals["played"] = total([t for t in tracking if t.get("play") is not False])
     write_json(SITE_DATA / f"{game.id}.json", {
         "meta": game.to_meta(), "status": status, "config": {"lines": N_LINES, "strategy": STRATEGY,
-                                                            "ticket_price": price, "min_jackpot": MIN_JACKPOT},
+                                                            "ticket_price": price, "min_jackpot": min_jackpot(game)},
         "next": nxt, "latest": list(reversed(draws[-15:])),
         "tracking": list(reversed(tracking)), "totals": totals,
         "stats": statistics(game, draws),
         "backtest": read_json(DATA / game.id / "backtest.json"),
         "models": read_json(DATA / game.id / "models.json"),
         "study": read_json(DATA / game.id / "study.json"),
+        "optimize": read_json(DATA / game.id / "optimize.json"),
         "value": _value_for(game, draws, nxt, price),
         "history": {**(read_json(DATA / game.id / "history.json", {}) or {}), "stop": HISTORY_STOP[game.id]},
     })

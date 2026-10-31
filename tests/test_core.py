@@ -175,3 +175,14 @@ def test_next_draw_number_step():
     draws = [{"draw": 4705 + 2 * i, "date": (dt.date(2026, 8, 22) + dt.timedelta(weeks=i)).isoformat()} for i in range(11)]
     n = next_draw(sat, draws)
     assert n["draw"] == draws[-1]["draw"] + 2 and n["date"] == "2026-11-07"
+
+
+def test_per_game_jackpot_threshold(monkeypatch):
+    import lottlab.cli as cli
+    from lottlab.games import GAMES
+    monkeypatch.setitem(cli.CONFIG, "min_jackpot", {"oz": 50e6, "saturday": 12e6})
+    assert cli.play_decision(GAMES["oz"], 60e6)["play"] is True
+    assert cli.play_decision(GAMES["oz"], 30e6)["play"] is False
+    assert cli.play_decision(GAMES["saturday"], 10e6)["play"] is False
+    assert cli.play_decision(GAMES["powerball"], 1e6)["play"] is True      # no threshold set
+    assert cli.play_decision(GAMES["oz"], None)["play"] is None

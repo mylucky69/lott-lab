@@ -26,6 +26,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m lottlab.models
       - run: python -m lottlab.study
+      - run: python -m lottlab.optimize
       - run: python -m lottlab backtest
       - name: Lưu thay đổi
         run: bash .github/scripts/save.sh "Cập nhật thử nghiệm chiến lược"
