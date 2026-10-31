@@ -627,7 +627,7 @@
   "p_any_independent": 0.6833496606733933,
   "mean_prizes_theory": 1.1368339301541226
  },
- "play": true,
- "play_reason": "Jackpot $30,000,000 ≥ $20,000,000",
- "min_jackpot": 20000000.0
+ "play": false,
+ "play_reason": "Jackpot $30 triệu < $50 triệu",
+ "min_jackpot": 50000000.0
 }

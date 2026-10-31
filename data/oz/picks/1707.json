@@ -578,6 +578,6 @@
   "mean_prizes_theory": 0.9934061199590742
  },
  "play": true,
- "play_reason": "Jackpot $60,000,000 ≥ $20,000,000",
- "min_jackpot": 20000000.0
+ "play_reason": "Jackpot $60 triệu ≥ $50 triệu",
+ "min_jackpot": 50000000.0
 }
