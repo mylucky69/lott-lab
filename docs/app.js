@@ -270,7 +270,8 @@ function statsCard(g) {
     nums.map((d) => `<tr><td>${d.n}</td><td class="num">${d.count}</td><td class="num">${d.recent}</td><td class="num">${d.gap}</td></tr>`).join("")}</tbody></table></div></details>`;
   return `<section class="card">
     <h2>Thống kê ${fmtInt(s.n_draws)} kỳ quay</h2>
-    <div class="sub" style="margin-bottom:12px">Từ ${fmtDate(s.first)} đến ${fmtDate(s.last)}, chỉ tính các kỳ theo luật hiện tại</div>
+    <div class="sub" style="margin-bottom:12px">Từ ${fmtDate(s.first)} đến ${fmtDate(s.last)}, chỉ tính các kỳ theo luật hiện tại${
+      g.history && !g.history.done && g.history.cursor ? ` · Đang tải thêm lịch sử (đã đến ${fmtDate(g.history.cursor)}, mục tiêu ${fmtDate(g.history.stop)})` : ""}</div>
     <div class="legend"><span class="key"><i></i>Số lần ra của mỗi số</span><span class="key"><i class="refkey"></i>Kỳ vọng nếu hoàn toàn ngẫu nhiên</span></div>
     ${chart}
     ${table}

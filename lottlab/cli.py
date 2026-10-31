@@ -4,6 +4,7 @@
   backfill [game]   download full history (one page per year)
   add-result GAME DRAW DATE "MAIN" "SUPP"   manual result entry (fallback)
   import-csv GAME FILE                      CSV: draw,date,main,supp  (numbers space separated)
+  history [pages]   crawl older draws backwards, a limited number of pages per run
   backtest [game]   walk-forward experiment (slow, run weekly)
   build             rebuild docs/data/*.json only
 """
@@ -120,6 +121,7 @@ def build_game(game: Game, status: dict) -> None:
         "tracking": list(reversed(tracking)), "totals": totals,
         "stats": statistics(game, draws),
         "backtest": read_json(DATA / game.id / "backtest.json"),
+        "history": {**(read_json(DATA / game.id / "history.json", {}) or {}), "stop": HISTORY_STOP[game.id]},
     })
 
 
@@ -253,6 +255,73 @@ def cmd_backfill(only: list[str]) -> int:
     return 0
 
 
+# How far back the per-draw crawl goes (current number matrix only, it is what the stats use).
+HISTORY_STOP = {"oz": "2022-05-31", "powerball": "2018-04-19", "saturday": "2000-01-01"}
+
+
+def history_game(game: Game, budget: int) -> int:
+    """Walk lotteryextreme's per-draw pages backwards from the oldest stored draw.
+    Returns pages used. Progress is saved so the next run continues where this one stopped."""
+    path = DATA / game.id / "history.json"
+    state = read_json(path, {}) or {}
+    if state.get("done"):
+        return 0
+    stop = HISTORY_STOP[game.id]
+    draws = load_draws(game, valid_only=False)
+    if not state.get("cursor"):
+        if not draws:
+            return 0
+        oldest = dt.date.fromisoformat(draws[0]["date"])
+        state["cursor"] = (oldest - dt.timedelta(days=7)).isoformat()
+    used, misses, added = 0, state.get("misses", 0), 0
+    try:
+        while used < budget and state["cursor"] >= stop:
+            used += 1
+            try:
+                draw, prev = src.lotteryextreme_draw(game, state["cursor"])
+            except src.SourceError as e:
+                if "HTTP 404" not in str(e) and "HTTP 410" not in str(e):
+                    log(f"  {state['cursor']}: {e} (stopping this run)")
+                    break
+                draw, prev = None, None
+            if draw:
+                misses = 0
+                new, conflicts = merge_draws(game, [draw])
+                if new:
+                    added += 1
+                elif draw.get("dividends"):
+                    set_dividends(game, draw["draw"], draw["dividends"])
+                for c in conflicts:
+                    log(f"  conflict {c}")
+            else:
+                misses += 1
+                if misses >= 6:
+                    log("  six missing weeks in a row, history finished")
+                    state["done"] = True
+                    break
+            cur = dt.date.fromisoformat(state["cursor"])
+            nxt = prev or (cur - dt.timedelta(days=7)).isoformat()
+            state["cursor"] = nxt if nxt < state["cursor"] else (cur - dt.timedelta(days=7)).isoformat()
+        if state["cursor"] < stop:
+            state["done"] = True
+    finally:
+        state["misses"] = misses
+        write_json(path, state)
+    log(f"  {game.name}: {used} page(s), {added} new draw(s), next {state['cursor']}"
+        + (" - finished" if state.get("done") else ""))
+    return used
+
+
+def cmd_history(args: list[str]) -> int:
+    budget = int(args[0]) if args else 300
+    src.PAUSE = 4.0
+    for game in GAMES.values():
+        if budget <= 0:
+            break
+        budget -= history_game(game, budget)
+    return cmd_build([])
+
+
 def _nums(s: str) -> list[int]:
     return [int(x) for x in s.replace(",", " ").split()]
 
@@ -315,7 +384,8 @@ def main(argv: list[str]) -> int:
         print(__doc__)
         return 1
     cmds = {"update": cmd_update, "backfill": cmd_backfill, "add-result": cmd_add_result,
-            "import-csv": cmd_import_csv, "backtest": cmd_backtest, "build": cmd_build}
+            "import-csv": cmd_import_csv, "backtest": cmd_backtest, "build": cmd_build,
+            "history": cmd_history}
     if argv[0] not in cmds:
         print(__doc__)
         return 1

@@ -141,3 +141,27 @@ def parse_le_dividends(page: str) -> list[dict]:
 
 def lotteryextreme_dividends(game: Game, date: str) -> list[dict]:
     return parse_le_dividends(polite_get(f"{LE_BASE}/{LE_SLUG[game.id]}-dividends({date})"))
+
+
+def parse_le_draw_page(game: Game, page: str) -> tuple[dict | None, str | None]:
+    """One dividends page = one draw (numbers + prizes) and a link to the previous draw."""
+    t = _clean(page)
+    h = re.search(r"<h1>[^<]*?Results\s+(\d+)\s*-\s*(\d{2})/(\d{2})/(\d{4})", t)
+    balls = re.search(r"<ul class='displayball'[^>]*>(.*?)</ul>", t, re.S)
+    prev = re.search(r"href='" + LE_SLUG[game.id] + r"-dividends\((\d{4}-\d{2}-\d{2})\)'", t)
+    draw = None
+    if h and balls:
+        before, _, after = balls.group(1).partition('class="dbx"')
+        main = [int(x) for x in re.findall(r"<li>\s*(\d+)", before)]
+        supp = [int(x) for x in re.findall(r"<li>\s*(\d+)", after)]
+        draw = {"game": game.id, "draw": int(h.group(1)), "date": f"{h.group(4)}-{h.group(3)}-{h.group(2)}",
+                "main": sorted(main), "supp": supp if game.pb_pool else sorted(supp),
+                "dividends": parse_le_dividends(page), "source": "lotteryextreme"}
+    prev_date = prev.group(1) if prev else None
+    if draw and prev_date and prev_date >= draw["date"]:
+        prev_date = None
+    return draw, prev_date
+
+
+def lotteryextreme_draw(game: Game, date: str) -> tuple[dict | None, str | None]:
+    return parse_le_draw_page(game, polite_get(f"{LE_BASE}/{LE_SLUG[game.id]}-dividends({date})"))

@@ -140,3 +140,27 @@ def test_merge_cross_check(env):
     assert store.load_draws(oz)[0]["sources"] == ["lotteryextreme", "national-lottery"]
     new, conflicts = store.merge_draws(oz, [{**a, "main": [1, 2, 3, 4, 5, 6, 11], "source": "x"}])
     assert new == [] and len(conflicts) == 1
+
+
+def test_history_walks_back_and_stops(env, monkeypatch):
+    root, cli, store = env
+    from lottlab.games import GAMES
+    oz = GAMES["oz"]
+    store.merge_draws(oz, [{"game": "oz", "draw": 1700, "date": "2026-09-15", "main": [1, 2, 3, 4, 5, 6, 7],
+                            "supp": [8, 9, 10], "dividends": [], "source": "t"}])
+    def fake(game, date):
+        d = dt.date.fromisoformat(date)
+        n = 1700 - (dt.date(2026, 9, 15) - d).days // 7
+        if n % 10 == 3:
+            raise cli.src.SourceError("HTTP 404")
+        return ({"game": "oz", "draw": n, "date": date, "main": [1, 2, 3, 4, 5, 6, 7], "supp": [8, 9, 10],
+                 "dividends": [{"div": 1, "winners": 0, "amount": 0.0}], "source": "le"},
+                (d - dt.timedelta(days=7)).isoformat())
+    monkeypatch.setattr(cli.src, "lotteryextreme_draw", fake)
+    monkeypatch.setitem(cli.HISTORY_STOP, "oz", "2026-06-01")
+    assert cli.history_game(oz, 5) == 5                       # budget respected
+    cli.history_game(oz, 100)
+    draws = store.load_draws(oz, valid_only=False)
+    assert draws[0]["date"] >= "2026-06-01" and len(draws) > 10
+    assert store.read_json(root / "data/oz/history.json")["done"] is True
+    assert cli.history_game(oz, 100) == 0                     # nothing more once finished
