@@ -164,3 +164,12 @@ def test_history_walks_back_and_stops(env, monkeypatch):
     assert draws[0]["date"] >= "2026-06-01" and len(draws) > 10
     assert store.read_json(root / "data/oz/history.json")["done"] is True
     assert cli.history_game(oz, 100) == 0                     # nothing more once finished
+
+
+def test_next_draw_number_step():
+    from lottlab.games import GAMES
+    from lottlab.store import next_draw
+    sat = GAMES["saturday"]
+    draws = [{"draw": 4705 + 2 * i, "date": (dt.date(2026, 8, 22) + dt.timedelta(weeks=i)).isoformat()} for i in range(11)]
+    n = next_draw(sat, draws)
+    assert n["draw"] == draws[-1]["draw"] + 2 and n["date"] == "2026-11-07"

@@ -126,7 +126,11 @@ def next_draw(game: Game, draws: list[dict], open_info: dict | None = None) -> d
         base = dt.date.fromisoformat(last["date"]) if last else now_sydney().date() - dt.timedelta(days=1)
         days = (game.draw_weekday - base.weekday()) % 7 or 7
         date = base + dt.timedelta(days=days)
-        number = (last["draw"] + 1) if last else 0
+        # draw numbers usually go up by 1, but Saturday Lotto shares its counter with
+        # another weekly draw and goes up by 2 - use the most common recent step
+        steps = [b["draw"] - a["draw"] for a, b in zip(draws[-11:], draws[-10:]) if b["draw"] > a["draw"]]
+        step = max(set(steps), key=steps.count) if steps else 1
+        number = (last["draw"] + step) if last else 0
     lock_at = dt.datetime.combine(date - dt.timedelta(days=1), dt.time(LOCK_HOUR), SYDNEY)
     return {"draw": number, "date": date.isoformat(), "lock_at": lock_at.isoformat(),
             "jackpot": (open_info or {}).get("jackpot")}

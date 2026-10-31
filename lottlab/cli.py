@@ -63,6 +63,10 @@ def prepare_next(game: Game, draws: list[dict], open_info: dict | None) -> dict 
     if not draws:
         return None
     nxt = next_draw(game, draws, open_info)
+    # drop unlocked previews that no longer match the next draw (e.g. renumbered)
+    for p in all_picks(game):
+        if p.get("status") == "preview" and p["draw"] != nxt["draw"]:
+            (DATA / game.id / "picks" / f"{p['draw']}.json").unlink(missing_ok=True)
     existing = load_pick(game, nxt["draw"])
     now = now_sydney()
     lock_at = dt.datetime.fromisoformat(nxt["lock_at"])
