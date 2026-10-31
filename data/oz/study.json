@@ -13,9 +13,9 @@
    "share_of_draws": 1.0,
    "realised": {
     "cost": 6935.0,
-    "won": 1872.35,
-    "net": -5062.65,
-    "prize_lines": 94
+    "won": 2132.15,
+    "net": -4802.85,
+    "prize_lines": 109
    },
    "expected_per_dollar": 0.46,
    "best_draw_per_dollar": 0.897,
@@ -48,9 +48,9 @@
    "share_of_draws": 0.526,
    "realised": {
     "cost": 3650.0,
-    "won": 1084.8,
-    "net": -2565.2,
-    "prize_lines": 55
+    "won": 1282.65,
+    "net": -2367.35,
+    "prize_lines": 66
    },
    "expected_per_dollar": 0.542,
    "best_draw_per_dollar": 0.897,
@@ -83,9 +83,9 @@
    "share_of_draws": 0.337,
    "realised": {
     "cost": 2336.0,
-    "won": 725.05,
-    "net": -1610.95,
-    "prize_lines": 37
+    "won": 708.1,
+    "net": -1627.9,
+    "prize_lines": 38
    },
    "expected_per_dollar": 0.591,
    "best_draw_per_dollar": 0.897,
@@ -118,8 +118,8 @@
    "share_of_draws": 0.211,
    "realised": {
     "cost": 1460.0,
-    "won": 470.35,
-    "net": -989.65,
+    "won": 474.2,
+    "net": -985.8,
     "prize_lines": 26
    },
    "expected_per_dollar": 0.651,
@@ -153,9 +153,9 @@
    "share_of_draws": 0.084,
    "realised": {
     "cost": 584.0,
-    "won": 127.1,
-    "net": -456.9,
-    "prize_lines": 7
+    "won": 162.85,
+    "net": -421.15,
+    "prize_lines": 9
    },
    "expected_per_dollar": 0.769,
    "best_draw_per_dollar": 0.897,
@@ -188,9 +188,9 @@
    "share_of_draws": 0.011,
    "realised": {
     "cost": 73.0,
-    "won": 16.65,
-    "net": -56.35,
-    "prize_lines": 1
+    "won": 60.4,
+    "net": -12.6,
+    "prize_lines": 3
    },
    "expected_per_dollar": 0.897,
    "best_draw_per_dollar": 0.897,
@@ -223,9 +223,9 @@
    "share_of_draws": 0.011,
    "realised": {
     "cost": 73.0,
-    "won": 16.65,
-    "net": -56.35,
-    "prize_lines": 1
+    "won": 60.4,
+    "net": -12.6,
+    "prize_lines": 3
    },
    "expected_per_dollar": 0.897,
    "best_draw_per_dollar": 0.897,

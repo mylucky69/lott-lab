@@ -4,48 +4,48 @@
    "label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
    "draws": 150,
    "lines": 7500,
-   "mean_match": 1.4016,
+   "mean_match": 1.4034666666666666,
    "divisions": {
     "5": 1,
-    "6": 5,
-    "7": 3,
-    "8": 52,
-    "9": 118
+    "6": 3,
+    "7": 10,
+    "8": 45,
+    "9": 119
    },
-   "prize_lines": 179,
-   "prize_total": 3289.4,
-   "p_value": 0.5100658315952166
+   "prize_lines": 178,
+   "prize_total": 3395.15,
+   "p_value": 0.5610801606706446
   },
   "hot": {
    "label": "Ưu tiên số ra nhiều trong 30 kỳ gần nhất",
    "draws": 150,
    "lines": 7500,
-   "mean_match": 1.3989333333333334,
+   "mean_match": 1.4037333333333333,
    "divisions": {
-    "6": 6,
-    "7": 11,
-    "8": 33,
+    "6": 7,
+    "7": 6,
+    "8": 36,
     "9": 121
    },
-   "prize_lines": 171,
-   "prize_total": 3319.5,
-   "p_value": 0.9690905257900279
+   "prize_lines": 170,
+   "prize_total": 3180.5,
+   "p_value": 1.0
   },
   "cold": {
    "label": "Ưu tiên số lâu chưa ra / ra ít",
    "draws": 150,
    "lines": 7500,
-   "mean_match": 1.3948,
+   "mean_match": 1.3976,
    "divisions": {
     "5": 1,
-    "6": 5,
-    "7": 4,
-    "8": 40,
-    "9": 109
+    "6": 9,
+    "7": 8,
+    "8": 37,
+    "9": 105
    },
-   "prize_lines": 159,
-   "prize_total": 3058.8,
-   "p_value": 0.3940771967443242
+   "prize_lines": 160,
+   "prize_total": 3437.75,
+   "p_value": 0.43849993007424715
   },
   "random": {
    "label": "Ngẫu nhiên hoàn toàn (mốc so sánh)",
@@ -81,5 +81,5 @@
  "draws": 150,
  "from": "2023-12-21",
  "to": "2026-10-29",
- "run_at": "2026-11-01T02:23+11:00"
+ "run_at": "2026-11-01T09:18+11:00"
 }
