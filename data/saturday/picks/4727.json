@@ -512,18 +512,19 @@
    ]
   }
  ],
+ "rules": 2,
  "simulation": {
   "draws": 20000,
-  "p_any": 0.504,
-  "mean_prizes": 0.5847,
-  "p_any_independent": 0.4449599549673636,
-  "mean_prizes_theory": 0.5852627236631774
+  "p_any": 0.7914,
+  "mean_prizes": 1.18115,
+  "p_any_independent": 0.7006480410562935,
+  "mean_prizes_theory": 1.1917039285161803
  },
  "simulation_random": {
   "draws": 20000,
-  "p_any": 0.45715,
-  "mean_prizes": 0.59355,
-  "p_any_independent": 0.4449599549673636,
-  "mean_prizes_theory": 0.5852627236631774
+  "p_any": 0.71535,
+  "mean_prizes": 1.19965,
+  "p_any_independent": 0.7006480410562935,
+  "mean_prizes_theory": 1.1917039285161803
  }
 }

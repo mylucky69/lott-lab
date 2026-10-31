@@ -612,6 +612,7 @@
    "pb": 5
   }
  ],
+ "rules": 2,
  "simulation": {
   "draws": 20000,
   "p_any": 0.76735,

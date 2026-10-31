@@ -41,44 +41,20 @@
    },
    {
     "division": 6,
-    "rule": "1–2 số + 2 số phụ",
-    "p": 0.006950225044382731,
-    "one_in": 143.9
+    "rule": "3 số",
+    "p": 0.01907904914144279,
+    "one_in": 52.4
    }
   ],
-  "any_prize_p": 0.01170525447326355
+  "any_prize_p": 0.023834078570323606
  },
  "status": {
   "fetch_ok": true,
-  "error": "national-lottery: https://australia.national-lottery.com/saturday-lotto/results-archive-2026: HTTPSConnectionPool(host='australia.national-lottery.com', port=443): Max retries exceeded with url: /saturday-lotto/results-archive-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='australia.national-lottery.com', port=443) at 0x7f96fa054200>, 'Connection to australia.national-lottery.com timed",
+  "error": null,
   "changed": true,
-  "checked_at": "2026-11-01T00:35+11:00",
-  "sources_ok": [
-   "lotteryextreme"
-  ],
-  "new_draws": [
-   4687,
-   4689,
-   4691,
-   4693,
-   4695,
-   4697,
-   4699,
-   4701,
-   4703,
-   4705,
-   4707,
-   4709,
-   4711,
-   4713,
-   4715,
-   4717,
-   4719,
-   4721,
-   4723,
-   4725
-  ],
-  "last_ok": "2026-11-01T00:35+11:00",
+  "checked_at": "2026-11-01T02:13+11:00",
+  "new_draws": [],
+  "last_ok": "2026-11-01T02:13+11:00",
   "history_years": 0
  },
  "config": {
@@ -600,19 +576,20 @@
     ]
    }
   ],
+  "rules": 2,
   "simulation": {
    "draws": 20000,
-   "p_any": 0.504,
-   "mean_prizes": 0.5847,
-   "p_any_independent": 0.4449599549673636,
-   "mean_prizes_theory": 0.5852627236631774
+   "p_any": 0.7914,
+   "mean_prizes": 1.18115,
+   "p_any_independent": 0.7006480410562935,
+   "mean_prizes_theory": 1.1917039285161803
   },
   "simulation_random": {
    "draws": 20000,
-   "p_any": 0.45715,
-   "mean_prizes": 0.59355,
-   "p_any_independent": 0.4449599549673636,
-   "mean_prizes_theory": 0.5852627236631774
+   "p_any": 0.71535,
+   "mean_prizes": 1.19965,
+   "p_any_independent": 0.7006480410562935,
+   "mean_prizes_theory": 1.1917039285161803
   }
  },
  "latest": [
@@ -1784,6 +1761,82 @@
   "from": null,
   "to": null,
   "run_at": "2026-11-01T01:02+11:00"
+ },
+ "models": {
+  "game": "saturday",
+  "draws": 228,
+  "tested": 168,
+  "chance_topk": 0.8,
+  "methods": {
+   "random": {
+    "label": "Ngẫu nhiên (mốc so sánh)",
+    "topk_mean": 0.8392857142857143,
+    "topk_p": 0.5169401208425547,
+    "rank_mean": 0.5036525974025974,
+    "rank_p": 0.6941942170582605
+   },
+   "frequency": {
+    "label": "Tần suất toàn bộ lịch sử",
+    "topk_mean": 0.7916666666666666,
+    "topk_p": 0.8889969546339869,
+    "rank_mean": 0.4913419913419913,
+    "rank_p": 0.3564792012136159
+   },
+   "hot": {
+    "label": "Số nóng (10 kỳ gần nhất)",
+    "topk_mean": 0.6964285714285714,
+    "topk_p": 0.07771125229326584,
+    "rank_mean": 0.49201839826839827,
+    "rank_p": 0.39091859091968634
+   },
+   "cold": {
+    "label": "Số lạnh (lâu chưa ra)",
+    "topk_mean": 0.7857142857142857,
+    "topk_p": 0.8095703381097595,
+    "rank_mean": 0.5027281746031746,
+    "rank_p": 0.7683959878657369
+   },
+   "markov": {
+    "label": "Chuỗi Markov (kỳ trước → kỳ sau)",
+    "topk_mean": 0.7619047619047619,
+    "topk_p": 0.5078982597284286,
+    "rank_mean": 0.49664051226551226,
+    "rank_p": 0.7184298056146808
+   },
+   "logistic": {
+    "label": "Hồi quy logistic, 5 kỳ gần nhất",
+    "topk_mean": 0.8392857142857143,
+    "topk_p": 0.5397041895575997,
+    "rank_mean": 0.4972718253968254,
+    "rank_p": 0.7721234626581288
+   },
+   "forest": {
+    "label": "Random Forest, 5 kỳ gần nhất",
+    "topk_mean": 0.8214285714285714,
+    "topk_p": 0.72096063270333,
+    "rank_mean": 0.49781295093795097,
+    "rank_p": 0.8156195897448972
+   },
+   "mlp": {
+    "label": "Mạng nơ-ron (như các repo LSTM), 5 kỳ gần nhất",
+    "topk_mean": 0.8809523809523809,
+    "topk_p": 0.2205998816134705,
+    "rank_mean": 0.5095373376623377,
+    "rank_p": 0.3024429495962092
+   }
+  }
+ },
+ "value": {
+  "price": 0.85,
+  "low_div_ev": 0.3196,
+  "entries": 37427264.65704894,
+  "jackpot": 10000000.0,
+  "ev_line": 0.584,
+  "per_dollar": 0.687,
+  "per_dollar_busy": 0.481,
+  "break_even_jackpot": 20100000.0,
+  "rating": "medium",
+  "jackpot_source": "lotteryguru.com"
  },
  "history": {
   "dividends_tried": [],

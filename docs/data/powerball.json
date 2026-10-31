@@ -68,35 +68,11 @@
  },
  "status": {
   "fetch_ok": true,
-  "error": "national-lottery: https://australia.national-lottery.com/powerball/results-archive-2026: HTTPSConnectionPool(host='australia.national-lottery.com', port=443): Max retries exceeded with url: /powerball/results-archive-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='australia.national-lottery.com', port=443) at 0x7f96f97c4e30>, 'Connection to australia.national-lottery.com timed out. (con",
+  "error": null,
   "changed": true,
-  "checked_at": "2026-11-01T00:33+11:00",
-  "sources_ok": [
-   "lotteryextreme"
-  ],
-  "new_draws": [
-   1570,
-   1571,
-   1572,
-   1573,
-   1574,
-   1575,
-   1576,
-   1577,
-   1578,
-   1579,
-   1580,
-   1581,
-   1582,
-   1583,
-   1584,
-   1585,
-   1586,
-   1587,
-   1588,
-   1589
-  ],
-  "last_ok": "2026-11-01T00:33+11:00",
+  "checked_at": "2026-11-01T02:13+11:00",
+  "new_draws": [],
+  "last_ok": "2026-11-01T02:13+11:00",
   "history_years": 0
  },
  "config": {
@@ -718,6 +694,7 @@
     "pb": 5
    }
   ],
+  "rules": 2,
   "simulation": {
    "draws": 20000,
    "p_any": 0.76735,
@@ -2178,6 +2155,82 @@
   "from": "2025-05-01",
   "to": "2026-10-29",
   "run_at": "2026-11-01T01:02+11:00"
+ },
+ "models": {
+  "game": "powerball",
+  "draws": 445,
+  "tested": 334,
+  "chance_topk": 1.4,
+  "methods": {
+   "random": {
+    "label": "Ngẫu nhiên (mốc so sánh)",
+    "topk_mean": 1.4580838323353293,
+    "topk_p": 0.2847845862240529,
+    "rank_mean": 0.5033839883258693,
+    "rank_p": 0.582070669830844
+   },
+   "frequency": {
+    "label": "Tần suất toàn bộ lịch sử",
+    "topk_mean": 1.347305389221557,
+    "topk_p": 0.3561467693193769,
+    "rank_mean": 0.49560962109394646,
+    "rank_p": 0.47344419645782243
+   },
+   "hot": {
+    "label": "Số nóng (10 kỳ gần nhất)",
+    "topk_mean": 1.3862275449101797,
+    "topk_p": 0.7828073726828594,
+    "rank_mean": 0.5021008403361344,
+    "rank_p": 0.7313478738039695
+   },
+   "cold": {
+    "label": "Số lạnh (lâu chưa ra)",
+    "topk_mean": 1.437125748502994,
+    "topk_p": 0.46936242321181426,
+    "rank_mean": 0.5009686509334272,
+    "rank_p": 0.8757190094411831
+   },
+   "markov": {
+    "label": "Chuỗi Markov (kỳ trước → kỳ sau)",
+    "topk_mean": 1.3532934131736527,
+    "topk_p": 0.3876873832959602,
+    "rank_mean": 0.496880189201429,
+    "rank_p": 0.6114871954140777
+   },
+   "logistic": {
+    "label": "Hồi quy logistic, 5 kỳ gần nhất",
+    "topk_mean": 1.4281437125748504,
+    "topk_p": 0.6109555688785938,
+    "rank_mean": 0.5070573139435415,
+    "rank_p": 0.2504763450627958
+   },
+   "forest": {
+    "label": "Random Forest, 5 kỳ gần nhất",
+    "topk_mean": 1.3862275449101797,
+    "topk_p": 0.7960112704780739,
+    "rank_mean": 0.5051074321944347,
+    "rank_p": 0.4023292370975658
+   },
+   "mlp": {
+    "label": "Mạng nơ-ron (như các repo LSTM), 5 kỳ gần nhất",
+    "topk_mean": 1.4940119760479043,
+    "topk_p": 0.08598985935123815,
+    "rank_mean": 0.5064408997131786,
+    "rank_p": 0.3010487934383431
+   }
+  }
+ },
+ "value": {
+  "price": 1.4,
+  "low_div_ev": 0.5494,
+  "entries": 34775609.447060876,
+  "jackpot": 30000000.0,
+  "ev_line": 0.746,
+  "per_dollar": 0.533,
+  "per_dollar_busy": 0.503,
+  "break_even_jackpot": 129800000.0,
+  "rating": "low",
+  "jackpot_source": "lotteryguru.com"
  },
  "history": {
   "cursor": "2018-04-12",
