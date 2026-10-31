@@ -1,5 +1,10 @@
 {
  "lines": 50,
  "strategy": "balanced",
- "ticket_price": {"oz": null, "powerball": null, "saturday": null}
+ "ticket_price": {
+  "oz": 1.45,
+  "powerball": 1.4,
+  "saturday": 0.85
+ },
+ "ticket_price_note": "Ước tính giá gốc mỗi dòng, chưa gồm hoa hồng đại lý. Sửa theo giá bạn thực trả."
 }
