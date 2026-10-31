@@ -70,9 +70,11 @@ def test_generator_shape_and_coverage():
 def test_pipeline_preview_lock_settle(env, monkeypatch):
     root, cli, store = env
     from lottlab.games import GAMES
-    import lottlab.fetch as fetch
-    monkeypatch.setattr(cli.fetch, "latest", lambda g, n=5: (_ for _ in ()).throw(fetch.FetchError("offline")))
-    monkeypatch.setattr(cli.fetch, "history", lambda g, a, b: [])
+    import lottlab.sources as src
+    def offline(*a, **k):
+        raise src.SourceError("offline")
+    for name in ("lotteryextreme_latest", "national_lottery_year", "lotteryextreme_dividends"):
+        monkeypatch.setattr(cli.src, name, offline)
     oz = GAMES["oz"]
     draws = fake_draws(oz, 40)
     store.merge_draws(oz, draws)
@@ -108,3 +110,33 @@ def test_backtest_runs():
     res = backtest(g, fake_draws(g, 50), last_n=10)
     assert set(res["strategies"]) == {"balanced", "hot", "cold", "random"}
     assert res["strategies"]["random"]["lines"] == 500
+
+
+FIX = __import__("pathlib").Path(__file__).parent / "fixtures"
+
+
+def test_parsers_on_saved_pages():
+    from lottlab.games import GAMES, valid_draw
+    from lottlab import sources as src
+    for g in ("oz", "powerball", "saturday"):
+        rows = src.parse_lotteryextreme(GAMES[g], (FIX / f"le_{g}.html").read_text())
+        assert len(rows) == 20 and all(valid_draw(GAMES[g], r) for r in rows)
+        assert [r["draw"] for r in rows] == sorted((r["draw"] for r in rows), reverse=True)
+    oz = src.parse_national_lottery(GAMES["oz"], (FIX / "nl_oz_2025.html").read_text())
+    assert len(oz) == 52 and oz[0]["draw"] == 1663 and oz[0]["date"] == "2025-12-30"
+    assert oz[0]["main"] == [11, 12, 14, 19, 20, 27, 31] and oz[0]["supp"] == [1, 13, 43]
+    divs = src.parse_le_dividends((FIX / "le_oz_dividends.html").read_text())
+    assert divs[1] == {"div": 2, "winners": 11, "amount": 57815.9} and len(divs) == 7
+
+
+def test_merge_cross_check(env):
+    root, cli, store = env
+    from lottlab.games import GAMES
+    oz = GAMES["oz"]
+    a = {"game": "oz", "draw": 1, "date": "2026-01-06", "main": [1, 2, 3, 4, 5, 6, 7], "supp": [8, 9, 10],
+         "dividends": [], "source": "lotteryextreme"}
+    assert store.merge_draws(oz, [a]) == ([1], [])
+    assert store.merge_draws(oz, [{**a, "source": "national-lottery"}]) == ([], [])
+    assert store.load_draws(oz)[0]["sources"] == ["lotteryextreme", "national-lottery"]
+    new, conflicts = store.merge_draws(oz, [{**a, "main": [1, 2, 3, 4, 5, 6, 11], "source": "x"}])
+    assert new == [] and len(conflicts) == 1

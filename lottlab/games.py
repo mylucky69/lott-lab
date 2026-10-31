@@ -17,7 +17,7 @@ class Game:
     pb_pool: int                   # Powerball pool (0 if none)
     draw_weekday: int              # Monday=0 ... Sunday=6 (Sydney time)
     matrix_start: str              # first draw date of the current matrix
-    history_start: str             # how far back to backfill
+    history_start: str             # first year to backfill
     division_rules: tuple[str, ...]  # human readable, index 0 = division 1
 
     # -- prize division for a line given match counts ------------------------
@@ -79,14 +79,14 @@ class Game:
 OZ = Game(
     id="oz", name="Oz Lotto", product_ids=("OzLotto",),
     pool=47, pick=7, drawn=7, supps=3, pb_pool=0, draw_weekday=1,
-    matrix_start="2022-05-31", history_start="2022-05-01",
+    matrix_start="2022-05-31", history_start="1994",
     division_rules=("7 số", "6 số + số phụ", "6 số", "5 số + số phụ", "5 số", "4 số", "3 số + số phụ"),
 )
 
 POWERBALL = Game(
     id="powerball", name="Powerball", product_ids=("Powerball",),
     pool=35, pick=7, drawn=7, supps=0, pb_pool=20, draw_weekday=3,
-    matrix_start="2018-04-19", history_start="2018-04-01",
+    matrix_start="2018-04-19", history_start="1996",
     division_rules=("7 số + PB", "7 số", "6 số + PB", "6 số", "5 số + PB", "4 số + PB",
                     "5 số", "3 số + PB", "2 số + PB"),
 )
@@ -94,7 +94,7 @@ POWERBALL = Game(
 SATURDAY = Game(
     id="saturday", name="Saturday Lotto", product_ids=("TattsLotto", "SaturdayLotto"),
     pool=45, pick=6, drawn=6, supps=2, pb_pool=0, draw_weekday=5,
-    matrix_start="1990-01-01", history_start="2012-01-01",
+    matrix_start="1985-01-01", history_start="1985",
     division_rules=("6 số", "5 số + số phụ", "5 số", "4 số", "3 số + số phụ", "1–2 số + 2 số phụ"),
 )
 

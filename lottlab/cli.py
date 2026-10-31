@@ -1,7 +1,7 @@
 """Command line entry point:  python -m lottlab <command>
 
   update            fetch new results, settle locked picks, preview/lock next picks, rebuild site
-  backfill [game]   download full history of the current matrix
+  backfill [game]   download full history (one page per year)
   add-result GAME DRAW DATE "MAIN" "SUPP"   manual result entry (fallback)
   import-csv GAME FILE                      CSV: draw,date,main,supp  (numbers space separated)
   backtest [game]   walk-forward experiment (slow, run weekly)
@@ -14,11 +14,11 @@ import datetime as dt
 import sys
 import traceback
 
-from . import fetch
+from . import sources as src
 from .analysis import backtest, simulate_set, statistics
 from .games import GAMES, Game, check_line
 from .generator import STRATEGIES, generate
-from .store import (DATA, ROOT, SITE_DATA, all_picks, load_draws, load_pick, merge_draws,
+from .store import (DATA, ROOT, SITE_DATA, all_picks, latest_due_date, load_draws, load_pick, merge_draws, set_dividends,
                     next_draw, now_sydney, read_json, save_pick, write_json)
 
 CONFIG = read_json(ROOT / "config.json", {}) or {}
@@ -135,35 +135,111 @@ def build_index(statuses: dict) -> None:
 
 
 # -- commands -------------------------------------------------------------------
+def fetch_new(game: Game, st: dict) -> None:
+    """Fetch only what is missing: a newly due result, then its prize table."""
+    draws = load_draws(game)
+    last_date = draws[-1]["date"] if draws else ""
+    due = latest_due_date(game).isoformat()
+    errors, new_all = [], []
+
+    def merge(rows, name):
+        new, conflicts = merge_draws(game, rows)
+        new_all.extend(new)
+        if conflicts:
+            st.setdefault("conflicts", []).extend(conflicts)
+            log(f"  CONFLICT ({name}): {conflicts}")
+        st.setdefault("sources_ok", []).append(name)
+        return new
+
+    if last_date < due:
+        log(f"  result due for {due} (have {last_date or 'none'})")
+        try:
+            merge(src.lotteryextreme_latest(game), "lotteryextreme")
+        except src.SourceError as e:
+            errors.append(f"lotteryextreme: {e}")
+        # second source: cross-check new draws, or fill in if the first failed
+        try:
+            merge(src.national_lottery_year(game, src_year()), "national-lottery")
+        except src.SourceError as e:
+            errors.append(f"national-lottery: {e}")
+    # prize tables for recent draws (published a little after the numbers)
+    recent_cut = (now_sydney().date() - dt.timedelta(days=10)).isoformat()
+    for d in [d for d in load_draws(game) if d["date"] >= recent_cut and not d.get("dividends")][-3:]:
+        try:
+            divs = src.lotteryextreme_dividends(game, d["date"])
+            if divs and set_dividends(game, d["draw"], divs):
+                log(f"  dividends #{d['draw']}")
+                st["changed"] = True
+        except src.SourceError as e:
+            errors.append(f"dividends #{d['draw']}: {e}")
+    if new_all:
+        log(f"  new results: {new_all}")
+    have = load_draws(game)
+    st["new_draws"] = new_all
+    st["changed"] = st.get("changed") or bool(new_all)
+    st["fetch_ok"] = bool(have) and have[-1]["date"] >= due
+    st["error"] = "; ".join(errors)[:400] or None
+
+
+def src_year() -> int:
+    return now_sydney().year
+
+
+def backfill_state(game: Game) -> dict:
+    return read_json(DATA / game.id / "backfill.json", {"done": [], "last_try": None}) or {}
+
+
+def backfill_game(game: Game, force: bool = False) -> None:
+    state = backfill_state(game)
+    today = now_sydney().date().isoformat()
+    years = [y for y in range(int(game.history_start), src_year() + 1) if y not in state["done"]]
+    if not years or (state.get("last_try") == today and not force):
+        return
+    state["last_try"] = today
+    log(f"  backfill {game.name}: {len(years)} year(s)")
+    failures = 0
+    for y in years:
+        try:
+            rows = src.national_lottery_year(game, y)
+        except src.SourceError as e:
+            if "HTTP 404" in str(e):
+                state["done"].append(y)       # no draws that year
+                continue
+            failures += 1
+            log(f"  {y}: {e}")
+            if failures >= 3:
+                log("  source unavailable, will retry tomorrow")
+                break
+            continue
+        new, conflicts = merge_draws(game, rows)
+        log(f"  {y}: {len(rows)} draws, {len(new)} new")
+        if y < src_year():
+            state["done"].append(y)
+    state["done"] = sorted(set(state["done"]))
+    write_json(DATA / game.id / "backfill.json", state)
+
+
 def cmd_update(only: list[str]) -> int:
-    statuses, failures = {}, 0
+    statuses = {}
     for game in GAMES.values():
         if only and game.id not in only:
             continue
         log(f"[{game.name}]")
         st = {"fetch_ok": False, "error": None, "changed": False,
               "checked_at": now_sydney().isoformat(timespec="minutes")}
-        open_info = None
         try:
-            if not load_draws(game, valid_only=False):
-                cmd_backfill([game.id])
-            new = merge_draws(game, fetch.latest(game, 5))
-            st.update(fetch_ok=True, new_draws=new, changed=bool(new))
-            if new:
-                log(f"  new results: {new}")
-            open_info = fetch.open_draw(game)
-        except Exception as e:  # keep going: manual results still work
-            failures += 1
-            st["error"] = f"{type(e).__name__}: {e}"[:300]
+            backfill_game(game)
+            fetch_new(game, st)
+        except Exception as e:  # never stop: manual entry still works
+            st["error"] = f"{type(e).__name__}: {e}"[:400]
             log(f"  fetch failed: {st['error']}")
         draws = load_draws(game)
         settle(game, draws)
-        prepare_next(game, draws, open_info)
+        prepare_next(game, draws, None)
         prev = (read_json(SITE_DATA / f"{game.id}.json", {}) or {}).get("status", {})
-        if not st["fetch_ok"] and prev.get("last_ok"):
-            st["last_ok"] = prev["last_ok"]
-        elif st["fetch_ok"]:
-            st["last_ok"] = st["checked_at"]
+        st["last_ok"] = st["checked_at"] if st["fetch_ok"] else prev.get("last_ok")
+        bf = backfill_state(game)
+        st["history_years"] = len(bf.get("done", []))
         build_game(game, st)
         statuses[game.id] = st
     build_index(statuses)
@@ -171,15 +247,9 @@ def cmd_update(only: list[str]) -> int:
 
 
 def cmd_backfill(only: list[str]) -> int:
-    today = now_sydney().date()
     for game in GAMES.values():
-        if only and game.id not in only:
-            continue
-        start = dt.date.fromisoformat(game.history_start)
-        log(f"  backfill {game.name} from {start}")
-        got = fetch.history(game, start, today)
-        new = merge_draws(game, got)
-        log(f"  {len(got)} draws fetched, {len(new)} new")
+        if not only or game.id in only:
+            backfill_game(game, force=True)
     return 0
 
 
@@ -197,7 +267,10 @@ def cmd_add_result(args: list[str]) -> int:
         log(f"Invalid result for {game.name}: need {game.drawn} main numbers 1..{game.pool} and "
             + (f"1 Powerball 1..{game.pb_pool}" if game.pb_pool else f"{game.supps} supplementary"))
         return 1
-    merge_draws(game, [d])
+    _, conflicts = merge_draws(game, [d])
+    if conflicts:
+        log(f"Not added, differs from stored result: {conflicts}")
+        return 1
     log(f"Added {game.name} #{draw}")
     return cmd_update([game.id]) if "--no-update" not in args else 0
 
@@ -210,7 +283,9 @@ def cmd_import_csv(args: list[str]) -> int:
             rows.append({"game": game.id, "draw": int(r["draw"]), "date": r["date"][:10],
                          "main": _nums(r["main"]), "supp": _nums(r.get("supp", "")),
                          "dividends": [], "source": "csv"})
-    new = merge_draws(game, rows)
+    new, conflicts = merge_draws(game, rows)
+    for c in conflicts:
+        log(f"  conflict {c}")
     log(f"Imported {len(rows)} rows, {len(new)} new")
     return 0
 

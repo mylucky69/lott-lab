@@ -83,14 +83,23 @@ function render(g) {
 
 function statusWarn(g) {
   const s = g.status || {};
-  if (!s.error) return "";
-  return `<div class="warn">⚠ Lần kiểm tra lúc ${fmtDateTime(s.checked_at)} không lấy được kết quả tự động từ The Lott${s.last_ok ? ` (lần thành công gần nhất: ${fmtDateTime(s.last_ok)})` : ""}.
-  Nếu kết quả mới chưa hiện, hãy nhập tay bằng workflow “Nhập kết quả thủ công” trên GitHub.</div>`;
+  let h = "";
+  if (s.conflicts && s.conflicts.length) h += `<div class="warn">⚠ Hai nguồn báo số khác nhau, đã giữ số cũ, cần kiểm tra: ${esc(s.conflicts.join("; "))}</div>`;
+  if (s.fetch_ok === false && s.checked_at) h += `<div class="warn">⚠ Đến ${fmtDateTime(s.checked_at)} vẫn chưa lấy được kết quả kỳ mới nhất${s.error ? ` (${esc(s.error.slice(0, 160))})` : ""}.
+  Hệ thống sẽ tự thử lại mỗi giờ. Nếu cần gấp, nhập tay bằng workflow “Nhập kết quả thủ công” trên GitHub.</div>`;
+  return h;
+}
+
+const SOURCE_NAMES = { lotteryextreme: "LotteryExtreme", "national-lottery": "National-Lottery", manual: "nhập tay", csv: "CSV", test: "test" };
+function sourceText(d) {
+  const list = d.sources || (d.source ? [d.source] : []);
+  const names = list.map((x) => SOURCE_NAMES[x] || x).join(", ");
+  return list.length >= 2 ? `✓ Đã đối chiếu ${list.length} nguồn (${esc(names)})` : `Nguồn: ${esc(names)}`;
 }
 
 function nextCard(g) {
   const n = g.next;
-  if (!n) return `<section class="card"><h2>Kỳ quay tiếp theo</h2><p class="muted">Chưa có dữ liệu lịch sử nên chưa tạo được bộ số.</p>${statusWarn(g)}</section>`;
+  if (!n) return `<section class="card"><h2>Kỳ quay tiếp theo</h2><p class="muted">Chưa có kết quả nào nên chưa tạo được bộ số. Hệ thống đang tải dữ liệu.</p>${statusWarn(g)}</section>`;
   const sim = n.simulation || {}, rnd = n.simulation_random || {};
   const isPB = !!g.meta.pb_pool;
   const lines = n.lines.map((l, i) => `<div class="line"><span class="idx">${pad(i + 1)}</span>${balls(l.main, [], { pb: isPB ? l.pb : null })}</div>`).join("");
@@ -165,7 +174,7 @@ function latestCard(g) {
   }</tbody></table></div>` : "";
   return `<section class="card">
     <h2>Kết quả mới nhất · kỳ #${last.draw}</h2>
-    <div class="sub" style="margin-bottom:10px">${fmtDate(last.date)}${last.source === "manual" ? " · nhập tay" : ""}</div>
+    <div class="sub" style="margin-bottom:10px">${fmtDate(last.date)} · ${sourceText(last)}</div>
     ${drawBalls(g, last, true)}
     ${divTable ? `<div style="margin-top:14px">${divTable}</div>` : ""}
     <details style="margin-top:12px"><summary>Các kỳ trước</summary>

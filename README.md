@@ -7,7 +7,7 @@ Mỗi kỳ, hệ thống tạo **50 dòng số** và tự chốt vào **17:00 (g
 
 | Việc | Khi nào |
 |---|---|
-| Lấy kết quả mới từ API công khai của thelott.com | Mỗi giờ từ khoảng 16:20 đến 00:20 giờ Sydney, và một lần buổi sáng |
+| Lấy kết quả mới (chỉ khi đã đến giờ có kết quả) | Mỗi giờ từ khoảng 16:20 đến 00:20 giờ Sydney, và một lần buổi sáng |
 | Tạo bản xem trước 50 dòng cho kỳ tiếp theo | Ngay khi có kết quả kỳ trước |
 | **Chốt** 50 dòng (không đổi nữa) | 17:00 giờ Sydney, ngày trước kỳ quay |
 | So bộ số đã chốt với kết quả, ghi lại giải trúng | Ngay khi có kết quả |
@@ -46,7 +46,19 @@ Chiến lược mặc định `balanced` chỉ tối ưu những gì tối ưu �
 4. **Actions → Cập nhật kết quả → Run workflow** để chạy lần đầu (tự tải toàn bộ lịch sử).
 5. **Actions → Thử nghiệm chiến lược → Run workflow** để có bảng thử nghiệm ngay.
 
-## Nếu The Lott chặn việc tự lấy dữ liệu
+## Nguồn dữ liệu
+
+| Nguồn | Dùng để | Ghi chú |
+|---|---|---|
+| [australia.national-lottery.com](https://australia.national-lottery.com/oz-lotto/results-archive-2025) | Toàn bộ lịch sử, mỗi năm 1 trang (Oz Lotto từ 1994, Powerball từ 1996, Saturday Lotto từ 1985) | Tải một lần, sau đó chỉ trang năm hiện tại |
+| [lotteryextreme.com](https://www.lotteryextreme.com/australia/ozlotto-results) | 20 kỳ gần nhất và bảng tiền thưởng | Nguồn chính cho kỳ mới |
+
+Mỗi kỳ được đối chiếu giữa 2 nguồn; nếu số khác nhau, hệ thống giữ số cũ và hiện cảnh báo.
+Phần mềm tự giới thiệu là công cụ tự động (User-Agent `LottLab/1.0`), đọc robots.txt trước khi tải,
+nghỉ 3 giây giữa các lần tải, và chỉ tải khi đã đến giờ có kết quả mới (khoảng 3 trang mỗi kỳ quay).
+The Lott chặn truy cập từ ngoài nước Úc nên không được dùng làm nguồn tự động.
+
+## Nếu các nguồn không có kết quả
 
 Trang web sẽ hiện cảnh báo màu vàng. Khi đó vào **Actions → Nhập kết quả thủ công → Run workflow**
 và nhập số kỳ, ngày, các số chính, số phụ hoặc Powerball (làm được ngay trên điện thoại bằng app GitHub).

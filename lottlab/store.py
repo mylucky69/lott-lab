@@ -52,19 +52,47 @@ def load_draws(game: Game, valid_only: bool = True) -> list[dict]:
     return sorted(draws, key=lambda d: d["draw"])
 
 
-def merge_draws(game: Game, new: list[dict]) -> list[int]:
-    """Add/refresh draws. Returns draw numbers that were new."""
+def merge_draws(game: Game, new: list[dict]) -> tuple[list[int], list[str]]:
+    """Add draws from a source. Same draw from a second source with identical numbers
+    marks it verified; different numbers are reported as a conflict (existing data kept)."""
     current = {d["draw"]: d for d in read_json(draws_path(game), [])}
-    added = []
+    added, conflicts = [], []
     for d in new:
-        if d["draw"] not in current:
+        src = d.get("source", "?")
+        cur = current.get(d["draw"])
+        if cur is None:
+            d = {**d, "sources": [src]}
+            d.pop("source", None)
+            current[d["draw"]] = d
             added.append(d["draw"])
-            current[d["draw"]] = d
-        elif d.get("source") == "thelott":
-            # official data always wins over manual entry and refreshes late dividends
-            current[d["draw"]] = d
+            continue
+        if cur["main"] == d["main"] and cur["supp"] == d["supp"]:
+            if src not in cur.setdefault("sources", []):
+                cur["sources"].append(src)
+            if d.get("dividends") and not cur.get("dividends"):
+                cur["dividends"] = d["dividends"]
+        else:
+            conflicts.append(f"#{d['draw']}: {src} {d['main']}+{d['supp']} != {cur['main']}+{cur['supp']}")
     write_json(draws_path(game), sorted(current.values(), key=lambda d: d["draw"]))
-    return sorted(added)
+    return sorted(added), conflicts
+
+
+def set_dividends(game: Game, draw: int, dividends: list[dict]) -> bool:
+    current = read_json(draws_path(game), [])
+    for d in current:
+        if d["draw"] == draw and dividends:
+            d["dividends"] = dividends
+            return write_json(draws_path(game), current)
+    return False
+
+
+def latest_due_date(game: Game) -> dt.date:
+    """Date of the most recent draw whose result should be published by now (21:00 Sydney)."""
+    now = now_sydney()
+    d = now.date() - dt.timedelta(days=(now.weekday() - game.draw_weekday) % 7)
+    if d == now.date() and now.hour < 21:
+        d -= dt.timedelta(days=7)
+    return d
 
 
 # -- picks ------------------------------------------------------------------
