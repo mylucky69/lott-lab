@@ -60,7 +60,7 @@
  "config": {
   "lines": 50,
   "strategy": "balanced",
-  "ticket_price": 0.85
+  "ticket_price": 0.976
  },
  "next": {
   "game": "saturday",
@@ -643,7 +643,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 20000000.0
   },
   {
    "game": "saturday",
@@ -695,7 +696,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 6000000.0
   },
   {
    "game": "saturday",
@@ -747,7 +749,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 6000000.0
   },
   {
    "game": "saturday",
@@ -799,7 +802,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 6000000.0
   },
   {
    "game": "saturday",
@@ -851,7 +855,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 6000000.0
   },
   {
    "game": "saturday",
@@ -903,7 +908,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 6000000.0
   },
   {
    "game": "saturday",
@@ -955,7 +961,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 6000000.0
   },
   {
    "game": "saturday",
@@ -1007,7 +1014,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 10000000.0
   },
   {
    "game": "saturday",
@@ -1059,7 +1067,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 20000000.0
   },
   {
    "game": "saturday",
@@ -1111,7 +1120,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 6000000.0
   },
   {
    "game": "saturday",
@@ -1163,7 +1173,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 6000000.0
   },
   {
    "game": "saturday",
@@ -1215,7 +1226,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 6000000.0
   },
   {
    "game": "saturday",
@@ -1267,7 +1279,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 6000000.0
   },
   {
    "game": "saturday",
@@ -1319,7 +1332,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 10000000.0
   },
   {
    "game": "saturday",
@@ -1371,7 +1385,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 20000000.0
   }
  ],
  "tracking": [],
@@ -1843,14 +1858,14 @@
   }
  },
  "value": {
-  "price": 0.85,
+  "price": 0.976,
   "low_div_ev": 0.3196,
   "entries": 37427264.65704894,
   "jackpot": 10000000.0,
   "ev_line": 0.584,
-  "per_dollar": 0.687,
-  "per_dollar_busy": 0.481,
-  "break_even_jackpot": 20100000.0,
+  "per_dollar": 0.598,
+  "per_dollar_busy": 0.419,
+  "break_even_jackpot": 24800000.0,
   "rating": "medium",
   "jackpot_source": "lotteryguru.com"
  },

@@ -66,7 +66,7 @@
  "config": {
   "lines": 50,
   "strategy": "balanced",
-  "ticket_price": 1.45
+  "ticket_price": 1.46
  },
  "next": {
   "game": "oz",
@@ -706,7 +706,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 50000000.0
   },
   {
    "game": "oz",
@@ -765,7 +766,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 40000000.0
   },
   {
    "game": "oz",
@@ -824,7 +826,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 30000000.0
   },
   {
    "game": "oz",
@@ -883,7 +886,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 20000000.0
   },
   {
    "game": "oz",
@@ -942,7 +946,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 15000000.0
   },
   {
    "game": "oz",
@@ -1001,7 +1006,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 8000000.0
   },
   {
    "game": "oz",
@@ -1060,7 +1066,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 4000000.0
   },
   {
    "game": "oz",
@@ -1119,7 +1126,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 8000000.0
   },
   {
    "game": "oz",
@@ -1178,7 +1186,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 4000000.0
   },
   {
    "game": "oz",
@@ -1237,7 +1246,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 4000000.0
   },
   {
    "game": "oz",
@@ -1296,7 +1306,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 4000000.0
   },
   {
    "game": "oz",
@@ -1355,7 +1366,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 40000000.0
   },
   {
    "game": "oz",
@@ -1414,7 +1426,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 30000000.0
   },
   {
    "game": "oz",
@@ -1473,7 +1486,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 20000000.0
   },
   {
    "game": "oz",
@@ -1532,7 +1546,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 15000000.0
   }
  ],
  "tracking": [],
@@ -2023,14 +2038,14 @@
   }
  },
  "value": {
-  "price": 1.45,
+  "price": 1.46,
   "low_div_ev": 0.4415,
   "entries": 14074842.038978104,
   "jackpot": 60000000.0,
   "ev_line": 1.2963,
-  "per_dollar": 0.894,
-  "per_dollar_busy": 0.784,
-  "break_even_jackpot": 70800000.0,
+  "per_dollar": 0.888,
+  "per_dollar_busy": 0.778,
+  "break_even_jackpot": 71500000.0,
   "rating": "high",
   "jackpot_source": "lotteryguru.com"
  },

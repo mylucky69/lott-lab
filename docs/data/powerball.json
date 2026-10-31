@@ -78,7 +78,7 @@
  "config": {
   "lines": 50,
   "strategy": "balanced",
-  "ticket_price": 1.4
+  "ticket_price": 1.572
  },
  "next": {
   "game": "powerball",
@@ -776,7 +776,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 20000000.0
   },
   {
    "game": "powerball",
@@ -843,7 +844,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 10000000.0
   },
   {
    "game": "powerball",
@@ -910,7 +912,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 100000000.0
   },
   {
    "game": "powerball",
@@ -977,7 +980,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 60000000.0
   },
   {
    "game": "powerball",
@@ -1044,7 +1048,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 40000000.0
   },
   {
    "game": "powerball",
@@ -1111,7 +1116,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 20000000.0
   },
   {
    "game": "powerball",
@@ -1178,7 +1184,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 12000000.0
   },
   {
    "game": "powerball",
@@ -1245,7 +1252,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 5000000.0
   },
   {
    "game": "powerball",
@@ -1312,7 +1320,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 20000000.0
   },
   {
    "game": "powerball",
@@ -1379,7 +1388,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 12000000.0
   },
   {
    "game": "powerball",
@@ -1446,7 +1456,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 5000000.0
   },
   {
    "game": "powerball",
@@ -1513,7 +1524,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 20000000.0
   },
   {
    "game": "powerball",
@@ -1580,7 +1592,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 12000000.0
   },
   {
    "game": "powerball",
@@ -1647,7 +1660,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 5000000.0
   },
   {
    "game": "powerball",
@@ -1714,7 +1728,8 @@
    ],
    "sources": [
     "lotteryextreme"
-   ]
+   ],
+   "jackpot": 40000000.0
   }
  ],
  "tracking": [],
@@ -2224,14 +2239,14 @@
   }
  },
  "value": {
-  "price": 1.4,
+  "price": 1.572,
   "low_div_ev": 0.5494,
   "entries": 34775609.447060876,
   "jackpot": 30000000.0,
   "ev_line": 0.746,
-  "per_dollar": 0.533,
-  "per_dollar_busy": 0.503,
-  "break_even_jackpot": 129800000.0,
+  "per_dollar": 0.475,
+  "per_dollar_busy": 0.448,
+  "break_even_jackpot": 156100000.0,
   "rating": "low",
   "jackpot_source": "lotteryguru.com"
  },
