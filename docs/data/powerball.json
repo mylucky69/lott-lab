@@ -70,9 +70,9 @@
   "fetch_ok": true,
   "error": null,
   "changed": false,
-  "checked_at": "2026-11-01T11:11+11:00",
+  "checked_at": "2026-11-01T12:27+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-01T11:11+11:00",
+  "last_ok": "2026-11-01T12:27+11:00",
   "history_years": 0
  },
  "config": {
@@ -101,133 +101,184 @@
   "strategy": "balanced",
   "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
   "based_on": 1589,
-  "generated_at": "2026-11-01T09:33:10+11:00",
+  "generated_at": "2026-11-01T12:27:27+11:00",
   "locked_at": null,
   "lines": [
    {
     "main": [
      1,
-     2,
+     5,
+     10,
+     13,
      16,
-     17,
-     24,
-     25,
-     26
+     30,
+     31
     ],
-    "pb": 13
+    "pb": 8
    },
    {
     "main": [
-     4,
-     17,
-     18,
+     1,
+     8,
+     9,
      23,
-     31,
-     33,
+     27,
+     28,
+     34
+    ],
+    "pb": 7
+   },
+   {
+    "main": [
+     2,
+     3,
+     4,
+     18,
+     19,
+     20,
+     33
+    ],
+    "pb": 6
+   },
+   {
+    "main": [
+     2,
+     6,
+     14,
+     16,
+     25,
+     26,
      34
     ],
     "pb": 12
    },
    {
     "main": [
-     6,
-     20,
-     28,
-     29,
-     32,
-     33,
+     3,
+     12,
+     13,
+     22,
+     26,
+     27,
      35
     ],
-    "pb": 20
+    "pb": 3
    },
    {
     "main": [
-     10,
+     4,
+     5,
+     7,
+     11,
+     17,
      24,
-     30,
-     31,
-     32,
-     34,
-     35
+     26
     ],
     "pb": 15
    },
    {
     "main": [
-     12,
-     14,
+     6,
+     9,
      15,
-     25,
-     32,
-     33,
-     34
+     18,
+     21,
+     22,
+     29
     ],
-    "pb": 4
+    "pb": 2
+   },
+   {
+    "main": [
+     10,
+     14,
+     20,
+     21,
+     23,
+     24,
+     35
+    ],
+    "pb": 16
+   },
+   {
+    "main": [
+     12,
+     15,
+     17,
+     31,
+     32,
+     34,
+     35
+    ],
+    "pb": 11
+   },
+   {
+    "main": [
+     24,
+     25,
+     28,
+     29,
+     30,
+     32,
+     33
+    ],
+    "pb": 14
    }
   ],
-  "rules": 4,
-  "lines_key": "auto|{'max_expected_loss_per_draw': 5, 'min': 5, 'max': 50}|30000000.0",
+  "rules": 5,
+  "lines_key": "auto|{'max_expected_loss_per_draw': 12, 'min': 5, 'max': 50, 'target_p_any': 0.5, 'goal': 'p_any'}|30000000.0",
   "lines_plan": {
    "mode": "auto",
-   "lines": 5,
-   "budget": 5.0,
+   "lines": 10,
+   "budget": 12.0,
+   "target_p_any": 0.5,
+   "goal": "p_any",
    "table": [
     {
      "lines": 5,
-     "per_dollar": 0.497,
-     "expected_loss": 3.95
+     "per_dollar": 0.485,
+     "expected_loss": 4.05,
+     "p_any": 0.1157,
+     "p_recoup": 0.1157,
+     "cost": 7.86
     },
     {
      "lines": 10,
-     "per_dollar": 0.489,
-     "expected_loss": 8.03
+     "per_dollar": 0.477,
+     "expected_loss": 8.21,
+     "p_any": 0.2251,
+     "p_recoup": 0.0754,
+     "cost": 15.72
     },
     {
      "lines": 15,
-     "per_dollar": 0.482,
-     "expected_loss": 12.22
-    },
-    {
-     "lines": 20,
-     "per_dollar": 0.479,
-     "expected_loss": 16.37
-    },
-    {
-     "lines": 25,
-     "per_dollar": 0.479,
-     "expected_loss": 20.47
-    },
-    {
-     "lines": 30,
-     "per_dollar": 0.479,
-     "expected_loss": 24.57
-    },
-    {
-     "lines": 40,
-     "per_dollar": 0.476,
-     "expected_loss": 32.94
-    },
-    {
-     "lines": 50,
-     "per_dollar": 0.475,
-     "expected_loss": 41.27
+     "per_dollar": 0.474,
+     "expected_loss": 12.41,
+     "p_any": 0.3372,
+     "p_recoup": 0.1093,
+     "cost": 23.58
     }
    ],
-   "reason": "Nhiều dòng nhất mà lỗ kỳ vọng kỳ này ≤ $5"
+   "reason": "Chưa đạt 50% vì vượt trần lỗ $12/kỳ; dùng nhiều dòng nhất trong trần"
   },
   "simulation": {
    "draws": 20000,
-   "p_any": 0.11875,
-   "mean_prizes": 0.11925,
-   "p_any_independent": 0.10863003608244115,
-   "mean_prizes_theory": 0.11368339301541226
+   "p_any": 0.23075,
+   "mean_prizes": 0.23195,
+   "p_any_independent": 0.20545958742560977,
+   "mean_prizes_theory": 0.22736678603082452
+  },
+  "prize_stats": {
+   "p_any": 0.2252,
+   "p_recoup": 0.0732,
+   "mean_return": 7.2116
   },
   "simulation_random": {
    "draws": 20000,
-   "p_any": 0.10855,
-   "mean_prizes": 0.10905,
-   "p_any_independent": 0.10863003608244115,
-   "mean_prizes_theory": 0.11368339301541226
+   "p_any": 0.21405,
+   "mean_prizes": 0.226,
+   "p_any_independent": 0.20545958742560977,
+   "mean_prizes_theory": 0.22736678603082452
   }
  },
  "latest": [
@@ -2461,12 +2512,12 @@
   "low_div_ev": 0.5494,
   "entries": 34775609.447060876,
   "jackpot": 30000000.0,
-  "set_ratio": 1.0621,
-  "ev_line": 0.7848,
-  "per_dollar": 0.504,
-  "per_dollar_busy": 0.499,
+  "set_ratio": 1.0127,
+  "ev_line": 0.7482,
+  "per_dollar": 0.481,
+  "per_dollar_busy": 0.476,
   "expected_sales": 45190598,
-  "break_even_jackpot": 409000000.0,
+  "break_even_jackpot": null,
   "rating": "low",
   "jackpot_source": "lotteryguru.com"
  },

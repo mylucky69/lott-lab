@@ -11,172 +11,329 @@
  "strategy": "balanced",
  "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
  "based_on": 4725,
- "generated_at": "2026-11-01T09:33:11+11:00",
+ "generated_at": "2026-11-01T12:27:28+11:00",
  "locked_at": null,
  "lines": [
   {
    "main": [
+    1,
     2,
-    6,
+    3,
+    12,
+    38,
+    42
+   ]
+  },
+  {
+   "main": [
+    1,
+    9,
+    10,
+    21,
+    23,
+    40
+   ]
+  },
+  {
+   "main": [
+    2,
+    4,
+    11,
+    18,
+    31,
+    36
+   ]
+  },
+  {
+   "main": [
+    2,
+    29,
+    30,
+    33,
+    34,
+    37
+   ]
+  },
+  {
+   "main": [
+    3,
+    4,
     16,
     32,
-    44,
-    45
-   ]
-  },
-  {
-   "main": [
-    12,
-    28,
-    29,
-    41,
-    42,
-    43
-   ]
-  },
-  {
-   "main": [
-    14,
-    15,
-    20,
-    24,
-    35,
+    33,
     41
    ]
   },
   {
    "main": [
-    16,
+    4,
     17,
+    25,
+    30,
+    35,
+    43
+   ]
+  },
+  {
+   "main": [
+    5,
+    6,
+    10,
+    25,
+    34,
+    41
+   ]
+  },
+  {
+   "main": [
+    5,
+    19,
+    27,
+    31,
+    37,
+    42
+   ]
+  },
+  {
+   "main": [
+    6,
+    8,
+    12,
+    35,
+    37,
+    45
+   ]
+  },
+  {
+   "main": [
+    6,
+    15,
+    16,
+    20,
+    43,
+    44
+   ]
+  },
+  {
+   "main": [
+    7,
+    11,
+    19,
+    21,
+    33,
+    43
+   ]
+  },
+  {
+   "main": [
+    7,
+    13,
+    16,
+    23,
+    29,
+    45
+   ]
+  },
+  {
+   "main": [
+    8,
+    9,
+    26,
+    32,
+    34,
+    44
+   ]
+  },
+  {
+   "main": [
+    9,
+    20,
+    24,
     28,
-    38,
+    30,
+    41
+   ]
+  },
+  {
+   "main": [
+    10,
+    15,
+    24,
+    27,
+    29,
+    38
+   ]
+  },
+  {
+   "main": [
+    12,
+    15,
+    30,
+    31,
     39,
     40
    ]
   },
   {
    "main": [
-    24,
-    25,
-    30,
+    13,
+    14,
+    20,
+    22,
+    34,
+    40
+   ]
+  },
+  {
+   "main": [
+    14,
+    28,
+    29,
     31,
+    32,
+    35
+   ]
+  },
+  {
+   "main": [
+    14,
+    36,
+    37,
     38,
+    41,
     44
    ]
   },
   {
    "main": [
-    30,
-    32,
-    33,
-    34,
-    40,
-    41
+    16,
+    17,
+    21,
+    28,
+    38,
+    39
    ]
   },
   {
    "main": [
-    31,
-    33,
+    17,
+    20,
+    26,
+    27,
+    36,
+    45
+   ]
+  },
+  {
+   "main": [
+    18,
+    19,
+    22,
+    23,
+    39,
+    44
+   ]
+  },
+  {
+   "main": [
+    23,
+    24,
+    34,
     35,
     36,
-    37,
-    43
-   ]
-  },
-  {
-   "main": [
-    32,
-    36,
-    37,
-    38,
-    41,
     42
    ]
   },
   {
    "main": [
-    34,
-    35,
-    36,
-    42,
+    24,
+    25,
+    33,
+    40,
     44,
     45
    ]
   },
   {
    "main": [
+    32,
     39,
-    40,
     41,
+    42,
     43,
-    44,
     45
    ]
   }
  ],
- "rules": 4,
- "lines_key": "auto|{'max_expected_loss_per_draw': 5, 'min': 5, 'max': 50}|10000000.0",
+ "rules": 5,
+ "lines_key": "auto|{'max_expected_loss_per_draw': 12, 'min': 5, 'max': 50, 'target_p_any': 0.5, 'goal': 'p_any'}|10000000.0",
  "lines_plan": {
   "mode": "auto",
-  "lines": 10,
-  "budget": 5.0,
+  "lines": 25,
+  "budget": 12.0,
+  "target_p_any": 0.5,
+  "goal": "p_any",
   "table": [
    {
     "lines": 5,
-    "per_dollar": 0.706,
-    "expected_loss": 1.43
+    "per_dollar": 0.624,
+    "expected_loss": 1.83,
+    "p_any": 0.1162,
+    "p_recoup": 0.1162,
+    "cost": 4.88
    },
    {
     "lines": 10,
-    "per_dollar": 0.652,
-    "expected_loss": 3.4
+    "per_dollar": 0.588,
+    "expected_loss": 4.02,
+    "p_any": 0.223,
+    "p_recoup": 0.052,
+    "cost": 9.76
    },
    {
     "lines": 15,
-    "per_dollar": 0.635,
-    "expected_loss": 5.34
+    "per_dollar": 0.568,
+    "expected_loss": 6.32,
+    "p_any": 0.3278,
+    "p_recoup": 0.0895,
+    "cost": 14.64
    },
    {
     "lines": 20,
-    "per_dollar": 0.613,
-    "expected_loss": 7.55
+    "per_dollar": 0.561,
+    "expected_loss": 8.56,
+    "p_any": 0.4205,
+    "p_recoup": 0.0437,
+    "cost": 19.52
    },
    {
     "lines": 25,
-    "per_dollar": 0.59,
-    "expected_loss": 10.01
-   },
-   {
-    "lines": 30,
-    "per_dollar": 0.58,
-    "expected_loss": 12.29
-   },
-   {
-    "lines": 40,
-    "per_dollar": 0.58,
-    "expected_loss": 16.41
-   },
-   {
-    "lines": 50,
-    "per_dollar": 0.568,
-    "expected_loss": 21.07
+    "per_dollar": 0.554,
+    "expected_loss": 10.88,
+    "p_any": 0.5095,
+    "p_recoup": 0.0631,
+    "cost": 24.4
    }
   ],
-  "reason": "Nhiều dòng nhất mà lỗ kỳ vọng kỳ này ≤ $5"
+  "reason": "Ít dòng nhất để có ≥ 50% khả năng trúng ít nhất 1 giải"
  },
  "simulation": {
   "draws": 20000,
-  "p_any": 0.2092,
-  "mean_prizes": 0.23845,
-  "p_any_independent": 0.2143367830420546,
-  "mean_prizes_theory": 0.23834078570323605
+  "p_any": 0.5084,
+  "mean_prizes": 0.5975,
+  "p_any_independent": 0.45286934015382896,
+  "mean_prizes_theory": 0.5958519642580902
+ },
+ "prize_stats": {
+  "p_any": 0.5063,
+  "p_recoup": 0.0603,
+  "mean_return": 8.1168
  },
  "simulation_random": {
   "draws": 20000,
-  "p_any": 0.219,
-  "mean_prizes": 0.24235,
-  "p_any_independent": 0.2143367830420546,
-  "mean_prizes_theory": 0.23834078570323605
+  "p_any": 0.45805,
+  "mean_prizes": 0.6033,
+  "p_any_independent": 0.45286934015382896,
+  "mean_prizes_theory": 0.5958519642580902
  }
 }
