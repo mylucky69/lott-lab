@@ -49,9 +49,17 @@ Chiến lược mặc định `balanced` chỉ tối ưu những gì tối ưu �
 nhận lại nhiều hơn (Oz Lotto ở jackpot $60 triệu: 10 dòng $0,85 → 50 dòng $0,79), và vì mỗi dòng vẫn
 lỗ trung bình, lỗ tăng theo số dòng. Nhiều dòng chỉ tăng khả năng trúng một giải nào đó.
 
-`config.json` → `"lines": "auto"`: mỗi kỳ hệ thống chọn nhiều dòng nhất mà lỗ kỳ vọng của kỳ đó
-≤ `lines_auto.max_expected_loss_per_draw` (mặc định $5), trong khoảng 5–50 dòng. Jackpot càng lớn
-(giá trị mỗi dòng càng cao) thì mua càng nhiều dòng. Đặt `"lines": 50` để mua cố định.
+`config.json` → `"lines": "auto"` và `lines_auto.goal`:
+- `p_any` (mặc định): ít dòng nhất để khả năng có ít nhất 1 dòng trúng giải ≥ `target_p_any` (50%).
+  Oz Lotto cần ~35 dòng (55%), Saturday Lotto ~25 dòng (50%).
+- `recoup`: số dòng cho khả năng tiền thưởng trong kỳ đủ bù tiền vé cao nhất (Oz Lotto 10 dòng: 19%,
+  vì giải nhỏ nhất ~$16,60 > $14,60 tiền vé; với 35 dòng chỉ còn 2%).
+- `loss`: nhiều dòng nhất trong mức lỗ.
+Luôn không vượt `max_expected_loss_per_draw` (mặc định $12/kỳ). Đặt `"lines": 50` để mua cố định.
+
+Giới hạn toán học: với n dòng, khả năng có ít nhất 1 dòng trúng giải không thể vượt n × (xác suất 1 dòng
+trúng giải). Cách phủ đều của hệ thống đạt sát mức này (15 dòng Oz Lotto: 28,0% so với trần 29,8%);
+bộ tối ưu phủ chuyên dụng (`lottlab/coverage.py`) không cải thiện thêm được.
 
 ## Quy tắc "chỉ chơi khi jackpot lớn"
 
@@ -120,7 +128,8 @@ lottlab/models.py     kiểm chứng các phương pháp dự đoán (LSTM-like,
 lottlab/replay.py     chạy lùi theo ngân sách
 lottlab/popularity.py đo mức phổ biến của từng số từ số người trúng thật
 lottlab/optimize.py   tìm ngưỡng jackpot tốt nhất, tổng hợp có/không Powerball
-lottlab/lines.py      so sánh số dòng mỗi kỳ (1–100)
+lottlab/lines.py      so sánh số dòng mỗi kỳ (1–100): khả năng trúng, thu lại đủ tiền vé, lỗ
+lottlab/coverage.py   khả năng trúng ≥ 1 giải, thu lại đủ tiền vé; tối ưu phủ
 data/<trò chơi>/      kết quả (draws.json) và các bộ số đã chốt (picks/)
 docs/                 trang web tĩnh (GitHub Pages)
 ```

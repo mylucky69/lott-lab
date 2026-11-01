@@ -28,9 +28,10 @@ from .store import (DATA, ROOT, SITE_DATA, all_picks, latest_due_date, load_draw
 CONFIG = read_json(ROOT / "config.json", {}) or {}
 LINES_CFG = CONFIG.get("lines", 50)
 N_LINES = int(LINES_CFG) if str(LINES_CFG).isdigit() else 50   # fixed size (also used by research)
-AUTO_LINES = {"max_expected_loss_per_draw": 5.0, "min": 5, "max": 50, **(CONFIG.get("lines_auto") or {})}
-LINE_SIZES = [5, 10, 15, 20, 25, 30, 40, 50, 75, 100]
-RULES_VERSION = 4  # bump when prize rules change, so unlocked previews are rebuilt
+AUTO_LINES = {"max_expected_loss_per_draw": 5.0, "min": 5, "max": 50, "target_p_any": None, "goal": "p_any",
+              **(CONFIG.get("lines_auto") or {})}
+LINE_SIZES = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100]
+RULES_VERSION = 5  # bump when prize rules change, so unlocked previews are rebuilt
 def min_jackpot(game: Game) -> float:
     """Play only when the jackpot is at least this (per game in config.json, 0 = always)."""
     v = CONFIG.get("min_jackpot") or 0
@@ -62,16 +63,53 @@ def plan_lines(game: Game, draws: list[dict], history: list[dict], draw_no: int,
                                       if x["div"] == o["division"] and x.get("amount")] or [0])
            for o in game.division_odds()}
     sales = max(sm["a"] + sm["b"] * jackpot, 1.0)
-    table, chosen = [], lo
+    target = AUTO_LINES.get("target_p_any")
+    goal = AUTO_LINES.get("goal", "p_any")
+    if goal != "p_any":
+        target = None
+    from .coverage import prize_stats as _prize_stats
+    table, chosen, reached, best_recoup = [], lo, False, 0.0
     for n in [x for x in LINE_SIZES if lo <= x <= hi]:
         trial = generate(game, history, draw_no, STRATEGY, n, candidates=1500, polish=150)
         v = set_value_exact(game, trial, pay, sales, jackpot)["value_set"] / price
         loss = n * price * (1 - v)
-        table.append({"lines": n, "per_dollar": round(v, 3), "expected_loss": round(loss, 2)})
-        if loss <= budget:
-            chosen = n
-    return chosen, {"mode": "auto", "lines": chosen, "budget": budget, "table": table,
-                    "reason": f"Nhiều dòng nhất mà lỗ kỳ vọng kỳ này ≤ ${budget:g}"}
+        st = _prize_stats(game, trial, pay, price, n=40000)
+        pa = st["p_any"]
+        table.append({"lines": n, "per_dollar": round(v, 3), "expected_loss": round(loss, 2),
+                      "p_any": round(pa, 4), "p_recoup": round(st["p_recoup"], 4), "cost": round(n * price, 2)})
+        if loss > budget:
+            break
+        if goal == "recoup":
+            if chosen == lo and not best_recoup or st["p_recoup"] > best_recoup:
+                chosen, best_recoup = n, st["p_recoup"]
+            continue
+        chosen = n
+        if target and pa >= target:
+            reached = True
+            break
+    if goal == "recoup":
+        reason = f"Số dòng cho khả năng thu lại đủ tiền vé cao nhất ({best_recoup:.0%}), lỗ kỳ vọng ≤ ${budget:g}/kỳ"
+    elif target:
+        reason = (f"Ít dòng nhất để có ≥ {target:.0%} khả năng trúng ít nhất 1 giải" if reached else
+                  f"Chưa đạt {target:.0%} vì vượt trần lỗ ${budget:g}/kỳ; dùng nhiều dòng nhất trong trần")
+    else:
+        reason = f"Nhiều dòng nhất mà lỗ kỳ vọng kỳ này ≤ ${budget:g}"
+    return chosen, {"mode": "auto", "lines": chosen, "budget": budget, "target_p_any": target, "goal": goal,
+                    "table": table, "reason": reason}
+
+
+def _final_stats(game: Game, draws: list[dict], lines: list[dict]) -> dict | None:
+    price = (CONFIG.get("ticket_price") or {}).get(game.id)
+    if not price:
+        return None
+    import statistics as _st
+    from .coverage import prize_stats
+    recent = [d for d in draws if d.get("dividends")][-30:]
+    pay = {o["division"]: _st.median([x["amount"] for d in recent for x in d["dividends"]
+                                      if x["div"] == o["division"] and x.get("amount")] or [0])
+           for o in game.division_odds()}
+    st = prize_stats(game, lines, pay, price, n=100000)
+    return {k: round(v, 4) for k, v in st.items()}
 
 
 def play_decision(game: Game, jackpot: float | None) -> dict:
@@ -165,6 +203,7 @@ def prepare_next(game: Game, draws: list[dict], open_info: dict | None) -> dict 
         "locked_at": now.isoformat(timespec="seconds") if status == "locked" else None,
         "lines": lines, "rules": RULES_VERSION, "lines_key": lines_key, "lines_plan": plan,
         "simulation": simulate_set(game, lines),
+        "prize_stats": _final_stats(game, draws, lines),
         "simulation_random": simulate_set(game, generate(game, history, nxt["draw"], "random", len(lines))),
     }
     if status == "locked" and pick["play"] is None:

@@ -49,7 +49,7 @@ def number_weights(game: Game, history: list[dict], strategy: str, window: int =
     return w
 
 
-POP_WEIGHT = 32.0  # weight of the measured number popularity (chosen in research: +value, keeps P(any prize) above random)
+POP_WEIGHT = 8.0  # measured popularity weight: keeps the chance of >=1 prize near the maximum while raising value (research 11/2026)
 
 
 def popularity_penalty(game: Game, lines: np.ndarray, last_main: set[int], past: set[tuple],

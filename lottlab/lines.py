@@ -13,13 +13,14 @@ import sys
 import numpy as np
 
 from .analysis import simulate_set
+from .coverage import prize_stats
 from .cli import CONFIG, min_jackpot
 from .games import GAMES, Game, check_line
 from .generator import generate
 from .popularity import set_value_exact
 from .store import DATA, load_draws, read_json, write_json
 
-SIZES = [1, 5, 10, 20, 30, 50, 75, 100]
+SIZES = [1, 5, 10, 15, 20, 25, 30, 35, 50, 75, 100]
 
 
 def study_lines(game: Game, price: float) -> dict | None:
@@ -47,6 +48,7 @@ def study_lines(game: Game, price: float) -> dict | None:
         sv = set_value_exact(game, lines, pay, sales, J)
         v = sv["value_set"] / price
         sim = simulate_set(game, lines, 20000)
+        ps = prize_stats(game, lines, pay, price, n=60000)
         cost = n * price
         # real replay on qualifying draws (numbers only from data before each draw)
         won = spent = 0.0
@@ -62,7 +64,7 @@ def study_lines(game: Game, price: float) -> dict | None:
         years = len(q_idx) / per_year if per_year else 1
         out.append({
             "lines": n, "cost_per_draw": round(cost, 2), "per_dollar": round(v, 3),
-            "p_any_prize": round(sim["p_any"], 4), "p_jackpot": n * p1,
+            "p_any_prize": round(ps["p_any"], 4), "p_recoup": round(ps["p_recoup"], 4), "p_jackpot": n * p1,
             "jackpot_one_in": round(1 / (n * p1)),
             "expected_loss_per_draw": round(cost * (1 - v), 2),
             "expected_loss_per_year": round(cost * (1 - v) * per_year, 0),
@@ -84,8 +86,8 @@ if __name__ == "__main__":
         write_json(DATA / g.id / "lines.json", res)
         print(f"\n[{g.name}] jackpot ≥ ${res['threshold']/1e6:.0f}M (typical ${res['typical_jackpot']/1e6:.0f}M), "
               f"{res['draws_per_year']} draws/yr, {res['qualifying_draws']} past qualifying draws")
-        print(f"  {'lines':>5} {'cost':>7} {'$/1':>5} {'P(prize)':>8} {'jackpot 1 in':>13} {'loss/draw':>9} {'loss/yr':>8} {'real/yr':>8} {'pop':>5}")
+        print(f"  {'lines':>5} {'cost':>7} {'$/1':>5} {'P(prize)':>8} {'recoup':>7} {'jackpot 1 in':>13} {'loss/draw':>9} {'loss/yr':>8} {'real/yr':>8} {'pop':>5}")
         for r in res["sizes"]:
-            print(f"  {r['lines']:>5} {r['cost_per_draw']:>7.2f} {r['per_dollar']:>5.3f} {r['p_any_prize']:>8.1%} "
+            print(f"  {r['lines']:>5} {r['cost_per_draw']:>7.2f} {r['per_dollar']:>5.3f} {r['p_any_prize']:>8.1%} {r['p_recoup']:>7.1%} "
                   f"{r['jackpot_one_in']:>13,} {r['expected_loss_per_draw']:>9.2f} {r['expected_loss_per_year']:>8,.0f} "
                   f"{r['real_net_per_year']:>8,.0f} {r['line_popularity']:>5.2f}")
