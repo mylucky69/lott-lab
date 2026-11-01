@@ -58,10 +58,10 @@
   "fetch_ok": true,
   "error": null,
   "changed": false,
-  "checked_at": "2026-11-01T12:27+11:00",
+  "checked_at": "2026-11-02T00:35+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-01T12:27+11:00",
-  "history_years": 0
+  "last_ok": "2026-11-02T00:35+11:00",
+  "history_years": 32
  },
  "config": {
   "lines": "auto",
@@ -623,7 +623,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 50000000.0
   },
@@ -683,7 +684,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 40000000.0
   },
@@ -743,7 +745,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 30000000.0
   },
@@ -803,7 +806,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 20000000.0
   },
@@ -863,7 +867,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 15000000.0
   },
@@ -923,7 +928,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 8000000.0
   },
@@ -983,7 +989,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 4000000.0
   },
@@ -1043,7 +1050,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 8000000.0
   },
@@ -1103,7 +1111,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 4000000.0
   },
@@ -1163,7 +1172,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 4000000.0
   },
@@ -1223,7 +1233,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 4000000.0
   },
@@ -1283,7 +1294,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 40000000.0
   },
@@ -1343,7 +1355,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 30000000.0
   },
@@ -1403,7 +1416,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 20000000.0
   },
@@ -1463,7 +1477,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 15000000.0
   }

@@ -52,10 +52,10 @@
   "fetch_ok": true,
   "error": null,
   "changed": false,
-  "checked_at": "2026-11-01T12:27+11:00",
+  "checked_at": "2026-11-02T00:39+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-01T12:27+11:00",
-  "history_years": 0
+  "last_ok": "2026-11-02T00:39+11:00",
+  "history_years": 41
  },
  "config": {
   "lines": "auto",
@@ -459,7 +459,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 20000000.0
   },
@@ -512,7 +513,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -565,7 +567,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -618,7 +621,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -671,7 +675,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -724,7 +729,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -777,7 +783,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -830,7 +837,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 10000000.0
   },
@@ -883,7 +891,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 20000000.0
   },
@@ -936,7 +945,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -989,7 +999,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -1042,7 +1053,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -1095,7 +1107,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -1148,7 +1161,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 10000000.0
   },
@@ -1201,7 +1215,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 20000000.0
   }
@@ -1224,322 +1239,322 @@
   }
  },
  "stats": {
-  "n_draws": 460,
-  "first": "2018-01-06",
+  "n_draws": 2098,
+  "first": "1986-08-30",
   "last": "2026-10-31",
   "numbers": [
    {
     "n": 1,
-    "count": 73,
+    "count": 319,
     "recent": 3,
     "gap": 2
    },
    {
     "n": 2,
-    "count": 58,
+    "count": 248,
     "recent": 5,
     "gap": 3
    },
    {
     "n": 3,
-    "count": 65,
+    "count": 292,
     "recent": 4,
     "gap": 0
    },
    {
     "n": 4,
-    "count": 44,
+    "count": 250,
     "recent": 2,
     "gap": 0
    },
    {
     "n": 5,
-    "count": 58,
+    "count": 290,
     "recent": 2,
     "gap": 8
    },
    {
     "n": 6,
-    "count": 68,
+    "count": 290,
     "recent": 4,
     "gap": 5
    },
    {
     "n": 7,
-    "count": 59,
+    "count": 290,
     "recent": 1,
     "gap": 15
    },
    {
     "n": 8,
-    "count": 72,
+    "count": 299,
     "recent": 2,
     "gap": 14
    },
    {
     "n": 9,
-    "count": 63,
+    "count": 276,
     "recent": 4,
     "gap": 4
    },
    {
     "n": 10,
-    "count": 73,
+    "count": 278,
     "recent": 1,
     "gap": 6
    },
    {
     "n": 11,
-    "count": 73,
+    "count": 306,
     "recent": 3,
     "gap": 2
    },
    {
     "n": 12,
-    "count": 61,
+    "count": 294,
     "recent": 1,
     "gap": 14
    },
    {
     "n": 13,
-    "count": 62,
+    "count": 278,
     "recent": 5,
     "gap": 1
    },
    {
     "n": 14,
-    "count": 59,
+    "count": 245,
     "recent": 2,
     "gap": 16
    },
    {
     "n": 15,
-    "count": 61,
+    "count": 282,
     "recent": 5,
     "gap": 2
    },
    {
     "n": 16,
-    "count": 66,
+    "count": 290,
     "recent": 2,
     "gap": 3
    },
    {
     "n": 17,
-    "count": 70,
+    "count": 264,
     "recent": 4,
     "gap": 8
    },
    {
     "n": 18,
-    "count": 58,
+    "count": 302,
     "recent": 2,
     "gap": 1
    },
    {
     "n": 19,
-    "count": 62,
+    "count": 292,
     "recent": 0,
     "gap": 22
    },
    {
     "n": 20,
-    "count": 49,
+    "count": 265,
     "recent": 3,
     "gap": 4
    },
    {
     "n": 21,
-    "count": 61,
+    "count": 284,
     "recent": 2,
     "gap": 16
    },
    {
     "n": 22,
-    "count": 63,
+    "count": 299,
     "recent": 4,
     "gap": 2
    },
    {
     "n": 23,
-    "count": 68,
+    "count": 267,
     "recent": 2,
     "gap": 0
    },
    {
     "n": 24,
-    "count": 61,
+    "count": 285,
     "recent": 2,
     "gap": 15
    },
    {
     "n": 25,
-    "count": 48,
+    "count": 283,
     "recent": 3,
     "gap": 5
    },
    {
     "n": 26,
-    "count": 56,
+    "count": 282,
     "recent": 1,
     "gap": 12
    },
    {
     "n": 27,
-    "count": 57,
+    "count": 268,
     "recent": 5,
     "gap": 5
    },
    {
     "n": 28,
-    "count": 47,
+    "count": 248,
     "recent": 2,
     "gap": 12
    },
    {
     "n": 29,
-    "count": 65,
+    "count": 279,
     "recent": 1,
     "gap": 16
    },
    {
     "n": 30,
-    "count": 59,
+    "count": 260,
     "recent": 4,
     "gap": 2
    },
    {
     "n": 31,
-    "count": 63,
+    "count": 283,
     "recent": 2,
     "gap": 5
    },
    {
     "n": 32,
-    "count": 69,
+    "count": 290,
     "recent": 6,
     "gap": 1
    },
    {
     "n": 33,
-    "count": 63,
+    "count": 291,
     "recent": 5,
     "gap": 3
    },
    {
     "n": 34,
-    "count": 57,
+    "count": 272,
     "recent": 0,
     "gap": 26
    },
    {
     "n": 35,
-    "count": 63,
+    "count": 253,
     "recent": 0,
     "gap": 34
    },
    {
     "n": 36,
-    "count": 54,
+    "count": 284,
     "recent": 3,
     "gap": 0
    },
    {
     "n": 37,
-    "count": 64,
+    "count": 282,
     "recent": 1,
     "gap": 18
    },
    {
     "n": 38,
-    "count": 67,
+    "count": 282,
     "recent": 2,
     "gap": 7
    },
    {
     "n": 39,
-    "count": 65,
+    "count": 271,
     "recent": 3,
     "gap": 0
    },
    {
     "n": 40,
-    "count": 57,
+    "count": 294,
     "recent": 4,
     "gap": 0
    },
    {
     "n": 41,
-    "count": 62,
+    "count": 294,
     "recent": 3,
     "gap": 3
    },
    {
     "n": 42,
-    "count": 72,
+    "count": 304,
     "recent": 2,
     "gap": 1
    },
    {
     "n": 43,
-    "count": 52,
+    "count": 265,
     "recent": 4,
     "gap": 3
    },
    {
     "n": 44,
-    "count": 53,
+    "count": 245,
     "recent": 2,
     "gap": 1
    },
    {
     "n": 45,
-    "count": 60,
+    "count": 273,
     "recent": 2,
     "gap": 4
    }
   ],
-  "expected_count": 61.333333333333336,
-  "chi2": 35.18478260869565,
-  "p_chi2": 0.8260314379517382,
-  "mean_overlap": 0.7407407407407407,
+  "expected_count": 279.73333333333335,
+  "chi2": 47.64823641563394,
+  "p_chi2": 0.3266029671256661,
+  "mean_overlap": 0.7949451597520267,
   "expected_overlap": 0.8,
-  "p_serial": 0.09899950570843749,
+  "p_serial": 0.7717148273292422,
   "odd": [
    {
     "odd": 0,
-    "observed": 4,
-    "expected": 4.213840045377198
+    "observed": 20,
+    "expected": 19.218774815655134
    },
    {
     "odd": 1,
-    "observed": 39,
-    "expected": 34.20646625070902
+    "observed": 150,
+    "expected": 156.01123085649462
    },
    {
     "odd": 2,
-    "observed": 93,
-    "expected": 104.51975798827756
+    "observed": 475,
+    "expected": 476.70098317262244
    },
    {
     "odd": 3,
-    "observed": 143,
-    "expected": 154.0291170353564
+    "observed": 681,
+    "expected": 702.5067120438646
    },
    {
     "odd": 4,
-    "observed": 128,
-    "expected": 115.5218377765173
+    "observed": 546,
+    "expected": 526.8800340328985
    },
    {
     "odd": 5,
-    "observed": 47,
-    "expected": 41.80790319531102
+    "observed": 201,
+    "expected": 190.68039326904898
    },
    {
     "odd": 6,
-    "observed": 6,
-    "expected": 5.701077708451503
+    "observed": 25,
+    "expected": 26.001871809415768
    }
   ]
  },
