@@ -1,0 +1,183 @@
+{
+ "game": "oz",
+ "draw": 1708,
+ "date": "2026-11-10",
+ "lock_at": "2026-11-09T17:00:00+11:00",
+ "jackpot": 4000000.0,
+ "play": false,
+ "play_reason": "Jackpot $4 triệu < $50 triệu",
+ "min_jackpot": 50000000.0,
+ "status": "preview",
+ "strategy": "balanced",
+ "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
+ "based_on": 1707,
+ "generated_at": "2026-11-04T01:28:04+11:00",
+ "locked_at": null,
+ "lines": [
+  {
+   "main": [
+    1,
+    2,
+    28,
+    29,
+    41,
+    43,
+    44
+   ]
+  },
+  {
+   "main": [
+    2,
+    3,
+    4,
+    13,
+    22,
+    33,
+    45
+   ]
+  },
+  {
+   "main": [
+    4,
+    5,
+    6,
+    15,
+    37,
+    40,
+    46
+   ]
+  },
+  {
+   "main": [
+    6,
+    10,
+    19,
+    30,
+    36,
+    41,
+    42
+   ]
+  },
+  {
+   "main": [
+    8,
+    9,
+    20,
+    23,
+    24,
+    38,
+    39
+   ]
+  },
+  {
+   "main": [
+    12,
+    25,
+    33,
+    34,
+    39,
+    40,
+    41
+   ]
+  },
+  {
+   "main": [
+    14,
+    32,
+    36,
+    37,
+    38,
+    44,
+    45
+   ]
+  },
+  {
+   "main": [
+    16,
+    17,
+    25,
+    30,
+    31,
+    32,
+    47
+   ]
+  },
+  {
+   "main": [
+    18,
+    21,
+    26,
+    27,
+    31,
+    34,
+    35
+   ]
+  },
+  {
+   "main": [
+    24,
+    35,
+    42,
+    43,
+    45,
+    46,
+    47
+   ]
+  }
+ ],
+ "rules": 5,
+ "lines_key": "auto|{'max_expected_loss_per_draw': 12, 'min': 5, 'max': 50, 'target_p_any': 0.5, 'goal': 'p_any'}|4000000.0",
+ "lines_plan": {
+  "mode": "auto",
+  "lines": 10,
+  "budget": 12.0,
+  "target_p_any": 0.5,
+  "goal": "p_any",
+  "table": [
+   {
+    "lines": 5,
+    "per_dollar": 0.373,
+    "expected_loss": 4.57,
+    "p_any": 0.0993,
+    "p_recoup": 0.0993,
+    "cost": 7.3
+   },
+   {
+    "lines": 10,
+    "per_dollar": 0.357,
+    "expected_loss": 9.39,
+    "p_any": 0.1918,
+    "p_recoup": 0.1918,
+    "cost": 14.6
+   },
+   {
+    "lines": 15,
+    "per_dollar": 0.352,
+    "expected_loss": 14.18,
+    "p_any": 0.2777,
+    "p_recoup": 0.0974,
+    "cost": 21.9
+   }
+  ],
+  "reason": "Chưa đạt 50% vì vượt trần lỗ $12/kỳ; dùng nhiều dòng nhất trong trần"
+ },
+ "simulation": {
+  "draws": 20000,
+  "p_any": 0.19315,
+  "mean_prizes": 0.2008,
+  "p_any_independent": 0.18182700049814005,
+  "mean_prizes_theory": 0.19868122399181484
+ },
+ "prize_stats": {
+  "p_any": 0.1886,
+  "p_recoup": 0.1886,
+  "mean_return": 4.1861
+ },
+ "simulation_random": {
+  "draws": 20000,
+  "p_any": 0.1814,
+  "mean_prizes": 0.1983,
+  "p_any_independent": 0.18182700049814005,
+  "mean_prizes_theory": 0.19868122399181484
+ }
+}

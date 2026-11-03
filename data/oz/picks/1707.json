@@ -7,7 +7,7 @@
  "play": true,
  "play_reason": "Jackpot $60 triệu ≥ $50 triệu",
  "min_jackpot": 50000000.0,
- "status": "locked",
+ "status": "settled",
  "strategy": "balanced",
  "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
  "based_on": 1706,
@@ -486,5 +486,239 @@
   "mean_prizes": 0.70065,
   "p_any_independent": 0.50459771954327,
   "mean_prizes_theory": 0.695384283971352
- }
+ },
+ "result": {
+  "draw": 1707,
+  "date": "2026-11-03",
+  "main": [
+   7,
+   18,
+   19,
+   22,
+   27,
+   30,
+   38
+  ],
+  "supp": [
+   3,
+   23,
+   45
+  ]
+ },
+ "checks": [
+  {
+   "m": 0,
+   "s": 2,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 2,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 3,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 1,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 1,
+   "pb": false,
+   "div": null
+  }
+ ],
+ "divisions": {},
+ "prize": 0.0,
+ "best": 3,
+ "dividends_known": true
 }
