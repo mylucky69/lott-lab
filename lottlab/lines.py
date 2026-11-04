@@ -72,8 +72,19 @@ def study_lines(game: Game, price: float) -> dict | None:
             "real_net": round(won - spent, 2), "real_net_per_year": round((won - spent) / years, 0),
             "line_popularity": round(sv["line_pop"], 3),
         })
+    # calibration: does the predicted chance of >= 1 prize match real draws?
+    calib = []
+    for n in (10, 20, 35, 50):
+        pred = next((r["p_any_prize"] for r in out if r["lines"] == n), None)
+        hits = tested = 0
+        for i in range(30, len(draws)):
+            d = draws[i]
+            L = generate(game, draws[:i], d["draw"], "balanced", n, candidates=800, polish=50)
+            hits += any(check_line(game, l, d)["div"] for l in L)
+            tested += 1
+        calib.append({"lines": n, "predicted": pred, "real": round(hits / tested, 4), "draws": tested, "hits": hits})
     return {"game": game.id, "threshold": t, "typical_jackpot": J, "draws_per_year": per_year,
-            "qualifying_draws": len(q_idx), "price": price, "sizes": out}
+            "qualifying_draws": len(q_idx), "price": price, "sizes": out, "calibration": calib}
 
 
 if __name__ == "__main__":
@@ -91,3 +102,5 @@ if __name__ == "__main__":
             print(f"  {r['lines']:>5} {r['cost_per_draw']:>7.2f} {r['per_dollar']:>5.3f} {r['p_any_prize']:>8.1%} {r['p_recoup']:>7.1%} "
                   f"{r['jackpot_one_in']:>13,} {r['expected_loss_per_draw']:>9.2f} {r['expected_loss_per_year']:>8,.0f} "
                   f"{r['real_net_per_year']:>8,.0f} {r['line_popularity']:>5.2f}")
+        for c in res["calibration"]:
+            print(f"  calibration {c['lines']} lines: predicted {c['predicted']:.1%}, real {c['real']:.1%} ({c['hits']}/{c['draws']} draws)")

@@ -1,13 +1,10 @@
 name: Cập nhật kết quả
 
-# Giờ GitHub là UTC. Sydney = UTC+10 (AEST) hoặc UTC+11 (AEDT).
-# 06:20–13:20 UTC = khoảng 16:20–00:20 giờ Sydney: đủ để chốt số lúc 17:00
-# ngày trước kỳ quay và lấy kết quả ngay sau giờ quay (~20:30–21:00).
-# 21:20 UTC = sáng hôm sau, để lấy bảng tiền thưởng công bố muộn.
+# GitHub hay trễ hoặc bỏ các lần chạy theo lịch khi quá tải, nên chạy mỗi 30 phút cả ngày.
+# Mỗi lần chạy chỉ tải dữ liệu khi đã đến giờ có kết quả mới (vài trang mỗi kỳ quay).
 on:
   schedule:
-    - cron: "20 6-13 * * *"
-    - cron: "20 21 * * *"
+    - cron: "20,50 * * * *"
   workflow_dispatch:
 
 permissions:

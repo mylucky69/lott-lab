@@ -81,6 +81,7 @@ function renderOverview() {
   const cards = ids.map((id) => {
     const g = state.games[id], n = g.next, v = g.value || {};
     if (!n) return "";
+    if (n.status === "preview" && n.lock_at && new Date(n.lock_at) <= new Date()) n.status = "locked";
     const cost = g.config.ticket_price ? n.lines.length * g.config.ticket_price : null;
     if (n.play === true && cost) total += cost;
     const cls = n.play === true ? "go" : n.play === false ? "wait" : "unknown";
@@ -204,7 +205,7 @@ function playBanner(g, n) {
   const cost = g.config.ticket_price ? ` · Chi phí ${fmtMoney(Math.round(n.lines.length * g.config.ticket_price * 100) / 100)}` : "";
   const plan = n.lines_plan || {};
   const ps = n.prize_stats;
-  const chance = ps ? ` · Trúng ≥ 1 giải ${pct(ps.p_any)}, thu lại đủ tiền vé ${pct(ps.p_recoup)}` : "";
+  const chance = ps ? ` · Khả năng trúng ≥ 1 giải ${pct(ps.p_any)} (khoảng ${Math.round((1 - ps.p_any) * 10)}/10 kỳ sẽ không trúng gì), thu lại đủ tiền vé ${pct(ps.p_recoup)}` : "";
   const linesTxt = (plan.mode === "auto" ? ` · ${n.lines.length} dòng (tự động: ${esc(plan.reason || "")})` : ` · ${n.lines.length} dòng`) + chance;
   return `<div class="play ${cls}"><strong>${head}</strong><span>${esc(n.play_reason || "")}${linesTxt}${cost}${v}</span>
     <span class="muted">Quy tắc: chỉ chơi khi jackpot ≥ ${million(g.config.min_jackpot)}${n.status === "locked" ? " · quyết định đã chốt" : " · có thể thay đổi đến lúc chốt"}</span></div>`;
@@ -212,6 +213,7 @@ function playBanner(g, n) {
 
 function nextCard(g) {
   const n = g.next;
+  if (n && n.status === "preview" && n.lock_at && new Date(n.lock_at) <= new Date()) n.status = "locked";
   if (!n) return `<section class="card"><h2>Kỳ quay tiếp theo</h2><p class="muted">Chưa có kết quả nào nên chưa tạo được bộ số. Hệ thống đang tải dữ liệu.</p>${statusWarn(g)}</section>`;
   const sim = n.simulation || {}, rnd = n.simulation_random || {};
   const isPB = !!g.meta.pb_pool;
@@ -337,6 +339,7 @@ function trackingCard(g) {
     <div class="stats-row">
       ${tile("Số kỳ đã theo dõi", fmtInt(tot.draws || 0), `${fmtInt(tot.lines || 0)} dòng`)}
       ${tile("Dòng trúng giải", fmtInt(tot.prize_lines || 0), `Kỳ vọng: ${num(expected, 1)}`)}
+      ${tot.with_expectation ? tile("Số kỳ có ≥ 1 giải", `${fmtInt(tot.hit_draws)} / ${fmtInt(tot.draws)}`, `Kỳ vọng ≈ ${num(tot.expected_hit_draws, 1)} kỳ (theo tỉ lệ dự tính từng kỳ)`) : ""}
       ${tile("Tổng tiền thưởng", fmtMoney(tot.prize || 0), tot.cost != null ? `Chi phí vé: ${fmtMoney(tot.cost)}` : "Điền giá vé trong config.json để tính lãi/lỗ")}
       ${tot.played && g.config && g.config.min_jackpot ? tile(`Chỉ các kỳ "nên chơi" (${fmtInt(tot.played.draws)} kỳ)`,
         tot.played.net != null ? (tot.played.net >= 0 ? "+" : "−") + fmtMoney(Math.abs(tot.played.net)) : "—",
@@ -502,6 +505,11 @@ function linesCard(g) {
     <div class="sub" style="margin-bottom:12px">Ở jackpot điển hình của các kỳ đủ điều kiện (${million(L.typical_jackpot)}), ${num(L.draws_per_year, 1)} kỳ/năm. “Thật/năm” = chạy lùi trên ${L.qualifying_draws} kỳ đủ điều kiện đã qua.</div>
     <div class="table-scroll"><table><thead><tr><th>Dòng/kỳ</th><th class="num">Chi/kỳ</th><th class="num">Nhận lại / $1</th><th class="num">Có ≥ 1 giải</th><th class="num">Thu lại đủ tiền vé</th><th class="num">Trúng jackpot</th><th class="num">Lỗ kỳ vọng/năm</th><th class="num">Thật/năm</th></tr></thead><tbody>${rows}</tbody></table></div>
     <p class="sub" style="margin-top:10px">Nhiều dòng hơn thì khả năng trúng ít nhất 1 giải tăng, nhưng khả năng tiền thưởng đủ bù tiền vé lại giảm (thường chỉ trúng 1 giải nhỏ trong khi đã mua nhiều vé), và lỗ kỳ vọng tăng. Ít dòng thì mỗi $1 nhận lại nhiều hơn. Chọn số dòng theo mục tiêu của bạn trong config.json (goal: p_any / recoup / loss).</p>
+    ${L.calibration ? `<h3 style="margin-top:14px">Kiểm chứng tỉ lệ trên kỳ thật</h3>
+    <div class="table-scroll"><table><thead><tr><th>Dòng/kỳ</th><th class="num">Dự tính ≥ 1 giải</th><th class="num">Thực tế</th><th class="num">Số kỳ thử</th></tr></thead><tbody>${
+      L.calibration.map((c) => `<tr><td>${c.lines}</td><td class="num">${c.predicted != null ? pct(c.predicted) : "—"}</td><td class="num">${pct(c.real)} (${fmtInt(c.hits)} kỳ)</td><td class="num">${fmtInt(c.draws)}</td></tr>`).join("")
+    }</tbody></table></div>
+    <p class="sub">Mỗi kỳ trong quá khứ, hệ thống tạo bộ số chỉ từ dữ liệu trước kỳ đó rồi so với kết quả thật. Tỉ lệ dự tính khớp thực tế, nhưng đó là tỉ lệ trung bình: một kỳ cụ thể vẫn có thể không trúng gì, và vài kỳ liền không trúng là bình thường.</p>` : ""}
     ${planRows}
   </section>`;
 }
