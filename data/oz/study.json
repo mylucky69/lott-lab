@@ -2,253 +2,253 @@
  "game": "oz",
  "price": 1.46,
  "lines": 50,
- "draws_with_jackpot": 95,
+ "draws_with_jackpot": 96,
  "from": "2025-01-07",
- "to": "2026-10-27",
+ "to": "2026-11-03",
  "years_covered": 1.8,
  "thresholds": [
   {
    "threshold": 0,
-   "draws": 95,
+   "draws": 96,
    "share_of_draws": 1.0,
    "realised": {
-    "cost": 6935.0,
-    "won": 2415.75,
-    "net": -4519.25,
-    "prize_lines": 91
+    "cost": 7008.0,
+    "won": 2368.2,
+    "net": -4639.8,
+    "prize_lines": 93
    },
-   "expected_per_dollar": 0.46,
+   "expected_per_dollar": 0.463,
    "best_draw_per_dollar": 0.897,
    "simulated": {
     "1": {
-     "p_profit": 0.0107,
-     "median": -2753.6499999999996,
+     "p_profit": 0.01065,
+     "median": -2753.8500000000004,
      "spent": 3796.0
     },
     "5": {
-     "p_profit": 0.0044,
-     "median": -13652.3,
+     "p_profit": 0.00445,
+     "median": -13655.974999999999,
      "spent": 18980.0
     },
     "10": {
-     "p_profit": 0.00845,
-     "median": -27239.625,
+     "p_profit": 0.00865,
+     "median": -27250.149999999998,
      "spent": 37960.0
     },
     "30": {
      "p_profit": 0.0056,
-     "median": -81366.42499999999,
+     "median": -81380.87500000001,
      "spent": 113880.0
     }
    }
   },
   {
    "threshold": 10000000.0,
-   "draws": 50,
-   "share_of_draws": 0.526,
+   "draws": 51,
+   "share_of_draws": 0.531,
    "realised": {
-    "cost": 3650.0,
-    "won": 941.2,
-    "net": -2708.8,
-    "prize_lines": 46
+    "cost": 3723.0,
+    "won": 984.25,
+    "net": -2738.75,
+    "prize_lines": 50
    },
-   "expected_per_dollar": 0.542,
+   "expected_per_dollar": 0.546,
    "best_draw_per_dollar": 0.897,
    "simulated": {
     "1": {
-     "p_profit": 0.0055,
-     "median": -1448.225,
-     "spent": 2001.0468
+     "p_profit": 0.00545,
+     "median": -1456.625,
+     "spent": 2016.2088999999999
     },
     "5": {
-     "p_profit": 0.003,
-     "median": -7208.800000000001,
-     "spent": 9993.6854
+     "p_profit": 0.0029,
+     "median": -7276.125,
+     "spent": 10082.256300000001
     },
     "10": {
      "p_profit": 0.0056,
-     "median": -14386.974999999999,
-     "spent": 19980.110950000002
+     "median": -14523.5,
+     "spent": 20158.99015
     },
     "30": {
-     "p_profit": 0.01005,
-     "median": -42972.025,
-     "spent": 59938.52245
+     "p_profit": 0.0091,
+     "median": -43396.075,
+     "spent": 60481.8359
     }
    }
   },
   {
    "threshold": 20000000.0,
-   "draws": 32,
-   "share_of_draws": 0.337,
+   "draws": 33,
+   "share_of_draws": 0.344,
    "realised": {
-    "cost": 2336.0,
-    "won": 622.9,
-    "net": -1713.1,
-    "prize_lines": 30
+    "cost": 2409.0,
+    "won": 720.2,
+    "net": -1688.8,
+    "prize_lines": 36
    },
-   "expected_per_dollar": 0.591,
+   "expected_per_dollar": 0.596,
    "best_draw_per_dollar": 0.897,
    "simulated": {
     "1": {
-     "p_profit": 0.0042,
-     "median": -924.5,
-     "spent": 1279.5987499999999
+     "p_profit": 0.0045,
+     "median": -944.3749999999999,
+     "spent": 1305.60865
     },
     "5": {
-     "p_profit": 0.0124,
-     "median": -4609.475,
-     "spent": 6391.442
+     "p_profit": 0.0098,
+     "median": -4717.775,
+     "spent": 6527.3570500000005
     },
     "10": {
-     "p_profit": 0.00295,
-     "median": -9223.025,
-     "spent": 12784.0374
+     "p_profit": 0.00325,
+     "median": -9425.375,
+     "spent": 13053.995050000001
     },
     "30": {
-     "p_profit": 0.0083,
-     "median": -27577.524999999998,
-     "spent": 38352.8349
+     "p_profit": 0.00835,
+     "median": -28169.225,
+     "spent": 39139.6435
     }
    }
   },
   {
    "threshold": 30000000.0,
-   "draws": 20,
-   "share_of_draws": 0.211,
+   "draws": 21,
+   "share_of_draws": 0.219,
    "realised": {
-    "cost": 1460.0,
-    "won": 405.95,
-    "net": -1054.05,
-    "prize_lines": 19
+    "cost": 1533.0,
+    "won": 531.95,
+    "net": -1001.05,
+    "prize_lines": 26
    },
-   "expected_per_dollar": 0.651,
+   "expected_per_dollar": 0.655,
    "best_draw_per_dollar": 0.897,
    "simulated": {
     "1": {
-     "p_profit": 0.00445,
-     "median": -572.75,
-     "spent": 796.4628500000001
+     "p_profit": 0.00345,
+     "median": -599.5,
+     "spent": 829.1048
     },
     "5": {
-     "p_profit": 0.0101,
-     "median": -2894.025,
-     "spent": 3994.37385
+     "p_profit": 0.01145,
+     "median": -3005.475,
+     "spent": 4150.27265
     },
     "10": {
-     "p_profit": 0.0046,
-     "median": -5773.9,
-     "spent": 7986.674499999999
+     "p_profit": 0.00435,
+     "median": -6007.75,
+     "spent": 8296.0339
     },
     "30": {
-     "p_profit": 0.00615,
-     "median": -17280.524999999998,
-     "spent": 23964.9291
+     "p_profit": 0.00665,
+     "median": -17984.9,
+     "spent": 24899.9569
     }
    }
   },
   {
    "threshold": 50000000.0,
-   "draws": 8,
-   "share_of_draws": 0.084,
+   "draws": 9,
+   "share_of_draws": 0.094,
    "realised": {
-    "cost": 584.0,
-    "won": 211.05,
-    "net": -372.95,
-    "prize_lines": 9
+    "cost": 657.0,
+    "won": 290.7,
+    "net": -366.3,
+    "prize_lines": 14
    },
-   "expected_per_dollar": 0.769,
+   "expected_per_dollar": 0.765,
    "best_draw_per_dollar": 0.897,
    "simulated": {
     "1": {
-     "p_profit": 0.00875,
-     "median": -223.025,
-     "spent": 320.1196
+     "p_profit": 0.00845,
+     "median": -250.25,
+     "spent": 357.44449999999995
     },
     "5": {
-     "p_profit": 0.00495,
-     "median": -1137.175,
-     "spent": 1599.38255
+     "p_profit": 0.0052,
+     "median": -1277.8249999999998,
+     "spent": 1781.1853999999998
     },
     "10": {
-     "p_profit": 0.0091,
-     "median": -2285.6,
-     "spent": 3196.43275
+     "p_profit": 0.01025,
+     "median": -2553.725,
+     "spent": 3557.6695999999997
     },
     "30": {
-     "p_profit": 0.00235,
-     "median": -6858.749999999999,
-     "spent": 9594.51045
+     "p_profit": 0.0029,
+     "median": -7669.425,
+     "spent": 10676.257300000001
     }
    }
   },
   {
    "threshold": 75000000.0,
    "draws": 1,
-   "share_of_draws": 0.011,
+   "share_of_draws": 0.01,
    "realised": {
     "cost": 73.0,
-    "won": 0.0,
-    "net": -73.0,
-    "prize_lines": 0
+    "won": 16.65,
+    "net": -56.35,
+    "prize_lines": 1
    },
    "expected_per_dollar": 0.897,
    "best_draw_per_dollar": 0.897,
    "simulated": {
     "1": {
-     "p_profit": 0.00915,
+     "p_profit": 0.0083,
      "median": 0.0,
-     "spent": 40.1135
+     "spent": 38.909
     },
     "5": {
-     "p_profit": 0.01045,
-     "median": -131.5,
-     "spent": 200.79015
+     "p_profit": 0.0085,
+     "median": -129.35,
+     "spent": 197.21315
     },
     "10": {
-     "p_profit": 0.0098,
+     "p_profit": 0.009,
      "median": -275.35,
-     "spent": 399.2005
+     "spent": 394.84605
     },
     "30": {
-     "p_profit": 0.0033,
-     "median": -853.3999999999999,
-     "spent": 1200.4010500000002
+     "p_profit": 0.0038,
+     "median": -843.1500000000001,
+     "spent": 1185.04185
     }
    }
   },
   {
    "threshold": 100000000.0,
    "draws": 1,
-   "share_of_draws": 0.011,
+   "share_of_draws": 0.01,
    "realised": {
     "cost": 73.0,
-    "won": 0.0,
-    "net": -73.0,
-    "prize_lines": 0
+    "won": 16.65,
+    "net": -56.35,
+    "prize_lines": 1
    },
    "expected_per_dollar": 0.897,
    "best_draw_per_dollar": 0.897,
    "simulated": {
     "1": {
-     "p_profit": 0.00925,
+     "p_profit": 0.008,
      "median": 0.0,
-     "spent": 39.5149
+     "spent": 39.3105
     },
     "5": {
-     "p_profit": 0.01185,
+     "p_profit": 0.0098,
      "median": -129.35,
-     "spent": 199.03085
+     "spent": 196.6766
     },
     "10": {
-     "p_profit": 0.0105,
-     "median": -277.5,
-     "spent": 399.5436
+     "p_profit": 0.01045,
+     "median": -275.35,
+     "spent": 395.1782
     },
     "30": {
-     "p_profit": 0.00405,
-     "median": -851.5,
-     "spent": 1199.77325
+     "p_profit": 0.0042,
+     "median": -844.0500000000002,
+     "spent": 1187.29025
     }
    }
   }

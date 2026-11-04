@@ -2,14 +2,14 @@
  "games": {
   "oz": {
    "threshold": 50000000.0,
-   "draws": 8,
-   "per_year": 4.4,
-   "per_dollar": 0.783,
-   "per_dollar_random_lines": 0.769,
-   "spend_per_year": 324.0,
-   "expected_loss_per_year": 70.0,
-   "real_net": -372.95,
-   "real_net_per_year": -207.0,
+   "draws": 9,
+   "per_year": 4.9,
+   "per_dollar": 0.779,
+   "per_dollar_random_lines": 0.765,
+   "spend_per_year": 361.0,
+   "expected_loss_per_year": 80.0,
+   "real_net": -366.3,
+   "real_net_per_year": -201.0,
    "name": "Oz Lotto"
   },
   "powerball": {
@@ -20,28 +20,28 @@
    "per_dollar_random_lines": 0.549,
    "spend_per_year": 604.0,
    "expected_loss_per_year": 271.0,
-   "real_net": -626.55,
-   "real_net_per_year": -344.0,
+   "real_net": -768.95,
+   "real_net_per_year": -422.0,
    "name": "Powerball"
   },
   "saturday": {
    "threshold": 12000000.0,
    "draws": 10,
    "per_year": 5.5,
-   "per_dollar": 0.616,
+   "per_dollar": 0.617,
    "per_dollar_random_lines": 0.587,
    "spend_per_year": 268.0,
    "expected_loss_per_year": 103.0,
-   "real_net": -369.35,
-   "real_net_per_year": -203.0,
+   "real_net": -388.0,
+   "real_net_per_year": -213.0,
    "name": "Saturday Lotto"
   }
  },
  "with_powerball": {
-  "per_year": 17.6,
-  "spend_per_year": 1196.0,
-  "expected_loss_per_year": 444.0,
-  "real_net_per_year": -754.0,
+  "per_year": 18.1,
+  "spend_per_year": 1233.0,
+  "expected_loss_per_year": 454.0,
+  "real_net_per_year": -836.0,
   "games": [
    "Oz Lotto",
    "Powerball",
@@ -49,10 +49,10 @@
   ]
  },
  "without_powerball": {
-  "per_year": 9.9,
-  "spend_per_year": 592.0,
-  "expected_loss_per_year": 173.0,
-  "real_net_per_year": -410.0,
+  "per_year": 10.4,
+  "spend_per_year": 629.0,
+  "expected_loss_per_year": 183.0,
+  "real_net_per_year": -414.0,
   "games": [
    "Oz Lotto",
    "Saturday Lotto"

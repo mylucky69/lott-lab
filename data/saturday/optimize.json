@@ -4,7 +4,7 @@
  "draws": 96,
  "years": 1.82,
  "sales_model": {
-  "a": 34143300.49163089,
+  "a": 34143300.4916309,
   "b": 2.00394636001484,
   "r2": 0.286
  },
@@ -32,7 +32,7 @@
    "jackpot": 10000000.0,
    "sales": 54182764,
    "per_dollar": 0.507,
-   "set_per_dollar": 0.527
+   "set_per_dollar": 0.526
   },
   {
    "jackpot": 15000000.0,
@@ -50,13 +50,13 @@
    "jackpot": 25000000.0,
    "sales": 84241959,
    "per_dollar": 0.622,
-   "set_per_dollar": 0.652
+   "set_per_dollar": 0.651
   },
   {
    "jackpot": 30000000.0,
    "sales": 94261691,
    "per_dollar": 0.644,
-   "set_per_dollar": 0.676
+   "set_per_dollar": 0.675
   },
   {
    "jackpot": 40000000.0,
@@ -74,50 +74,50 @@
    "jackpot": 60000000.0,
    "sales": 154380082,
    "per_dollar": 0.716,
-   "set_per_dollar": 0.754
+   "set_per_dollar": 0.753
   },
   {
    "jackpot": 70000000.0,
    "sales": 174419546,
    "per_dollar": 0.729,
-   "set_per_dollar": 0.768
+   "set_per_dollar": 0.767
   },
   {
    "jackpot": 80000000.0,
    "sales": 194459009,
    "per_dollar": 0.739,
-   "set_per_dollar": 0.779
+   "set_per_dollar": 0.778
   },
   {
    "jackpot": 100000000.0,
    "sales": 234537936,
    "per_dollar": 0.755,
-   "set_per_dollar": 0.796
+   "set_per_dollar": 0.795
   },
   {
    "jackpot": 120000000.0,
    "sales": 274616864,
    "per_dollar": 0.766,
-   "set_per_dollar": 0.808
+   "set_per_dollar": 0.807
   },
   {
    "jackpot": 150000000.0,
    "sales": 334735254,
    "per_dollar": 0.777,
-   "set_per_dollar": 0.82
+   "set_per_dollar": 0.819
   },
   {
    "jackpot": 200000000.0,
    "sales": 434932572,
    "per_dollar": 0.789,
-   "set_per_dollar": 0.833
+   "set_per_dollar": 0.832
   }
  ],
  "curve_best": {
   "jackpot": 200000000.0,
   "sales": 434932572,
   "per_dollar": 0.789,
-  "set_per_dollar": 0.833
+  "set_per_dollar": 0.832
  },
  "break_even": null,
  "break_even_set": null,
@@ -130,8 +130,8 @@
    "per_dollar_random_lines": 0.462,
    "spend_per_year": 2573.0,
    "expected_loss_per_year": 1340.0,
-   "real_net": -3430.7,
-   "real_net_per_year": -1884.0
+   "real_net": -3349.1,
+   "real_net_per_year": -1839.0
   },
   {
    "threshold": 6000000.0,
@@ -141,30 +141,30 @@
    "per_dollar_random_lines": 0.512,
    "spend_per_year": 1474.0,
    "expected_loss_per_year": 689.0,
-   "real_net": -1976.2,
-   "real_net_per_year": -1085.0
+   "real_net": -1901.8,
+   "real_net_per_year": -1045.0
   },
   {
    "threshold": 10000000.0,
    "draws": 16,
    "per_year": 8.8,
-   "per_dollar": 0.594,
+   "per_dollar": 0.595,
    "per_dollar_random_lines": 0.566,
    "spend_per_year": 429.0,
    "expected_loss_per_year": 174.0,
-   "real_net": -567.8,
-   "real_net_per_year": -312.0
+   "real_net": -606.4,
+   "real_net_per_year": -333.0
   },
   {
    "threshold": 12000000.0,
    "draws": 10,
    "per_year": 5.5,
-   "per_dollar": 0.616,
+   "per_dollar": 0.617,
    "per_dollar_random_lines": 0.587,
    "spend_per_year": 268.0,
    "expected_loss_per_year": 103.0,
-   "real_net": -369.35,
-   "real_net_per_year": -203.0
+   "real_net": -388.0,
+   "real_net_per_year": -213.0
   },
   {
    "threshold": 20000000.0,
@@ -174,8 +174,8 @@
    "per_dollar_random_lines": 0.583,
    "spend_per_year": 241.0,
    "expected_loss_per_year": 93.0,
-   "real_net": -351.45,
-   "real_net_per_year": -193.0
+   "real_net": -359.8,
+   "real_net_per_year": -198.0
   },
   {
    "threshold": 30000000.0,
@@ -193,11 +193,11 @@
   "threshold": 12000000.0,
   "draws": 10,
   "per_year": 5.5,
-  "per_dollar": 0.616,
+  "per_dollar": 0.617,
   "per_dollar_random_lines": 0.587,
   "spend_per_year": 268.0,
   "expected_loss_per_year": 103.0,
-  "real_net": -369.35,
-  "real_net_per_year": -203.0
+  "real_net": -388.0,
+  "real_net_per_year": -213.0
  }
 }
