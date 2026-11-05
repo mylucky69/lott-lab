@@ -52404,5 +52404,73 @@
    "national-lottery"
   ],
   "jackpot": 20000000.0
+ },
+ {
+  "game": "powerball",
+  "draw": 1590,
+  "date": "2026-11-05",
+  "main": [
+   9,
+   17,
+   22,
+   24,
+   30,
+   33,
+   35
+  ],
+  "supp": [
+   13
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 113078.55
+   },
+   {
+    "div": 3,
+    "winners": 53,
+    "amount": 13194.35
+   },
+   {
+    "div": 4,
+    "winners": 952,
+    "amount": 640.8
+   },
+   {
+    "div": 5,
+    "winners": 2152,
+    "amount": 214.35
+   },
+   {
+    "div": 6,
+    "winners": 31370,
+    "amount": 91.55
+   },
+   {
+    "div": 7,
+    "winners": 40631,
+    "amount": 54.95
+   },
+   {
+    "div": 8,
+    "winners": 199753,
+    "amount": 23.85
+   },
+   {
+    "div": 9,
+    "winners": 580661,
+    "amount": 14.1
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ],
+  "jackpot": 30000000.0
  }
 ]
