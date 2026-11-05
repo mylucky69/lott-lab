@@ -68,16 +68,11 @@
  },
  "status": {
   "fetch_ok": true,
-  "error": "national-lottery: https://australia.national-lottery.com/powerball/results-archive-2026: HTTPSConnectionPool(host='australia.national-lottery.com', port=443): Max retries exceeded with url: /powerball/results-archive-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='australia.national-lottery.com', port=443) at 0x7fd61b0d8680>, 'Connection to australia.national-lottery.com timed out. (con",
-  "changed": true,
-  "checked_at": "2026-11-06T05:08+11:00",
-  "sources_ok": [
-   "lotteryextreme"
-  ],
-  "new_draws": [
-   1590
-  ],
-  "last_ok": "2026-11-06T05:08+11:00",
+  "error": null,
+  "changed": false,
+  "checked_at": "2026-11-06T10:43+11:00",
+  "new_draws": [],
+  "last_ok": "2026-11-06T10:43+11:00",
   "history_years": 30
  },
  "config": {
