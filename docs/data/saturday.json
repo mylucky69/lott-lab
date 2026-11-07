@@ -50,11 +50,17 @@
  },
  "status": {
   "fetch_ok": true,
-  "error": null,
-  "changed": false,
-  "checked_at": "2026-11-07T14:17+11:00",
-  "new_draws": [],
-  "last_ok": "2026-11-07T14:17+11:00",
+  "error": "dividends #4727: https://www.lotteryextreme.com/australia/saturdaylotto-dividends(2026-11-07): HTTP 404",
+  "changed": true,
+  "checked_at": "2026-11-07T21:28+11:00",
+  "sources_ok": [
+   "lotteryextreme",
+   "national-lottery"
+  ],
+  "new_draws": [
+   4727
+  ],
+  "last_ok": "2026-11-07T21:28+11:00",
   "history_years": 41
  },
  "config": {
@@ -72,344 +78,120 @@
  },
  "next": {
   "game": "saturday",
-  "draw": 4727,
-  "date": "2026-11-07",
-  "lock_at": "2026-11-06T17:00:00+11:00",
-  "jackpot": 10000000.0,
-  "play": false,
-  "play_reason": "Jackpot $10 triệu < $12 triệu",
+  "draw": 4729,
+  "date": "2026-11-14",
+  "lock_at": "2026-11-13T17:00:00+11:00",
+  "jackpot": null,
+  "play": null,
+  "play_reason": "Chưa có thông tin jackpot",
   "min_jackpot": 12000000.0,
-  "status": "locked",
+  "status": "preview",
   "strategy": "balanced",
   "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
-  "based_on": 4725,
-  "generated_at": "2026-11-01T12:27:28+11:00",
-  "locked_at": "2026-11-06T22:37:58+11:00",
+  "based_on": 4727,
+  "generated_at": "2026-11-07T21:29:08+11:00",
+  "locked_at": null,
   "lines": [
    {
     "main": [
-     1,
-     2,
-     3,
-     12,
-     38,
-     42
-    ]
-   },
-   {
-    "main": [
-     1,
-     9,
-     10,
-     21,
-     23,
-     40
-    ]
-   },
-   {
-    "main": [
-     2,
-     4,
-     11,
-     18,
-     31,
-     36
-    ]
-   },
-   {
-    "main": [
-     2,
-     29,
-     30,
-     33,
-     34,
-     37
-    ]
-   },
-   {
-    "main": [
-     3,
-     4,
-     16,
-     32,
-     33,
-     41
-    ]
-   },
-   {
-    "main": [
-     4,
-     17,
+     6,
+     14,
      25,
-     30,
-     35,
-     43
-    ]
-   },
-   {
-    "main": [
-     5,
-     6,
-     10,
-     25,
-     34,
-     41
-    ]
-   },
-   {
-    "main": [
-     5,
-     19,
-     27,
-     31,
-     37,
-     42
-    ]
-   },
-   {
-    "main": [
-     6,
-     8,
-     12,
-     35,
-     37,
-     45
-    ]
-   },
-   {
-    "main": [
-     6,
-     15,
-     16,
-     20,
-     43,
-     44
-    ]
-   },
-   {
-    "main": [
-     7,
-     11,
-     19,
-     21,
-     33,
-     43
-    ]
-   },
-   {
-    "main": [
-     7,
-     13,
-     16,
-     23,
-     29,
-     45
-    ]
-   },
-   {
-    "main": [
-     8,
-     9,
-     26,
-     32,
-     34,
-     44
-    ]
-   },
-   {
-    "main": [
-     9,
-     20,
-     24,
      28,
-     30,
-     41
-    ]
-   },
-   {
-    "main": [
-     10,
-     15,
-     24,
-     27,
-     29,
-     38
-    ]
-   },
-   {
-    "main": [
-     12,
-     15,
-     30,
-     31,
      39,
      40
     ]
    },
    {
     "main": [
-     13,
-     14,
-     20,
-     22,
-     34,
-     40
-    ]
-   },
-   {
-    "main": [
-     14,
-     28,
-     29,
-     31,
-     32,
-     35
-    ]
-   },
-   {
-    "main": [
-     14,
-     36,
-     37,
-     38,
-     41,
-     44
-    ]
-   },
-   {
-    "main": [
+     15,
      16,
-     17,
-     21,
-     28,
-     38,
-     39
-    ]
-   },
-   {
-    "main": [
-     17,
-     20,
-     26,
-     27,
-     36,
-     45
-    ]
-   },
-   {
-    "main": [
-     18,
-     19,
-     22,
-     23,
-     39,
-     44
-    ]
-   },
-   {
-    "main": [
      23,
      24,
-     34,
-     35,
-     36,
-     42
-    ]
-   },
-   {
-    "main": [
-     24,
-     25,
-     33,
-     40,
      44,
      45
     ]
    },
    {
     "main": [
+     20,
+     30,
+     31,
      32,
-     39,
+     36,
+     40
+    ]
+   },
+   {
+    "main": [
+     33,
+     34,
+     35,
      41,
      42,
+     44
+    ]
+   },
+   {
+    "main": [
+     37,
+     38,
+     39,
+     41,
      43,
      45
     ]
    }
   ],
   "rules": 5,
-  "lines_key": "auto|{'max_expected_loss_per_draw': 12, 'min': 5, 'max': 50, 'target_p_any': 0.5, 'goal': 'p_any'}|10000000.0",
+  "lines_key": "auto|{'max_expected_loss_per_draw': 12, 'min': 5, 'max': 50, 'target_p_any': 0.5, 'goal': 'p_any'}|None",
   "lines_plan": {
    "mode": "auto",
-   "lines": 25,
-   "budget": 12.0,
-   "target_p_any": 0.5,
-   "goal": "p_any",
-   "table": [
-    {
-     "lines": 5,
-     "per_dollar": 0.624,
-     "expected_loss": 1.83,
-     "p_any": 0.1162,
-     "p_recoup": 0.1162,
-     "cost": 4.88
-    },
-    {
-     "lines": 10,
-     "per_dollar": 0.588,
-     "expected_loss": 4.02,
-     "p_any": 0.223,
-     "p_recoup": 0.052,
-     "cost": 9.76
-    },
-    {
-     "lines": 15,
-     "per_dollar": 0.568,
-     "expected_loss": 6.32,
-     "p_any": 0.3278,
-     "p_recoup": 0.0895,
-     "cost": 14.64
-    },
-    {
-     "lines": 20,
-     "per_dollar": 0.561,
-     "expected_loss": 8.56,
-     "p_any": 0.4205,
-     "p_recoup": 0.0437,
-     "cost": 19.52
-    },
-    {
-     "lines": 25,
-     "per_dollar": 0.554,
-     "expected_loss": 10.88,
-     "p_any": 0.5095,
-     "p_recoup": 0.0631,
-     "cost": 24.4
-    }
-   ],
-   "reason": "Ít dòng nhất để có ≥ 50% khả năng trúng ít nhất 1 giải"
+   "lines": 5,
+   "reason": "Chưa có jackpot hoặc mô hình, dùng số dòng tối thiểu"
   },
   "simulation": {
    "draws": 20000,
-   "p_any": 0.5084,
-   "mean_prizes": 0.5975,
-   "p_any_independent": 0.45286934015382896,
-   "mean_prizes_theory": 0.5958519642580902
+   "p_any": 0.11575,
+   "mean_prizes": 0.1185,
+   "p_any_independent": 0.11362354670380292,
+   "mean_prizes_theory": 0.11917039285161803
   },
   "prize_stats": {
-   "p_any": 0.5063,
-   "p_recoup": 0.0603,
-   "mean_return": 8.1168
+   "p_any": 0.1154,
+   "p_recoup": 0.1154,
+   "mean_return": 1.5885
   },
   "simulation_random": {
    "draws": 20000,
-   "p_any": 0.45805,
-   "mean_prizes": 0.6033,
-   "p_any_independent": 0.45286934015382896,
-   "mean_prizes_theory": 0.5958519642580902
+   "p_any": 0.11325,
+   "mean_prizes": 0.11945,
+   "p_any_independent": 0.11362354670380292,
+   "mean_prizes_theory": 0.11917039285161803
   }
  },
  "latest": [
+  {
+   "game": "saturday",
+   "draw": 4727,
+   "date": "2026-11-07",
+   "main": [
+    3,
+    5,
+    7,
+    17,
+    24,
+    29
+   ],
+   "supp": [
+    19,
+    45
+   ],
+   "dividends": [],
+   "sources": [
+    "national-lottery"
+   ]
+  },
   {
    "game": "saturday",
    "draw": 4725,
@@ -1165,73 +947,457 @@
     "national-lottery"
    ],
    "jackpot": 10000000.0
-  },
-  {
-   "game": "saturday",
-   "draw": 4697,
-   "date": "2026-07-25",
-   "main": [
-    2,
-    6,
-    8,
-    12,
-    22,
-    43
-   ],
-   "supp": [
-    13,
-    28
-   ],
-   "dividends": [
-    {
-     "div": 1,
-     "winners": 9,
-     "amount": 2222222.23
-    },
-    {
-     "div": 2,
-     "winners": 107,
-     "amount": 9524.95
-    },
-    {
-     "div": 3,
-     "winners": 2016,
-     "amount": 765.25
-    },
-    {
-     "div": 4,
-     "winners": 104586,
-     "amount": 21.9
-    },
-    {
-     "div": 5,
-     "winners": 249259,
-     "amount": 14.4
-    },
-    {
-     "div": 6,
-     "winners": 1361392,
-     "amount": 8.9
-    }
-   ],
-   "sources": [
-    "lotteryextreme",
-    "national-lottery"
-   ],
-   "jackpot": 20000000.0
   }
  ],
- "tracking": [],
+ "tracking": [
+  {
+   "draw": 4727,
+   "date": "2026-11-07",
+   "status": "settled",
+   "divisions": {},
+   "prize": 0.0,
+   "best": 2,
+   "result": {
+    "draw": 4727,
+    "date": "2026-11-07",
+    "main": [
+     3,
+     5,
+     7,
+     17,
+     24,
+     29
+    ],
+    "supp": [
+     19,
+     45
+    ]
+   },
+   "dividends_known": false,
+   "lines": [
+    {
+     "main": [
+      1,
+      2,
+      3,
+      12,
+      38,
+      42
+     ]
+    },
+    {
+     "main": [
+      1,
+      9,
+      10,
+      21,
+      23,
+      40
+     ]
+    },
+    {
+     "main": [
+      2,
+      4,
+      11,
+      18,
+      31,
+      36
+     ]
+    },
+    {
+     "main": [
+      2,
+      29,
+      30,
+      33,
+      34,
+      37
+     ]
+    },
+    {
+     "main": [
+      3,
+      4,
+      16,
+      32,
+      33,
+      41
+     ]
+    },
+    {
+     "main": [
+      4,
+      17,
+      25,
+      30,
+      35,
+      43
+     ]
+    },
+    {
+     "main": [
+      5,
+      6,
+      10,
+      25,
+      34,
+      41
+     ]
+    },
+    {
+     "main": [
+      5,
+      19,
+      27,
+      31,
+      37,
+      42
+     ]
+    },
+    {
+     "main": [
+      6,
+      8,
+      12,
+      35,
+      37,
+      45
+     ]
+    },
+    {
+     "main": [
+      6,
+      15,
+      16,
+      20,
+      43,
+      44
+     ]
+    },
+    {
+     "main": [
+      7,
+      11,
+      19,
+      21,
+      33,
+      43
+     ]
+    },
+    {
+     "main": [
+      7,
+      13,
+      16,
+      23,
+      29,
+      45
+     ]
+    },
+    {
+     "main": [
+      8,
+      9,
+      26,
+      32,
+      34,
+      44
+     ]
+    },
+    {
+     "main": [
+      9,
+      20,
+      24,
+      28,
+      30,
+      41
+     ]
+    },
+    {
+     "main": [
+      10,
+      15,
+      24,
+      27,
+      29,
+      38
+     ]
+    },
+    {
+     "main": [
+      12,
+      15,
+      30,
+      31,
+      39,
+      40
+     ]
+    },
+    {
+     "main": [
+      13,
+      14,
+      20,
+      22,
+      34,
+      40
+     ]
+    },
+    {
+     "main": [
+      14,
+      28,
+      29,
+      31,
+      32,
+      35
+     ]
+    },
+    {
+     "main": [
+      14,
+      36,
+      37,
+      38,
+      41,
+      44
+     ]
+    },
+    {
+     "main": [
+      16,
+      17,
+      21,
+      28,
+      38,
+      39
+     ]
+    },
+    {
+     "main": [
+      17,
+      20,
+      26,
+      27,
+      36,
+      45
+     ]
+    },
+    {
+     "main": [
+      18,
+      19,
+      22,
+      23,
+      39,
+      44
+     ]
+    },
+    {
+     "main": [
+      23,
+      24,
+      34,
+      35,
+      36,
+      42
+     ]
+    },
+    {
+     "main": [
+      24,
+      25,
+      33,
+      40,
+      44,
+      45
+     ]
+    },
+    {
+     "main": [
+      32,
+      39,
+      41,
+      42,
+      43,
+      45
+     ]
+    }
+   ],
+   "checks": [
+    {
+     "m": 1,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 0,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 0,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 1,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 0,
+     "s": 1,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 0,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 1,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 2,
+     "s": 1,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 0,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 2,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 0,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 0,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 0,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 1,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 0,
+     "s": 1,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 0,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 1,
+     "s": 1,
+     "pb": false,
+     "div": null
+    },
+    {
+     "m": 0,
+     "s": 1,
+     "pb": false,
+     "div": null
+    }
+   ],
+   "play": false,
+   "play_reason": "Jackpot $10 triệu < $12 triệu",
+   "jackpot": 10000000.0,
+   "prize_stats": {
+    "p_any": 0.5063,
+    "p_recoup": 0.0603,
+    "mean_return": 8.1168
+   }
+  }
+ ],
  "totals": {
-  "draws": 0,
-  "lines": 0,
+  "draws": 1,
+  "lines": 25,
   "hit_draws": 0,
-  "expected_hit_draws": 0,
-  "with_expectation": 0,
+  "expected_hit_draws": 0.51,
+  "with_expectation": 1,
   "prize": 0,
   "prize_lines": 0,
-  "cost": 0.0,
-  "net": 0.0,
+  "cost": 24.4,
+  "net": -24.4,
   "played": {
    "draws": 0,
    "lines": 0,
@@ -1245,25 +1411,25 @@
   }
  },
  "stats": {
-  "n_draws": 2098,
+  "n_draws": 2099,
   "first": "1986-08-30",
-  "last": "2026-10-31",
+  "last": "2026-11-07",
   "numbers": [
    {
     "n": 1,
     "count": 319,
     "recent": 3,
-    "gap": 2
+    "gap": 3
    },
    {
     "n": 2,
     "count": 248,
     "recent": 5,
-    "gap": 3
+    "gap": 4
    },
    {
     "n": 3,
-    "count": 292,
+    "count": 293,
     "recent": 4,
     "gap": 0
    },
@@ -1271,296 +1437,296 @@
     "n": 4,
     "count": 250,
     "recent": 2,
-    "gap": 0
+    "gap": 1
    },
    {
     "n": 5,
-    "count": 290,
-    "recent": 2,
-    "gap": 8
+    "count": 291,
+    "recent": 3,
+    "gap": 0
    },
    {
     "n": 6,
     "count": 290,
-    "recent": 4,
-    "gap": 5
+    "recent": 3,
+    "gap": 6
    },
    {
     "n": 7,
-    "count": 290,
-    "recent": 1,
-    "gap": 15
+    "count": 291,
+    "recent": 2,
+    "gap": 0
    },
    {
     "n": 8,
     "count": 299,
     "recent": 2,
-    "gap": 14
+    "gap": 15
    },
    {
     "n": 9,
     "count": 276,
-    "recent": 4,
-    "gap": 4
+    "recent": 3,
+    "gap": 5
    },
    {
     "n": 10,
     "count": 278,
     "recent": 1,
-    "gap": 6
+    "gap": 7
    },
    {
     "n": 11,
     "count": 306,
     "recent": 3,
-    "gap": 2
+    "gap": 3
    },
    {
     "n": 12,
     "count": 294,
     "recent": 1,
-    "gap": 14
+    "gap": 15
    },
    {
     "n": 13,
     "count": 278,
     "recent": 5,
-    "gap": 1
+    "gap": 2
    },
    {
     "n": 14,
     "count": 245,
-    "recent": 2,
-    "gap": 16
+    "recent": 1,
+    "gap": 17
    },
    {
     "n": 15,
     "count": 282,
     "recent": 5,
-    "gap": 2
+    "gap": 3
    },
    {
     "n": 16,
     "count": 290,
     "recent": 2,
-    "gap": 3
+    "gap": 4
    },
    {
     "n": 17,
-    "count": 264,
-    "recent": 4,
-    "gap": 8
+    "count": 265,
+    "recent": 5,
+    "gap": 0
    },
    {
     "n": 18,
     "count": 302,
     "recent": 2,
-    "gap": 1
+    "gap": 2
    },
    {
     "n": 19,
     "count": 292,
     "recent": 0,
-    "gap": 22
+    "gap": 23
    },
    {
     "n": 20,
     "count": 265,
     "recent": 3,
-    "gap": 4
+    "gap": 5
    },
    {
     "n": 21,
     "count": 284,
-    "recent": 2,
-    "gap": 16
+    "recent": 1,
+    "gap": 17
    },
    {
     "n": 22,
     "count": 299,
-    "recent": 4,
-    "gap": 2
+    "recent": 3,
+    "gap": 3
    },
    {
     "n": 23,
     "count": 267,
     "recent": 2,
-    "gap": 0
+    "gap": 1
    },
    {
     "n": 24,
-    "count": 285,
-    "recent": 2,
-    "gap": 15
+    "count": 286,
+    "recent": 3,
+    "gap": 0
    },
    {
     "n": 25,
     "count": 283,
     "recent": 3,
-    "gap": 5
+    "gap": 6
    },
    {
     "n": 26,
     "count": 282,
     "recent": 1,
-    "gap": 12
+    "gap": 13
    },
    {
     "n": 27,
     "count": 268,
     "recent": 5,
-    "gap": 5
+    "gap": 6
    },
    {
     "n": 28,
     "count": 248,
     "recent": 2,
-    "gap": 12
+    "gap": 13
    },
    {
     "n": 29,
-    "count": 279,
-    "recent": 1,
-    "gap": 16
+    "count": 280,
+    "recent": 2,
+    "gap": 0
    },
    {
     "n": 30,
     "count": 260,
     "recent": 4,
-    "gap": 2
+    "gap": 3
    },
    {
     "n": 31,
     "count": 283,
     "recent": 2,
-    "gap": 5
+    "gap": 6
    },
    {
     "n": 32,
     "count": 290,
     "recent": 6,
-    "gap": 1
+    "gap": 2
    },
    {
     "n": 33,
     "count": 291,
     "recent": 5,
-    "gap": 3
+    "gap": 4
    },
    {
     "n": 34,
     "count": 272,
     "recent": 0,
-    "gap": 26
+    "gap": 27
    },
    {
     "n": 35,
     "count": 253,
     "recent": 0,
-    "gap": 34
+    "gap": 35
    },
    {
     "n": 36,
     "count": 284,
     "recent": 3,
-    "gap": 0
+    "gap": 1
    },
    {
     "n": 37,
     "count": 282,
     "recent": 1,
-    "gap": 18
+    "gap": 19
    },
    {
     "n": 38,
     "count": 282,
     "recent": 2,
-    "gap": 7
+    "gap": 8
    },
    {
     "n": 39,
     "count": 271,
     "recent": 3,
-    "gap": 0
+    "gap": 1
    },
    {
     "n": 40,
     "count": 294,
     "recent": 4,
-    "gap": 0
+    "gap": 1
    },
    {
     "n": 41,
     "count": 294,
     "recent": 3,
-    "gap": 3
+    "gap": 4
    },
    {
     "n": 42,
     "count": 304,
     "recent": 2,
-    "gap": 1
+    "gap": 2
    },
    {
     "n": 43,
     "count": 265,
     "recent": 4,
-    "gap": 3
+    "gap": 4
    },
    {
     "n": 44,
     "count": 245,
     "recent": 2,
-    "gap": 1
+    "gap": 2
    },
    {
     "n": 45,
     "count": 273,
     "recent": 2,
-    "gap": 4
+    "gap": 5
    }
   ],
-  "expected_count": 279.73333333333335,
-  "chi2": 47.64823641563394,
-  "p_chi2": 0.3266029671256661,
-  "mean_overlap": 0.7949451597520267,
+  "expected_count": 279.8666666666667,
+  "chi2": 47.79847546450691,
+  "p_chi2": 0.32115628367500454,
+  "mean_overlap": 0.7950428979980935,
   "expected_overlap": 0.8,
-  "p_serial": 0.7717148273292422,
+  "p_serial": 0.7759092105879238,
   "odd": [
    {
     "odd": 0,
     "observed": 20,
-    "expected": 19.218774815655134
+    "expected": 19.22793533749291
    },
    {
     "odd": 1,
     "observed": 150,
-    "expected": 156.01123085649462
+    "expected": 156.08559273964832
    },
    {
     "odd": 2,
     "observed": 475,
-    "expected": 476.70098317262244
+    "expected": 476.92820003781435
    },
    {
     "odd": 3,
     "observed": 681,
-    "expected": 702.5067120438646
+    "expected": 702.8415579504632
    },
    {
     "odd": 4,
     "observed": 546,
-    "expected": 526.8800340328985
+    "expected": 527.1311684628474
    },
    {
     "odd": 5,
-    "observed": 201,
-    "expected": 190.68039326904898
+    "observed": 202,
+    "expected": 190.77128001512574
    },
    {
     "odd": 6,
     "observed": 25,
-    "expected": 26.001871809415768
+    "expected": 26.014265456608054
    }
   ]
  },
@@ -2279,15 +2445,8 @@
   "price": 0.976,
   "low_div_ev": 0.3196,
   "entries": 37427264.65704894,
-  "jackpot": 10000000.0,
-  "set_ratio": 1.0751,
-  "ev_line": 0.5417,
-  "per_dollar": 0.643,
-  "per_dollar_busy": 0.555,
-  "expected_sales": 54182764,
-  "break_even_jackpot": null,
-  "rating": "medium",
-  "jackpot_source": "lotteryguru.com"
+  "jackpot": null,
+  "jackpot_source": null
  },
  "history": {
   "dividends_tried": [

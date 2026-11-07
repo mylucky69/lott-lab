@@ -58902,5 +58902,26 @@
    "national-lottery"
   ],
   "jackpot": 20000000.0
+ },
+ {
+  "game": "saturday",
+  "draw": 4727,
+  "date": "2026-11-07",
+  "main": [
+   3,
+   5,
+   7,
+   17,
+   24,
+   29
+  ],
+  "supp": [
+   19,
+   45
+  ],
+  "dividends": [],
+  "sources": [
+   "national-lottery"
+  ]
  }
 ]
