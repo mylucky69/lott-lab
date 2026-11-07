@@ -70,9 +70,9 @@
   "fetch_ok": true,
   "error": null,
   "changed": false,
-  "checked_at": "2026-11-07T21:28+11:00",
+  "checked_at": "2026-11-08T03:39+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-07T21:28+11:00",
+  "last_ok": "2026-11-08T03:39+11:00",
   "history_years": 30
  },
  "config": {
@@ -414,7 +414,8 @@
     }
    ],
    "sources": [
-    "lotteryextreme"
+    "lotteryextreme",
+    "national-lottery"
    ],
    "jackpot": 30000000.0
   },

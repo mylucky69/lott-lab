@@ -58919,9 +58919,41 @@
    19,
    45
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 9,
+    "amount": 1111111.12
+   },
+   {
+    "div": 2,
+    "winners": 89,
+    "amount": 8051.55
+   },
+   {
+    "div": 3,
+    "winners": 1893,
+    "amount": 573.05
+   },
+   {
+    "div": 4,
+    "winners": 85705,
+    "amount": 18.8
+   },
+   {
+    "div": 5,
+    "winners": 184834,
+    "amount": 13.65
+   },
+   {
+    "div": 6,
+    "winners": 1072892,
+    "amount": 7.95
+   }
+  ],
   "sources": [
    "national-lottery"
-  ]
+  ],
+  "jackpot": 10000000.0
  }
 ]

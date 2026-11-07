@@ -3,45 +3,195 @@
  "draw": 4729,
  "date": "2026-11-14",
  "lock_at": "2026-11-13T17:00:00+11:00",
- "jackpot": null,
- "play": null,
- "play_reason": "Chưa có thông tin jackpot",
+ "jackpot": 6000000.0,
+ "play": false,
+ "play_reason": "Jackpot $6 triệu < $12 triệu",
  "min_jackpot": 12000000.0,
  "status": "preview",
  "strategy": "balanced",
  "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
  "based_on": 4727,
- "generated_at": "2026-11-07T21:29:08+11:00",
+ "generated_at": "2026-11-08T03:39:56+11:00",
  "locked_at": null,
  "lines": [
   {
    "main": [
-    6,
+    1,
+    2,
+    9,
+    27,
+    35,
+    45
+   ]
+  },
+  {
+   "main": [
+    1,
+    3,
+    7,
+    30,
+    31,
+    44
+   ]
+  },
+  {
+   "main": [
+    2,
+    13,
+    30,
+    36,
+    37,
+    42
+   ]
+  },
+  {
+   "main": [
+    3,
+    4,
+    5,
     14,
+    23,
+    34
+   ]
+  },
+  {
+   "main": [
+    4,
+    21,
     25,
+    27,
+    37,
+    44
+   ]
+  },
+  {
+   "main": [
+    5,
+    19,
+    22,
+    26,
+    40,
+    43
+   ]
+  },
+  {
+   "main": [
+    6,
+    7,
+    12,
+    22,
+    24,
+    41
+   ]
+  },
+  {
+   "main": [
+    6,
+    10,
+    18,
+    32,
+    43,
+    44
+   ]
+  },
+  {
+   "main": [
+    6,
+    16,
+    17,
+    19,
     28,
+    45
+   ]
+  },
+  {
+   "main": [
+    8,
+    9,
+    14,
+    29,
+    32,
+    42
+   ]
+  },
+  {
+   "main": [
+    8,
+    16,
+    20,
+    34,
+    38,
+    40
+   ]
+  },
+  {
+   "main": [
+    9,
+    10,
+    16,
+    33,
+    36,
+    39
+   ]
+  },
+  {
+   "main": [
+    11,
+    12,
+    20,
+    23,
+    33,
+    45
+   ]
+  },
+  {
+   "main": [
+    13,
+    24,
+    27,
+    29,
     39,
     40
    ]
   },
   {
    "main": [
+    14,
     15,
-    16,
-    23,
-    24,
-    44,
-    45
+    25,
+    35,
+    36,
+    38
    ]
   },
   {
    "main": [
-    20,
-    30,
+    15,
+    16,
+    21,
+    24,
+    31,
+    42
+   ]
+  },
+  {
+   "main": [
+    17,
     31,
     32,
     36,
-    40
+    40,
+    41
+   ]
+  },
+  {
+   "main": [
+    18,
+    26,
+    28,
+    29,
+    30,
+    35
    ]
   },
   {
@@ -66,29 +216,74 @@
   }
  ],
  "rules": 5,
- "lines_key": "auto|{'max_expected_loss_per_draw': 12, 'min': 5, 'max': 50, 'target_p_any': 0.5, 'goal': 'p_any'}|None",
+ "lines_key": "auto|{'max_expected_loss_per_draw': 12, 'min': 5, 'max': 50, 'target_p_any': 0.5, 'goal': 'p_any'}|6000000.0",
  "lines_plan": {
   "mode": "auto",
-  "lines": 5,
-  "reason": "Chưa có jackpot hoặc mô hình, dùng số dòng tối thiểu"
+  "lines": 20,
+  "budget": 12.0,
+  "target_p_any": 0.5,
+  "goal": "p_any",
+  "table": [
+   {
+    "lines": 5,
+    "per_dollar": 0.536,
+    "expected_loss": 2.26,
+    "p_any": 0.1212,
+    "p_recoup": 0.1212,
+    "cost": 4.88
+   },
+   {
+    "lines": 10,
+    "per_dollar": 0.516,
+    "expected_loss": 4.73,
+    "p_any": 0.2268,
+    "p_recoup": 0.0561,
+    "cost": 9.76
+   },
+   {
+    "lines": 15,
+    "per_dollar": 0.5,
+    "expected_loss": 7.32,
+    "p_any": 0.3275,
+    "p_recoup": 0.0903,
+    "cost": 14.64
+   },
+   {
+    "lines": 20,
+    "per_dollar": 0.491,
+    "expected_loss": 9.93,
+    "p_any": 0.4218,
+    "p_recoup": 0.0439,
+    "cost": 19.52
+   },
+   {
+    "lines": 25,
+    "per_dollar": 0.49,
+    "expected_loss": 12.44,
+    "p_any": 0.5028,
+    "p_recoup": 0.0596,
+    "cost": 24.4
+   }
+  ],
+  "reason": "Chưa đạt 50% vì vượt trần lỗ $12/kỳ; dùng nhiều dòng nhất trong trần"
  },
  "simulation": {
   "draws": 20000,
-  "p_any": 0.11575,
-  "mean_prizes": 0.1185,
-  "p_any_independent": 0.11362354670380292,
-  "mean_prizes_theory": 0.11917039285161803
+  "p_any": 0.41905,
+  "mean_prizes": 0.471,
+  "p_any_independent": 0.3827333095192924,
+  "mean_prizes_theory": 0.4766815714064721
  },
  "prize_stats": {
-  "p_any": 0.1154,
-  "p_recoup": 0.1154,
-  "mean_return": 1.5885
+  "p_any": 0.4265,
+  "p_recoup": 0.0428,
+  "mean_return": 6.1606
  },
  "simulation_random": {
   "draws": 20000,
-  "p_any": 0.11325,
-  "mean_prizes": 0.11945,
-  "p_any_independent": 0.11362354670380292,
-  "mean_prizes_theory": 0.11917039285161803
+  "p_any": 0.3947,
+  "mean_prizes": 0.4778,
+  "p_any_independent": 0.3827333095192924,
+  "mean_prizes_theory": 0.4766815714064721
  }
 }
