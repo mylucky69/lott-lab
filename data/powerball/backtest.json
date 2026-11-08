@@ -4,63 +4,63 @@
    "label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
    "draws": 150,
    "lines": 7500,
-   "mean_match": 1.4029333333333334,
+   "mean_match": 1.4018666666666666,
    "divisions": {
     "4": 1,
-    "5": 3,
-    "6": 8,
-    "7": 12,
-    "8": 43,
-    "9": 125
+    "5": 1,
+    "6": 12,
+    "7": 7,
+    "8": 44,
+    "9": 117
    },
-   "prize_lines": 192,
-   "prize_total": 4790.95,
-   "p_value": 0.09582839950523193
+   "prize_lines": 182,
+   "prize_total": 4452.4,
+   "p_value": 0.37281463495638023
   },
   "hot": {
    "label": "Ưu tiên số ra nhiều trong 30 kỳ gần nhất",
    "draws": 150,
    "lines": 7500,
-   "mean_match": 1.3949333333333334,
+   "mean_match": 1.4010666666666667,
    "divisions": {
-    "6": 8,
-    "7": 3,
-    "8": 45,
-    "9": 112
+    "6": 9,
+    "7": 7,
+    "8": 57,
+    "9": 110
    },
-   "prize_lines": 168,
-   "prize_total": 3213.6,
-   "p_value": 0.8768972757181794
+   "prize_lines": 183,
+   "prize_total": 3700.9,
+   "p_value": 0.33269597907231857
   },
   "cold": {
    "label": "Ưu tiên số lâu chưa ra / ra ít",
    "draws": 150,
    "lines": 7500,
-   "mean_match": 1.3958666666666666,
+   "mean_match": 1.3981333333333332,
    "divisions": {
-    "6": 6,
-    "7": 6,
-    "8": 31,
-    "9": 119
+    "6": 7,
+    "7": 5,
+    "8": 30,
+    "9": 120
    },
    "prize_lines": 162,
-   "prize_total": 2969.9,
+   "prize_total": 2980.8,
    "p_value": 0.5354398445978873
   },
   "random": {
    "label": "Ngẫu nhiên hoàn toàn (mốc so sánh)",
    "draws": 150,
    "lines": 7500,
-   "mean_match": 1.3862666666666668,
+   "mean_match": 1.3857333333333333,
    "divisions": {
     "6": 6,
     "7": 6,
-    "8": 46,
+    "8": 47,
     "9": 137
    },
-   "prize_lines": 195,
-   "prize_total": 3468.35,
-   "p_value": 0.0628185629033084
+   "prize_lines": 196,
+   "prize_total": 3492.2,
+   "p_value": 0.052626066750593836
   }
  },
  "theory": {
@@ -79,7 +79,7 @@
   }
  },
  "draws": 150,
- "from": "2023-12-21",
- "to": "2026-10-29",
- "run_at": "2026-11-04T13:01+11:00"
+ "from": "2023-12-28",
+ "to": "2026-11-05",
+ "run_at": "2026-11-08T20:54+11:00"
 }

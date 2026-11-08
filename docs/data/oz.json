@@ -2176,45 +2176,43 @@
     "label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
     "draws": 150,
     "lines": 7500,
-    "mean_match": 1.0465333333333333,
+    "mean_match": 1.0418666666666667,
     "divisions": {
      "4": 1,
-     "5": 2,
+     "5": 1,
      "6": 36,
-     "7": 97
+     "7": 106
     },
-    "prize_lines": 136,
-    "prize_total": 3058.1,
-    "p_value": 0.30082939276312437
+    "prize_lines": 144,
+    "prize_total": 3197.4,
+    "p_value": 0.7096694037414705
    },
    "hot": {
     "label": "Ưu tiên số ra nhiều trong 30 kỳ gần nhất",
     "draws": 150,
     "lines": 7500,
-    "mean_match": 1.0482666666666667,
+    "mean_match": 1.0396,
     "divisions": {
-     "4": 1,
-     "6": 44,
-     "7": 108
+     "5": 1,
+     "6": 46,
+     "7": 93
     },
-    "prize_lines": 153,
-    "prize_total": 3468.45,
-    "p_value": 0.7405260246536118
+    "prize_lines": 140,
+    "prize_total": 2848.9,
+    "p_value": 0.48182313302024926
    },
    "cold": {
     "label": "Ưu tiên số lâu chưa ra / ra ít",
     "draws": 150,
     "lines": 7500,
-    "mean_match": 1.0428,
+    "mean_match": 1.0490666666666666,
     "divisions": {
-     "4": 1,
-     "5": 1,
-     "6": 42,
-     "7": 108
+     "6": 51,
+     "7": 116
     },
-    "prize_lines": 152,
-    "prize_total": 3465.5,
-    "p_value": 0.8038504525094972
+    "prize_lines": 167,
+    "prize_total": 3340.1,
+    "p_value": 0.13628499287671553
    },
    "random": {
     "label": "Ngẫu nhiên hoàn toàn (mốc so sánh)",
@@ -2247,7 +2245,7 @@
   "draws": 150,
   "from": "2023-12-26",
   "to": "2026-11-03",
-  "run_at": "2026-11-04T13:01+11:00"
+  "run_at": "2026-11-08T20:54+11:00"
  },
  "models": {
   "game": "oz",
@@ -2328,9 +2326,9 @@
     "share_of_draws": 1.0,
     "realised": {
      "cost": 7008.0,
-     "won": 2368.2,
-     "net": -4639.8,
-     "prize_lines": 93
+     "won": 1986.05,
+     "net": -5021.95,
+     "prize_lines": 99
     },
     "expected_per_dollar": 0.463,
     "best_draw_per_dollar": 0.897,
@@ -2363,9 +2361,9 @@
     "share_of_draws": 0.531,
     "realised": {
      "cost": 3723.0,
-     "won": 984.25,
-     "net": -2738.75,
-     "prize_lines": 50
+     "won": 1035.1,
+     "net": -2687.9,
+     "prize_lines": 54
     },
     "expected_per_dollar": 0.546,
     "best_draw_per_dollar": 0.897,
@@ -2398,8 +2396,8 @@
     "share_of_draws": 0.344,
     "realised": {
      "cost": 2409.0,
-     "won": 720.2,
-     "net": -1688.8,
+     "won": 698.2,
+     "net": -1710.8,
      "prize_lines": 36
     },
     "expected_per_dollar": 0.596,
@@ -2433,9 +2431,9 @@
     "share_of_draws": 0.219,
     "realised": {
      "cost": 1533.0,
-     "won": 531.95,
-     "net": -1001.05,
-     "prize_lines": 26
+     "won": 433.05,
+     "net": -1099.95,
+     "prize_lines": 22
     },
     "expected_per_dollar": 0.655,
     "best_draw_per_dollar": 0.897,
@@ -2468,9 +2466,9 @@
     "share_of_draws": 0.094,
     "realised": {
      "cost": 657.0,
-     "won": 290.7,
-     "net": -366.3,
-     "prize_lines": 14
+     "won": 222.75,
+     "net": -434.25,
+     "prize_lines": 11
     },
     "expected_per_dollar": 0.765,
     "best_draw_per_dollar": 0.897,
@@ -2503,8 +2501,8 @@
     "share_of_draws": 0.01,
     "realised": {
      "cost": 73.0,
-     "won": 16.65,
-     "net": -56.35,
+     "won": 27.1,
+     "net": -45.9,
      "prize_lines": 1
     },
     "expected_per_dollar": 0.897,
@@ -2538,8 +2536,8 @@
     "share_of_draws": 0.01,
     "realised": {
      "cost": 73.0,
-     "won": 16.65,
-     "net": -56.35,
+     "won": 27.1,
+     "net": -45.9,
      "prize_lines": 1
     },
     "expected_per_dollar": 0.897,
@@ -2585,110 +2583,110 @@
     "jackpot": 3000000.0,
     "sales": 8364362,
     "per_dollar": 0.337,
-    "set_per_dollar": 0.34
+    "set_per_dollar": 0.341
    },
    {
     "jackpot": 5000000.0,
     "sales": 9831450,
     "per_dollar": 0.357,
-    "set_per_dollar": 0.36
+    "set_per_dollar": 0.361
    },
    {
     "jackpot": 8000000.0,
     "sales": 12032084,
     "per_dollar": 0.386,
-    "set_per_dollar": 0.389
+    "set_per_dollar": 0.39
    },
    {
     "jackpot": 10000000.0,
     "sales": 13499172,
     "per_dollar": 0.404,
-    "set_per_dollar": 0.407
+    "set_per_dollar": 0.408
    },
    {
     "jackpot": 15000000.0,
     "sales": 17166894,
     "per_dollar": 0.449,
-    "set_per_dollar": 0.452
+    "set_per_dollar": 0.454
    },
    {
     "jackpot": 20000000.0,
     "sales": 20834616,
     "per_dollar": 0.492,
-    "set_per_dollar": 0.496
+    "set_per_dollar": 0.497
    },
    {
     "jackpot": 25000000.0,
     "sales": 24502338,
     "per_dollar": 0.532,
-    "set_per_dollar": 0.536
+    "set_per_dollar": 0.538
    },
    {
     "jackpot": 30000000.0,
     "sales": 28170060,
     "per_dollar": 0.57,
-    "set_per_dollar": 0.575
+    "set_per_dollar": 0.577
    },
    {
     "jackpot": 40000000.0,
     "sales": 35505504,
     "per_dollar": 0.639,
-    "set_per_dollar": 0.645
+    "set_per_dollar": 0.647
    },
    {
     "jackpot": 50000000.0,
     "sales": 42840948,
     "per_dollar": 0.701,
-    "set_per_dollar": 0.708
+    "set_per_dollar": 0.711
    },
    {
     "jackpot": 60000000.0,
     "sales": 50176392,
     "per_dollar": 0.757,
-    "set_per_dollar": 0.766
+    "set_per_dollar": 0.769
    },
    {
     "jackpot": 70000000.0,
     "sales": 57511836,
     "per_dollar": 0.806,
-    "set_per_dollar": 0.817
+    "set_per_dollar": 0.82
    },
    {
     "jackpot": 80000000.0,
     "sales": 64847280,
     "per_dollar": 0.85,
-    "set_per_dollar": 0.862
+    "set_per_dollar": 0.867
    },
    {
     "jackpot": 100000000.0,
     "sales": 79518168,
     "per_dollar": 0.924,
-    "set_per_dollar": 0.94
+    "set_per_dollar": 0.946
    },
    {
     "jackpot": 120000000.0,
     "sales": 94189055,
     "per_dollar": 0.984,
-    "set_per_dollar": 1.005
+    "set_per_dollar": 1.011
    },
    {
     "jackpot": 150000000.0,
     "sales": 116195387,
     "per_dollar": 1.051,
-    "set_per_dollar": 1.078
+    "set_per_dollar": 1.085
    },
    {
     "jackpot": 200000000.0,
     "sales": 152872607,
     "per_dollar": 1.124,
-    "set_per_dollar": 1.161
+    "set_per_dollar": 1.17
    }
   ],
   "curve_best": {
    "jackpot": 200000000.0,
    "sales": 152872607,
    "per_dollar": 1.124,
-   "set_per_dollar": 1.161
+   "set_per_dollar": 1.17
   },
   "break_even": 150000000.0,
   "break_even_set": 120000000.0,
@@ -2701,8 +2699,8 @@
     "per_dollar_random_lines": 0.463,
     "spend_per_year": 3849.0,
     "expected_loss_per_year": 2044.0,
-    "real_net": -4639.8,
-    "real_net_per_year": -2548.0
+    "real_net": -5021.95,
+    "real_net_per_year": -2758.0
    },
    {
     "threshold": 4000000.0,
@@ -2711,20 +2709,20 @@
     "per_dollar": 0.489,
     "per_dollar_random_lines": 0.483,
     "spend_per_year": 3328.0,
-    "expected_loss_per_year": 1699.0,
-    "real_net": -3916.7,
-    "real_net_per_year": -2151.0
+    "expected_loss_per_year": 1700.0,
+    "real_net": -4337.6,
+    "real_net_per_year": -2382.0
    },
    {
     "threshold": 8000000.0,
     "draws": 72,
     "per_year": 39.5,
-    "per_dollar": 0.51,
+    "per_dollar": 0.509,
     "per_dollar_random_lines": 0.503,
     "spend_per_year": 2887.0,
     "expected_loss_per_year": 1416.0,
-    "real_net": -3318.6,
-    "real_net_per_year": -1823.0
+    "real_net": -3770.05,
+    "real_net_per_year": -2071.0
    },
    {
     "threshold": 15000000.0,
@@ -2734,8 +2732,8 @@
     "per_dollar_random_lines": 0.546,
     "spend_per_year": 2045.0,
     "expected_loss_per_year": 914.0,
-    "real_net": -2738.75,
-    "real_net_per_year": -1504.0
+    "real_net": -2687.9,
+    "real_net_per_year": -1476.0
    },
    {
     "threshold": 20000000.0,
@@ -2744,20 +2742,20 @@
     "per_dollar": 0.604,
     "per_dollar_random_lines": 0.596,
     "spend_per_year": 1323.0,
-    "expected_loss_per_year": 523.0,
-    "real_net": -1688.8,
-    "real_net_per_year": -928.0
+    "expected_loss_per_year": 524.0,
+    "real_net": -1710.8,
+    "real_net_per_year": -940.0
    },
    {
     "threshold": 30000000.0,
     "draws": 21,
     "per_year": 11.5,
-    "per_dollar": 0.666,
+    "per_dollar": 0.665,
     "per_dollar_random_lines": 0.655,
     "spend_per_year": 842.0,
     "expected_loss_per_year": 282.0,
-    "real_net": -1001.05,
-    "real_net_per_year": -550.0
+    "real_net": -1099.95,
+    "real_net_per_year": -604.0
    },
    {
     "threshold": 40000000.0,
@@ -2767,8 +2765,8 @@
     "per_dollar_random_lines": 0.724,
     "spend_per_year": 481.0,
     "expected_loss_per_year": 127.0,
-    "real_net": -498.5,
-    "real_net_per_year": -274.0
+    "real_net": -621.2,
+    "real_net_per_year": -341.0
    },
    {
     "threshold": 50000000.0,
@@ -2778,41 +2776,41 @@
     "per_dollar_random_lines": 0.765,
     "spend_per_year": 361.0,
     "expected_loss_per_year": 80.0,
-    "real_net": -366.3,
-    "real_net_per_year": -201.0
+    "real_net": -434.25,
+    "real_net_per_year": -239.0
    },
    {
     "threshold": 60000000.0,
     "draws": 5,
     "per_year": 2.7,
-    "per_dollar": 0.823,
+    "per_dollar": 0.821,
     "per_dollar_random_lines": 0.806,
     "spend_per_year": 200.0,
     "expected_loss_per_year": 36.0,
-    "real_net": -194.95,
-    "real_net_per_year": -107.0
+    "real_net": -263.7,
+    "real_net_per_year": -145.0
    },
    {
     "threshold": 70000000.0,
     "draws": 4,
     "per_year": 2.2,
-    "per_dollar": 0.842,
+    "per_dollar": 0.84,
     "per_dollar_random_lines": 0.824,
     "spend_per_year": 160.0,
-    "expected_loss_per_year": 25.0,
-    "real_net": -160.95,
-    "real_net_per_year": -88.0
+    "expected_loss_per_year": 26.0,
+    "real_net": -214.65,
+    "real_net_per_year": -118.0
    },
    {
     "threshold": 100000000.0,
     "draws": 1,
     "per_year": 0.5,
-    "per_dollar": 0.921,
+    "per_dollar": 0.919,
     "per_dollar_random_lines": 0.897,
     "spend_per_year": 40.0,
     "expected_loss_per_year": 3.0,
-    "real_net": -56.35,
-    "real_net_per_year": -31.0
+    "real_net": -45.9,
+    "real_net_per_year": -25.0
    }
   ],
   "recommended": {
@@ -2823,8 +2821,8 @@
    "per_dollar_random_lines": 0.765,
    "spend_per_year": 361.0,
    "expected_loss_per_year": 80.0,
-   "real_net": -366.3,
-   "real_net_per_year": -201.0
+   "real_net": -434.25,
+   "real_net_per_year": -239.0
   }
  },
  "lines_study": {
@@ -2848,22 +2846,22 @@
     "spend_per_year": 7.0,
     "real_net": -13.14,
     "real_net_per_year": -7.0,
-    "line_popularity": 0.458
+    "line_popularity": 0.457
    },
    {
     "lines": 5,
     "cost_per_draw": 7.3,
-    "per_dollar": 0.831,
-    "p_any_prize": 0.0969,
-    "p_recoup": 0.0969,
+    "per_dollar": 0.833,
+    "p_any_prize": 0.0992,
+    "p_recoup": 0.0992,
     "p_jackpot": 7.950200073940041e-08,
     "jackpot_one_in": 12578300,
-    "expected_loss_per_draw": 1.23,
+    "expected_loss_per_draw": 1.22,
     "expected_loss_per_year": 6.0,
     "spend_per_year": 36.0,
     "real_net": -32.35,
     "real_net_per_year": -18.0,
-    "line_popularity": 0.701
+    "line_popularity": 0.694
    },
    {
     "lines": 10,
@@ -2873,27 +2871,27 @@
     "p_recoup": 0.1934,
     "p_jackpot": 1.5900400147880082e-07,
     "jackpot_one_in": 6289150,
-    "expected_loss_per_draw": 3.1,
+    "expected_loss_per_draw": 3.11,
     "expected_loss_per_year": 15.0,
     "spend_per_year": 72.0,
-    "real_net": -11.7,
-    "real_net_per_year": -6.0,
-    "line_popularity": 0.864
+    "real_net": 5.55,
+    "real_net_per_year": 3.0,
+    "line_popularity": 0.865
    },
    {
     "lines": 15,
     "cost_per_draw": 21.9,
-    "per_dollar": 0.778,
-    "p_any_prize": 0.2791,
-    "p_recoup": 0.0978,
+    "per_dollar": 0.773,
+    "p_any_prize": 0.2798,
+    "p_recoup": 0.0975,
     "p_jackpot": 2.3850600221820123e-07,
     "jackpot_one_in": 4192767,
-    "expected_loss_per_draw": 4.87,
+    "expected_loss_per_draw": 4.97,
     "expected_loss_per_year": 24.0,
     "spend_per_year": 107.0,
-    "real_net": -154.0,
-    "real_net_per_year": -84.0,
-    "line_popularity": 0.905
+    "real_net": -152.5,
+    "real_net_per_year": -83.0,
+    "line_popularity": 0.923
    },
    {
     "lines": 20,
@@ -2906,99 +2904,99 @@
     "expected_loss_per_draw": 6.59,
     "expected_loss_per_year": 32.0,
     "spend_per_year": 143.0,
-    "real_net": -245.3,
-    "real_net_per_year": -134.0,
+    "real_net": -160.35,
+    "real_net_per_year": -87.0,
     "line_popularity": 0.913
    },
    {
     "lines": 25,
     "cost_per_draw": 36.5,
-    "per_dollar": 0.766,
-    "p_any_prize": 0.4361,
-    "p_recoup": 0.0347,
+    "per_dollar": 0.77,
+    "p_any_prize": 0.4349,
+    "p_recoup": 0.0348,
     "p_jackpot": 3.9751000369700205e-07,
     "jackpot_one_in": 2515660,
-    "expected_loss_per_draw": 8.54,
-    "expected_loss_per_year": 42.0,
+    "expected_loss_per_draw": 8.4,
+    "expected_loss_per_year": 41.0,
     "spend_per_year": 179.0,
     "real_net": -258.3,
     "real_net_per_year": -141.0,
-    "line_popularity": 0.942
+    "line_popularity": 0.929
    },
    {
     "lines": 30,
     "cost_per_draw": 43.8,
-    "per_dollar": 0.769,
-    "p_any_prize": 0.4958,
-    "p_recoup": 0.0175,
+    "per_dollar": 0.766,
+    "p_any_prize": 0.5019,
+    "p_recoup": 0.0174,
     "p_jackpot": 4.770120044364025e-07,
     "jackpot_one_in": 2096383,
-    "expected_loss_per_draw": 10.13,
+    "expected_loss_per_draw": 10.27,
     "expected_loss_per_year": 50.0,
     "spend_per_year": 215.0,
-    "real_net": -288.85,
-    "real_net_per_year": -157.0,
-    "line_popularity": 0.933
+    "real_net": -279.65,
+    "real_net_per_year": -152.0,
+    "line_popularity": 0.946
    },
    {
     "lines": 35,
     "cost_per_draw": 51.1,
-    "per_dollar": 0.765,
-    "p_any_prize": 0.5576,
-    "p_recoup": 0.0211,
+    "per_dollar": 0.768,
+    "p_any_prize": 0.5579,
+    "p_recoup": 0.0208,
     "p_jackpot": 5.565140051758029e-07,
     "jackpot_one_in": 1796900,
-    "expected_loss_per_draw": 12.01,
-    "expected_loss_per_year": 59.0,
+    "expected_loss_per_draw": 11.87,
+    "expected_loss_per_year": 58.0,
     "spend_per_year": 250.0,
-    "real_net": -348.1,
-    "real_net_per_year": -190.0,
-    "line_popularity": 0.948
+    "real_net": -282.0,
+    "real_net_per_year": -154.0,
+    "line_popularity": 0.935
    },
    {
     "lines": 50,
     "cost_per_draw": 73.0,
-    "per_dollar": 0.764,
-    "p_any_prize": 0.6967,
-    "p_recoup": 0.0056,
+    "per_dollar": 0.76,
+    "p_any_prize": 0.7054,
+    "p_recoup": 0.0046,
     "p_jackpot": 7.950200073940041e-07,
     "jackpot_one_in": 1257830,
-    "expected_loss_per_draw": 17.22,
-    "expected_loss_per_year": 84.0,
+    "expected_loss_per_draw": 17.56,
+    "expected_loss_per_year": 86.0,
     "spend_per_year": 358.0,
-    "real_net": -366.3,
-    "real_net_per_year": -199.0,
-    "line_popularity": 0.947
+    "real_net": -434.25,
+    "real_net_per_year": -236.0,
+    "line_popularity": 0.967
    },
    {
     "lines": 75,
     "cost_per_draw": 109.5,
-    "per_dollar": 0.759,
-    "p_any_prize": 0.849,
-    "p_recoup": 0.0034,
+    "per_dollar": 0.76,
+    "p_any_prize": 0.8448,
+    "p_recoup": 0.0039,
     "p_jackpot": 1.1925300110910062e-06,
     "jackpot_one_in": 838553,
-    "expected_loss_per_draw": 26.38,
+    "expected_loss_per_draw": 26.25,
     "expected_loss_per_year": 129.0,
     "spend_per_year": 537.0,
-    "real_net": -791.7,
-    "real_net_per_year": -431.0,
-    "line_popularity": 0.966
+    "real_net": -757.25,
+    "real_net_per_year": -412.0,
+    "line_popularity": 0.963
    },
    {
     "lines": 100,
     "cost_per_draw": 146.0,
-    "per_dollar": 0.759,
-    "p_any_prize": 0.9234,
-    "p_recoup": 0.0041,
+    "per_dollar": 0.757,
+    "p_any_prize": 0.9237,
+    "p_recoup": 0.0046,
     "p_jackpot": 1.5900400147880082e-06,
     "jackpot_one_in": 628915,
-    "expected_loss_per_draw": 35.13,
-    "expected_loss_per_year": 172.0,
+    "expected_loss_per_draw": 35.46,
+    "expected_loss_per_year": 174.0,
     "spend_per_year": 715.0,
-    "real_net": -1000.5,
-    "real_net_per_year": -545.0,
-    "line_popularity": 0.967
+    "real_net": -906.0,
+    "real_net_per_year": -493.0,
+    "line_popularity": 0.976
    }
   ],
   "calibration": [
@@ -3012,23 +3010,23 @@
    {
     "lines": 20,
     "predicted": 0.3575,
-    "real": 0.3762,
+    "real": 0.396,
     "draws": 202,
-    "hits": 76
+    "hits": 80
    },
    {
     "lines": 35,
-    "predicted": 0.5576,
+    "predicted": 0.5579,
     "real": 0.5644,
     "draws": 202,
     "hits": 114
    },
    {
     "lines": 50,
-    "predicted": 0.6967,
-    "real": 0.6584,
+    "predicted": 0.7054,
+    "real": 0.7426,
     "draws": 202,
-    "hits": 133
+    "hits": 150
    }
   ]
  },
