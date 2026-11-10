@@ -45917,6 +45917,7 @@
   "sources": [
    "lotteryextreme",
    "national-lottery"
-  ]
+  ],
+  "jackpot": 4000000.0
  }
 ]
