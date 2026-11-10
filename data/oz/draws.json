@@ -45854,8 +45854,69 @@
    }
   ],
   "sources": [
-   "national-lottery"
+   "national-lottery",
+   "lotteryextreme"
   ],
   "jackpot": 60000000.0
+ },
+ {
+  "game": "oz",
+  "draw": 1708,
+  "date": "2026-11-10",
+  "main": [
+   4,
+   22,
+   25,
+   34,
+   38,
+   46,
+   47
+  ],
+  "supp": [
+   17,
+   20,
+   27
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 5,
+    "amount": 31568.3
+   },
+   {
+    "div": 3,
+    "winners": 33,
+    "amount": 5652.75
+   },
+   {
+    "div": 4,
+    "winners": 295,
+    "amount": 486.4
+   },
+   {
+    "div": 5,
+    "winners": 1817,
+    "amount": 63.2
+   },
+   {
+    "div": 6,
+    "winners": 43592,
+    "amount": 32.6
+   },
+   {
+    "div": 7,
+    "winners": 119770,
+    "amount": 19.05
+   }
+  ],
+  "sources": [
+   "lotteryextreme",
+   "national-lottery"
+  ]
  }
 ]
