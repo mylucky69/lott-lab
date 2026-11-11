@@ -57,10 +57,10 @@
  "status": {
   "fetch_ok": true,
   "error": null,
-  "changed": true,
-  "checked_at": "2026-11-11T06:52+11:00",
+  "changed": false,
+  "checked_at": "2026-11-11T11:43+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-11T06:52+11:00",
+  "last_ok": "2026-11-11T11:43+11:00",
   "history_years": 32
  },
  "config": {
