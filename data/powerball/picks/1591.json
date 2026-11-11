@@ -7,12 +7,12 @@
  "play": false,
  "play_reason": "Jackpot $40 triệu < $50 triệu",
  "min_jackpot": 50000000.0,
- "status": "preview",
+ "status": "locked",
  "strategy": "balanced",
  "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
  "based_on": 1590,
  "generated_at": "2026-11-06T05:09:59+11:00",
- "locked_at": null,
+ "locked_at": "2026-11-11T18:16:29+11:00",
  "lines": [
   {
    "main": [
