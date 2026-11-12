@@ -7,7 +7,7 @@
  "play": false,
  "play_reason": "Jackpot $40 triệu < $50 triệu",
  "min_jackpot": 50000000.0,
- "status": "locked",
+ "status": "settled",
  "strategy": "balanced",
  "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
  "based_on": 1590,
@@ -257,5 +257,117 @@
   "mean_prizes": 0.3463,
   "p_any_independent": 0.29177054111252343,
   "mean_prizes_theory": 0.3410501790462368
- }
+ },
+ "result": {
+  "draw": 1591,
+  "date": "2026-11-12",
+  "main": [
+   2,
+   7,
+   11,
+   13,
+   25,
+   27,
+   31
+  ],
+  "supp": [
+   2
+  ]
+ },
+ "checks": [
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 3,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 0,
+   "pb": true,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 1,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 4,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 0,
+   "s": 0,
+   "pb": false,
+   "div": null
+  },
+  {
+   "m": 2,
+   "s": 0,
+   "pb": false,
+   "div": null
+  }
+ ],
+ "divisions": {},
+ "prize": 0.0,
+ "best": 4,
+ "dividends_known": false
 }

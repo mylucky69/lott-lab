@@ -52473,5 +52473,27 @@
    "national-lottery"
   ],
   "jackpot": 30000000.0
+ },
+ {
+  "game": "powerball",
+  "draw": 1591,
+  "date": "2026-11-12",
+  "main": [
+   2,
+   7,
+   11,
+   13,
+   25,
+   27,
+   31
+  ],
+  "supp": [
+   2
+  ],
+  "dividends": [],
+  "sources": [
+   "national-lottery"
+  ],
+  "jackpot": 40000000.0
  }
 ]
