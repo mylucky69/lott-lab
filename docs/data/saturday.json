@@ -50,16 +50,11 @@
  },
  "status": {
   "fetch_ok": true,
-  "error": "national-lottery: https://australia.national-lottery.com/saturday-lotto/results-archive-2026: HTTPSConnectionPool(host='australia.national-lottery.com', port=443): Max retries exceeded with url: /saturday-lotto/results-archive-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='australia.national-lottery.com', port=443) at 0x7f6bad410440>, 'Connection to australia.national-lottery.com timed",
-  "changed": true,
-  "checked_at": "2026-11-15T02:54+11:00",
-  "sources_ok": [
-   "lotteryextreme"
-  ],
-  "new_draws": [
-   4729
-  ],
-  "last_ok": "2026-11-15T02:54+11:00",
+  "error": null,
+  "changed": false,
+  "checked_at": "2026-11-15T07:47+11:00",
+  "new_draws": [],
+  "last_ok": "2026-11-15T07:47+11:00",
   "history_years": 41
  },
  "config": {
