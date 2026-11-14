@@ -58952,8 +58952,62 @@
    }
   ],
   "sources": [
-   "national-lottery"
+   "national-lottery",
+   "lotteryextreme"
   ],
   "jackpot": 10000000.0
+ },
+ {
+  "game": "saturday",
+  "draw": 4729,
+  "date": "2026-11-14",
+  "main": [
+   1,
+   9,
+   24,
+   25,
+   43,
+   45
+  ],
+  "supp": [
+   26,
+   35
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 4,
+    "amount": 1544086.04
+   },
+   {
+    "div": 2,
+    "winners": 42,
+    "amount": 14067.2
+   },
+   {
+    "div": 3,
+    "winners": 941,
+    "amount": 950.45
+   },
+   {
+    "div": 4,
+    "winners": 47674,
+    "amount": 27.85
+   },
+   {
+    "div": 5,
+    "winners": 112419,
+    "amount": 18.5
+   },
+   {
+    "div": 6,
+    "winners": 703412,
+    "amount": 9.95
+   }
+  ],
+  "sources": [
+   "lotteryextreme"
+  ],
+  "jackpot": 6000000.0
  }
 ]
