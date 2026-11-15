@@ -2,42 +2,42 @@
  "game": "saturday",
  "price": 0.976,
  "lines": 50,
- "draws_with_jackpot": 97,
+ "draws_with_jackpot": 98,
  "from": "2025-01-04",
- "to": "2026-11-07",
- "years_covered": 1.8,
+ "to": "2026-11-14",
+ "years_covered": 1.9,
  "thresholds": [
   {
    "threshold": 0,
-   "draws": 97,
+   "draws": 98,
    "share_of_draws": 1.0,
    "realised": {
-    "cost": 4733.6,
-    "won": 1365.25,
-    "net": -3368.35,
-    "prize_lines": 118
+    "cost": 4782.4,
+    "won": 1418.05,
+    "net": -3364.35,
+    "prize_lines": 124
    },
    "expected_per_dollar": 0.462,
    "best_draw_per_dollar": 0.71,
    "simulated": {
     "1": {
      "p_profit": 0.00515,
-     "median": -1832.7749999999996,
+     "median": -1832.2499999999998,
      "spent": 2537.6
     },
     "5": {
-     "p_profit": 0.0168,
-     "median": -9072.499999999998,
+     "p_profit": 0.0174,
+     "median": -9071.174999999997,
      "spent": 12688.0
     },
     "10": {
-     "p_profit": 0.00405,
-     "median": -17874.72499999999,
+     "p_profit": 0.0043,
+     "median": -17862.049999999996,
      "spent": 25376.0
     },
     "30": {
-     "p_profit": 0.0094,
-     "median": -53223.84999999998,
+     "p_profit": 0.00925,
+     "median": -53212.07499999998,
      "spent": 76128.0
     }
    }
@@ -45,70 +45,70 @@
   {
    "threshold": 10000000.0,
    "draws": 17,
-   "share_of_draws": 0.175,
+   "share_of_draws": 0.173,
    "realised": {
     "cost": 829.6,
-    "won": 189.45,
-    "net": -640.15,
-    "prize_lines": 16
+    "won": 209.6,
+    "net": -620.0,
+    "prize_lines": 19
    },
    "expected_per_dollar": 0.558,
    "best_draw_per_dollar": 0.71,
    "simulated": {
     "1": {
-     "p_profit": 0.0137,
-     "median": -316.625,
-     "spent": 444.74611999999996
+     "p_profit": 0.01355,
+     "median": -315.0,
+     "spent": 440.69571999999994
     },
     "5": {
-     "p_profit": 0.0052,
-     "median": -1589.65,
-     "spent": 2222.6692
+     "p_profit": 0.005,
+     "median": -1577.975,
+     "spent": 2201.4607199999996
     },
     "10": {
-     "p_profit": 0.00715,
-     "median": -3172.8999999999996,
-     "spent": 4447.65884
+     "p_profit": 0.007,
+     "median": -3142.2499999999995,
+     "spent": 4401.30616
     },
     "30": {
-     "p_profit": 0.01545,
-     "median": -9449.075,
-     "spent": 13341.663799999998
+     "p_profit": 0.0133,
+     "median": -9358.925,
+     "spent": 13210.955439999998
     }
    }
   },
   {
    "threshold": 20000000.0,
    "draws": 9,
-   "share_of_draws": 0.093,
+   "share_of_draws": 0.092,
    "realised": {
     "cost": 439.2,
-    "won": 81.15,
-    "net": -358.05,
-    "prize_lines": 8
+    "won": 105.4,
+    "net": -333.8,
+    "prize_lines": 10
    },
    "expected_per_dollar": 0.583,
    "best_draw_per_dollar": 0.71,
    "simulated": {
     "1": {
-     "p_profit": 0.0072,
-     "median": -166.39999999999998,
-     "spent": 236.03828
+     "p_profit": 0.00865,
+     "median": -162.975,
+     "spent": 233.25423999999998
     },
     "5": {
-     "p_profit": 0.0148,
-     "median": -845.95,
-     "spent": 1177.71236
+     "p_profit": 0.01495,
+     "median": -834.7249999999999,
+     "spent": 1165.3927999999999
     },
     "10": {
-     "p_profit": 0.00475,
-     "median": -1689.125,
-     "spent": 2354.92452
+     "p_profit": 0.0055,
+     "median": -1670.2749999999996,
+     "spent": 2328.5944799999997
     },
     "30": {
-     "p_profit": 0.01215,
-     "median": -5041.775000000001,
-     "spent": 7071.856879999999
+     "p_profit": 0.01295,
+     "median": -4981.5,
+     "spent": 6987.303559999999
     }
    }
   },
@@ -118,32 +118,32 @@
    "share_of_draws": 0.01,
    "realised": {
     "cost": 48.8,
-    "won": 9.1,
-    "net": -39.7,
-    "prize_lines": 1
+    "won": 24.8,
+    "net": -24.0,
+    "prize_lines": 2
    },
    "expected_per_dollar": 0.534,
    "best_draw_per_dollar": 0.534,
    "simulated": {
     "1": {
-     "p_profit": 0.00545,
+     "p_profit": 0.0054,
      "median": 0.0,
-     "spent": 26.046999999999997
+     "spent": 25.6688
     },
     "5": {
-     "p_profit": 0.00665,
+     "p_profit": 0.00565,
      "median": -88.5,
-     "spent": 131.00116
+     "spent": 129.1248
     },
     "10": {
-     "p_profit": 0.00705,
-     "median": -182.84999999999997,
-     "spent": 261.98036
+     "p_profit": 0.0072,
+     "median": -182.79999999999998,
+     "spent": 259.24268
     },
     "30": {
-     "p_profit": 0.0194,
-     "median": -562.425,
-     "spent": 784.4014399999999
+     "p_profit": 0.0178,
+     "median": -557.5,
+     "spent": 774.9073999999999
     }
    }
   },
