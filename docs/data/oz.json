@@ -58,9 +58,9 @@
   "fetch_ok": true,
   "error": null,
   "changed": false,
-  "checked_at": "2026-11-16T11:25+11:00",
+  "checked_at": "2026-11-16T18:22+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-16T11:25+11:00",
+  "last_ok": "2026-11-16T18:22+11:00",
   "history_years": 32
  },
  "config": {
@@ -85,12 +85,12 @@
   "play": false,
   "play_reason": "Jackpot $8 triệu < $50 triệu",
   "min_jackpot": 50000000.0,
-  "status": "preview",
+  "status": "locked",
   "strategy": "balanced",
   "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
   "based_on": 1708,
   "generated_at": "2026-11-11T06:52:04+11:00",
-  "locked_at": null,
+  "locked_at": "2026-11-16T18:22:50+11:00",
   "lines": [
    {
     "main": [
