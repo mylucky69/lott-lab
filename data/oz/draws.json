@@ -45919,5 +45919,65 @@
    "national-lottery"
   ],
   "jackpot": 4000000.0
+ },
+ {
+  "game": "oz",
+  "draw": 1709,
+  "date": "2026-11-17",
+  "main": [
+   3,
+   8,
+   27,
+   32,
+   36,
+   45,
+   47
+  ],
+  "supp": [
+   15,
+   24,
+   35
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 7,
+    "amount": 26737.6
+   },
+   {
+    "div": 3,
+    "winners": 42,
+    "amount": 5266.5
+   },
+   {
+    "div": 4,
+    "winners": 368,
+    "amount": 462.35
+   },
+   {
+    "div": 5,
+    "winners": 2329,
+    "amount": 58.45
+   },
+   {
+    "div": 6,
+    "winners": 60334,
+    "amount": 27.9
+   },
+   {
+    "div": 7,
+    "winners": 157832,
+    "amount": 17.15
+   }
+  ],
+  "sources": [
+   "national-lottery"
+  ],
+  "jackpot": 8000000.0
  }
 ]
