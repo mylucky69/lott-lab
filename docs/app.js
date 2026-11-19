@@ -339,7 +339,7 @@ function trackingCard(g) {
     <div class="stats-row">
       ${tile("Số kỳ đã theo dõi", fmtInt(tot.draws || 0), `${fmtInt(tot.lines || 0)} dòng`)}
       ${tile("Dòng trúng giải", fmtInt(tot.prize_lines || 0), `Kỳ vọng: ${num(expected, 1)}`)}
-      ${tot.with_expectation ? tile("Số kỳ có ≥ 1 giải", `${fmtInt(tot.hit_draws)} / ${fmtInt(tot.draws)}`, `Kỳ vọng ≈ ${num(tot.expected_hit_draws, 1)} kỳ (theo tỉ lệ dự tính từng kỳ)`) : ""}
+      ${tot.with_expectation ? tile("Số kỳ có ≥ 1 giải", `${fmtInt(tot.hit_draws)} / ${fmtInt(tot.draws)}`, `Kỳ vọng ≈ ${num(tot.expected_hit_draws, 1)} kỳ; chọn ngẫu nhiên ≈ ${num(tot.random_hit_draws || 0, 1)} kỳ. Vài kỳ là quá ít để so sánh, xem kiểm chứng trên hàng trăm kỳ ở thẻ “Nên mua bao nhiêu dòng?”`) : ""}
       ${tile("Tổng tiền thưởng", fmtMoney(tot.prize || 0), tot.cost != null ? `Chi phí vé: ${fmtMoney(tot.cost)}` : "Điền giá vé trong config.json để tính lãi/lỗ")}
       ${tot.played && g.config && g.config.min_jackpot ? tile(`Chỉ các kỳ "nên chơi" (${fmtInt(tot.played.draws)} kỳ)`,
         tot.played.net != null ? (tot.played.net >= 0 ? "+" : "−") + fmtMoney(Math.abs(tot.played.net)) : "—",
@@ -506,8 +506,8 @@ function linesCard(g) {
     <div class="table-scroll"><table><thead><tr><th>Dòng/kỳ</th><th class="num">Chi/kỳ</th><th class="num">Nhận lại / $1</th><th class="num">Có ≥ 1 giải</th><th class="num">Thu lại đủ tiền vé</th><th class="num">Trúng jackpot</th><th class="num">Lỗ kỳ vọng/năm</th><th class="num">Thật/năm</th></tr></thead><tbody>${rows}</tbody></table></div>
     <p class="sub" style="margin-top:10px">Nhiều dòng hơn thì khả năng trúng ít nhất 1 giải tăng, nhưng khả năng tiền thưởng đủ bù tiền vé lại giảm (thường chỉ trúng 1 giải nhỏ trong khi đã mua nhiều vé), và lỗ kỳ vọng tăng. Ít dòng thì mỗi $1 nhận lại nhiều hơn. Chọn số dòng theo mục tiêu của bạn trong config.json (goal: p_any / recoup / loss).</p>
     ${L.calibration ? `<h3 style="margin-top:14px">Kiểm chứng tỉ lệ trên kỳ thật</h3>
-    <div class="table-scroll"><table><thead><tr><th>Dòng/kỳ</th><th class="num">Dự tính ≥ 1 giải</th><th class="num">Thực tế</th><th class="num">Số kỳ thử</th></tr></thead><tbody>${
-      L.calibration.map((c) => `<tr><td>${c.lines}</td><td class="num">${c.predicted != null ? pct(c.predicted) : "—"}</td><td class="num">${pct(c.real)} (${fmtInt(c.hits)} kỳ)</td><td class="num">${fmtInt(c.draws)}</td></tr>`).join("")
+    <div class="table-scroll"><table><thead><tr><th>Dòng/kỳ</th><th class="num">Dự tính ≥ 1 giải</th><th class="num">Thực tế</th><th class="num">Chọn ngẫu nhiên (thực tế)</th><th class="num">Số kỳ thử</th></tr></thead><tbody>${
+      L.calibration.map((c) => `<tr><td>${c.lines}</td><td class="num">${c.predicted != null ? pct(c.predicted) : "—"}</td><td class="num">${pct(c.real)} (${fmtInt(c.hits)} kỳ)</td><td class="num">${c.random_real != null ? pct(c.random_real) : "—"}</td><td class="num">${fmtInt(c.draws)}</td></tr>`).join("")
     }</tbody></table></div>
     <p class="sub">Mỗi kỳ trong quá khứ, hệ thống tạo bộ số chỉ từ dữ liệu trước kỳ đó rồi so với kết quả thật. Tỉ lệ dự tính khớp thực tế, nhưng đó là tỉ lệ trung bình: một kỳ cụ thể vẫn có thể không trúng gì, và vài kỳ liền không trúng là bình thường.</p>` : ""}
     ${planRows}

@@ -76,13 +76,16 @@ def study_lines(game: Game, price: float) -> dict | None:
     calib = []
     for n in (10, 20, 35, 50):
         pred = next((r["p_any_prize"] for r in out if r["lines"] == n), None)
-        hits = tested = 0
-        for i in range(30, len(draws)):
+        hits = rnd_hits = tested = 0
+        for i in range(max(30, len(draws) - 400), len(draws)):   # last 400 draws at most (speed)
             d = draws[i]
             L = generate(game, draws[:i], d["draw"], "balanced", n, candidates=800, polish=50)
+            R = generate(game, draws[:i], d["draw"] + 100000, "random", n)
             hits += any(check_line(game, l, d)["div"] for l in L)
+            rnd_hits += any(check_line(game, l, d)["div"] for l in R)
             tested += 1
-        calib.append({"lines": n, "predicted": pred, "real": round(hits / tested, 4), "draws": tested, "hits": hits})
+        calib.append({"lines": n, "predicted": pred, "real": round(hits / tested, 4), "draws": tested, "hits": hits,
+                      "random_real": round(rnd_hits / tested, 4), "random_hits": rnd_hits})
     return {"game": game.id, "threshold": t, "typical_jackpot": J, "draws_per_year": per_year,
             "qualifying_draws": len(q_idx), "price": price, "sizes": out, "calibration": calib}
 
@@ -103,4 +106,4 @@ if __name__ == "__main__":
                   f"{r['jackpot_one_in']:>13,} {r['expected_loss_per_draw']:>9.2f} {r['expected_loss_per_year']:>8,.0f} "
                   f"{r['real_net_per_year']:>8,.0f} {r['line_popularity']:>5.2f}")
         for c in res["calibration"]:
-            print(f"  calibration {c['lines']} lines: predicted {c['predicted']:.1%}, real {c['real']:.1%} ({c['hits']}/{c['draws']} draws)")
+            print(f"  calibration {c['lines']} lines: predicted {c['predicted']:.1%}, real {c['real']:.1%} ({c['hits']}/{c['draws']} draws), random {c['random_real']:.1%}")

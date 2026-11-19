@@ -227,7 +227,7 @@ def build_game(game: Game, status: dict) -> None:
         nxt = pending[-1]
     tracking = [{k: p.get(k) for k in ("draw", "date", "status", "divisions", "prize", "best", "result",
                                       "dividends_known", "lines", "checks", "play", "play_reason", "jackpot",
-                                      "prize_stats")}
+                                      "prize_stats", "simulation_random")}
                 for p in picks if p.get("status") == "settled"]
     price = (CONFIG.get("ticket_price") or {}).get(game.id)
 
@@ -236,6 +236,7 @@ def build_game(game: Game, status: dict) -> None:
         t = {"draws": len(rows), "lines": sum(len(r["lines"]) for r in rows),
              "hit_draws": sum(1 for r in rows if r.get("divisions")),
              "expected_hit_draws": round(sum(r["prize_stats"]["p_any"] for r in with_p), 2),
+             "random_hit_draws": round(sum((r.get("simulation_random") or {}).get("p_any", 0) for r in with_p), 2),
              "with_expectation": len(with_p),
              "prize": round(sum(r["prize"] or 0 for r in rows), 2),
              "prize_lines": sum(sum(r["divisions"].values()) for r in rows)}
