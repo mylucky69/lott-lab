@@ -58,9 +58,9 @@
   "fetch_ok": true,
   "error": null,
   "changed": false,
-  "checked_at": "2026-11-19T19:00+11:00",
+  "checked_at": "2026-11-20T00:33+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-19T19:00+11:00",
+  "last_ok": "2026-11-20T00:33+11:00",
   "history_years": 32
  },
  "config": {
@@ -1446,6 +1446,13 @@
     "p_any": 0.1914,
     "p_recoup": 0.1914,
     "mean_return": 4.1198
+   },
+   "simulation_random": {
+    "draws": 20000,
+    "p_any": 0.18665,
+    "mean_prizes": 0.20375,
+    "p_any_independent": 0.18182700049814005,
+    "mean_prizes_theory": 0.19868122399181484
    }
   },
   {
@@ -1655,6 +1662,13 @@
     "p_any": 0.1886,
     "p_recoup": 0.1886,
     "mean_return": 4.1861
+   },
+   "simulation_random": {
+    "draws": 20000,
+    "p_any": 0.1814,
+    "mean_prizes": 0.1983,
+    "p_any_independent": 0.18182700049814005,
+    "mean_prizes_theory": 0.19868122399181484
    }
   },
   {
@@ -2289,6 +2303,13 @@
     "p_any": 0.5575,
     "p_recoup": 0.0197,
     "mean_return": 15.3277
+   },
+   "simulation_random": {
+    "draws": 20000,
+    "p_any": 0.50875,
+    "mean_prizes": 0.70065,
+    "p_any_independent": 0.50459771954327,
+    "mean_prizes_theory": 0.695384283971352
    }
   }
  ],
@@ -2297,6 +2318,7 @@
   "lines": 55,
   "hit_draws": 0,
   "expected_hit_draws": 0.94,
+  "random_hit_draws": 0.88,
   "with_expectation": 3,
   "prize": 0,
   "prize_lines": 0,
@@ -2307,6 +2329,7 @@
    "lines": 35,
    "hit_draws": 0,
    "expected_hit_draws": 0.56,
+   "random_hit_draws": 0.51,
    "with_expectation": 1,
    "prize": 0,
    "prize_lines": 0,

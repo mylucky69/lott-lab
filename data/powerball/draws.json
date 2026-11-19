@@ -52538,7 +52538,8 @@
    }
   ],
   "sources": [
-   "national-lottery"
+   "national-lottery",
+   "lotteryextreme"
   ],
   "jackpot": 40000000.0
  }

@@ -67,10 +67,13 @@
   "any_prize_p": 0.022736678603082452
  },
  "status": {
-  "fetch_ok": true,
-  "error": null,
+  "fetch_ok": false,
+  "error": "national-lottery: https://australia.national-lottery.com/powerball/results-archive-2026: HTTPSConnectionPool(host='australia.national-lottery.com', port=443): Max retries exceeded with url: /powerball/results-archive-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='australia.national-lottery.com', port=443) at 0x76064f812c00>, 'Connection to australia.national-lottery.com timed out. (con",
   "changed": false,
-  "checked_at": "2026-11-19T19:00+11:00",
+  "checked_at": "2026-11-20T00:34+11:00",
+  "sources_ok": [
+   "lotteryextreme"
+  ],
   "new_draws": [],
   "last_ok": "2026-11-19T19:00+11:00",
   "history_years": 30
@@ -414,7 +417,8 @@
     }
    ],
    "sources": [
-    "national-lottery"
+    "national-lottery",
+    "lotteryextreme"
    ],
    "jackpot": 40000000.0
   },
@@ -1691,6 +1695,13 @@
     "p_any": 0.3362,
     "p_recoup": 0.1098,
     "mean_return": 8.0533
+   },
+   "simulation_random": {
+    "draws": 20000,
+    "p_any": 0.3135,
+    "mean_prizes": 0.3463,
+    "p_any_independent": 0.29177054111252343,
+    "mean_prizes_theory": 0.3410501790462368
    }
   },
   {
@@ -1908,6 +1919,13 @@
     "p_any": 0.2252,
     "p_recoup": 0.0732,
     "mean_return": 7.2116
+   },
+   "simulation_random": {
+    "draws": 20000,
+    "p_any": 0.21405,
+    "mean_prizes": 0.226,
+    "p_any_independent": 0.20545958742560977,
+    "mean_prizes_theory": 0.22736678603082452
    }
   }
  ],
@@ -1916,6 +1934,7 @@
   "lines": 25,
   "hit_draws": 0,
   "expected_hit_draws": 0.56,
+  "random_hit_draws": 0.53,
   "with_expectation": 2,
   "prize": 0,
   "prize_lines": 0,
@@ -1926,6 +1945,7 @@
    "lines": 0,
    "hit_draws": 0,
    "expected_hit_draws": 0,
+   "random_hit_draws": 0,
    "with_expectation": 0,
    "prize": 0,
    "prize_lines": 0,

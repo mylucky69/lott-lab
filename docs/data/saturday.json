@@ -52,9 +52,9 @@
   "fetch_ok": true,
   "error": null,
   "changed": false,
-  "checked_at": "2026-11-19T19:00+11:00",
+  "checked_at": "2026-11-20T00:35+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-19T19:00+11:00",
+  "last_ok": "2026-11-20T00:35+11:00",
   "history_years": 41
  },
  "config": {
@@ -1529,6 +1529,13 @@
     "p_any": 0.4265,
     "p_recoup": 0.0428,
     "mean_return": 6.1606
+   },
+   "simulation_random": {
+    "draws": 20000,
+    "p_any": 0.3947,
+    "mean_prizes": 0.4778,
+    "p_any_independent": 0.3827333095192924,
+    "mean_prizes_theory": 0.4766815714064721
    }
   },
   {
@@ -1966,6 +1973,13 @@
     "p_any": 0.5063,
     "p_recoup": 0.0603,
     "mean_return": 8.1168
+   },
+   "simulation_random": {
+    "draws": 20000,
+    "p_any": 0.45805,
+    "mean_prizes": 0.6033,
+    "p_any_independent": 0.45286934015382896,
+    "mean_prizes_theory": 0.5958519642580902
    }
   }
  ],
@@ -1974,6 +1988,7 @@
   "lines": 45,
   "hit_draws": 1,
   "expected_hit_draws": 0.93,
+  "random_hit_draws": 0.85,
   "with_expectation": 2,
   "prize": 18.5,
   "prize_lines": 1,
@@ -1984,6 +1999,7 @@
    "lines": 0,
    "hit_draws": 0,
    "expected_hit_draws": 0,
+   "random_hit_draws": 0,
    "with_expectation": 0,
    "prize": 0,
    "prize_lines": 0,
