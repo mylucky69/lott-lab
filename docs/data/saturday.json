@@ -2402,7 +2402,7 @@
   "draws": 150,
   "from": "2024-01-06",
   "to": "2026-11-14",
-  "run_at": "2026-11-15T21:19+11:00"
+  "run_at": "2026-11-20T01:05+11:00"
  },
  "models": {
   "game": "saturday",
@@ -3012,30 +3012,38 @@
    {
     "lines": 10,
     "predicted": 0.2262,
-    "real": 0.2237,
-    "draws": 2070,
-    "hits": 463
+    "real": 0.245,
+    "draws": 400,
+    "hits": 98,
+    "random_real": 0.2325,
+    "random_hits": 93
    },
    {
     "lines": 20,
     "predicted": 0.4252,
-    "real": 0.4396,
-    "draws": 2070,
-    "hits": 910
+    "real": 0.4275,
+    "draws": 400,
+    "hits": 171,
+    "random_real": 0.3825,
+    "random_hits": 153
    },
    {
     "lines": 35,
     "predicted": 0.6462,
-    "real": 0.629,
-    "draws": 2070,
-    "hits": 1302
+    "real": 0.64,
+    "draws": 400,
+    "hits": 256,
+    "random_real": 0.53,
+    "random_hits": 212
    },
    {
     "lines": 50,
     "predicted": 0.7916,
-    "real": 0.7845,
-    "draws": 2070,
-    "hits": 1624
+    "real": 0.765,
+    "draws": 400,
+    "hits": 306,
+    "random_real": 0.67,
+    "random_hits": 268
    }
   ]
  },

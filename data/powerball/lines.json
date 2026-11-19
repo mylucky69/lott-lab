@@ -176,30 +176,38 @@
   {
    "lines": 10,
    "predicted": 0.2248,
-   "real": 0.2134,
-   "draws": 417,
-   "hits": 89
+   "real": 0.2175,
+   "draws": 400,
+   "hits": 87,
+   "random_real": 0.2225,
+   "random_hits": 89
   },
   {
    "lines": 20,
    "predicted": 0.4461,
-   "real": 0.4844,
-   "draws": 417,
-   "hits": 202
+   "real": 0.4825,
+   "draws": 400,
+   "hits": 193,
+   "random_real": 0.4025,
+   "random_hits": 161
   },
   {
    "lines": 35,
    "predicted": 0.6431,
-   "real": 0.6235,
-   "draws": 417,
-   "hits": 260
+   "real": 0.63,
+   "draws": 400,
+   "hits": 252,
+   "random_real": 0.58,
+   "random_hits": 232
   },
   {
    "lines": 50,
    "predicted": 0.766,
-   "real": 0.7626,
-   "draws": 417,
-   "hits": 318
+   "real": 0.7625,
+   "draws": 400,
+   "hits": 305,
+   "random_real": 0.6675,
+   "random_hits": 267
   }
  ]
 }
