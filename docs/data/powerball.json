@@ -69,17 +69,10 @@
  "status": {
   "fetch_ok": true,
   "error": null,
-  "changed": true,
-  "checked_at": "2026-11-20T23:47+11:00",
-  "sources_ok": [
-   "lotteryextreme",
-   "national-lottery",
-   "lotteryguru"
-  ],
-  "new_draws": [
-   1592
-  ],
-  "last_ok": "2026-11-20T23:47+11:00",
+  "changed": false,
+  "checked_at": "2026-11-21T03:27+11:00",
+  "new_draws": [],
+  "last_ok": "2026-11-21T03:27+11:00",
   "history_years": 30
  },
  "config": {
