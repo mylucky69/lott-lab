@@ -237,3 +237,25 @@ def parse_lotteryguru_history(page: str) -> dict:
 
 def lotteryguru_history(game: Game, page: int = 1) -> dict:
     return parse_lotteryguru_history(polite_get(lg_history_url(game, page)))
+
+
+def parse_lotteryguru_results(game: Game, page: str) -> list[dict]:
+    """Winning numbers listed on a lotteryguru history page: main numbers, then the
+    supplementary numbers (or the Powerball). The page shows no draw number, so callers
+    attach one by date."""
+    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", _clean(page))))
+    out = []
+    pat = r"(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) (\d{1,2} [A-Z][a-z]{2} \d{4})((?: \d{1,2})+) Jackpot"
+    extra = 1 if game.pb_pool else game.supps
+    for date, nums in re.findall(pat, text):
+        n = [int(x) for x in nums.split()]
+        if len(n) < game.drawn + extra:
+            continue
+        try:
+            iso = dt.datetime.strptime(date, "%d %b %Y").date().isoformat()
+        except ValueError:
+            continue
+        main, supp = n[:game.drawn], n[game.drawn:game.drawn + extra]
+        out.append({"game": game.id, "date": iso, "main": sorted(main),
+                    "supp": supp if game.pb_pool else sorted(supp), "dividends": [], "source": "lotteryguru"})
+    return out

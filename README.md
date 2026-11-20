@@ -90,6 +90,7 @@ không ngưỡng nào cho giá trị ≥ $1: jackpot càng lớn càng nhiều n
 | Nguồn | Dùng để | Ghi chú |
 |---|---|---|
 | [australia.national-lottery.com](https://australia.national-lottery.com/oz-lotto/results-archive-2025) | Toàn bộ lịch sử, mỗi năm 1 trang (Oz Lotto từ 1994, Powerball từ 1996, Saturday Lotto từ 1985) | Tải một lần, sau đó chỉ trang năm hiện tại |
+| [lotteryguru.com](https://lotteryguru.com/australia-lottery-results/au-oz-lotto/au-oz-lotto-results-history) | Kết quả mới (thường có sớm nhất) và jackpot từng kỳ | Đối chiếu chéo với hai nguồn còn lại |
 | [lotteryextreme.com](https://www.lotteryextreme.com/australia/ozlotto-results) | 20 kỳ gần nhất, bảng tiền thưởng, và lịch sử (mỗi kỳ 1 trang, tải lùi tối đa 300 trang/lần, 2 lần/ngày) | Nguồn chính cho kỳ mới |
 
 Mỗi kỳ được đối chiếu giữa 2 nguồn; nếu số khác nhau, hệ thống giữ số cũ và hiện cảnh báo.

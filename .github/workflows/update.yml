@@ -1,7 +1,8 @@
 name: Cập nhật kết quả
 
-# GitHub hay trễ hoặc bỏ các lần chạy theo lịch khi quá tải, nên chạy mỗi 30 phút cả ngày.
-# Mỗi lần chạy chỉ tải dữ liệu khi đã đến giờ có kết quả mới (vài trang mỗi kỳ quay).
+# GitHub hay trễ hoặc bỏ các lần chạy theo lịch, nên mỗi lần được chạy, quy trình tự lặp lại
+# mỗi 15 phút (tối đa ~5,5 giờ) chừng nào còn việc đang chờ: kết quả đã đến giờ nhưng chưa có,
+# hoặc sắp đến giờ chốt bộ số. Không còn việc thì dừng ngay.
 on:
   schedule:
     - cron: "20,50 * * * *"
@@ -11,13 +12,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: lott-data
+  group: lott-update        # own queue, so a long loop never blocks history/backtest runs
   cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 345
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -25,6 +26,14 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - run: python -m lottlab update
-      - name: Lưu thay đổi
-        run: bash .github/scripts/save.sh "Cập nhật dữ liệu $(TZ=Australia/Sydney date '+%Y-%m-%d %H:%M')"
+      - name: Cập nhật (lặp lại khi còn việc đang chờ)
+        run: |
+          end=$((SECONDS + 5 * 3600 + 1800))
+          while true; do
+            python -m lottlab update
+            bash .github/scripts/save.sh "Cập nhật dữ liệu $(TZ=Australia/Sydney date '+%Y-%m-%d %H:%M')"
+            python -m lottlab pending || { echo "Không còn việc đang chờ"; break; }
+            if [ $SECONDS -ge $end ]; then echo "Hết thời gian, lần chạy sau sẽ tiếp tục"; break; fi
+            sleep 900
+            git pull -q --rebase || true
+          done

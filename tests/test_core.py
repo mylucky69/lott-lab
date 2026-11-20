@@ -75,7 +75,7 @@ def test_pipeline_preview_lock_settle(env, monkeypatch):
     import lottlab.sources as src
     def offline(*a, **k):
         raise src.SourceError("offline")
-    for name in ("lotteryextreme_latest", "national_lottery_year", "lotteryextreme_dividends"):
+    for name in ("lotteryextreme_latest", "national_lottery_year", "lotteryextreme_dividends", "polite_get"):
         monkeypatch.setattr(cli.src, name, offline)
     oz = GAMES["oz"]
     draws = fake_draws(oz, 40)
@@ -186,3 +186,13 @@ def test_per_game_jackpot_threshold(monkeypatch):
     assert cli.play_decision(GAMES["saturday"], 10e6)["play"] is False
     assert cli.play_decision(GAMES["powerball"], 1e6)["play"] is True      # no threshold set
     assert cli.play_decision(GAMES["oz"], None)["play"] is None
+
+
+
+def test_lotteryguru_results_parser():
+    from lottlab.games import GAMES, valid_draw
+    from lottlab import sources as src
+    rows = src.parse_lotteryguru_results(GAMES["oz"], (FIX / "lg_oz.html").read_text())
+    assert len(rows) == 10 and all(valid_draw(GAMES["oz"], {**r, "draw": 0}) for r in rows)
+    assert rows[0]["date"] == "2026-10-27" and rows[0]["main"] == [8, 13, 21, 34, 36, 40, 42]
+    assert rows[0]["supp"] == [10, 15, 27]

@@ -319,6 +319,32 @@ def fetch_new(game: Game, st: dict) -> None:
             merge(src.national_lottery_year(game, src_year()), "national-lottery")
         except src.SourceError as e:
             errors.append(f"national-lottery: {e}")
+    # third source: lotteryguru (also gives the jackpots). Its page shows no draw number,
+    # so a new result is numbered only when its date is exactly the next expected draw.
+    lg_page = None
+    if last_date < due or not any(d.get("jackpot") for d in load_draws(game)[-1:]):
+        try:
+            lg_page = src.polite_get(src.lg_history_url(game, 1))
+        except src.SourceError as e:
+            errors.append(f"lotteryguru: {e}")
+    if lg_page:
+        by_date = {d["date"]: d for d in load_draws(game, valid_only=False)}
+        rows, new_rows = [], []
+        for r in sorted(src.parse_lotteryguru_results(game, lg_page), key=lambda r: r["date"]):
+            if r["date"] in by_date:
+                rows.append({**r, "draw": by_date[r["date"]]["draw"]})   # cross-check
+            elif r["date"] > (load_draws(game)[-1]["date"] if load_draws(game) else ""):
+                new_rows.append(r)
+        if rows:
+            merge(rows, "lotteryguru")
+        for r in new_rows:
+            cur = load_draws(game)
+            nxt = next_draw(game, cur) if cur else None
+            if nxt and nxt["date"] == r["date"]:
+                merge([{**r, "draw": nxt["draw"]}], "lotteryguru")
+            else:
+                errors.append(f"lotteryguru: cannot number draw of {r['date']}")
+                break
     # prize tables for recent draws (published a little after the numbers)
     recent_cut = (now_sydney().date() - dt.timedelta(days=10)).isoformat()
     for d in [d for d in load_draws(game) if d["date"] >= recent_cut and not d.get("dividends")][-3:]:
@@ -331,6 +357,8 @@ def fetch_new(game: Game, st: dict) -> None:
             errors.append(f"dividends #{d['draw']}: {e}")
     # announced jackpot for the next draw (one request per draw)
     have = load_draws(game)
+    if lg_page:
+        set_jackpots(game, src.parse_lotteryguru_history(lg_page)["draws"])
     if have:
         nxt = next_draw(game, have)
         jp_path = DATA / game.id / "jackpot.json"
@@ -338,7 +366,8 @@ def fetch_new(game: Game, st: dict) -> None:
         if jp.get("for_draw") != nxt["draw"]:
             found = None
             try:  # history page 1: next jackpot + jackpots of the last 10 draws
-                page = src.lotteryguru_history(game, 1)
+                page = (src.parse_lotteryguru_history(lg_page) if lg_page
+                        else src.lotteryguru_history(game, 1))
                 set_jackpots(game, page["draws"])
                 found = page["next"]
             except Exception as e:  # optional information
@@ -424,6 +453,29 @@ def cmd_update(only: list[str]) -> int:
         statuses[game.id] = st
     build_index(statuses)
     return 0
+
+
+def cmd_pending(args: list[str]) -> int:
+    """Exit 0 if something is waiting (a due result not fetched yet, or a lock within
+    the next few hours), else 1. Used by the workflow to keep looping only when needed."""
+    horizon = float(args[0]) if args else 6.0
+    now = now_sydney()
+    waiting = []
+    for game in GAMES.values():
+        draws = load_draws(game)
+        if draws and draws[-1]["date"] < latest_due_date(game).isoformat():
+            # stop waiting for a result after 3 days (manual entry can take over)
+            if (now.date() - latest_due_date(game)).days <= 3:
+                waiting.append(f"{game.name}: result of {latest_due_date(game)}")
+        for p in all_picks(game):
+            if p.get("status") == "preview" and p.get("lock_at"):
+                lock = dt.datetime.fromisoformat(p["lock_at"])
+                if now < lock <= now + dt.timedelta(hours=horizon) or \
+                        (lock <= now and p["date"] >= now.date().isoformat()):
+                    waiting.append(f"{game.name}: lock of #{p['draw']} at {p['lock_at']}")
+    for w in waiting:
+        log(f"  waiting: {w}")
+    return 0 if waiting else 1
 
 
 def cmd_backfill(only: list[str]) -> int:
@@ -625,7 +677,7 @@ def main(argv: list[str]) -> int:
         return 1
     cmds = {"update": cmd_update, "backfill": cmd_backfill, "add-result": cmd_add_result,
             "import-csv": cmd_import_csv, "backtest": cmd_backtest, "build": cmd_build,
-            "history": cmd_history, "jackpots": cmd_jackpots}
+            "history": cmd_history, "jackpots": cmd_jackpots, "pending": cmd_pending}
     if argv[0] not in cmds:
         print(__doc__)
         return 1
