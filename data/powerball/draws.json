@@ -51987,7 +51987,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 12000000.0
  },
@@ -52056,7 +52057,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 20000000.0
  },
@@ -52125,7 +52127,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 40000000.0
  },
@@ -52194,7 +52197,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 60000000.0
  },
@@ -52263,7 +52267,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 100000000.0
  },
@@ -52332,7 +52337,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 10000000.0
  },
@@ -52401,7 +52407,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 20000000.0
  },
@@ -52470,7 +52477,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 30000000.0
  },
@@ -52539,8 +52547,79 @@
   ],
   "sources": [
    "national-lottery",
-   "lotteryextreme"
+   "lotteryextreme",
+   "lotteryguru"
   ],
   "jackpot": 40000000.0
+ },
+ {
+  "game": "powerball",
+  "draw": 1592,
+  "date": "2026-11-19",
+  "main": [
+   3,
+   4,
+   9,
+   16,
+   21,
+   32,
+   35
+  ],
+  "supp": [
+   16
+  ],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 2,
+    "amount": 485885.9
+   },
+   {
+    "div": 3,
+    "winners": 142,
+    "amount": 8464.3
+   },
+   {
+    "div": 4,
+    "winners": 2836,
+    "amount": 369.7
+   },
+   {
+    "div": 5,
+    "winners": 3639,
+    "amount": 217.85
+   },
+   {
+    "div": 6,
+    "winners": 53219,
+    "amount": 92.75
+   },
+   {
+    "div": 7,
+    "winners": 69566,
+    "amount": 55.15
+   },
+   {
+    "div": 8,
+    "winners": 335722,
+    "amount": 24.4
+   },
+   {
+    "div": 9,
+    "winners": 975686,
+    "amount": 14.4
+   }
+  ],
+  "sources": [
+   "lotteryextreme",
+   "national-lottery",
+   "lotteryguru"
+  ],
+  "jackpot": 60000000.0
  }
 ]
