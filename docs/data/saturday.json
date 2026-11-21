@@ -50,18 +50,11 @@
  },
  "status": {
   "fetch_ok": true,
-  "error": "national-lottery: https://australia.national-lottery.com/saturday-lotto/results-archive-2026: HTTPSConnectionPool(host='australia.national-lottery.com', port=443): Max retries exceeded with url: /saturday-lotto/results-archive-2026 (Caused by ConnectTimeoutError(<HTTPSConnection(host='australia.national-lottery.com', port=443) at 0x707d20e1f6e0>, 'Connection to australia.national-lottery.com timed",
+  "error": "dividends #4731: https://www.lotteryextreme.com/australia/saturdaylotto-dividends(2026-11-21): HTTP 404",
   "changed": true,
-  "checked_at": "2026-11-21T23:49+11:00",
-  "sources_ok": [
-   "lotteryextreme",
-   "lotteryguru",
-   "lotteryguru"
-  ],
-  "new_draws": [
-   4731
-  ],
-  "last_ok": "2026-11-21T23:49+11:00",
+  "checked_at": "2026-11-22T06:51+11:00",
+  "new_draws": [],
+  "last_ok": "2026-11-22T06:51+11:00",
   "history_years": 41
  },
  "config": {
@@ -82,35 +75,165 @@
   "draw": 4733,
   "date": "2026-11-28",
   "lock_at": "2026-11-27T17:00:00+11:00",
-  "jackpot": null,
-  "play": null,
-  "play_reason": "Chưa có thông tin jackpot",
+  "jackpot": 6000000.0,
+  "play": false,
+  "play_reason": "Jackpot $6 triệu < $12 triệu",
   "min_jackpot": 12000000.0,
   "status": "preview",
   "strategy": "balanced",
   "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
   "based_on": 4731,
-  "generated_at": "2026-11-21T23:50:02+11:00",
+  "generated_at": "2026-11-22T06:52:00+11:00",
   "locked_at": null,
   "lines": [
    {
     "main": [
+     1,
      2,
-     14,
+     3,
+     5,
+     13,
+     40
+    ]
+   },
+   {
+    "main": [
+     1,
+     6,
+     21,
+     23,
+     33,
+     42
+    ]
+   },
+   {
+    "main": [
+     1,
+     11,
+     18,
+     22,
+     32,
+     34
+    ]
+   },
+   {
+    "main": [
+     2,
+     7,
      15,
+     19,
+     33,
+     44
+    ]
+   },
+   {
+    "main": [
+     2,
+     12,
+     23,
+     30,
+     35,
+     41
+    ]
+   },
+   {
+    "main": [
+     3,
+     14,
+     22,
+     27,
      28,
-     34,
-     36
+     35
+    ]
+   },
+   {
+    "main": [
+     4,
+     9,
+     10,
+     26,
+     37,
+     39
+    ]
+   },
+   {
+    "main": [
+     4,
+     12,
+     19,
+     20,
+     32,
+     40
+    ]
+   },
+   {
+    "main": [
+     5,
+     17,
+     18,
+     31,
+     39,
+     45
     ]
    },
    {
     "main": [
      6,
-     12,
-     20,
+     9,
+     13,
+     24,
+     27,
+     32
+    ]
+   },
+   {
+    "main": [
+     6,
+     35,
+     38,
+     39,
+     40,
+     43
+    ]
+   },
+   {
+    "main": [
+     7,
+     8,
+     16,
      29,
      30,
+     31
+    ]
+   },
+   {
+    "main": [
+     8,
+     10,
+     11,
+     12,
+     17,
+     43
+    ]
+   },
+   {
+    "main": [
+     10,
+     14,
+     24,
+     29,
+     38,
      41
+    ]
+   },
+   {
+    "main": [
+     14,
+     15,
+     16,
+     25,
+     26,
+     36
     ]
    },
    {
@@ -125,50 +248,115 @@
    },
    {
     "main": [
-     23,
-     24,
-     35,
+     20,
+     28,
+     34,
+     37,
      38,
-     39,
-     43
+     42
     ]
    },
    {
     "main": [
+     21,
+     29,
+     34,
+     36,
+     39,
+     44
+    ]
+   },
+   {
+    "main": [
+     24,
      25,
+     30,
+     34,
+     43,
+     45
+    ]
+   },
+   {
+    "main": [
      31,
      32,
      33,
+     36,
      37,
-     45
+     41
     ]
    }
   ],
   "rules": 5,
-  "lines_key": "auto|{'max_expected_loss_per_draw': 12, 'min': 5, 'max': 50, 'target_p_any': 0.5, 'goal': 'p_any'}|None",
+  "lines_key": "auto|{'max_expected_loss_per_draw': 12, 'min': 5, 'max': 50, 'target_p_any': 0.5, 'goal': 'p_any'}|6000000.0",
   "lines_plan": {
    "mode": "auto",
-   "lines": 5,
-   "reason": "Chưa có jackpot hoặc mô hình, dùng số dòng tối thiểu"
+   "lines": 20,
+   "budget": 12.0,
+   "target_p_any": 0.5,
+   "goal": "p_any",
+   "table": [
+    {
+     "lines": 5,
+     "per_dollar": 0.551,
+     "expected_loss": 2.19,
+     "p_any": 0.1181,
+     "p_recoup": 0.1181,
+     "cost": 4.88
+    },
+    {
+     "lines": 10,
+     "per_dollar": 0.52,
+     "expected_loss": 4.68,
+     "p_any": 0.2267,
+     "p_recoup": 0.0546,
+     "cost": 9.76
+    },
+    {
+     "lines": 15,
+     "per_dollar": 0.503,
+     "expected_loss": 7.28,
+     "p_any": 0.3255,
+     "p_recoup": 0.0906,
+     "cost": 14.64
+    },
+    {
+     "lines": 20,
+     "per_dollar": 0.492,
+     "expected_loss": 9.92,
+     "p_any": 0.4208,
+     "p_recoup": 0.0433,
+     "cost": 19.52
+    },
+    {
+     "lines": 25,
+     "per_dollar": 0.484,
+     "expected_loss": 12.59,
+     "p_any": 0.5037,
+     "p_recoup": 0.0613,
+     "cost": 24.4
+    }
+   ],
+   "reason": "Chưa đạt 50% vì vượt trần lỗ $12/kỳ; dùng nhiều dòng nhất trong trần"
   },
   "simulation": {
    "draws": 20000,
-   "p_any": 0.11915,
-   "mean_prizes": 0.1206,
-   "p_any_independent": 0.11362354670380292,
-   "mean_prizes_theory": 0.11917039285161803
+   "p_any": 0.42525,
+   "mean_prizes": 0.4776,
+   "p_any_independent": 0.3827333095192924,
+   "mean_prizes_theory": 0.4766815714064721
   },
   "prize_stats": {
-   "p_any": 0.119,
-   "p_recoup": 0.119,
-   "mean_return": 1.8185
+   "p_any": 0.4233,
+   "p_recoup": 0.0421,
+   "mean_return": 6.4473
   },
   "simulation_random": {
    "draws": 20000,
-   "p_any": 0.1113,
-   "mean_prizes": 0.1191,
-   "p_any_independent": 0.11362354670380292,
-   "mean_prizes_theory": 0.11917039285161803
+   "p_any": 0.38315,
+   "mean_prizes": 0.4754,
+   "p_any_independent": 0.3827333095192924,
+   "mean_prizes_theory": 0.4766815714064721
   }
  },
  "latest": [
@@ -190,7 +378,8 @@
    "dividends": [],
    "draw": 4731,
    "sources": [
-    "lotteryguru"
+    "lotteryguru",
+    "national-lottery"
    ],
    "jackpot": 6000000.0
   },
@@ -3206,8 +3395,15 @@
   "price": 0.976,
   "low_div_ev": 0.3181,
   "entries": 36440652.51081081,
-  "jackpot": null,
-  "jackpot_source": null
+  "jackpot": 6000000.0,
+  "set_ratio": 1.0573,
+  "ev_line": 0.4735,
+  "per_dollar": 0.521,
+  "per_dollar_busy": 0.485,
+  "expected_sales": 46094597,
+  "break_even_jackpot": null,
+  "rating": "low",
+  "jackpot_source": "lotteryguru.com"
  },
  "history": {
   "dividends_tried": [
