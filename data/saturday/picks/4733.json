@@ -1,0 +1,94 @@
+{
+ "game": "saturday",
+ "draw": 4733,
+ "date": "2026-11-28",
+ "lock_at": "2026-11-27T17:00:00+11:00",
+ "jackpot": null,
+ "play": null,
+ "play_reason": "Chưa có thông tin jackpot",
+ "min_jackpot": 12000000.0,
+ "status": "preview",
+ "strategy": "balanced",
+ "strategy_label": "Phủ đều + tránh bộ số phổ biến (khuyến nghị)",
+ "based_on": 4731,
+ "generated_at": "2026-11-21T23:50:02+11:00",
+ "locked_at": null,
+ "lines": [
+  {
+   "main": [
+    2,
+    14,
+    15,
+    28,
+    34,
+    36
+   ]
+  },
+  {
+   "main": [
+    6,
+    12,
+    20,
+    29,
+    30,
+    41
+   ]
+  },
+  {
+   "main": [
+    16,
+    40,
+    41,
+    42,
+    44,
+    45
+   ]
+  },
+  {
+   "main": [
+    23,
+    24,
+    35,
+    38,
+    39,
+    43
+   ]
+  },
+  {
+   "main": [
+    25,
+    31,
+    32,
+    33,
+    37,
+    45
+   ]
+  }
+ ],
+ "rules": 5,
+ "lines_key": "auto|{'max_expected_loss_per_draw': 12, 'min': 5, 'max': 50, 'target_p_any': 0.5, 'goal': 'p_any'}|None",
+ "lines_plan": {
+  "mode": "auto",
+  "lines": 5,
+  "reason": "Chưa có jackpot hoặc mô hình, dùng số dòng tối thiểu"
+ },
+ "simulation": {
+  "draws": 20000,
+  "p_any": 0.11915,
+  "mean_prizes": 0.1206,
+  "p_any_independent": 0.11362354670380292,
+  "mean_prizes_theory": 0.11917039285161803
+ },
+ "prize_stats": {
+  "p_any": 0.119,
+  "p_recoup": 0.119,
+  "mean_return": 1.8185
+ },
+ "simulation_random": {
+  "draws": 20000,
+  "p_any": 0.1113,
+  "mean_prizes": 0.1191,
+  "p_any_independent": 0.11362354670380292,
+  "mean_prizes_theory": 0.11917039285161803
+ }
+}

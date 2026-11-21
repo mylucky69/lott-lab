@@ -58575,7 +58575,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 6000000.0
  },
@@ -58629,7 +58630,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 6000000.0
  },
@@ -58683,7 +58685,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 6000000.0
  },
@@ -58737,7 +58740,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 6000000.0
  },
@@ -58791,7 +58795,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 6000000.0
  },
@@ -58845,7 +58850,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 6000000.0
  },
@@ -58899,7 +58905,8 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
   ],
   "jackpot": 20000000.0
  },
@@ -58953,7 +58960,8 @@
   ],
   "sources": [
    "national-lottery",
-   "lotteryextreme"
+   "lotteryextreme",
+   "lotteryguru"
   ],
   "jackpot": 10000000.0
  },
@@ -59007,7 +59015,30 @@
   ],
   "sources": [
    "lotteryextreme",
-   "national-lottery"
+   "national-lottery",
+   "lotteryguru"
+  ],
+  "jackpot": 6000000.0
+ },
+ {
+  "game": "saturday",
+  "date": "2026-11-21",
+  "main": [
+   7,
+   10,
+   11,
+   16,
+   35,
+   39
+  ],
+  "supp": [
+   25,
+   37
+  ],
+  "dividends": [],
+  "draw": 4731,
+  "sources": [
+   "lotteryguru"
   ],
   "jackpot": 6000000.0
  }
