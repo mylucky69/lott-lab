@@ -59035,7 +59035,38 @@
    25,
    37
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 1,
+    "amount": 5939014.17
+   },
+   {
+    "div": 2,
+    "winners": 45,
+    "amount": 12673.85
+   },
+   {
+    "div": 3,
+    "winners": 894,
+    "amount": 965.7
+   },
+   {
+    "div": 4,
+    "winners": 48020,
+    "amount": 26.7
+   },
+   {
+    "div": 5,
+    "winners": 119623,
+    "amount": 16.75
+   },
+   {
+    "div": 6,
+    "winners": 725411,
+    "amount": 9.35
+   }
+  ],
   "draw": 4731,
   "sources": [
    "lotteryguru",

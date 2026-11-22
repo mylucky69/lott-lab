@@ -50,11 +50,11 @@
  },
  "status": {
   "fetch_ok": true,
-  "error": "dividends #4731: https://www.lotteryextreme.com/australia/saturdaylotto-dividends(2026-11-21): HTTP 404",
-  "changed": false,
-  "checked_at": "2026-11-23T02:43+11:00",
+  "error": null,
+  "changed": true,
+  "checked_at": "2026-11-23T08:20+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-23T02:43+11:00",
+  "last_ok": "2026-11-23T08:20+11:00",
   "history_years": 41
  },
  "config": {
@@ -375,7 +375,38 @@
     25,
     37
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 1,
+     "amount": 5939014.17
+    },
+    {
+     "div": 2,
+     "winners": 45,
+     "amount": 12673.85
+    },
+    {
+     "div": 3,
+     "winners": 894,
+     "amount": 965.7
+    },
+    {
+     "div": 4,
+     "winners": 48020,
+     "amount": 26.7
+    },
+    {
+     "div": 5,
+     "winners": 119623,
+     "amount": 16.75
+    },
+    {
+     "div": 6,
+     "winners": 725411,
+     "amount": 9.35
+    }
+   ],
    "draw": 4731,
    "sources": [
     "lotteryguru",
@@ -3393,13 +3424,13 @@
  },
  "value": {
   "price": 0.976,
-  "low_div_ev": 0.3181,
-  "entries": 36440652.51081081,
+  "low_div_ev": 0.3205,
+  "entries": 35387352.925241195,
   "jackpot": 6000000.0,
-  "set_ratio": 1.0573,
-  "ev_line": 0.4735,
-  "per_dollar": 0.521,
-  "per_dollar_busy": 0.485,
+  "set_ratio": 1.0572,
+  "ev_line": 0.476,
+  "per_dollar": 0.528,
+  "per_dollar_busy": 0.488,
   "expected_sales": 46094597,
   "break_even_jackpot": null,
   "rating": "low",
