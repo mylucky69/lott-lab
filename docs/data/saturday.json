@@ -51,10 +51,10 @@
  "status": {
   "fetch_ok": true,
   "error": "dividends #4731: https://www.lotteryextreme.com/australia/saturdaylotto-dividends(2026-11-21): HTTP 404",
-  "changed": true,
-  "checked_at": "2026-11-22T06:51+11:00",
+  "changed": false,
+  "checked_at": "2026-11-22T11:27+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-22T06:51+11:00",
+  "last_ok": "2026-11-22T11:27+11:00",
   "history_years": 41
  },
  "config": {
