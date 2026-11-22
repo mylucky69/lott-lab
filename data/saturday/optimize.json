@@ -32,92 +32,92 @@
    "jackpot": 10000000.0,
    "sales": 54155522,
    "per_dollar": 0.507,
-   "set_per_dollar": 0.526
+   "set_per_dollar": 0.527
   },
   {
    "jackpot": 15000000.0,
    "sales": 64231678,
    "per_dollar": 0.557,
-   "set_per_dollar": 0.58
+   "set_per_dollar": 0.581
   },
   {
    "jackpot": 20000000.0,
    "sales": 74307834,
    "per_dollar": 0.594,
-   "set_per_dollar": 0.62
+   "set_per_dollar": 0.621
   },
   {
    "jackpot": 25000000.0,
    "sales": 84383991,
    "per_dollar": 0.621,
-   "set_per_dollar": 0.649
+   "set_per_dollar": 0.651
   },
   {
    "jackpot": 30000000.0,
    "sales": 94460147,
    "per_dollar": 0.643,
-   "set_per_dollar": 0.673
+   "set_per_dollar": 0.675
   },
   {
    "jackpot": 40000000.0,
    "sales": 114612459,
    "per_dollar": 0.676,
-   "set_per_dollar": 0.708
+   "set_per_dollar": 0.71
   },
   {
    "jackpot": 50000000.0,
    "sales": 134764772,
    "per_dollar": 0.698,
-   "set_per_dollar": 0.732
+   "set_per_dollar": 0.734
   },
   {
    "jackpot": 60000000.0,
    "sales": 154917084,
    "per_dollar": 0.715,
-   "set_per_dollar": 0.751
+   "set_per_dollar": 0.753
   },
   {
    "jackpot": 70000000.0,
    "sales": 175069397,
    "per_dollar": 0.728,
-   "set_per_dollar": 0.765
+   "set_per_dollar": 0.767
   },
   {
    "jackpot": 80000000.0,
    "sales": 195221709,
    "per_dollar": 0.738,
-   "set_per_dollar": 0.775
+   "set_per_dollar": 0.778
   },
   {
    "jackpot": 100000000.0,
    "sales": 235526334,
    "per_dollar": 0.753,
-   "set_per_dollar": 0.792
+   "set_per_dollar": 0.794
   },
   {
    "jackpot": 120000000.0,
    "sales": 275830959,
    "per_dollar": 0.764,
-   "set_per_dollar": 0.803
+   "set_per_dollar": 0.806
   },
   {
    "jackpot": 150000000.0,
    "sales": 336287896,
    "per_dollar": 0.775,
-   "set_per_dollar": 0.815
+   "set_per_dollar": 0.818
   },
   {
    "jackpot": 200000000.0,
    "sales": 437049458,
    "per_dollar": 0.787,
-   "set_per_dollar": 0.828
+   "set_per_dollar": 0.831
   }
  ],
  "curve_best": {
   "jackpot": 200000000.0,
   "sales": 437049458,
   "per_dollar": 0.787,
-  "set_per_dollar": 0.828
+  "set_per_dollar": 0.831
  },
  "break_even": null,
  "break_even_set": null,
