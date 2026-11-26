@@ -52621,5 +52621,28 @@
    "lotteryguru"
   ],
   "jackpot": 60000000.0
+ },
+ {
+  "game": "powerball",
+  "draw": 1593,
+  "date": "2026-11-26",
+  "main": [
+   18,
+   19,
+   24,
+   25,
+   31,
+   32,
+   34
+  ],
+  "supp": [
+   8
+  ],
+  "dividends": [],
+  "sources": [
+   "national-lottery",
+   "lotteryguru"
+  ],
+  "jackpot": 100000000.0
  }
 ]
