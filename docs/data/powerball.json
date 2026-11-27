@@ -70,9 +70,9 @@
   "fetch_ok": true,
   "error": "dividends #1593: https://www.lotteryextreme.com/australia/powerball-dividends(2026-11-26): HTTP 404",
   "changed": false,
-  "checked_at": "2026-11-27T10:05+11:00",
+  "checked_at": "2026-11-27T16:09+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-27T10:05+11:00",
+  "last_ok": "2026-11-27T16:09+11:00",
   "history_years": 30
  },
  "config": {
