@@ -4004,7 +4004,9 @@
  "history": {
   "cursor": "2018-04-12",
   "misses": 0,
-  "dividends_tried": [],
+  "dividends_tried": [
+   1593
+  ],
   "done": true,
   "stop": "2018-04-19"
  }
