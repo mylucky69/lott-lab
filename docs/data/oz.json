@@ -56,11 +56,11 @@
  },
  "status": {
   "fetch_ok": true,
-  "error": "dividends #1710: https://www.lotteryextreme.com/australia/ozlotto-dividends(2026-11-24): HTTP 404",
-  "changed": false,
-  "checked_at": "2026-11-27T16:39+11:00",
+  "error": null,
+  "changed": true,
+  "checked_at": "2026-11-27T16:54+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-27T16:39+11:00",
+  "last_ok": "2026-11-27T16:54+11:00",
   "history_years": 32
  },
  "config": {
@@ -278,7 +278,43 @@
     4,
     33
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 1,
+     "amount": 15000000.0
+    },
+    {
+     "div": 2,
+     "winners": 5,
+     "amount": 46669.95
+    },
+    {
+     "div": 3,
+     "winners": 75,
+     "amount": 3677.05
+    },
+    {
+     "div": 4,
+     "winners": 644,
+     "amount": 329.4
+    },
+    {
+     "div": 5,
+     "winners": 3676,
+     "amount": 46.15
+    },
+    {
+     "div": 6,
+     "winners": 89858,
+     "amount": 23.35
+    },
+    {
+     "div": 7,
+     "winners": 227459,
+     "amount": 14.85
+    }
+   ],
    "sources": [
     "national-lottery",
     "lotteryguru"
@@ -3756,12 +3792,12 @@
  "value": {
   "price": 1.46,
   "low_div_ev": 0.4401,
-  "entries": 15079773.707593985,
+  "entries": 16427374.954084301,
   "jackpot": 4000000.0,
   "set_ratio": 1.0462,
   "ev_line": 0.5224,
   "per_dollar": 0.358,
-  "per_dollar_busy": 0.356,
+  "per_dollar_busy": 0.355,
   "expected_sales": 9061967,
   "break_even_jackpot": 112000000.0,
   "rating": "low",

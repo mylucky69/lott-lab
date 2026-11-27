@@ -68,11 +68,11 @@
  },
  "status": {
   "fetch_ok": true,
-  "error": "dividends #1593: https://www.lotteryextreme.com/australia/powerball-dividends(2026-11-26): HTTP 404",
-  "changed": false,
-  "checked_at": "2026-11-27T16:39+11:00",
+  "error": null,
+  "changed": true,
+  "checked_at": "2026-11-27T16:55+11:00",
   "new_draws": [],
-  "last_ok": "2026-11-27T16:39+11:00",
+  "last_ok": "2026-11-27T16:55+11:00",
   "history_years": 30
  },
  "config": {
@@ -494,7 +494,53 @@
    "supp": [
     8
    ],
-   "dividends": [],
+   "dividends": [
+    {
+     "div": 1,
+     "winners": 0,
+     "amount": 0.0
+    },
+    {
+     "div": 2,
+     "winners": 6,
+     "amount": 360612.25
+    },
+    {
+     "div": 3,
+     "winners": 211,
+     "amount": 12683.05
+    },
+    {
+     "div": 4,
+     "winners": 3701,
+     "amount": 630.75
+    },
+    {
+     "div": 5,
+     "winners": 7900,
+     "amount": 223.45
+    },
+    {
+     "div": 6,
+     "winners": 114808,
+     "amount": 95.7
+    },
+    {
+     "div": 7,
+     "winners": 147177,
+     "amount": 58.05
+    },
+    {
+     "div": 8,
+     "winners": 738777,
+     "amount": 24.65
+    },
+    {
+     "div": 9,
+     "winners": 2184396,
+     "amount": 14.35
+    }
+   ],
    "sources": [
     "national-lottery",
     "lotteryguru"
@@ -3989,15 +4035,15 @@
  },
  "value": {
   "price": 1.572,
-  "low_div_ev": 0.5472,
-  "entries": 48289226.83838207,
+  "low_div_ev": 0.5497,
+  "entries": 53502336.12768184,
   "jackpot": 150000000.0,
   "set_ratio": 1.0093,
-  "ev_line": 1.2061,
-  "per_dollar": 0.953,
-  "per_dollar_busy": 0.767,
+  "ev_line": 1.2086,
+  "per_dollar": 0.944,
+  "per_dollar_busy": 0.769,
   "expected_sales": 162266467,
-  "break_even_jackpot": 1316000000.0,
+  "break_even_jackpot": 1107000000.0,
   "rating": "high",
   "jackpot_source": "lotteryguru.com"
  },

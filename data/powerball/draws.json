@@ -52638,7 +52638,53 @@
   "supp": [
    8
   ],
-  "dividends": [],
+  "dividends": [
+   {
+    "div": 1,
+    "winners": 0,
+    "amount": 0.0
+   },
+   {
+    "div": 2,
+    "winners": 6,
+    "amount": 360612.25
+   },
+   {
+    "div": 3,
+    "winners": 211,
+    "amount": 12683.05
+   },
+   {
+    "div": 4,
+    "winners": 3701,
+    "amount": 630.75
+   },
+   {
+    "div": 5,
+    "winners": 7900,
+    "amount": 223.45
+   },
+   {
+    "div": 6,
+    "winners": 114808,
+    "amount": 95.7
+   },
+   {
+    "div": 7,
+    "winners": 147177,
+    "amount": 58.05
+   },
+   {
+    "div": 8,
+    "winners": 738777,
+    "amount": 24.65
+   },
+   {
+    "div": 9,
+    "winners": 2184396,
+    "amount": 14.35
+   }
+  ],
   "sources": [
    "national-lottery",
    "lotteryguru"
